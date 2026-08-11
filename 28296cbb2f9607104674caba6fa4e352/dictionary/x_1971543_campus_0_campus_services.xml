@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="enforce_dot_walk_cross_scope_access=true" db_object_id="7a123f842fa20b104674caba6fa4e353" label="Campus Services" max_length="40" name="x_1971543_campus_0_campus_services" type="collection">
+        <element label="Department" max_length="32" name="department" reference="cmn_department" type="reference"/>
+        <element label="SLA Hours" max_length="40" name="sla_hours" type="integer"/>
+        <element label="Active" max_length="40" name="active" type="boolean"/>
+        <element label="Service Name" max_length="100" name="service_name" type="string"/>
+        <element label="Service Owner" max_length="32" name="service_owner" reference="sys_user" type="reference"/>
+        <index name="index">
+            <element name="department"/>
+        </index>
+        <index name="index2">
+            <element name="service_owner"/>
+        </index>
+    </element>
+</database>

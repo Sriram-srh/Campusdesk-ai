@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="enforce_dot_walk_cross_scope_access=true" db_object_id="bcd9753f2fd247104674caba6fa4e371" label="Feedback" max_length="40" name="x_1971543_campus_0_feedback" type="collection">
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element label="Submitted By" mandatory="true" max_length="32" name="submitted_by" read_only="true" read_only_option="display_read_only" reference="sys_user" type="reference"/>
+        <element label="Submitted On" mandatory="true" max_length="40" name="submitted_on" read_only="true" read_only_option="display_read_only" type="glide_date_time"/>
+        <element choice="3" label="Rating" mandatory="true" max_length="40" name="rating" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="⭐⭐⭐☆☆ (3 - Average)" sequence="2" value="3"/>
+                <element inactive_on_update="false" label="⭐⭐⭐⭐☆ (4 - Good)" sequence="3" value="4"/>
+                <element inactive_on_update="false" label="⭐⭐☆☆☆ (2 - Poor)" sequence="1" value="2"/>
+                <element inactive_on_update="false" label="⭐⭐⭐⭐⭐ (5 - Excellent)" sequence="4" value="5"/>
+                <element inactive_on_update="false" label="⭐☆☆☆☆ (1 - Very Poor)" sequence="0" value="1"/>
+            </choice>
+        </element>
+        <element label="Comments" max_length="1000" name="comments" type="string"/>
+        <element label="Incident" mandatory="true" max_length="32" name="incident" reference="incident" type="reference"/>
+        <index name="index">
+            <element name="incident"/>
+        </index>
+        <index name="index2">
+            <element name="submitted_by"/>
+        </index>
+    </element>
+</database>

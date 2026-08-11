@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="enforce_dot_walk_cross_scope_access=true" db_object_id="38fcf7ec2fa20f104674caba6fa4e319" label="Incident Category" max_length="40" name="x_1971543_campus_0_incident_category" type="collection">
+        <element label="Description" max_length="1000" name="description" type="string"/>
+        <element display="true" label="Category Name" max_length="100" name="category_name" type="string"/>
+        <element label="Active" max_length="255" name="active" type="boolean"/>
+        <element choice="1" label="Priority" max_length="40" name="priority" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="High" sequence="0" value="High"/>
+                <element inactive_on_update="false" label="Critical" sequence="3" value="Critical"/>
+                <element inactive_on_update="false" label="Low" sequence="2" value="Low"/>
+                <element inactive_on_update="false" label="Medium" sequence="1" value="Medium"/>
+            </choice>
+        </element>
+    </element>
+</database>

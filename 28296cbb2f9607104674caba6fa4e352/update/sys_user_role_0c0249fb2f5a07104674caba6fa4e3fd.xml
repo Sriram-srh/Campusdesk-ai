@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_user_role">
+    <sys_user_role action="INSERT_OR_UPDATE">
+        <assignable_by/>
+        <can_delegate>true</can_delegate>
+        <description>Faculty Self-Service Portal</description>
+        <elevated_privilege>false</elevated_privilege>
+        <federated_id>dZc/x3B1Rz4U7JvuQQZJh+sYTJdZhWiHYR6MjY1lAQ4=</federated_id>
+        <grantable>true</grantable>
+        <includes_roles/>
+        <name>x_1971543_campus_0.faculty</name>
+        <scoped_admin>false</scoped_admin>
+        <suffix>faculty</suffix>
+        <sys_class_name>sys_user_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-01 06:04:35</sys_created_on>
+        <sys_id>0c0249fb2f5a07104674caba6fa4e3fd</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>x_1971543_campus_0.faculty</sys_name>
+        <sys_package display_value="CampusDesk AI" source="x_1971543_campus_0">28296cbb2f9607104674caba6fa4e352</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CampusDesk AI">28296cbb2f9607104674caba6fa4e352</sys_scope>
+        <sys_update_name>sys_user_role_0c0249fb2f5a07104674caba6fa4e3fd</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-01 06:05:32</sys_updated_on>
+    </sys_user_role>
+</record_update>

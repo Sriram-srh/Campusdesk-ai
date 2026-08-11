@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="enforce_dot_walk_cross_scope_access=true" db_object_id="b7bf3d3b2f1647104674caba6fa4e36a" label="AI Preferences" max_length="40" name="x_1971543_campus_0_ai_preferences" type="collection">
+        <element choice="3" label="Preferred AI Model" max_length="40" name="preferred_ai_model" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Azure OpenAI" sequence="2" value="Azure OpenAI"/>
+                <element inactive_on_update="false" label="Gemini" sequence="3" value="Gemini"/>
+                <element inactive_on_update="false" label="OpenAI GPT" sequence="0" value="OpenAI GPT"/>
+                <element inactive_on_update="false" label="Now Assist" sequence="1" value="Now Assist"/>
+            </choice>
+        </element>
+        <element label="Enable AI Suggestions" max_length="255" name="enable_ai_suggestions" type="boolean"/>
+        <element choice="3" label="Language" max_length="255" name="language" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Tamil" sequence="1" value="Tamil"/>
+                <element inactive_on_update="false" label="English" sequence="0" value="English"/>
+                <element inactive_on_update="false" label="Hindi" sequence="2" value="Hindi"/>
+            </choice>
+        </element>
+        <element label="User" max_length="32" name="user" reference="sys_user" type="reference"/>
+        <element choice="3" label="Theme" max_length="255" name="theme" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Light" sequence="0" value="Light"/>
+                <element inactive_on_update="false" label="System" sequence="2" value="System"/>
+                <element inactive_on_update="false" label="Dark" sequence="1" value="Dark"/>
+            </choice>
+        </element>
+        <index name="index">
+            <element name="user"/>
+        </index>
+    </element>
+</database>

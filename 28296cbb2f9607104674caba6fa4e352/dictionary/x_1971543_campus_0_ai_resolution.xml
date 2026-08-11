@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="enforce_dot_walk_cross_scope_access=true" db_object_id="41b4fa382f6a4f104674caba6fa4e333" label="AI Resolution" max_length="40" name="x_1971543_campus_0_ai_resolution" type="collection">
+        <element label="Confidence" max_length="20" name="confidence" type="decimal"/>
+        <element label="Resolution" max_length="8000" name="resolution" type="html"/>
+        <element label="Estimated Resolution Time" max_length="100" name="estimated_resolution_time" type="string"/>
+        <element label="Category" max_length="32" name="category" reference="x_1971543_campus_0_incident_category" type="reference"/>
+        <element label="Active" max_length="40" name="active" type="boolean"/>
+        <index name="index">
+            <element name="category"/>
+        </index>
+    </element>
+</database>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="INSERT_OR_UPDATE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-04 17:03:24</sys_created_on>
+        <sys_id>a3c63e3c2f6a4f104674caba6fa4e385</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_1971543_campus_0_ai_resolution.x_1971543_campus_0.ai_resolution_user</sys_name>
+        <sys_package display_value="CampusDesk AI" source="x_1971543_campus_0">28296cbb2f9607104674caba6fa4e352</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CampusDesk AI">28296cbb2f9607104674caba6fa4e352</sys_scope>
+        <sys_security_acl display_value="x_1971543_campus_0_ai_resolution">dfc63e3c2f6a4f104674caba6fa4e37e</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_a3c63e3c2f6a4f104674caba6fa4e385</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-04 17:03:24</sys_updated_on>
+        <sys_user_role display_value="x_1971543_campus_0.ai_resolution_user" name="x_1971543_campus_0.ai_resolution_user">21c63a3c2f6a4f104674caba6fa4e3a9</sys_user_role>
+    </sys_security_acl_role>
+</record_update>

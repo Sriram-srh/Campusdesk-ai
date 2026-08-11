@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_list parent="sys_ui_list" relationship="" sys_domain="global" table="sys_ui_list_element" version="2" view="reference_list">
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>element</element>
+            <list_id display_value="sys_ui_list_element" element="NULL" name="sys_ui_list_element" parent="sys_ui_list" relationship="NULL" sys_domain="global" view="0d728c202f268b104674caba6fa4e342">1fe244a02f268b104674caba6fa4e3b1</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>0</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-08-03 09:19:01</sys_created_on>
+            <sys_id>dbe244a02f268b104674caba6fa4e3b2</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-08-03 09:19:01</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>position</element>
+            <list_id display_value="sys_ui_list_element" element="NULL" name="sys_ui_list_element" parent="sys_ui_list" relationship="NULL" sys_domain="global" view="0d728c202f268b104674caba6fa4e342">1fe244a02f268b104674caba6fa4e3b1</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>1</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-08-03 09:19:01</sys_created_on>
+            <sys_id>53e244a02f268b104674caba6fa4e3b3</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-08-03 09:19:01</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>average_value</element>
+            <list_id display_value="sys_ui_list_element" element="NULL" name="sys_ui_list_element" parent="sys_ui_list" relationship="NULL" sys_domain="global" view="0d728c202f268b104674caba6fa4e342">1fe244a02f268b104674caba6fa4e3b1</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>2</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-08-03 09:19:01</sys_created_on>
+            <sys_id>d7e244a02f268b104674caba6fa4e3b3</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-08-03 09:19:01</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>max_value</element>
+            <list_id display_value="sys_ui_list_element" element="NULL" name="sys_ui_list_element" parent="sys_ui_list" relationship="NULL" sys_domain="global" view="0d728c202f268b104674caba6fa4e342">1fe244a02f268b104674caba6fa4e3b1</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>3</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-08-03 09:19:01</sys_created_on>
+            <sys_id>6fe244a02f268b104674caba6fa4e3b3</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-08-03 09:19:01</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>min_value</element>
+            <list_id display_value="sys_ui_list_element" element="NULL" name="sys_ui_list_element" parent="sys_ui_list" relationship="NULL" sys_domain="global" view="0d728c202f268b104674caba6fa4e342">1fe244a02f268b104674caba6fa4e3b1</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>4</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-08-03 09:19:01</sys_created_on>
+            <sys_id>e3e244a02f268b104674caba6fa4e3b4</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-08-03 09:19:01</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>sum</element>
+            <list_id display_value="sys_ui_list_element" element="NULL" name="sys_ui_list_element" parent="sys_ui_list" relationship="NULL" sys_domain="global" view="0d728c202f268b104674caba6fa4e342">1fe244a02f268b104674caba6fa4e3b1</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>5</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-08-03 09:19:01</sys_created_on>
+            <sys_id>6be244a02f268b104674caba6fa4e3b4</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-08-03 09:19:01</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element/>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <name>sys_ui_list_element</name>
+            <parent>sys_ui_list</parent>
+            <position/>
+            <relationship/>
+            <sum>false</sum>
+            <sys_class_name>sys_ui_list</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-08-03 09:19:01</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>1fe244a02f268b104674caba6fa4e3b1</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>sys_ui_list_element</sys_name>
+            <sys_package display_value="CampusDesk AI" source="x_1971543_campus_0">28296cbb2f9607104674caba6fa4e352</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="CampusDesk AI">28296cbb2f9607104674caba6fa4e352</sys_scope>
+            <sys_update_name>sys_ui_list_sys_ui_list_element_sys_ui_list_reference_list</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-08-03 09:19:01</sys_updated_on>
+            <sys_user/>
+            <view display_value="Reference_list" name="reference_list">0d728c202f268b104674caba6fa4e342</view>
+            <view_name/>
+        </sys_ui_list>
+    </sys_ui_list>
+</record_update>

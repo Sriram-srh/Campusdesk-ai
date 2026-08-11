@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="DELETE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-02 13:19:29</sys_created_on>
+        <sys_id>c460bb802fa20b104674caba6fa4e377</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_1971543_campus_0_incident_category.x_1971543_campus_0.incident_category_user</sys_name>
+        <sys_package display_value="CampusDesk AI" source="x_1971543_campus_0">28296cbb2f9607104674caba6fa4e352</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CampusDesk AI">28296cbb2f9607104674caba6fa4e352</sys_scope>
+        <sys_security_acl display_value="x_1971543_campus_0_incident_category">8460bb802fa20b104674caba6fa4e358</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_c460bb802fa20b104674caba6fa4e377</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-02 13:19:29</sys_updated_on>
+        <sys_user_role display_value="x_1971543_campus_0.incident_category_user" name="x_1971543_campus_0.incident_category_user">73834f082f2ec7104674caba6fa4e38a</sys_user_role>
+    </sys_security_acl_role>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="CampusDesk AI">28296cbb2f9607104674caba6fa4e352</application>
+        <file_path/>
+        <instance_id>61376ff2ebce879056eafddacad0cd95</instance_id>
+        <instance_name>dev440008</instance_name>
+        <name>sys_security_acl_role_c460bb802fa20b104674caba6fa4e377</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role"><sys_security_acl_role action="INSERT_OR_UPDATE"><sys_class_name>sys_security_acl_role</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-08-02 13:19:29</sys_created_on><sys_id>c460bb802fa20b104674caba6fa4e377</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_1971543_campus_0_incident_category.x_1971543_campus_0.incident_category_user</sys_name><sys_package display_value="CampusDesk AI" source="x_1971543_campus_0">28296cbb2f9607104674caba6fa4e352</sys_package><sys_policy/><sys_scope display_value="CampusDesk AI">28296cbb2f9607104674caba6fa4e352</sys_scope><sys_security_acl display_value="x_1971543_campus_0_incident_category">8460bb802fa20b104674caba6fa4e358</sys_security_acl><sys_update_name>sys_security_acl_role_c460bb802fa20b104674caba6fa4e377</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-08-02 13:19:29</sys_updated_on><sys_user_role display_value="x_1971543_campus_0.incident_category_user" name="x_1971543_campus_0.incident_category_user">73834f082f2ec7104674caba6fa4e38a</sys_user_role></sys_security_acl_role></record_update>]]></payload>
+        <payload_hash>-1429627734</payload_hash>
+        <record_name>x_1971543_campus_0_incident_category.x_1971543_campus_0.incident_category_user</record_name>
+        <reverted_from/>
+        <source>3b72457f2f5a07104674caba6fa4e39f</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-02 13:19:29</sys_created_on>
+        <sys_id>c060bb802fa20b104674caba6fa4e38d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19fc2a127f60000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-02 13:19:29</sys_updated_on>
+        <type>Access Roles</type>
+        <update_guid>8060bb80e2a20b1068ff5aa67eebc58c</update_guid>
+        <update_guid_history>8060bb80e2a20b1068ff5aa67eebc58c:-1429627734</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="x_1971543_campus_0_incident_category.x_1971543_campus_0.incident_category_user">02dc33ec2fa20f104674caba6fa4e35b</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-04 03:30:55</sys_created_on>
+        <sys_db_object display_value="" name="sys_security_acl_role">sys_security_acl_role</sys_db_object>
+        <sys_id>2386cfb6d962439cb2058215e9579d09</sys_id>
+        <sys_metadata>c460bb802fa20b104674caba6fa4e377</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_1971543_campus_0_incident_category.x_1971543_campus_0.incident_category_user</sys_name>
+        <sys_package display_value="CampusDesk AI" source="x_1971543_campus_0">28296cbb2f9607104674caba6fa4e352</sys_package>
+        <sys_parent display_value="">8460bb802fa20b104674caba6fa4e358</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="CampusDesk AI">28296cbb2f9607104674caba6fa4e352</sys_scope>
+        <sys_scope_delete display_value="">00f198debf51430880043b00f9ed0910</sys_scope_delete>
+        <sys_update_name>sys_security_acl_role_c460bb802fa20b104674caba6fa4e377</sys_update_name>
+        <sys_update_version display_value="sys_security_acl_role_c460bb802fa20b104674caba6fa4e377">c060bb802fa20b104674caba6fa4e38d</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-04 03:30:55</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

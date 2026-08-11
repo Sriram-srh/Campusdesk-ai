@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="enforce_dot_walk_cross_scope_access=true" db_object_id="0b6ddd7c2fae0f104674caba6fa4e3ba" label="AI Recommendation" max_length="40" name="x_1971543_campus_0_ai_recommendation" type="collection">
+        <element label="Active" max_length="40" name="active" type="boolean"/>
+        <element label="Category" max_length="32" name="category" reference="x_1971543_campus_0_incident_category" type="reference"/>
+        <element label="Recommendation" max_length="8000" name="recommendation" type="html"/>
+        <index name="index">
+            <element name="category"/>
+        </index>
+    </element>
+</database>

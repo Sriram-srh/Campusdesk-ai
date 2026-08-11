@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>false</active>
+        <allow_high_security_roles>false</allow_high_security_roles>
+        <annotation/>
+        <attributes>labelCacheCleanUpExecuted=true</attributes>
+        <authored_on_release_version>29000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <compiler_build/>
+        <copied_from/>
+        <copied_from_name/>
+        <description>Automates complete Incident lifecycle</description>
+        <display_name_after_preview/>
+        <flow_priority>MEDIUM</flow_priority>
+        <generation_source/>
+        <internal_name>campusdesk_incident_automation</internal_name>
+        <label_cache>[{"name":"b60264bd-8bbb-416d-ae02-c34d049140a8.Record.sys_id","label":"1➛Group Record➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"sys_user_group","column_name":"sys_id","choices":[{"label":null,"value":null,"order":0}],"usedInstances":{"9a2edd51-8f42-4204-a810-15636eba97df":["assignment_group"]},"attributes":null},{"name":"Created_1.table_name","label":"Trigger - Record Created➛Incident Table","reference":"incident","reference_display":"Incident","type":"table_name","base_type":"table_name","parent_table_name":null,"column_name":null,"choices":[{"label":null,"value":null,"order":0.0}],"usedInstances":{},"attributes":{"test_input_hidden":"true"}},{"name":"Created_1.current","label":"Trigger - Record Created➛Incident Record","reference":"incident","reference_display":"Incident","type":"reference","base_type":"reference","parent_table_name":null,"column_name":null,"choices":[{"label":null,"value":null,"order":0}],"usedInstances":{"9a2edd51-8f42-4204-a810-15636eba97df":["record"]},"attributes":{"":""}}]</label_cache>
+        <latest_snapshot/>
+        <master_snapshot/>
+        <master_snapshot_digest/>
+        <name>CampusDesk Incident Automation</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id/>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>draft</status>
+        <substatus/>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-04 05:12:33</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>fe14107c2f660f104674caba6fa4e387</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_name>CampusDesk Incident Automation</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="CampusDesk AI" source="x_1971543_campus_0">28296cbb2f9607104674caba6fa4e352</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CampusDesk AI">28296cbb2f9607104674caba6fa4e352</sys_scope>
+        <sys_update_name>sys_hub_flow_fe14107c2f660f104674caba6fa4e387</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-04 07:33:41</sys_updated_on>
+        <type>flow</type>
+        <updation_source/>
+        <version>2</version>
+        <version_record>3464bc7c2f6a0f104674caba6fa4e36d</version_record>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=fe14107c2f660f104674caba6fa4e387"/>
+    <sys_variable_value action="delete_multiple" query="document_key=fe14107c2f660f104674caba6fa4e387"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=fe14107c2f660f104674caba6fa4e387"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=fe14107c2f660f104674caba6fa4e387^sys_idNOT INb21414bc2f660f104674caba6fa4e3a9"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>fe14107c2f660f104674caba6fa4e387</id>
+        <name>CampusDesk Incident Automation</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-04 05:12:33</sys_created_on>
+        <sys_id>b21414bc2f660f104674caba6fa4e3a9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-04 05:12:33</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=b21414bc2f660f104674caba6fa4e3a9"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=fe14107c2f660f104674caba6fa4e387^sys_idNOT IN99ea14f82fa60f104674caba6fa4e3e7,fdea54f82fa60f104674caba6fa4e39a"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="CampusDesk Incident Automation">fe14107c2f660f104674caba6fa4e387</model>
+        <model_id>fe14107c2f660f104674caba6fa4e387</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_fe14107c2f660f104674caba6fa4e387</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_only_option/>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-04 05:42:12</sys_created_on>
+        <sys_id>99ea14f82fa60f104674caba6fa4e3e7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="CampusDesk AI">28296cbb2f9607104674caba6fa4e352</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-04 05:42:12</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=99ea14f82fa60f104674caba6fa4e3e7"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="CampusDesk Incident Automation">fe14107c2f660f104674caba6fa4e387</model>
+        <model_id>fe14107c2f660f104674caba6fa4e387</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_fe14107c2f660f104674caba6fa4e387</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_only_option/>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-04 05:42:15</sys_created_on>
+        <sys_id>fdea54f82fa60f104674caba6fa4e39a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="CampusDesk AI">28296cbb2f9607104674caba6fa4e352</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-04 05:42:15</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=fdea54f82fa60f104674caba6fa4e39a"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=fe14107c2f660f104674caba6fa4e387"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=fe14107c2f660f104674caba6fa4e387"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=fe14107c2f660f104674caba6fa4e387^sys_idNOT INe0ead8bc2f660f104674caba6fa4e32d"/>
+    <sys_hub_trigger_instance_v2 action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="CampusDesk Incident Automation">fe14107c2f660f104674caba6fa4e387</flow>
+        <generation_source/>
+        <name>Created</name>
+        <published_version/>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-04 05:42:10</sys_created_on>
+        <sys_id>e0ead8bc2f660f104674caba6fa4e32d</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-04 05:42:34</sys_updated_on>
+        <trigger_definition display_value="Created">798916a0c31322002841b63b12d3ae7c</trigger_definition>
+        <trigger_inputs>H4sIAAAAAAAA/91ZW2/iOBT+K1GediVGygVK6dssdLSVuq2WMrsPVTdyEhusMQ7jOOkwVf/72rmQm0OhIaO2T4jj23c+n/Md27l/0glwIdEv9GlAfcxxQPWBjimHjAKy2G6gaPLyplC0rQH1AQ/YVr9AgIRwoCMWrBdwvSGAw50xYD5k+oVpGAM9BiSCd9vwyheTiSkoWFem1bMuwvbf5d/in49DMdv2n4rRW2HiM0j1i/uHgb4BTMzC5RpPO7zXmH5Ll6h2xnLhszMAfAgMzzZtyzIM63xoume2a1q+DaCLxCgVFwqwXEGLtF3Xh8uGMhHwB4fUh/6OpSaZDAL/lpLCsBLOpT6twY8Q/xQrDw05GYMICg89mLbu/joZe6kZzQAHd5xFHo8YzMkJsAfDlBsfIhARPi3b0g63m8TfZAgHLslHByRa05uUFn03Qb5ZwhKFAgTcSFcldrG4jJK7VfA4z0F+wTShJXOSBB4gu3+Ac4bdiEs4T/ojoDx0eOAA33dKnF/ocmLJS+BDMivWE3a8XELmYLqJeKg/D/RwG04JCMMCtaDL+R7JRVMfstFO4nDqrRznMbzhnz2O4zy0nwdFzrCIigHOblubmZMQuaP8GocC3/2TIAN+j9K9+2QKbnLyMo9QHknziGoB1byICda4JqJFyxfTEpAywtDVGiwzt8TEBHq8FGLoa1j+9xcOQ0yXJWfasCQdmmDItowoZaobhodTikpzS+KaPzVxOYGymCZCLkSWMZa6Yhq2i0xjbIwA8m3D8KySsjThteLmtRCqKExu7EVdTqMtRZrsC5z67mQOGeU0OygL4moK5cQ8qySuEzTzRNCs56bS2kdJ7S6iU/OsGtj7XKspdJ5zr5Vo4MdAjPBzH49X3APFFpHgUch6d6FFAYNLFkTUryucXELD4rfSox+JdYH3bT+Koof2W7bNv781uS02JQ90QLe9CK2NTHcCh9AQ+moLaXVHk4nrAQuh8dkYWmZNaAtgSrQfS2BfiJhYFXJtYqvMgViVOkfIbAeADck9GmB3sc1iWim1adt7FdXHFaSOAM8cImWzoa1Lgn2Yt51WOhpLx4VYnF4+0PnEG5njsTcWtz8hH2gIXWAOrRGYjM/s81FNPhrg9gHnCq7KgnKdmn7JbVCESYKtRVi+pk1v4Gb4vlIkhJzLOtr58JEMB+l6pbovN1pL1C1gmtwk7aroqN1BUcWT54e+DiMBXzWOIQLJH8JeQSIPuTcB/aRA1+N1lIrb0SHEtSB7a4emWkTF1U3o4Y4Kh+ejCbLV2ocmKu0r4LUD/ziHqAOjKG6NR9Vp6tCcjpXS0Hr8eUVa1iKsfC7ac3A7FSnmyUmx+iPF7nxYzNO49WL+GrDvungmZ6WTVdCAQidAyhqAkZa9/0Jfc7caX0HBNhEXBrGyJmH0WKTSi0CjhAqzlh3IequOck/qpMwCTTRo7JfQ0k+JrMVN3y8M0B+D0chuuSJM6i8MKogvePBxCubR0RWrgnVv1Txu3vqcyrpZysVqMB1YEU/qtbosdvNaWRhf8rp7ydv3PqJA8R6L2SJ7Pa8Vr4QjJ0n7SnJm3z33KWCr/tW/QWDq4YSphuhdFS1dxc9DHphYsOULuWGUxC+nogaXKxgpC1wyTLtJGwoS9klcyuIhCnf+nj6Kdw14hInYUSdlOgwilrg8v5zezmfOv58X0z8v58788m4xv5ouLmevTIiMtS8YEhkgkZPHoeOJcF7KDVJnzcP/Tz4PT1oiAAA=</trigger_inputs>
+        <trigger_outputs/>
+        <trigger_type>record_create</trigger_type>
+        <updation_source/>
+    </sys_hub_trigger_instance_v2>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=fe14107c2f660f104674caba6fa4e387^sys_idNOT IN1e6bd8bc2f660f104674caba6fa4e331,f762b0b82f6a0f104674caba6fa4e33a"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Look Up Record">9d09f99587003300663ca1bb36cb0ba3</action_type>
+        <action_type_parent/>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="CampusDesk Incident Automation">fe14107c2f660f104674caba6fa4e387</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-04 05:44:28</sys_created_on>
+        <sys_id>1e6bd8bc2f660f104674caba6fa4e331</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="CampusDesk AI">28296cbb2f9607104674caba6fa4e352</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-04 07:21:25</sys_updated_on>
+        <ui_id>b60264bd-8bbb-416d-ae02-c34d049140a8</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VYUW/iOBD+K1GeKZcQINC3UytOlfa20rbXl72V5cQOWGvsrO3QpVX/+40Th7CQArmyp67uCWU88Xwz831jh8/PPiP+pT8iwTSbTkeTOAiiKAjG4yjFYZJE4zQJkiT0e77ASwqeWiqDzDqnYFphXmxsWKdgIkznHK8f3Ar2jPSewJ4uGCeKCv/y85een2MFuxmq/MvnnaVT4XCcUA6udxDbu6/wtEAsfy4hhmRp/fzBvXpVG6UiFkrU8+l3QwWhgCHDXNOev8SCYCPVemNRFJNbwRvDggkDu/nW+btmTxAvGli/jEJWKa3WNo/IlagyZ9fY4DujitQUyrlWYDXU43mT5qaQLTV38IOXXuP/ZP3xrj+h2y+EL1BvQjNccHP172KGXWMObMwqwdvcMAld9yPbF5zwOn3Ji6X4WPXS3yB8aCFbtXL9CucKDcWmuW2o7ZBrV3a3kI+f6m7MmChxuUUuU8w3T9gYxZLC2Lo8+xlBGaOcICY4EzYStM3Sh3K6hAhoifOciTnKlVyxclfIZdmfc3joZ1w+2lqwuejj1GbeB2Lh/gzs16X5AStmq/AnbAMv92zABbzq4iGdKpYb9MjInJomeu1FpHnE/GvbumMcqhtVpue/9Hy91lcca90UG2iKvhW2BlXpXfVQ2ajylRLF75DBirpCWQ6Usg0PyhaTHYlWjd7iy/786Dw5ToBQV+HWMtJL1q+hcqOj6nnp8eP4mNkF72O1UNP7bCNkEpxnhLRJfF+CnRS4Ly1LtV9HWd2JX9XmGPunBw+tacMzlqEl1JPlnCJFU+CORlhRlMlCEFTlsCULW+yMKW2c875MPlFovfAkcMozC+qV3t7Gu6OEjudRS+gm8+pEXDTtQSJemYi3SaRb2l2O7OHZ9DY8k96a43CGGS+7oQ3Nt9pJlZLqlWP7SCMPMOLEM/1EUOFZQb390G+TQOvhfwTrma8E72U+HRtNKcXJcIDHcRSGQRAGJA4mcRxOxkk2xvEwazSKkBYp3CVg5wyoAtujmhp1n4P9+VNdKLoOmhNQ1RS8luLvIggGsfEsLOivV8M6DtwNlERKTrHYmSj3cNL8NnP4HV9H726q/Cen+FvVULD71wr7s67IVcgfmluwvwT7VtAbS7EJDQaTkKQXkziML4YZGV9MCR5d4GkyiiNC02H2My7CZHTwFrp1FUilIMymqrcUZtcs3SNyc+/dUbWCJntQga/7yjvk2k2NJ2Cu1Xi1DbotkfoI37V9aNugPnLOKLrgV5LdGy/P7+UMOnRHro0l9Zrew9NBZ9DZS6Opg9dSPGyoWCHZ+htirRHUXKG5kkW+r6E/nLmjXo7jqfVy7wDt4HMqKR/bPjDL13Y+MIP/5wfm+7yoASDGgSGoaqGWhSpLuUIpL3S5oLDQ7svmfMfMl38AE/1GybcVAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=1e6bd8bc2f660f104674caba6fa4e331"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent/>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="CampusDesk Incident Automation">fe14107c2f660f104674caba6fa4e387</flow>
+        <generation_source/>
+        <order>2</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-04 07:25:03</sys_created_on>
+        <sys_id>f762b0b82f6a0f104674caba6fa4e33a</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="CampusDesk AI">28296cbb2f9607104674caba6fa4e352</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-04 07:33:31</sys_updated_on>
+        <ui_id>9a2edd51-8f42-4204-a810-15636eba97df</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1TXWvbMBT9K0HPiZFj1yR5GwmBQtdCW/LSdUaWrhOB/DFZTpsZ//dd23KSpV1JoYMV5jfdD+mc43MeKiIFmREfBHWnbsA91/PGlI4nvhsFXuSOhccAXDIkKUsAJzXwTAs8b5kqm0JVzTUwAyJ0HV5qDampa+wLWeSK7VZ2DCt8I5XAPpk9PA5JzjTeaECTWXXSOheSYhEoHL3tMZ1iNLu8OYuMlwniCmVfvLKbC9sZXC6wg0sNHJcOCTwbSAUgkJipAoYkYalgJtM7MjO6xAKSFjep2u0nNjI1HdGEPRfyJ77s02YuBmTGrQj7Y2gF6srxghl2hzdzU+q9XpnkUHSaCIhZqcz8uNYN3ORGZmm3Ylik+u1MlUl63SlC9hcc/Y+yQBCQNzwb5B2t+G6TPd32IJcybSWxFFXGmdqfmDFaRqVp4FQEFLQaJyzPZboOc51tZbuMUBJnrfDgxCp7wjcLuU4dxhvcDqrKnCXWF215xbRsSHzFa3C5HpJiV8wVK4oDFdQw/FE2SDpilkLYqtBKELZOaJa5lrn5gk9twQKvh9b0dPymw+BgqNbrxZHpEQ5ibfmudVbm30pKPVFVUUDHgR+J0SSKopHvBmLEgI5H3PMF9aeuT9nE6ezqIC80ZF1/75ZfRubvPPK+FJ6hUZ/CpQQlildEsyk0kCA7A2En4u9BvLfNwco291n8sDC6AW2//5H8dyMZXbxlNz49uOvozkMsZcplq9yLLF0eOu8LwBmI+gDct3/6dYR9Bk5rV8e7g+uuYb1/8WHWn3wm01san971f/L64y+YISVtdQkAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=f762b0b82f6a0f104674caba6fa4e33a"/>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=fe14107c2f660f104674caba6fa4e387"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=fe14107c2f660f104674caba6fa4e387"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=fe14107c2f660f104674caba6fa4e387"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=fe14107c2f660f104674caba6fa4e387"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_fe14107c2f660f104674caba6fa4e387</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-04 05:42:15</sys_created_on>
+        <sys_id>7dea54f82fa60f104674caba6fa4e3ba</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="CampusDesk AI" source="x_1971543_campus_0">28296cbb2f9607104674caba6fa4e352</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CampusDesk AI">28296cbb2f9607104674caba6fa4e352</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-04 05:42:15</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_fe14107c2f660f104674caba6fa4e387</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-04 05:42:15</sys_created_on>
+        <sys_id>b9ea54f82fa60f104674caba6fa4e395</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="CampusDesk AI" source="x_1971543_campus_0">28296cbb2f9607104674caba6fa4e352</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CampusDesk AI">28296cbb2f9607104674caba6fa4e352</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-04 05:42:15</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_fe14107c2f660f104674caba6fa4e387"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_fe14107c2f660f104674caba6fa4e387"/>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=fe14107c2f660f104674caba6fa4e387"/>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=fe14107c2f660f104674caba6fa4e387"/>
+</record_update>

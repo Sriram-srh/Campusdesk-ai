@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="email_client=true,hasWorkflow=true,live_feed=true,all_tables.query_hints=true" audit="true" db_object_id="f0dcd2f5086403100a22e9371c04a41d" extends="task" label="Incident" max_length="40" name="incident" text_index="true" type="collection">
+        <element label="AI Recommendation" max_length="65536" name="x_1971543_campus_0_ai_recommendation" type="html"/>
+    </element>
+</database>

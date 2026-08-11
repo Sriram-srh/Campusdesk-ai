@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_policy_action">
+    <sys_ui_policy_action action="INSERT_OR_UPDATE">
+        <cleared>false</cleared>
+        <disabled>true</disabled>
+        <field>submitted_on</field>
+        <field_message/>
+        <field_message_type>none</field_message_type>
+        <mandatory>ignore</mandatory>
+        <sys_class_name>sys_ui_policy_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-01 15:46:37</sys_created_on>
+        <sys_id>d758cb3b2f5e47104674caba6fa4e33c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>submitted_on</sys_name>
+        <sys_package display_value="CampusDesk AI" source="x_1971543_campus_0">28296cbb2f9607104674caba6fa4e352</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CampusDesk AI">28296cbb2f9607104674caba6fa4e352</sys_scope>
+        <sys_update_name>sys_ui_policy_action_d758cb3b2f5e47104674caba6fa4e33c</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-01 15:46:37</sys_updated_on>
+        <table>x_1971543_campus_0_feedback</table>
+        <ui_policy display_value="Feedback - Read Only Fields">8e27c3b72f5e47104674caba6fa4e3a6</ui_policy>
+        <value/>
+        <value_action>ignore</value_action>
+        <visible>ignore</visible>
+    </sys_ui_policy_action>
+    <sys_translated_text action="delete_multiple" query="documentkey=d758cb3b2f5e47104674caba6fa4e33c"/>
+</record_update>
