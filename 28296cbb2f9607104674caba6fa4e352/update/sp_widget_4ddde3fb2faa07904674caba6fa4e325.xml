@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[function ($scope, $sce) {
+	var c = this;
+	c.html = $sce.trustAsHtml(c.options.html);
+	$scope.$watch('c.options.html',function(){
+		c.html = $sce.trustAsHtml(c.options.html);
+	})
+}]]></client_script>
+        <controller_as>c</controller_as>
+        <css>.campusdesk-actions {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 55px 30px 65px;
+  font-family: Arial, sans-serif;
+}
+
+.campusdesk-actions-header {
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.campusdesk-actions-label {
+  display: inline-block;
+  padding: 7px 14px;
+  border: 1px solid #d7e8d0;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  color: #5c8f35;
+}
+
+.campusdesk-actions-header h2 {
+  margin: 14px 0 8px;
+  font-size: 30px;
+  font-weight: 700;
+  color: #123247;
+}
+
+.campusdesk-actions-header p {
+  margin: 0;
+  font-size: 15px;
+  color: #667781;
+}
+
+.campusdesk-action-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.campusdesk-action-card {
+  display: flex;
+  align-items: center;
+  position: relative;
+  min-height: 125px;
+  padding: 25px;
+  background: #ffffff;
+  border: 1px solid #e1e8eb;
+  border-radius: 14px;
+  text-decoration: none;
+  box-shadow: 0 4px 14px rgba(10, 40, 55, 0.06);
+  transition: all 0.2s ease;
+}
+
+.campusdesk-action-card:hover {
+  transform: translateY(-3px);
+  border-color: #8bd14f;
+  box-shadow: 0 8px 22px rgba(10, 40, 55, 0.11);
+}
+
+.campusdesk-action-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 58px;
+  height: 58px;
+  margin-right: 20px;
+  background: #eef8e7;
+  border-radius: 14px;
+  font-size: 27px;
+  flex-shrink: 0;
+}
+
+.campusdesk-action-content {
+  padding-right: 35px;
+}
+
+.campusdesk-action-content h3 {
+  margin: 0 0 7px;
+  color: #123247;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.campusdesk-action-content p {
+  margin: 0;
+  color: #71808a;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.campusdesk-action-arrow {
+  position: absolute;
+  right: 22px;
+  color: #7ac943;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+@media (max-width: 700px) {
+
+  .campusdesk-actions {
+    padding: 40px 18px;
+  }
+
+  .campusdesk-action-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .campusdesk-actions-header h2 {
+    font-size: 25px;
+  }
+
+}</css>
+        <data_table>sp_instance</data_table>
+        <demo_data>{"options": &#13;
+	{&#13;
+		"html": "&lt;i&gt;Hi&lt;/i&gt;",&#13;
+		"title": "HTML"&#13;
+	}&#13;
+}</demo_data>
+        <description/>
+        <docs/>
+        <field_list>title</field_list>
+        <has_preview>true</has_preview>
+        <id>campusdesk_ai_quick_actions</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {  }]]></link>
+        <name>CampusDesk AI Quick Actions</name>
+        <option_schema>[{"name":"html","default_value":" &lt;b&gt;hello&lt;/b&gt;","section":"Data","label":"HTML","type":"translated_html"}]</option_schema>
+        <public>true</public>
+        <roles/>
+        <script><![CDATA[(function() {  /* populate the 'data' object */  /* e.g., data.table = $sp.getValue('table'); */})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-14 04:45:34</sys_created_on>
+        <sys_id>4ddde3fb2faa07904674caba6fa4e325</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>CampusDesk AI Quick Actions</sys_name>
+        <sys_package display_value="CampusDesk AI" source="x_1971543_campus_0">28296cbb2f9607104674caba6fa4e352</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CampusDesk AI">28296cbb2f9607104674caba6fa4e352</sys_scope>
+        <sys_update_name>sp_widget_4ddde3fb2faa07904674caba6fa4e325</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-14 10:17:29</sys_updated_on>
+        <template><![CDATA[<div class="campusdesk-actions">
+
+  <div class="campusdesk-actions-header">
+    <span class="campusdesk-actions-label">CAMPUSDESK SERVICES</span>
+    <h2>How can we help?</h2>
+    <p>Quick access to the most common campus IT support services.</p>
+  </div>
+
+  <div class="campusdesk-action-grid">
+
+    <!-- Report an Issue -->
+    <a class="campusdesk-action-card"
+       href="?id=campusdesk_report_issue&table=incident&sys_id=-1&view=campusdesk_ai_portal">
+      <div class="campusdesk-action-icon">]]>🚨<![CDATA[</div>
+      <div class="campusdesk-action-content">
+        <h3>Report an Issue</h3>
+        <p>Report a new IT problem or service issue.</p>
+      </div>
+      <span class="campusdesk-action-arrow">→</span>
+    </a>
+
+    <!-- My Incidents -->
+    <a class="campusdesk-action-card"
+       href="?id=my_incidents">
+      <div class="campusdesk-action-icon">]]>📋<![CDATA[</div>
+      <div class="campusdesk-action-content">
+        <h3>My Incidents</h3>
+        <p>View and track incidents you have reported.</p>
+      </div>
+      <span class="campusdesk-action-arrow">→</span>
+    </a>
+
+    <!-- Knowledge Base -->
+    <a class="campusdesk-action-card"
+       href="?id=kb_home">
+      <div class="campusdesk-action-icon">]]>📚<![CDATA[</div>
+      <div class="campusdesk-action-content">
+        <h3>Knowledge Base</h3>
+        <p>Find solutions, guides and helpful articles.</p>
+      </div>
+      <span class="campusdesk-action-arrow">→</span>
+    </a>
+
+    <!-- Track Requests -->
+    <a class="campusdesk-action-card"
+       href="?id=my_requests">
+      <div class="campusdesk-action-icon">]]>🔎<![CDATA[</div>
+      <div class="campusdesk-action-content">
+        <h3>Track Requests</h3>
+        <p>Check the status of your submitted requests.</p>
+      </div>
+      <span class="campusdesk-action-arrow">→</span>
+    </a>
+
+  </div>
+
+</div>]]></template>
+    </sp_widget>
+</record_update>

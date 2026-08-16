@@ -1,5 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element attributes="email_client=true,hasWorkflow=true,live_feed=true,all_tables.query_hints=true" audit="true" db_object_id="f0dcd2f5086403100a22e9371c04a41d" extends="task" label="Incident" max_length="40" name="incident" text_index="true" type="collection">
+        <element choice="3" label="AI Suggested Impact" max_length="40" name="x_1971543_campus_0_ai_suggested_impact" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="2 - Medium" sequence="2" value="2"/>
+                <element inactive_on_update="false" label="3 - Low" sequence="3" value="3"/>
+                <element inactive_on_update="false" label="1 - High" sequence="1" value="1"/>
+            </choice>
+        </element>
+        <element label="AI Resolution Guidance" max_length="65536" name="x_1971543_campus_0_ai_resolution_guidance" type="html"/>
+        <element choice="3" label="AI Suggested Urgency" max_length="40" name="x_1971543_campus_0_ai_suggested_urgency" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="3 - Low" sequence="3" value="3"/>
+                <element inactive_on_update="false" label="1 - High" sequence="1" value="1"/>
+                <element inactive_on_update="false" label="2 - Medium" sequence="2" value="2"/>
+            </choice>
+        </element>
+        <element choice="1" label="AI Suggested Priority" max_length="40" name="x_1971543_campus_0_ai_suggested_priority" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="1 - Critical" sequence="1" value="1"/>
+                <element inactive_on_update="false" label="2 - High" sequence="2" value="2"/>
+                <element inactive_on_update="false" label="3 - Moderate" sequence="3" value="3"/>
+                <element inactive_on_update="false" label="4 - Low" sequence="4" value="4"/>
+            </choice>
+        </element>
         <element label="AI Recommendation" max_length="65536" name="x_1971543_campus_0_ai_recommendation" type="html"/>
+        <element label="AI Priority Reason" max_length="8000" name="x_1971543_campus_0_ai_priority_reason" type="html"/>
     </element>
 </database>

@@ -3,7 +3,7 @@
         <element label="Department" max_length="32" name="department" reference="cmn_department" type="reference"/>
         <element label="SLA Hours" max_length="40" name="sla_hours" type="integer"/>
         <element label="Active" max_length="40" name="active" type="boolean"/>
-        <element label="Service Name" max_length="100" name="service_name" type="string"/>
+        <element display="true" label="Service Name" max_length="100" name="service_name" type="string"/>
         <element label="Service Owner" max_length="32" name="service_owner" reference="sys_user" type="reference"/>
         <index name="index">
             <element name="department"/>

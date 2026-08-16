@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="x_1971543_campus_0_ai_priority_reason" label="AI Priority Reason" language="en" table="incident">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>x_1971543_campus_0_ai_priority_reason</element>
+            <help/>
+            <hint/>
+            <label>AI Priority Reason</label>
+            <language>en</language>
+            <name>incident</name>
+            <plural>AI Priority Reasons</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-08-15 11:25:36</sys_created_on>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>AI Priority Reason</sys_name>
+            <sys_package display_value="CampusDesk AI" source="x_1971543_campus_0">28296cbb2f9607104674caba6fa4e352</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="CampusDesk AI">28296cbb2f9607104674caba6fa4e352</sys_scope>
+            <sys_update_name>sys_documentation_incident_x_1971543_campus_0_ai_priority_reason_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-08-15 11:25:36</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

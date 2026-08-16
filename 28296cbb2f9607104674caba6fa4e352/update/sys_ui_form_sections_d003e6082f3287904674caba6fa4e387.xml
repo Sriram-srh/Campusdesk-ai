@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_form_sections form_id="d003e6082f3287904674caba6fa4e387" sys_domain="global" table="sys_hub_action_output" version="3">
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-08-14 17:57:12</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>0d03e6082f3287904674caba6fa4e3fe</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="sys_hub_action_output" name="sys_hub_action_output" sys_domain="global" view="7966be310a0a0b8c00bd504090503227">d003e6082f3287904674caba6fa4e387</sys_ui_form>
+            <sys_ui_section caption="NULL" display_value="" name="sys_hub_action_output" sys_domain="global" view="7966be310a0a0b8c00bd504090503227">ac03e6082f3287904674caba6fa4e3c0</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-08-14 17:57:12</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-08-14 17:57:13</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>e9032a082f3287904674caba6fa4e345</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="sys_hub_action_output" name="sys_hub_action_output" sys_domain="global" view="7966be310a0a0b8c00bd504090503227">d003e6082f3287904674caba6fa4e387</sys_ui_form>
+            <sys_ui_section caption="Reference Specification" display_value="Reference Specification" name="sys_hub_action_output" sys_domain="global" view="7966be310a0a0b8c00bd504090503227">8503e6082f3287904674caba6fa4e3ff</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-08-14 17:57:13</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>2</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-08-14 17:57:09</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>a403e6082f3287904674caba6fa4e3ad</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="sys_hub_action_output" name="sys_hub_action_output" sys_domain="global" view="7966be310a0a0b8c00bd504090503227">d003e6082f3287904674caba6fa4e387</sys_ui_form>
+            <sys_ui_section caption="Choice List Specification" display_value="Choice List Specification" name="sys_hub_action_output" sys_domain="global" view="7966be310a0a0b8c00bd504090503227">d003e6082f3287904674caba6fa4e38b</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-08-14 17:57:09</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>3</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-08-14 17:57:09</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>6403e6082f3287904674caba6fa4e3b7</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="sys_hub_action_output" name="sys_hub_action_output" sys_domain="global" view="7966be310a0a0b8c00bd504090503227">d003e6082f3287904674caba6fa4e387</sys_ui_form>
+            <sys_ui_section caption="Dependent Field" display_value="Dependent Field" name="sys_hub_action_output" sys_domain="global" view="7966be310a0a0b8c00bd504090503227">2003e6082f3287904674caba6fa4e3ae</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-08-14 17:57:09</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>4</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-08-14 17:57:09</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>2403e6082f3287904674caba6fa4e3c0</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="sys_hub_action_output" name="sys_hub_action_output" sys_domain="global" view="7966be310a0a0b8c00bd504090503227">d003e6082f3287904674caba6fa4e387</sys_ui_form>
+            <sys_ui_section caption="Calculated Value" display_value="Calculated Value" name="sys_hub_action_output" sys_domain="global" view="7966be310a0a0b8c00bd504090503227">ec03e6082f3287904674caba6fa4e3b7</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-08-14 17:57:09</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>5</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-08-14 17:57:14</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>7d032a082f3287904674caba6fa4e38d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="sys_hub_action_output" name="sys_hub_action_output" sys_domain="global" view="7966be310a0a0b8c00bd504090503227">d003e6082f3287904674caba6fa4e387</sys_ui_form>
+            <sys_ui_section caption="Default Value" display_value="Default Value" name="sys_hub_action_output" sys_domain="global" view="7966be310a0a0b8c00bd504090503227">65032a082f3287904674caba6fa4e346</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-08-14 17:57:14</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form action="INSERT_OR_UPDATE">
+            <name>sys_hub_action_output</name>
+            <roles/>
+            <sys_class_name>sys_ui_form</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-08-14 17:57:08</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>d003e6082f3287904674caba6fa4e387</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>sys_hub_action_output</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="CampusDesk AI" source="x_1971543_campus_0">28296cbb2f9607104674caba6fa4e352</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="CampusDesk AI">28296cbb2f9607104674caba6fa4e352</sys_scope>
+            <sys_update_name>sys_ui_form_sections_d003e6082f3287904674caba6fa4e387</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-08-14 17:57:08</sys_updated_on>
+            <sys_user/>
+            <view display_value="Advanced" name="Advanced">7966be310a0a0b8c00bd504090503227</view>
+            <view_name/>
+        </sys_ui_form>
+    </sys_ui_form_sections>
+</record_update>

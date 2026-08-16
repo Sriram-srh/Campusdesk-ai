@@ -1,0 +1,657 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_1971543_campus_0.CampusDeskAIRecommendationEngine</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <mobile_callable>false</mobile_callable>
+        <name>CampusDeskAIRecommendationEngine</name>
+        <sandbox_callable>false</sandbox_callable>
+        <script><![CDATA[var CampusDeskAIRecommendationEngine = Class.create();
+
+CampusDeskAIRecommendationEngine.prototype = {
+
+    initialize: function() {
+    },
+
+
+    /*
+     * =========================================================
+     * AI RESOLUTION GUIDANCE
+     * =========================================================
+     *
+     * Generates troubleshooting guidance based on the
+     * AI-detected incident category.
+     *
+     */
+
+    generateResolutionGuidance: function(category, text) {
+
+        var guidance = '';
+
+
+        /*
+         * ---------------------------------------------------------
+         * NETWORK
+         * ---------------------------------------------------------
+         */
+
+        if (category == 'Network') {
+
+            guidance =
+                '<b>AI Resolution Guidance</b><br>' +
+                '1. Verify whether the affected location has network connectivity.<br>' +
+                '2. Check whether multiple users are experiencing the same issue.<br>' +
+                '3. Verify Wi-Fi availability and access point status.<br>' +
+                '4. Check the campus network status for an active outage.<br>' +
+                '5. Restart or reconnect the affected device when appropriate.<br>' +
+                '6. If the issue affects multiple users, escalate to Network Support.<br>' +
+                '7. Refer to the recommended Knowledge Article for additional troubleshooting.';
+
+
+        /*
+         * ---------------------------------------------------------
+         * HARDWARE
+         * ---------------------------------------------------------
+         */
+
+        } else if (category == 'Hardware') {
+
+            guidance =
+                '<b>AI Resolution Guidance</b><br>' +
+                '1. Identify the affected device.<br>' +
+                '2. Verify power, cables, and peripheral connections.<br>' +
+                '3. Check whether the issue occurs after restarting the device.<br>' +
+                '4. Inspect the device for hardware errors or physical damage.<br>' +
+                '5. Verify whether the issue affects only one device or multiple devices.<br>' +
+                '6. If the issue persists, escalate to Hardware Support.<br>' +
+                '7. Refer to the recommended Knowledge Article for additional troubleshooting.';
+
+
+        /*
+         * ---------------------------------------------------------
+         * SOFTWARE
+         * ---------------------------------------------------------
+         */
+
+        } else if (category == 'Software') {
+
+            guidance =
+                '<b>AI Resolution Guidance</b><br>' +
+                '1. Identify the affected application or software.<br>' +
+                '2. Verify the user account and required permissions.<br>' +
+                '3. Check for authentication or login errors.<br>' +
+                '4. Verify whether the issue started after a recent change.<br>' +
+                '5. Restart or reauthenticate the application when appropriate.<br>' +
+                '6. Check whether other users are experiencing the same issue.<br>' +
+                '7. Escalate to Software Support if the issue persists.';
+
+
+        /*
+         * ---------------------------------------------------------
+         * GENERAL
+         * ---------------------------------------------------------
+         */
+
+        } else {
+
+            guidance =
+                '<b>AI Resolution Guidance</b><br>' +
+                '1. Review the incident description carefully.<br>' +
+                '2. Identify the affected service, system, or location.<br>' +
+                '3. Gather additional information from the caller if required.<br>' +
+                '4. Check for similar incidents or known issues.<br>' +
+                '5. Assign the incident to the appropriate support team.<br>' +
+                '6. Check for a relevant Knowledge Article when available.<br>' +
+                '7. Escalate the incident if additional technical investigation is required.';
+        }
+
+
+        return guidance;
+    },
+
+
+    /*
+     * =========================================================
+     * KNOWLEDGE ARTICLE MATCHING
+     * =========================================================
+     *
+     * Returns the sys_id of the recommended Knowledge Article.
+     *
+     * CampusDesk AI mapping:
+     *
+     * Network  -> KB0010015
+     * Hardware -> Published Hardware article
+     * Software -> Published Software article
+     * General  -> No article
+     *
+     */
+
+    findKnowledgeArticle: function(category, text) {
+
+        var article = new GlideRecord('kb_knowledge');
+
+
+        /*
+         * ---------------------------------------------------------
+         * NETWORK
+         * ---------------------------------------------------------
+         */
+
+        if (category == 'Network') {
+
+            article.addQuery(
+                'number',
+                'KB0010015'
+            );
+
+
+        /*
+         * ---------------------------------------------------------
+         * HARDWARE
+         * ---------------------------------------------------------
+         */
+
+        } else if (category == 'Hardware') {
+
+            article.addQuery(
+                'short_description',
+                'CONTAINS',
+                'Hardware'
+            );
+
+
+        /*
+         * ---------------------------------------------------------
+         * SOFTWARE
+         * ---------------------------------------------------------
+         */
+
+        } else if (category == 'Software') {
+
+            article.addQuery(
+                'short_description',
+                'CONTAINS',
+                'Software'
+            );
+
+
+        /*
+         * ---------------------------------------------------------
+         * GENERAL
+         * ---------------------------------------------------------
+         */
+
+        } else {
+
+            return '';
+        }
+
+
+        /*
+         * ---------------------------------------------------------
+         * ONLY PUBLISHED ARTICLES
+         * ---------------------------------------------------------
+         */
+
+        article.addQuery(
+            'workflow_state',
+            'published'
+        );
+
+
+        /*
+         * ---------------------------------------------------------
+         * MOST RECENT MATCHING ARTICLE
+         * ---------------------------------------------------------
+         */
+
+        article.orderByDesc('sys_updated_on');
+
+        article.setLimit(1);
+
+        article.query();
+
+
+        if (article.next()) {
+
+            gs.info(
+                '[CampusDesk AI] Knowledge Article matched: ' +
+                article.getValue('number') +
+                ' - ' +
+                article.getValue('short_description')
+            );
+
+            return article.getUniqueValue();
+        }
+
+
+        gs.info(
+            '[CampusDesk AI] No Knowledge Article found for category: ' +
+            category
+        );
+
+        return '';
+    },
+
+
+    /*
+     * =========================================================
+     * INCIDENT ANALYSIS
+     * =========================================================
+     */
+
+    analyzeIncident: function(incident) {
+
+        var result = {
+
+            /*
+             * AI Category Intelligence
+             */
+            suggested_category: '',
+            confidence: 0,
+            recommendation: '',
+            knowledge_article: '',
+
+            /*
+             * AI Priority Intelligence
+             */
+            suggested_impact: '',
+            suggested_urgency: '',
+            suggested_priority: '',
+            priority_reason: '',
+
+            /*
+             * AI Resolution Intelligence
+             */
+            resolution_guidance: ''
+        };
+
+
+        /*
+         * ---------------------------------------------------------
+         * INCIDENT TEXT PREPARATION
+         * ---------------------------------------------------------
+         */
+
+        var shortDescription =
+            (incident.short_description || '').toLowerCase();
+
+        var description =
+            (incident.description || '').toLowerCase();
+
+        var text =
+            shortDescription + ' ' + description;
+
+
+        /*
+         * ---------------------------------------------------------
+         * CAMPUSDESK AI CATEGORY DETECTION
+         * ---------------------------------------------------------
+         */
+
+        if (
+            text.indexOf('wifi') >= 0 ||
+            text.indexOf('internet') >= 0 ||
+            text.indexOf('network') >= 0
+        ) {
+
+            result.suggested_category = 'Network';
+
+            result.confidence = 0.90;
+
+            result.recommendation =
+                '<b>AI Recommendation</b><br>' +
+                'This incident appears to be network related. ' +
+                'Verify the campus network connection, Wi-Fi availability, ' +
+                'and affected location before assigning to the network support team.';
+
+
+        } else if (
+            text.indexOf('computer') >= 0 ||
+            text.indexOf('laptop') >= 0 ||
+            text.indexOf('desktop') >= 0 ||
+            text.indexOf('system') >= 0
+        ) {
+
+            result.suggested_category = 'Hardware';
+
+            result.confidence = 0.85;
+
+            result.recommendation =
+                '<b>AI Recommendation</b><br>' +
+                'This incident appears to involve a computer or hardware issue. ' +
+                'Check the affected device, power status, peripherals, and hardware condition.';
+
+
+        } else if (
+            text.indexOf('software') >= 0 ||
+            text.indexOf('application') >= 0 ||
+            text.indexOf('login') >= 0 ||
+            text.indexOf('password') >= 0
+        ) {
+
+            result.suggested_category = 'Software';
+
+            result.confidence = 0.85;
+
+            result.recommendation =
+                '<b>AI Recommendation</b><br>' +
+                'This incident appears to be software or application related. ' +
+                'Verify the application, user access, authentication status, and recent changes.';
+
+
+        } else {
+
+            result.suggested_category = 'General';
+
+            result.confidence = 0.50;
+
+            result.recommendation =
+                '<b>AI Recommendation</b><br>' +
+                'The incident could not be confidently classified. ' +
+                'Review the incident description and assign it to the appropriate support team.';
+        }
+
+
+        /*
+         * ---------------------------------------------------------
+         * KNOWLEDGE ARTICLE RECOMMENDATION
+         * ---------------------------------------------------------
+         */
+
+        result.knowledge_article =
+            this.findKnowledgeArticle(
+                result.suggested_category,
+                text
+            );
+
+
+        /*
+         * ---------------------------------------------------------
+         * AI RESOLUTION GUIDANCE
+         * ---------------------------------------------------------
+         *
+         * IMPORTANT:
+         * This is generated AFTER category detection.
+         *
+         */
+
+        result.resolution_guidance =
+            this.generateResolutionGuidance(
+                result.suggested_category,
+                text
+            );
+
+
+        /*
+         * ---------------------------------------------------------
+         * SAFETY FALLBACK
+         * ---------------------------------------------------------
+         *
+         * Ensure the field never remains empty when a category
+         * has been detected.
+         *
+         */
+
+        if (!result.resolution_guidance) {
+
+            result.resolution_guidance =
+                '<b>AI Resolution Guidance</b><br>' +
+                'Review the incident details, identify the affected service, ' +
+                'perform the appropriate troubleshooting steps, and escalate ' +
+                'to the appropriate support team if required.';
+        }
+
+
+        /*
+         * ---------------------------------------------------------
+         * AI PRIORITY INTELLIGENCE
+         * ---------------------------------------------------------
+         *
+         * Impact:
+         * 1 = High
+         * 2 = Medium
+         * 3 = Low
+         *
+         * Urgency:
+         * 1 = High
+         * 2 = Medium
+         * 3 = Low
+         *
+         * Priority:
+         * 1 = Critical
+         * 2 = High
+         * 3 = Moderate
+         * 4 = Low
+         *
+         */
+
+
+        /*
+         * ---------------------------------------------------------
+         * IMPACT DETECTION
+         * ---------------------------------------------------------
+         */
+
+        var highImpact =
+            text.indexOf('campus-wide') >= 0 ||
+            text.indexOf('campus wide') >= 0 ||
+            text.indexOf('entire campus') >= 0 ||
+            text.indexOf('all students') >= 0 ||
+            text.indexOf('all users') >= 0 ||
+            text.indexOf('everyone') >= 0 ||
+            text.indexOf('multiple users') >= 0 ||
+            text.indexOf('server down') >= 0 ||
+            text.indexOf('network outage') >= 0;
+
+
+        var mediumImpact =
+            text.indexOf('department') >= 0 ||
+            text.indexOf('multiple') >= 0 ||
+            text.indexOf('several') >= 0 ||
+            text.indexOf('classroom') >= 0 ||
+            text.indexOf('lab') >= 0;
+
+
+        if (highImpact) {
+
+            result.suggested_impact = '1';
+
+        } else if (mediumImpact) {
+
+            result.suggested_impact = '2';
+
+        } else {
+
+            result.suggested_impact = '3';
+        }
+
+
+        /*
+         * ---------------------------------------------------------
+         * URGENCY DETECTION
+         * ---------------------------------------------------------
+         */
+
+        var highUrgency =
+            text.indexOf('urgent') >= 0 ||
+            text.indexOf('immediately') >= 0 ||
+            text.indexOf('critical') >= 0 ||
+            text.indexOf('completely down') >= 0 ||
+            text.indexOf('not working') >= 0 ||
+            text.indexOf('unable to access') >= 0 ||
+            text.indexOf('cannot access') >= 0 ||
+            text.indexOf('outage') >= 0;
+
+
+        var mediumUrgency =
+            text.indexOf('unable') >= 0 ||
+            text.indexOf('error') >= 0 ||
+            text.indexOf('issue') >= 0 ||
+            text.indexOf('problem') >= 0 ||
+            text.indexOf('slow') >= 0;
+
+
+        if (highUrgency) {
+
+            result.suggested_urgency = '1';
+
+        } else if (mediumUrgency) {
+
+            result.suggested_urgency = '2';
+
+        } else {
+
+            result.suggested_urgency = '3';
+        }
+
+
+        /*
+         * ---------------------------------------------------------
+         * PRIORITY CALCULATION
+         * ---------------------------------------------------------
+         */
+
+        if (
+            result.suggested_impact == '1' &&
+            result.suggested_urgency == '1'
+        ) {
+
+            result.suggested_priority = '1';
+
+            result.priority_reason =
+                '<b>AI Priority Reason</b><br>' +
+                'High impact and high urgency were detected. ' +
+                'The incident appears to affect multiple users or an important ' +
+                'campus service and requires immediate attention.';
+
+
+        } else if (
+            result.suggested_impact == '1' &&
+            result.suggested_urgency == '2'
+        ) {
+
+            result.suggested_priority = '2';
+
+            result.priority_reason =
+                '<b>AI Priority Reason</b><br>' +
+                'The incident has a high potential impact but moderate urgency. ' +
+                'Multiple users or an important campus service may be affected.';
+
+
+        } else if (
+            result.suggested_impact == '2' &&
+            result.suggested_urgency == '1'
+        ) {
+
+            result.suggested_priority = '2';
+
+            result.priority_reason =
+                '<b>AI Priority Reason</b><br>' +
+                'The incident has moderate impact but high urgency. ' +
+                'The issue requires expedited support.';
+
+
+        } else if (
+            result.suggested_impact == '2' &&
+            result.suggested_urgency == '2'
+        ) {
+
+            result.suggested_priority = '3';
+
+            result.priority_reason =
+                '<b>AI Priority Reason</b><br>' +
+                'The incident has moderate impact and moderate urgency. ' +
+                'Normal support handling is appropriate.';
+
+
+        } else if (
+            result.suggested_impact == '3' &&
+            result.suggested_urgency == '1'
+        ) {
+
+            result.suggested_priority = '3';
+
+            result.priority_reason =
+                '<b>AI Priority Reason</b><br>' +
+                'The incident affects a limited number of users but requires ' +
+                'quick attention because of its urgency.';
+
+
+        } else if (
+            result.suggested_impact == '3' &&
+            result.suggested_urgency == '2'
+        ) {
+
+            result.suggested_priority = '4';
+
+            result.priority_reason =
+                '<b>AI Priority Reason</b><br>' +
+                'The incident has limited impact and moderate urgency. ' +
+                'Standard support handling is appropriate.';
+
+
+        } else {
+
+            result.suggested_priority = '4';
+
+            result.priority_reason =
+                '<b>AI Priority Reason</b><br>' +
+                'The incident has limited impact and low urgency. ' +
+                'Standard support handling is recommended.';
+        }
+
+
+        /*
+         * ---------------------------------------------------------
+         * LOGGING
+         * ---------------------------------------------------------
+         */
+
+        gs.info(
+            '[CampusDesk AI] Priority Intelligence - ' +
+            'Impact: ' + result.suggested_impact +
+            ', Urgency: ' + result.suggested_urgency +
+            ', Priority: ' + result.suggested_priority
+        );
+
+
+        gs.info(
+            '[CampusDesk AI] Analysis Result - ' +
+            'Category: ' + result.suggested_category +
+            ', Confidence: ' + result.confidence +
+            ', Knowledge Article: ' + result.knowledge_article +
+            ', Resolution Guidance Generated: ' +
+            (result.resolution_guidance != '')
+        );
+
+
+        /*
+         * ---------------------------------------------------------
+         * FINAL RESULT
+         * ---------------------------------------------------------
+         */
+
+        return result;
+    },
+
+
+    type: 'CampusDeskAIRecommendationEngine'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-15 03:39:13</sys_created_on>
+        <sys_id>78662cd82ffe87904674caba6fa4e301</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>CampusDeskAIRecommendationEngine</sys_name>
+        <sys_package display_value="CampusDesk AI" source="x_1971543_campus_0">28296cbb2f9607104674caba6fa4e352</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="CampusDesk AI">28296cbb2f9607104674caba6fa4e352</sys_scope>
+        <sys_update_name>sys_script_include_78662cd82ffe87904674caba6fa4e301</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-16 05:42:42</sys_updated_on>
+    </sys_script_include>
+</record_update>

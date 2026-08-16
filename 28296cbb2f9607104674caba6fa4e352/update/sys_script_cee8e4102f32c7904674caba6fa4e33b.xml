@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script">
+    <sys_script action="INSERT_OR_UPDATE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>true</action_insert>
+        <action_query>false</action_query>
+        <action_update>true</action_update>
+        <active>true</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>incident</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition/>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>CampusDesk AI - Analyze Incident</name>
+        <order>100</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
+
+    try {
+
+        // ---------------------------------------------------------
+        // CREATE CAMPUSDESK AI ENGINE
+        // ---------------------------------------------------------
+
+        var aiEngine = new CampusDeskAIRecommendationEngine();
+
+
+        // ---------------------------------------------------------
+        // ANALYZE CURRENT INCIDENT
+        // ---------------------------------------------------------
+
+        var result = aiEngine.analyzeIncident(current);
+
+
+        // ---------------------------------------------------------
+        // EXISTING AI ANALYSIS
+        // ---------------------------------------------------------
+
+        // AI Suggested Category
+        current.setValue(
+            'u_ai_suggested_category',
+            result.suggested_category
+        );
+
+
+        // AI Confidence
+        current.setValue(
+            'u_ai_confidence',
+            result.confidence
+        );
+
+
+        // AI Recommendation
+        current.setValue(
+            'x_1971543_campus_0_ai_recommendation',
+            result.recommendation
+        );
+
+
+        // ---------------------------------------------------------
+        // KNOWLEDGE ARTICLE
+        // ---------------------------------------------------------
+
+        if (result.knowledge_article) {
+
+            current.setValue(
+                'u_knowledge_article',
+                result.knowledge_article
+            );
+        }
+
+
+        // ---------------------------------------------------------
+        // AI PRIORITY INTELLIGENCE
+        // ---------------------------------------------------------
+
+        // AI Suggested Impact
+        if (result.suggested_impact) {
+
+            current.setValue(
+                'x_1971543_campus_0_ai_suggested_impact',
+                result.suggested_impact
+            );
+        }
+
+
+        // AI Suggested Urgency
+        if (result.suggested_urgency) {
+
+            current.setValue(
+                'x_1971543_campus_0_ai_suggested_urgency',
+                result.suggested_urgency
+            );
+        }
+
+
+        // AI Suggested Priority
+        if (result.suggested_priority) {
+
+            current.setValue(
+                'x_1971543_campus_0_ai_suggested_priority',
+                result.suggested_priority
+            );
+        }
+
+
+        // AI Priority Reason
+        if (result.priority_reason) {
+
+            current.setValue(
+                'x_1971543_campus_0_ai_priority_reason',
+                result.priority_reason
+            );
+        }
+
+
+        // ---------------------------------------------------------
+        // AI RESOLUTION INTELLIGENCE
+        // ---------------------------------------------------------
+
+        // AI Resolution Guidance
+        //
+        // IMPORTANT:
+        // Actual field name:
+        // x_1971543_campus_0_ai_resolution_guidance
+        //
+
+        if (result.resolution_guidance) {
+
+            current.setValue(
+                'x_1971543_campus_0_ai_resolution_guidance',
+                result.resolution_guidance
+            );
+        }
+
+
+        // ---------------------------------------------------------
+        // LOGGING
+        // ---------------------------------------------------------
+
+        gs.info(
+            '[CampusDesk AI] Incident analyzed - ' +
+            'Category: ' + result.suggested_category +
+            ', Confidence: ' + result.confidence +
+            ', Impact: ' + result.suggested_impact +
+            ', Urgency: ' + result.suggested_urgency +
+            ', Priority: ' + result.suggested_priority +
+            ', Knowledge Article: ' + result.knowledge_article +
+            ', Resolution Guidance: ' +
+            (result.resolution_guidance ? 'Generated' : 'Not Generated')
+        );
+
+
+    } catch (ex) {
+
+        gs.error(
+            '[CampusDesk AI] Error analyzing Incident: ' +
+            ex.message
+        );
+    }
+
+})(current, previous);]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-15 03:46:28</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>cee8e4102f32c7904674caba6fa4e33b</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>CampusDesk AI - Analyze Incident</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="CampusDesk AI" source="x_1971543_campus_0">28296cbb2f9607104674caba6fa4e352</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CampusDesk AI">28296cbb2f9607104674caba6fa4e352</sys_scope>
+        <sys_update_name>sys_script_cee8e4102f32c7904674caba6fa4e33b</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-16 05:45:44</sys_updated_on>
+        <template/>
+        <when>before</when>
+    </sys_script>
+    <sys_translated_text action="delete_multiple" query="documentkey=cee8e4102f32c7904674caba6fa4e33b"/>
+</record_update>

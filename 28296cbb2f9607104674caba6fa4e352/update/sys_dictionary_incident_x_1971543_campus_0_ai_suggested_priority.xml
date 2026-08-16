@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update>
-    <sys_dictionary action="INSERT_OR_UPDATE" element="service_name" table="x_1971543_campus_0_campus_services">
+    <sys_dictionary action="INSERT_OR_UPDATE" element="x_1971543_campus_0_ai_suggested_priority" table="incident">
         <active>true</active>
         <array>false</array>
         <attributes/>
@@ -10,10 +10,10 @@
 	return '';  // return the calculated value
 
 })(current);]]></calculation>
-        <choice/>
+        <choice>1</choice>
         <choice_field/>
         <choice_table/>
-        <column_label>Service Name</column_label>
+        <column_label>AI Suggested Priority</column_label>
         <comments/>
         <create_roles/>
         <default_value/>
@@ -21,21 +21,21 @@
         <delete_roles/>
         <dependent/>
         <dependent_on_field/>
-        <display>true</display>
+        <display>false</display>
         <dynamic_creation>false</dynamic_creation>
         <dynamic_creation_script/>
         <dynamic_default_value/>
         <dynamic_ref_qual/>
-        <element>service_name</element>
+        <element>x_1971543_campus_0_ai_suggested_priority</element>
         <element_reference>false</element_reference>
         <foreign_database/>
         <formula/>
         <function_definition/>
         <function_field>false</function_field>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Choice">choice</internal_type>
         <mandatory>false</mandatory>
-        <max_length>100</max_length>
-        <name>x_1971543_campus_0_campus_services</name>
+        <max_length>40</max_length>
+        <name>incident</name>
         <next_element/>
         <primary>false</primary>
         <read_only>false</read_only>
@@ -52,14 +52,14 @@
         <staged>false</staged>
         <sys_class_name>sys_dictionary</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2026-08-02 13:33:14</sys_created_on>
-        <sys_name>Service Name</sys_name>
+        <sys_created_on>2026-08-15 11:21:25</sys_created_on>
+        <sys_name>AI Suggested Priority</sys_name>
         <sys_package display_value="CampusDesk AI" source="x_1971543_campus_0">28296cbb2f9607104674caba6fa4e352</sys_package>
         <sys_policy/>
         <sys_scope display_value="CampusDesk AI">28296cbb2f9607104674caba6fa4e352</sys_scope>
-        <sys_update_name>sys_dictionary_x_1971543_campus_0_campus_services_service_name</sys_update_name>
+        <sys_update_name>sys_dictionary_incident_x_1971543_campus_0_ai_suggested_priority</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-08-14 16:53:19</sys_updated_on>
+        <sys_updated_on>2026-08-15 11:21:25</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
