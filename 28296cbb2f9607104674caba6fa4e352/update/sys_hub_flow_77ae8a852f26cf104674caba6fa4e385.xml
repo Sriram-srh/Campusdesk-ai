@@ -5,7 +5,7 @@
         <active>true</active>
         <allow_high_security_roles>false</allow_high_security_roles>
         <annotation/>
-        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=369873000,viewActivatedIn=naturalLanguage</attributes>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=1800018000,viewActivatedIn=naturalLanguage</attributes>
         <authored_on_release_version>29000</authored_on_release_version>
         <callable_by_client_api>false</callable_by_client_api>
         <category/>
@@ -16,7 +16,7 @@
         <flow_priority>MEDIUM</flow_priority>
         <generation_source/>
         <internal_name>campusdesk_knowledge_suggestion</internal_name>
-        <label_cache>[{"name":"5edc813b-342e-494c-8b6c-c7b20b0ca8e4.ai_confidence","label":"3➛AI Confidence","reference":null,"reference_display":"AI Confidence","type":"integer","base_type":"integer","parent_table_name":null,"column_name":null,"choices":null,"usedInstances":{},"attributes":{"uiTypeLabel":"Integer","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"integer","uiUniqueId":"abc01c5a-dfa2-4cd9-92f2-12bc798d15ec"}},{"name":"ec3ca5e8-0287-4132-b6e4-3c6b6212efc9.Record","label":"1 - Look Up Record➛Knowledge Record","reference":"kb_knowledge","reference_display":"Knowledge Record","type":"reference","base_type":"reference","parent_table_name":null,"column_name":null,"choices":null,"usedInstances":{"c5276408-f4f0-4dd2-9a51-d51873868403":["u_knowledge_article"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Created or Updated_1.current.u_incident_category.category_name","label":"Trigger - Record Created or Updated➛Incident Record➛Incident Category➛Category Name","reference":"","reference_display":"Category Name","type":"string","base_type":"string","parent_table_name":"x_1971543_campus_0_incident_category","column_name":"category_name","choices":null,"usedInstances":{},"attributes":null},{"name":"Created or Updated_1.current.description","label":"Trigger - Record Created or Updated➛Incident Record➛Description","reference":"","reference_display":"Description","type":"string","base_type":"string","parent_table_name":"incident","column_name":"description","choices":null,"usedInstances":{"5edc813b-342e-494c-8b6c-c7b20b0ca8e4":["description"]},"attributes":null},{"name":"ec3ca5e8-0287-4132-b6e4-3c6b6212efc9.Record.x_1971543_campus_0_ai_confidence","label":"1 - Look Up Record➛Knowledge Record➛AI Confidence","reference":"","reference_display":"AI Confidence","type":"decimal","base_type":"decimal","parent_table_name":"kb_knowledge","column_name":"x_1971543_campus_0_ai_confidence","choices":null,"usedInstances":{"c5276408-f4f0-4dd2-9a51-d51873868403":["u_ai_confidence"]},"attributes":null},{"name":"ec3ca5e8-0287-4132-b6e4-3c6b6212efc9.Record.sys_id","label":"1 - Look Up Record➛Knowledge Record➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"kb_knowledge","column_name":"sys_id","choices":null,"usedInstances":{"5a12a273-2f89-49c5-8cdd-b51b90dc46d9":[null]},"attributes":null},{"name":"Created or Updated_1.current.u_incident_category","label":"Trigger - Record Created or Updated➛Incident Record➛Incident Category","reference":"x_1971543_campus_0_incident_category","reference_display":"Incident Category","type":"reference","base_type":"reference","parent_table_name":"incident","column_name":"u_incident_category","choices":null,"usedInstances":{"ec3ca5e8-0287-4132-b6e4-3c6b6212efc9":[null]},"attributes":null},{"name":"5edc813b-342e-494c-8b6c-c7b20b0ca8e4.ai_recommendation","label":"3➛AI Recommendation","reference":null,"reference_display":"AI Recommendation","type":"string","base_type":"string","parent_table_name":null,"column_name":null,"choices":null,"usedInstances":{},"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"string","uiUniqueId":"fc52fdff-4de0-4480-a22f-3b9e101722dc"}},{"name":"Created or Updated_1.current.short_description","label":"Trigger - Record Created or Updated➛Incident Record➛Short description","reference":"","reference_display":"Short description","type":"string","base_type":"string","parent_table_name":"incident","column_name":"short_description","choices":null,"usedInstances":{"5edc813b-342e-494c-8b6c-c7b20b0ca8e4":["short_description"]},"attributes":null},{"name":"Created or Updated_1.current","label":"Trigger - Record Created or Updated➛Incident Record","reference":"incident","reference_display":"Incident","type":"reference","base_type":"reference","parent_table_name":null,"column_name":null,"choices":null,"usedInstances":{"c5276408-f4f0-4dd2-9a51-d51873868403":["record"],"42d495d0-3a07-4cb8-98c6-f1ee9097132e":["record"]},"attributes":{}},{"name":"ec3ca5e8-0287-4132-b6e4-3c6b6212efc9.Record.category","label":"1 - Look Up Record➛Knowledge Record➛Category (category)","reference":"","reference_display":"Category (category)","type":"choice","base_type":"choice","parent_table_name":"kb_knowledge","column_name":"category","choices":[{"label":"-- None --","sequence":-1.0,"selected":false,"used":false,"rawLabel":"-- None --","missing":false,"image":"","reference":false,"value":""},{"parameters":{"name":"kb_knowledge","dependent_values":["Policies"],"dependent_values_map":{"Policies":"Benefits"}},"sequence":1.0,"selected":false,"label":"Benefits","used":false,"rawLabel":"Benefits","missing":false,"image":"","reference":false,"value":"Benefits"},{"parameters":{"name":"kb_knowledge","dependent_values":["Email"],"dependent_values_map":{"Email":"Web Mail"}},"sequence":1.0,"selected":false,"label":"Web Mail","used":false,"rawLabel":"Web Mail","missing":false,"image":"","reference":false,"value":"Web Mail"},{"parameters":{"name":"kb_knowledge","dependent_values":["Email"],"dependent_values_map":{"Email":"Outlook"}},"sequence":2.0,"selected":false,"label":"Outlook","used":false,"rawLabel":"Outlook","missing":false,"image":"","reference":false,"value":"Outlook"},{"parameters":{"name":"kb_knowledge","dependent_values":["Email"],"dependent_values_map":{"Email":"Tips and Tricks"}},"sequence":3.0,"selected":false,"label":"Tips and Tricks","used":false,"rawLabel":"Tips and Tricks","missing":false,"image":"","reference":false,"value":"Tips and Tricks"},{"parameters":{"name":"kb_knowledge","dependent_values":["Email"],"dependent_values_map":{"Email":"Blackberry"}},"sequence":4.0,"selected":false,"label":"Blackberry","used":false,"rawLabel":"Blackberry","missing":false,"image":"","reference":false,"value":"Blackberry"}],"usedInstances":{"c5276408-f4f0-4dd2-9a51-d51873868403":[null]},"attributes":null},{"name":"5a12a273-2f89-49c5-8cdd-b51b90dc46d9.Record.kb_workaround","label":"2➛Known Error article Record➛Workaround","reference":"","reference_display":"Workaround","type":"html","base_type":"html","parent_table_name":"kb_template_known_error_article","column_name":"kb_workaround","choices":null,"usedInstances":{"c5276408-f4f0-4dd2-9a51-d51873868403":[null]},"attributes":null},{"name":"5edc813b-342e-494c-8b6c-c7b20b0ca8e4.knowledge_article","label":"3➛Knowledge Article","reference":"kb_knowledge","reference_display":"Knowledge Article","type":"reference","base_type":"reference","parent_table_name":null,"column_name":null,"choices":null,"usedInstances":{},"attributes":{"uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"reference","uiUniqueId":"625030db-e594-40ce-b2e3-97c05ef6c9ae"}},{"name":"ec3ca5e8-0287-4132-b6e4-3c6b6212efc9.Record.x_1971543_campus_0_ai_recommendation","label":"1 - Look Up Record➛Knowledge Record➛AI Recommendation","reference":"","reference_display":"AI Recommendation","type":"html","base_type":"html","parent_table_name":"kb_knowledge","column_name":"x_1971543_campus_0_ai_recommendation","choices":null,"usedInstances":{"c5276408-f4f0-4dd2-9a51-d51873868403":[null]},"attributes":null},{"name":"Created or Updated_1.current.category","label":"Trigger - Record Created or Updated➛Incident Record➛Category","reference":"","reference_display":"Category","type":"choice","base_type":"choice","parent_table_name":"incident","column_name":"category","choices":[{"label":"-- None --","sequence":-1.0,"selected":false,"used":false,"rawLabel":"-- None --","missing":false,"image":"","reference":false,"value":""},{"parameters":{"name":"incident","dependent_values":[""],"dependent_values_map":{"":"Inquiry / Help"}},"sequence":1.0,"selected":false,"label":"Inquiry / Help","used":false,"rawLabel":"Inquiry / Help","missing":false,"image":"","reference":false,"value":"inquiry"},{"parameters":{"name":"incident","dependent_values":[""],"dependent_values_map":{"":"Software"}},"sequence":2.0,"selected":false,"label":"Software","used":false,"rawLabel":"Software","missing":false,"image":"","reference":false,"value":"software"},{"parameters":{"name":"incident","dependent_values":[""],"dependent_values_map":{"":"Hardware"}},"sequence":3.0,"selected":false,"label":"Hardware","used":false,"rawLabel":"Hardware","missing":false,"image":"","reference":false,"value":"hardware"},{"parameters":{"name":"incident","dependent_values":[""],"dependent_values_map":{"":"Network"}},"sequence":4.0,"selected":false,"label":"Network","used":false,"rawLabel":"Network","missing":false,"image":"","reference":false,"value":"network"},{"parameters":{"name":"incident","dependent_values":[""],"dependent_values_map":{"":"Database"}},"sequence":5.0,"selected":false,"label":"Database","used":false,"rawLabel":"Database","missing":false,"image":"","reference":false,"value":"database"},{"parameters":{"name":"incident","dependent_values":[""],"dependent_values_map":{"":"Password Reset"}},"sequence":100.0,"selected":false,"label":"Password Reset","used":false,"rawLabel":"Password Reset","missing":false,"image":"","reference":false,"value":"password_reset"}],"usedInstances":{"c5276408-f4f0-4dd2-9a51-d51873868403":["u_ai_suggested_category"],"5edc813b-342e-494c-8b6c-c7b20b0ca8e4":["category"]},"attributes":null}]</label_cache>
+        <label_cache>[{"name":"Created or Updated_1.current.category","label":"Trigger - Record Created or Updated➛Incident Record➛Category","reference":"","reference_display":"Category","type":"choice","base_type":"choice","parent_table_name":"incident","column_name":"category","choices":[{"label":"-- None --","selected":false,"sequence":-1.0,"used":false,"reference":false,"image":"","rawLabel":"-- None --","missing":false,"value":""},{"parameters":{"name":"incident","dependent_values":[""],"dependent_values_map":{"":"Inquiry / Help"}},"selected":false,"sequence":1.0,"label":"Inquiry / Help","used":false,"reference":false,"image":"","rawLabel":"Inquiry / Help","missing":false,"value":"inquiry"},{"parameters":{"name":"incident","dependent_values":[""],"dependent_values_map":{"":"Software"}},"selected":false,"sequence":2.0,"label":"Software","used":false,"reference":false,"image":"","rawLabel":"Software","missing":false,"value":"software"},{"parameters":{"name":"incident","dependent_values":[""],"dependent_values_map":{"":"Hardware"}},"selected":false,"sequence":3.0,"label":"Hardware","used":false,"reference":false,"image":"","rawLabel":"Hardware","missing":false,"value":"hardware"},{"parameters":{"name":"incident","dependent_values":[""],"dependent_values_map":{"":"Network"}},"selected":false,"sequence":4.0,"label":"Network","used":false,"reference":false,"image":"","rawLabel":"Network","missing":false,"value":"network"},{"parameters":{"name":"incident","dependent_values":[""],"dependent_values_map":{"":"Database"}},"selected":false,"sequence":5.0,"label":"Database","used":false,"reference":false,"image":"","rawLabel":"Database","missing":false,"value":"database"},{"parameters":{"name":"incident","dependent_values":[""],"dependent_values_map":{"":"Password Reset"}},"selected":false,"sequence":100.0,"label":"Password Reset","used":false,"reference":false,"image":"","rawLabel":"Password Reset","missing":false,"value":"password_reset"}],"usedInstances":{"c5276408-f4f0-4dd2-9a51-d51873868403":["u_ai_suggested_category"],"5edc813b-342e-494c-8b6c-c7b20b0ca8e4":["category"]}},{"name":"ec3ca5e8-0287-4132-b6e4-3c6b6212efc9.Record.x_1971543_campus_0_ai_recommendation","label":"1 - Look Up Record➛Knowledge Record➛AI Recommendation","reference":"","reference_display":"AI Recommendation","type":"html","base_type":"html","parent_table_name":"kb_knowledge","column_name":"x_1971543_campus_0_ai_recommendation","usedInstances":{"c5276408-f4f0-4dd2-9a51-d51873868403":[null]}},{"name":"5edc813b-342e-494c-8b6c-c7b20b0ca8e4.knowledge_article","label":"3 - CampusDesk - Find Best Knowledge Article➛Knowledge Article","reference":"kb_knowledge","reference_display":"Knowledge","type":"reference","base_type":"reference","usedInstances":{},"attributes":{"uiType":"reference","uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"625030db-e594-40ce-b2e3-97c05ef6c9ae"}},{"name":"5a12a273-2f89-49c5-8cdd-b51b90dc46d9.Record.kb_workaround","label":"2➛Known Error article Record➛Workaround","reference":"","reference_display":"Workaround","type":"html","base_type":"html","parent_table_name":"kb_template_known_error_article","column_name":"kb_workaround","usedInstances":{"c5276408-f4f0-4dd2-9a51-d51873868403":[null]}},{"name":"ec3ca5e8-0287-4132-b6e4-3c6b6212efc9.Record.category","label":"1 - Look Up Record➛Knowledge Record➛Category (category)","reference":"","reference_display":"Category (category)","type":"choice","base_type":"choice","parent_table_name":"kb_knowledge","column_name":"category","choices":[{"label":"-- None --","selected":false,"sequence":-1.0,"used":false,"reference":false,"image":"","rawLabel":"-- None --","missing":false,"value":""},{"parameters":{"name":"kb_knowledge","dependent_values":["Policies"],"dependent_values_map":{"Policies":"Benefits"}},"selected":false,"sequence":1.0,"label":"Benefits","used":false,"reference":false,"image":"","rawLabel":"Benefits","missing":false,"value":"Benefits"},{"parameters":{"name":"kb_knowledge","dependent_values":["Email"],"dependent_values_map":{"Email":"Web Mail"}},"selected":false,"sequence":1.0,"label":"Web Mail","used":false,"reference":false,"image":"","rawLabel":"Web Mail","missing":false,"value":"Web Mail"},{"parameters":{"name":"kb_knowledge","dependent_values":["Email"],"dependent_values_map":{"Email":"Outlook"}},"selected":false,"sequence":2.0,"label":"Outlook","used":false,"reference":false,"image":"","rawLabel":"Outlook","missing":false,"value":"Outlook"},{"parameters":{"name":"kb_knowledge","dependent_values":["Email"],"dependent_values_map":{"Email":"Tips and Tricks"}},"selected":false,"sequence":3.0,"label":"Tips and Tricks","used":false,"reference":false,"image":"","rawLabel":"Tips and Tricks","missing":false,"value":"Tips and Tricks"},{"parameters":{"name":"kb_knowledge","dependent_values":["Email"],"dependent_values_map":{"Email":"Blackberry"}},"selected":false,"sequence":4.0,"label":"Blackberry","used":false,"reference":false,"image":"","rawLabel":"Blackberry","missing":false,"value":"Blackberry"}],"usedInstances":{"c5276408-f4f0-4dd2-9a51-d51873868403":[null]}},{"name":"Created or Updated_1.current","label":"Trigger - Record Created or Updated➛Incident Record","reference":"incident","reference_display":"Incident","type":"reference","base_type":"reference","usedInstances":{"c5276408-f4f0-4dd2-9a51-d51873868403":["record"],"42d495d0-3a07-4cb8-98c6-f1ee9097132e":["record"]},"attributes":{}},{"name":"Created or Updated_1.current.short_description","label":"Trigger - Record Created or Updated➛Incident Record➛Short description","reference":"","reference_display":"Short description","type":"string","base_type":"string","parent_table_name":"incident","column_name":"short_description","usedInstances":{"5edc813b-342e-494c-8b6c-c7b20b0ca8e4":["short_description"]}},{"name":"5edc813b-342e-494c-8b6c-c7b20b0ca8e4.ai_recommendation","label":"3 - CampusDesk - Find Best Knowledge Article➛AI Recommendation","reference_display":"AI Recommendation","type":"string","base_type":"string","usedInstances":{},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"fc52fdff-4de0-4480-a22f-3b9e101722dc"}},{"name":"Created or Updated_1.current.u_incident_category","label":"Trigger - Record Created or Updated➛Incident Record➛Incident Category","reference":"x_1971543_campus_0_incident_category","reference_display":"Incident Category","type":"reference","base_type":"reference","parent_table_name":"incident","column_name":"u_incident_category","usedInstances":{"ec3ca5e8-0287-4132-b6e4-3c6b6212efc9":[null]}},{"name":"ec3ca5e8-0287-4132-b6e4-3c6b6212efc9.Record.sys_id","label":"1 - Look Up Record➛Knowledge Record➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"kb_knowledge","column_name":"sys_id","usedInstances":{"5a12a273-2f89-49c5-8cdd-b51b90dc46d9":[null]}},{"name":"ec3ca5e8-0287-4132-b6e4-3c6b6212efc9.Record.x_1971543_campus_0_ai_confidence","label":"1 - Look Up Record➛Knowledge Record➛AI Confidence","reference":"","reference_display":"AI Confidence","type":"decimal","base_type":"decimal","parent_table_name":"kb_knowledge","column_name":"x_1971543_campus_0_ai_confidence","usedInstances":{"c5276408-f4f0-4dd2-9a51-d51873868403":["u_ai_confidence"]}},{"name":"Created or Updated_1.current.description","label":"Trigger - Record Created or Updated➛Incident Record➛Description","reference":"","reference_display":"Description","type":"string","base_type":"string","parent_table_name":"incident","column_name":"description","usedInstances":{"5edc813b-342e-494c-8b6c-c7b20b0ca8e4":["description"]}},{"name":"Created or Updated_1.current.u_incident_category.category_name","label":"Trigger - Record Created or Updated➛Incident Record➛Incident Category➛Category Name","reference":"","reference_display":"Category Name","type":"string","base_type":"string","parent_table_name":"x_1971543_campus_0_incident_category","column_name":"category_name","usedInstances":{}},{"name":"ec3ca5e8-0287-4132-b6e4-3c6b6212efc9.Record","label":"1 - Look Up Record➛Knowledge Record","reference":"kb_knowledge","reference_display":"Knowledge","type":"reference","base_type":"reference","usedInstances":{"c5276408-f4f0-4dd2-9a51-d51873868403":["u_knowledge_article"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"5edc813b-342e-494c-8b6c-c7b20b0ca8e4.ai_confidence","label":"3 - CampusDesk - Find Best Knowledge Article➛AI Confidence","reference_display":"AI Confidence","type":"decimal","base_type":"decimal","usedInstances":{},"attributes":{"uiType":"decimal","uiTypeLabel":"Decimal","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"abc01c5a-dfa2-4cd9-92f2-12bc798d15ec"}}]</label_cache>
         <master_snapshot>4d52760e2f62c7504674caba6fa4e3ba</master_snapshot>
         <master_snapshot_digest/>
         <name>CampusDesk Knowledge Suggestion</name>
@@ -29,7 +29,7 @@
         <sc_callable>false</sc_callable>
         <show_draft_actions>false</show_draft_actions>
         <show_triggered_flows>false</show_triggered_flows>
-        <status>draft</status>
+        <status>published</status>
         <substatus/>
         <sys_class_name>sys_hub_flow</sys_class_name>
         <sys_created_by>admin</sys_created_by>
@@ -37,7 +37,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>77ae8a852f26cf104674caba6fa4e385</sys_id>
-        <sys_mod_count>64</sys_mod_count>
+        <sys_mod_count>66</sys_mod_count>
         <sys_name>CampusDesk Knowledge Suggestion</sys_name>
         <sys_overrides/>
         <sys_package display_value="CampusDesk AI" source="x_1971543_campus_0">28296cbb2f9607104674caba6fa4e352</sys_package>
@@ -45,11 +45,11 @@
         <sys_scope display_value="CampusDesk AI">28296cbb2f9607104674caba6fa4e352</sys_scope>
         <sys_update_name>sys_hub_flow_77ae8a852f26cf104674caba6fa4e385</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-08-11 04:37:49</sys_updated_on>
+        <sys_updated_on>2026-08-26 04:46:56</sys_updated_on>
         <type>flow</type>
         <updation_source/>
         <version>2</version>
-        <version_record>464fc8c32fe64f504674caba6fa4e39e</version_record>
+        <version_record>963161f32f3e07104674caba6fa4e347</version_record>
     </sys_hub_flow>
     <sys_translated_text action="delete_multiple" query="documentkey=77ae8a852f26cf104674caba6fa4e385"/>
     <sys_variable_value action="delete_multiple" query="document_key=77ae8a852f26cf104674caba6fa4e385"/>
@@ -83,19 +83,19 @@
     </sys_flow_record_trigger>
     <sys_trigger_runner_mapping action="INSERT_OR_UPDATE">
         <active>true</active>
-        <data>{"run_flow_in":"background","run_when_user_list":[],"run_when_setting":"both","run_when_user_setting":"any","run_on_extended":"false"}</data>
+        <data>{"run_on_extended":"false","run_flow_in":"background","run_when_user_list":[],"run_when_setting":"both","run_when_user_setting":"any"}</data>
         <identifier>77ae8a852f26cf104674caba6fa4e385</identifier>
         <identifier_type>flow</identifier_type>
         <runner>FDTriggerRunner</runner>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2026-08-09 15:31:26</sys_created_on>
-        <sys_id>15b1d8e62fea4b504674caba6fa4e3d2</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_created_on>2026-08-26 04:46:56</sys_created_on>
+        <sys_id>0e3121f32f3e07104674caba6fa4e3cb</sys_id>
+        <sys_mod_count>2</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-08-09 15:31:26</sys_updated_on>
+        <sys_updated_on>2026-08-26 06:45:53</sys_updated_on>
         <trigger display_value="">7c3922b02f2a4f104674caba6fa4e3ed</trigger>
     </sys_trigger_runner_mapping>
-    <sys_trigger_runner_mapping action="delete_multiple" query="identifier=77ae8a852f26cf104674caba6fa4e385^sys_idNOT IN15b1d8e62fea4b504674caba6fa4e3d2"/>
+    <sys_trigger_runner_mapping action="delete_multiple" query="identifier=77ae8a852f26cf104674caba6fa4e385^sys_idNOT IN0e3121f32f3e07104674caba6fa4e3cb"/>
     <sys_hub_flow_stage action="delete_multiple" query="flow=77ae8a852f26cf104674caba6fa4e385"/>
     <sys_flow_cat_variable_model action="delete_multiple" query="id=77ae8a852f26cf104674caba6fa4e385^sys_idNOT INbbae8a852f26cf104674caba6fa4e386"/>
     <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
@@ -406,10 +406,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-08-08 13:52:17</sys_created_on>
         <sys_id>0f617a8a2f62c7504674caba6fa4e3a3</sys_id>
-        <sys_mod_count>20</sys_mod_count>
+        <sys_mod_count>22</sys_mod_count>
         <sys_scope display_value="CampusDesk AI">28296cbb2f9607104674caba6fa4e352</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-08-11 04:37:39</sys_updated_on>
+        <sys_updated_on>2026-08-26 04:46:53</sys_updated_on>
         <ui_id>c5276408-f4f0-4dd2-9a51-d51873868403</ui_id>
         <updation_source/>
         <values>H4sIAAAAAAAA/+1Y224bNxD9FWKftequLtYlT24MA0bRuHDTvCQpwSVnZcJccsvl2lYEAX3vJxTIx+VLOtyLJVu2szLSBgVkA/ZyOJcznDOcld6vAimCeRANRBTP4iM+jIfDQRQNpqM4ORom8UAMGQAEvUCzDFDzmqkSClxXDygo6ZU2NwrEAiizTnIFH8ooGorVagyCT+NhEg5HAwhHsxEPp8kRD/kkGURJxNkURv0d6/X695IySYtysYDCgaCcOVgYu2z9vraAEkGMJb/lwj/SuM9La0G7fqvcuuFGp1KA5vvBumeJvm5pPJvE49EQ0WR5WdDIO7fATZaBRhDS6DpA9ZfnBGUsdFIvMw7WGJcow68alQB//VONiRc504QrVhTtvjemOfMZ0Vwq9SEghVu2R4v7ssgVW86J1EpqeIX7CNehOgjpWLLRTJkqALcrON5VVbh2d7VKBXWW6SI1NptPkAEzkU7D6dQfTTKZhMkAeDhh6ZjNolEUjZP1uht4DEUI4xxyV2xC0LTU3B9WgZgQqNQCblvD6D9Oo6kRskyK1tUJin5B/2eiS5oVlLDBXP1nWA77NVNvVXRRQnC37g6oMcrJPNyAZZe0Eb41+UO1BlWrOyQheV1x9wSKK1yc4tmTHzF58lPbg+S47kHijQZHC/eKHJ+Ri/ss7wK7cNjNreY+kWuvP3i3HcIwa81N9zoplgBWC9vK7Wt0L9KXz38/gfPrgicywdNtve+e+EtjJaVzRpMNX3bbkKaMMwG0S8v47twG/qQ3os1Wx7M8VxJQnzArWX2erYvzHDS5UyWtH5JLfgWWoJDswx4szN58rW/QsOBW5i6U/FGLxy9fbaqrtyHFn391LlRdmP2KuSvI6xUO4wbRu8NMPszkw0w+zOTDTD7M5MNM/r4zmV9KJXBYBPP3H3sBzg38AO3ABvPVgy23zIFWFcDR/RYyzMMBqWd5r/Pn89bBqQQlikc+sPswuHZNAHrdBDBWeFRxFPUCvNiwRIAhq7u9F2TMVwxHdzB3tkQBjnlxrtXyTuNSaoduA697W8hPGCM+iqofr52C9dO61rhb0qZctZhfGsnhPPfMqCXVmGk2jSoz/aZOxr/qQMpK5dpXHZSUBfqD3AP3UGqc6a+X5uaijefp6ZNsMOPUZ+puxZyzEquPp4S1AQWZn/AZtojUC5pbcy0rY4SS9RcKF/1UmRuMWciF7rOqO/r+cuqfovykEr/zfYVJ/Ixu0HhdJU//KH3cOo0GMK1yrhKmVclQteb9MTq+hgbmutd8VTOCZ6kQbyrvX4Ss2Pqq5vm3tPV690XyxTQ+Mbz0x0jOTloOdwDeWl+0yB9m0nBYNN6pFNsE/lb8HR2Y+28wNxk/RwA+29R7y+eGvVJzWZ3TDkvPNjsvvHR9PPKmjtcV6z3jJ7C3d+62rKHr+JvRdfqd6Nog+p/x9SmWfvwHxOXjEgwXAAA=</values>
@@ -420,7 +420,7 @@
         <action_type_parent display_value="CampusDesk - Find Best Knowledge Article">b339206e2f6e4b504674caba6fa4e342</action_type_parent>
         <attributes/>
         <comment/>
-        <compiled_snapshot/>
+        <compiled_snapshot>9b983eee2fae8b504674caba6fa4e3f2</compiled_snapshot>
         <display_text/>
         <flow display_value="CampusDesk Knowledge Suggestion">77ae8a852f26cf104674caba6fa4e385</flow>
         <generation_source/>
@@ -430,13 +430,13 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-08-11 04:08:17</sys_created_on>
         <sys_id>7d88c0872fa64f504674caba6fa4e36f</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_scope display_value="CampusDesk AI">28296cbb2f9607104674caba6fa4e352</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-08-11 04:13:12</sys_updated_on>
+        <sys_updated_on>2026-08-26 04:46:53</sys_updated_on>
         <ui_id>5edc813b-342e-494c-8b6c-c7b20b0ca8e4</ui_id>
         <updation_source/>
-        <values>H4sIAAAAAAAA/+1VXU/bMBT9KyjPTZQPt3F5m0BIk7YhjcELQtFNfN1acpPgOIWu6n/fdZO0DBiquk3igbf42PfjnHuPcrv2lPBOvXE65SkixhKQ5+OQTVJWQA4TCQyTKPRGXgkLpJcFWJxVZkXIEnTroPX6zCDB4qQyJ9e1cJ9ZFBStMVjaYIjYbChGqKbWsLo5IrSYKy0I9k5v70ZeDYYasmi80/WzK7uqMdOQo6YKV9aockbhh/IcAs/2RF9SdyUIaYbklRGuk2jk4aPFUiAVk6AbHHkLKImWCxsQYiwuS70H5qq0lM1zjx8b9ZNS8zAM3UuJRKvA7nZ3zHoZO7iYV6rAy9qqquwQC7nuY4pKt4vyW8fADQAltNoOAyCkbSgf1q5r10bfk7yaVw/fh4IXqtwS7C91VYDencCSDHlrsXGzaNUPEufLc/lR44LyZwuoa0Ky2lRLtc1JLS6CmaZDIHX1QL00alYGUDg+AWkHwQXh51v4Boxy5L5SGgoe9eWezqJV16W6b/GzG3gopzGmaeLLhEuf4Zj5fCLQ59NiEnPMGUu4t9lKm923jlQnUi9H1ilKD5rCqNp+oqaWuGPegdsNHHaDvl95utlsRr3V0vzNFeT7fWvmlbFOjm0+N9yDPfci9AjzvZ7jX7jwAAl2ga6Jk/PfNHhDnj/4Mv7w5TvzJc+nIYsnzM/jSeQznkY+YD71gSUEi6nkEB/ry53VGIc39ozL/S4dZbK/s9f/MNYBhIfAVy11kJmSDzO9MzOxNEnSGDj92mL0GQj6yUUi9/NQpFESRjKF8dFmuvsF0OUBCCQKAAA=</values>
+        <values>H4sIAAAAAAAA/+1VTWvbQBD9K0ZnS+hjba19KwmBQttA0+QSghhpZ+2FtaSsVklc4//eWUuyaZIG47aQQ27at/tm5s3MQ7cbTwlv7k3SGU8RMZaAPJ+EbJqyAnKYSmCYRKE39kpYIb0swOKiMmtCHkC3DtpszgwSLEaVGV3Xwn1mUVC0xmBpg4Gx3RJHqKbWsL45gVoslRYEe/Pbu7FXg6GCLBpvvnl2Zdc1Zhpy1JThyhpVLoh+rM6BeHYQ+lK6S0FIMwSvjHCVRGMPnyyWAimZBN3g2FtBSbIcbUBIsbgs9QFYqtJSNM89fmrUTwrNwzB0LyWSrAK72/0x69vYwcWyUgVe1lZVZYdYyHXPKSrdrspvnQI3AJTQajsMgJC2oXhYu6pdGX1N8mpZPX4fEl6ociewv9RVAXp/AkttyFuLjZtFq348a06HfHk+ENS4oozZCuqakKw21YPaZaGiV8FC0yGQunqk6hq1KAMonMKAugnBBeHnO/gGjHJyv1IYIrt016W6b/GzG3goZzGmaeLLhEuf4YT5fCrQ57NiGnPMGUu4t921NrtvnaiuSX07sq6j9KApjKrtJyrhAffKO3C3gcNu0PcrT7fb7bi3Wpq/uYL8sG/NsjLWid/Fc8M92nMvqCeY7/UY/8KFR7RgT3RFjM5/68Eb7fmDL+MPX74zX/J8FrJ4yvw8nkY+42nkA+YzH1hCsJhJDvGpvtxbjXF4Y8+4POzSSSb7O3v9D2MdIXggvmqpo8yUfJjpnZmJpUmSxsDp1xajz0DQTy4SuZ+HIo2SMJIpTE42090vOx8NViQKAAA=</values>
     </sys_hub_action_instance_v2>
     <sys_hub_alias_mapping action="delete_multiple" query="source_id=7d88c0872fa64f504674caba6fa4e36f"/>
     <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
@@ -454,10 +454,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-08-05 08:48:31</sys_created_on>
         <sys_id>802fce852f26cf104674caba6fa4e3d2</sys_id>
-        <sys_mod_count>10</sys_mod_count>
+        <sys_mod_count>12</sys_mod_count>
         <sys_scope display_value="CampusDesk AI">28296cbb2f9607104674caba6fa4e352</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-08-09 15:19:35</sys_updated_on>
+        <sys_updated_on>2026-08-26 04:46:53</sys_updated_on>
         <ui_id>ec3ca5e8-0287-4132-b6e4-3c6b6212efc9</ui_id>
         <updation_source/>
         <values>H4sIAAAAAAAA/+1XWW/bOBD+K4KeHa9k+czbIoGBYo8AbZqXbpegSComQpMqRcVNDP/3HVKHz9jyEbQF9skWj5lvvvmGQ36Z+5z6136PBqNkNOoNB0EQRUHQ70cEh3Ec9UkcxHHot3yJpwxWZkobZF5SBkPPWOT1GGUZgTHKs1Tgl4dy6tUzysMwTiZcUM2kf/3la8tPsQZzhmn/er4xZW0jgWMmYPvNRHFiXTVFWW38BJC8+wLmDuTu5xo8l+aVphZL1PLZd8MkZeAuwSJjLX+KJcVG6Zd6RDNM76RYDky4NGDNt4u/Z/wVTEcduy5hEBZhxVz9iUqOiuECQwbBz2v02LL2uskwdgSXUINFa7m+ZnlXRsoN4QLIpSzBuTA3p/kMj/XZsT6LAO9SwxWk2I8s/TgWJStEiXwq/y5S5NcIH7ZBlDO36wKrYecZEMtSmzybjTI1yaeJmn2smB9z6XCVk0IRLOovbIzmcW4sL3M/oSjhTFDEpeDSejI6t1Jhgk3BA5riNOXyEaVaPXNnFWKZth8FfLQToWaWC/4o25jYyNsgItwew/itG37AmlsW/gIzsLllHU5ga+kPZUTz1KAZp4/MLL1Xq6gyMyyeds2X6qpryIXnL5wA0bfcRlwQXXKFXFrsgsLn74D3mZW02Iy72gv31h6mG3VWpHVFHWkeC55NGN0+I1anTjsmxjZTnhNRqzHcavOd1aoXv7wVQXlWFGqQhY9K3xc7L4bBcedFXU5HVdN2mVjZnFEl71gMu6rvkIgLJg4pebS3i4yWOuAJmgJ7PBUMaUYg6RnCmqFE5ZKiIpQViVtqE64zUy7eVvpHZnItPQVi8MyEeW61V6++RI9sEF218UPiVeGVGDIPwvNceF4d3nFkvNFZuxerlO6RlbLe5caYC0d9Zli6kjumtdJvdNcDWduT/oattyGo8KKgzu/Nu/S+s0cfwHrhzv0+Z9K5/ZMwHHc7uD+IwjAIwoAOguFgEA77cdLHg26yLDSEMkmgwYPlBIQB5lElhCqrwfbRUnT5U8+QezhdfxuXJprirTbfKvlPHgSdgfEsYMizVwE+HFJ5XsRKCYblUp69H3ZgXKq1nqvjnN9vclMM/bkrae/ViXP+WfJvOftgRTFkQWcYUnI1HISDq25C+1cjintXeBT3BhFlpJucf9Okvb1Xt5X+TJSk3EaRrdTGU4wINuwRZNJ2CrXajOh8fgNiMYx6SnufU2r/orBNcg15Me0cbhqEO5D17uqPu/QtFv/OlH5yDGYGZgqze661Pw7IifeIVTabZmLn5l3pqe4Fq2NVX7tgqQf/36Ob96xG12W690KJu8t8F+bWKvFJqplg8ETdLo8/VqZObFrW39qrrwHWtc3b2EuZus+Nx17wyz/2fs6bFQDiArKNCtIzlWvHyjMiIs/chMYyK18Yp3aXr/8BcuDuMOsUAAA=</values>
@@ -468,7 +468,7 @@
         <action_type_parent display_value="Look Up Record">b93f42810b30030085c083eb37673a63</action_type_parent>
         <attributes/>
         <comment/>
-        <compiled_snapshot/>
+        <compiled_snapshot>9d09f99587003300663ca1bb36cb0ba3</compiled_snapshot>
         <display_text/>
         <flow display_value="CampusDesk Knowledge Suggestion">77ae8a852f26cf104674caba6fa4e385</flow>
         <generation_source/>
@@ -478,10 +478,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-08-09 13:58:19</sys_created_on>
         <sys_id>d16cbb9e2f2a4b504674caba6fa4e3cb</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>6</sys_mod_count>
         <sys_scope display_value="CampusDesk AI">28296cbb2f9607104674caba6fa4e352</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-08-09 15:31:08</sys_updated_on>
+        <sys_updated_on>2026-08-26 04:46:53</sys_updated_on>
         <ui_id>5a12a273-2f89-49c5-8cdd-b51b90dc46d9</ui_id>
         <updation_source/>
         <values>H4sIAAAAAAAA/9VY227bOBD9FUHPtlcX27LztmjWQNFuA6TZvmQDgiKpmAhNqhQV1wn87x2Kku34HsdF00eSczkzc2ZE6vbZ59S/8OkwGGbDYW+QBEEcB0G/HxMcpmncJ2mQ4q7f8iWeMJA0OBUMlo9YlHb9kCLDJrnAhqEHqaYSMa2VRlgbTipJygs4nn2rFT5ZIe8fK+QthciYC6qZ9C9u71p+jjV4M0z7F89rR2aWMyRwygTYurFgvC8WWevoQF4obwZmHTRLJJ1ppanFErR89sMwSRm4yrAoWMufYEmxUXq22NEM0ysplhtjLg1Y9K3wj4I/gflBYOUyBmER5s4WS1QnzG2TseKEXeWGK+l2HFB3qEQ5kV9cADbVLMOlME2qYacswB7LLWYLokaUfR2r6XXjcMRlFV59KBTBYrHCxmieloYVthZMsAkYQhOc51zeo1yrR14pA5ZJ517AopMJNQWnBb+XHUws8A6kCHdGsH9ZbX/Dmtso/gUzoAyAuIBqI5f0QpW6ysojIqIsqgONZeFs+fMqV+h7aVG6qOv4kEsRCBRE89z8DQqPrA5l3mq43ttLkeGSEkRJyq3PYoXwxaxAnP5fgjJ9fmYElHts0A6iQdLuhnHUTvus245JP+1HYcQyMuxcMwIM6jjN+XyzJ85i87QW+rAa47H52aq8LWl1M73Yq5spPFszdYPgN7WT0eX766ZD/eECPtAkId1LArqsd6G0QS5zK12yyfGTGTriTNAXQ/4IcI3ylSWbl8524a0Jmlkfa9M++uOn/bukJwCiyOWbS8Fl9bEFoOfhbW8vNdJwjQdV+Vdmu93DBdlkL/aM8p5On7JVXRv+HgGyUfwKiLwbh3IL8Ga+NuZr6sZno24cvY66QJzb5wX6Rda2JLi5U9nSNfJPVh6vywO7VhTC+d2C+h9O8xm+1mdkfa71Zvyq5lxllju53EGwM9/YdjRb61d29xhUa3/INSuacnrPzNJ7I0WVmWLxsO28Zteih6rw3nz7C/c+ENKV2x/P0ATqxHO4kurqtlXAq4ahTJWSovoyuqSNrVvGdWFq4c0Zcs1MqaWnoOU8M2ZeJe0tpM8xWY6IrlH8mHlNeDWGAt5jgMqG5y3Ce10ydsyj7hnvem+ZRyPMRZV6eFTkK7Wrnqw7ZtKBqu0p/5ED60hQ4VlBvX2ibeP71sl2AOsf8UJ969QhDKfdCPeTOAyDIAxoEgySJBz006yPk262bDSECklgLILlDIgB5lFDhKaqweZocbPx5N8oMHP/GtUmjsXbKF8qaR+uUWI8Cxjq7DWAD4dUz4tUKcGwXNKz99sGxnv501Lym/XcuK3P24r2qz7mJf9P8u8l+2hJMWBBNAgpaQ+SMGl3M9pvDynutfEw7SUxZaSbnf59vvsJMbaBhosUAAA=</values>
@@ -662,7 +662,7 @@
         <description/>
         <flow_priority>MEDIUM</flow_priority>
         <internal_name>campusdesk_knowledge_suggestion</internal_name>
-        <label_cache>[{"name":"5a12a273-2f89-49c5-8cdd-b51b90dc46d9.Record.kb_workaround","label":"2➛Known Error article Record➛Workaround","reference":"","reference_display":"Workaround","type":"html","base_type":"html","parent_table_name":"kb_template_known_error_article","column_name":"kb_workaround","usedInstances":{"c5276408-f4f0-4dd2-9a51-d51873868403":[null]}},{"name":"ec3ca5e8-0287-4132-b6e4-3c6b6212efc9.Record.sys_id","label":"1 - Look Up Record➛Knowledge Record➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"kb_knowledge","column_name":"sys_id","usedInstances":{"5a12a273-2f89-49c5-8cdd-b51b90dc46d9":[null]}},{"name":"ec3ca5e8-0287-4132-b6e4-3c6b6212efc9.Record.category","label":"1 - Look Up Record➛Knowledge Record➛Category (category)","reference":"","reference_display":"Category (category)","type":"choice","base_type":"choice","parent_table_name":"kb_knowledge","column_name":"category","choices":[{"label":"-- None --","sequence":-1.0,"selected":false,"used":false,"rawLabel":"-- None --","missing":false,"image":"","reference":false,"value":""},{"parameters":{"name":"kb_knowledge","dependent_values":["Policies"],"dependent_values_map":{"Policies":"Benefits"}},"sequence":1.0,"selected":false,"label":"Benefits","used":false,"rawLabel":"Benefits","missing":false,"image":"","reference":false,"value":"Benefits"},{"parameters":{"name":"kb_knowledge","dependent_values":["Email"],"dependent_values_map":{"Email":"Web Mail"}},"sequence":1.0,"selected":false,"label":"Web Mail","used":false,"rawLabel":"Web Mail","missing":false,"image":"","reference":false,"value":"Web Mail"},{"parameters":{"name":"kb_knowledge","dependent_values":["Email"],"dependent_values_map":{"Email":"Outlook"}},"sequence":2.0,"selected":false,"label":"Outlook","used":false,"rawLabel":"Outlook","missing":false,"image":"","reference":false,"value":"Outlook"},{"parameters":{"name":"kb_knowledge","dependent_values":["Email"],"dependent_values_map":{"Email":"Tips and Tricks"}},"sequence":3.0,"selected":false,"label":"Tips and Tricks","used":false,"rawLabel":"Tips and Tricks","missing":false,"image":"","reference":false,"value":"Tips and Tricks"},{"parameters":{"name":"kb_knowledge","dependent_values":["Email"],"dependent_values_map":{"Email":"Blackberry"}},"sequence":4.0,"selected":false,"label":"Blackberry","used":false,"rawLabel":"Blackberry","missing":false,"image":"","reference":false,"value":"Blackberry"}],"usedInstances":{"c5276408-f4f0-4dd2-9a51-d51873868403":[null]}},{"name":"Created or Updated_1.current.u_incident_category","label":"Trigger - Record Created or Updated➛Incident Record➛Incident Category","reference":"x_1971543_campus_0_incident_category","reference_display":"Incident Category","type":"reference","base_type":"reference","parent_table_name":"incident","column_name":"u_incident_category","usedInstances":{"ec3ca5e8-0287-4132-b6e4-3c6b6212efc9":[null]}},{"name":"Created or Updated_1.current.category","label":"Trigger - Record Created or Updated➛Incident Record➛Category","reference":"","reference_display":"Category","type":"choice","base_type":"choice","parent_table_name":"incident","column_name":"category","choices":[{"label":"-- None --","sequence":-1.0,"selected":false,"used":false,"rawLabel":"-- None --","missing":false,"image":"","reference":false,"value":""},{"parameters":{"name":"incident","dependent_values":[""],"dependent_values_map":{"":"Inquiry / Help"}},"sequence":1.0,"selected":false,"label":"Inquiry / Help","used":false,"rawLabel":"Inquiry / Help","missing":false,"image":"","reference":false,"value":"inquiry"},{"parameters":{"name":"incident","dependent_values":[""],"dependent_values_map":{"":"Software"}},"sequence":2.0,"selected":false,"label":"Software","used":false,"rawLabel":"Software","missing":false,"image":"","reference":false,"value":"software"},{"parameters":{"name":"incident","dependent_values":[""],"dependent_values_map":{"":"Hardware"}},"sequence":3.0,"selected":false,"label":"Hardware","used":false,"rawLabel":"Hardware","missing":false,"image":"","reference":false,"value":"hardware"},{"parameters":{"name":"incident","dependent_values":[""],"dependent_values_map":{"":"Network"}},"sequence":4.0,"selected":false,"label":"Network","used":false,"rawLabel":"Network","missing":false,"image":"","reference":false,"value":"network"},{"parameters":{"name":"incident","dependent_values":[""],"dependent_values_map":{"":"Database"}},"sequence":5.0,"selected":false,"label":"Database","used":false,"rawLabel":"Database","missing":false,"image":"","reference":false,"value":"database"},{"parameters":{"name":"incident","dependent_values":[""],"dependent_values_map":{"":"Password Reset"}},"sequence":100.0,"selected":false,"label":"Password Reset","used":false,"rawLabel":"Password Reset","missing":false,"image":"","reference":false,"value":"password_reset"}],"usedInstances":{"c5276408-f4f0-4dd2-9a51-d51873868403":["u_ai_suggested_category"]}},{"name":"Created or Updated_1.current","label":"Trigger - Record Created or Updated➛Incident Record","reference":"incident","reference_display":"Incident","type":"reference","base_type":"reference","usedInstances":{"c5276408-f4f0-4dd2-9a51-d51873868403":["record"],"42d495d0-3a07-4cb8-98c6-f1ee9097132e":["record"]},"attributes":{}},{"name":"Created or Updated_1.current.u_incident_category.category_name","label":"Trigger - Record Created or Updated➛Incident Record➛Incident Category➛Category Name","reference":"","reference_display":"Category Name","type":"string","base_type":"string","parent_table_name":"x_1971543_campus_0_incident_category","column_name":"category_name","usedInstances":{}},{"name":"ec3ca5e8-0287-4132-b6e4-3c6b6212efc9.Record","label":"1 - Look Up Record➛Knowledge Record","reference":"kb_knowledge","reference_display":"Knowledge","type":"reference","base_type":"reference","usedInstances":{"c5276408-f4f0-4dd2-9a51-d51873868403":["u_knowledge_article"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"ec3ca5e8-0287-4132-b6e4-3c6b6212efc9.Record.x_1971543_campus_0_ai_recommendation","label":"1 - Look Up Record➛Knowledge Record➛AI Recommendation","reference":"","reference_display":"AI Recommendation","type":"html","base_type":"html","parent_table_name":"kb_knowledge","column_name":"x_1971543_campus_0_ai_recommendation","usedInstances":{"c5276408-f4f0-4dd2-9a51-d51873868403":[null]}},{"name":"ec3ca5e8-0287-4132-b6e4-3c6b6212efc9.Record.x_1971543_campus_0_ai_confidence","label":"1 - Look Up Record➛Knowledge Record➛AI Confidence","reference":"","reference_display":"AI Confidence","type":"decimal","base_type":"decimal","parent_table_name":"kb_knowledge","column_name":"x_1971543_campus_0_ai_confidence","usedInstances":{"c5276408-f4f0-4dd2-9a51-d51873868403":["u_ai_confidence"]}}]</label_cache>
+        <label_cache>[{"name":"Created or Updated_1.current.category","label":"Trigger - Record Created or Updated➛Incident Record➛Category","reference":"","reference_display":"Category","type":"choice","base_type":"choice","parent_table_name":"incident","column_name":"category","choices":[{"label":"-- None --","selected":false,"sequence":-1.0,"used":false,"reference":false,"image":"","rawLabel":"-- None --","missing":false,"value":""},{"parameters":{"name":"incident","dependent_values":[""],"dependent_values_map":{"":"Inquiry / Help"}},"selected":false,"sequence":1.0,"label":"Inquiry / Help","used":false,"reference":false,"image":"","rawLabel":"Inquiry / Help","missing":false,"value":"inquiry"},{"parameters":{"name":"incident","dependent_values":[""],"dependent_values_map":{"":"Software"}},"selected":false,"sequence":2.0,"label":"Software","used":false,"reference":false,"image":"","rawLabel":"Software","missing":false,"value":"software"},{"parameters":{"name":"incident","dependent_values":[""],"dependent_values_map":{"":"Hardware"}},"selected":false,"sequence":3.0,"label":"Hardware","used":false,"reference":false,"image":"","rawLabel":"Hardware","missing":false,"value":"hardware"},{"parameters":{"name":"incident","dependent_values":[""],"dependent_values_map":{"":"Network"}},"selected":false,"sequence":4.0,"label":"Network","used":false,"reference":false,"image":"","rawLabel":"Network","missing":false,"value":"network"},{"parameters":{"name":"incident","dependent_values":[""],"dependent_values_map":{"":"Database"}},"selected":false,"sequence":5.0,"label":"Database","used":false,"reference":false,"image":"","rawLabel":"Database","missing":false,"value":"database"},{"parameters":{"name":"incident","dependent_values":[""],"dependent_values_map":{"":"Password Reset"}},"selected":false,"sequence":100.0,"label":"Password Reset","used":false,"reference":false,"image":"","rawLabel":"Password Reset","missing":false,"value":"password_reset"}],"usedInstances":{"c5276408-f4f0-4dd2-9a51-d51873868403":["u_ai_suggested_category"],"5edc813b-342e-494c-8b6c-c7b20b0ca8e4":["category"]}},{"name":"ec3ca5e8-0287-4132-b6e4-3c6b6212efc9.Record.x_1971543_campus_0_ai_recommendation","label":"1 - Look Up Record➛Knowledge Record➛AI Recommendation","reference":"","reference_display":"AI Recommendation","type":"html","base_type":"html","parent_table_name":"kb_knowledge","column_name":"x_1971543_campus_0_ai_recommendation","usedInstances":{"c5276408-f4f0-4dd2-9a51-d51873868403":[null]}},{"name":"5edc813b-342e-494c-8b6c-c7b20b0ca8e4.knowledge_article","label":"3 - CampusDesk - Find Best Knowledge Article➛Knowledge Article","reference":"kb_knowledge","reference_display":"Knowledge","type":"reference","base_type":"reference","usedInstances":{},"attributes":{"uiType":"reference","uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"625030db-e594-40ce-b2e3-97c05ef6c9ae"}},{"name":"5a12a273-2f89-49c5-8cdd-b51b90dc46d9.Record.kb_workaround","label":"2➛Known Error article Record➛Workaround","reference":"","reference_display":"Workaround","type":"html","base_type":"html","parent_table_name":"kb_template_known_error_article","column_name":"kb_workaround","usedInstances":{"c5276408-f4f0-4dd2-9a51-d51873868403":[null]}},{"name":"ec3ca5e8-0287-4132-b6e4-3c6b6212efc9.Record.category","label":"1 - Look Up Record➛Knowledge Record➛Category (category)","reference":"","reference_display":"Category (category)","type":"choice","base_type":"choice","parent_table_name":"kb_knowledge","column_name":"category","choices":[{"label":"-- None --","selected":false,"sequence":-1.0,"used":false,"reference":false,"image":"","rawLabel":"-- None --","missing":false,"value":""},{"parameters":{"name":"kb_knowledge","dependent_values":["Policies"],"dependent_values_map":{"Policies":"Benefits"}},"selected":false,"sequence":1.0,"label":"Benefits","used":false,"reference":false,"image":"","rawLabel":"Benefits","missing":false,"value":"Benefits"},{"parameters":{"name":"kb_knowledge","dependent_values":["Email"],"dependent_values_map":{"Email":"Web Mail"}},"selected":false,"sequence":1.0,"label":"Web Mail","used":false,"reference":false,"image":"","rawLabel":"Web Mail","missing":false,"value":"Web Mail"},{"parameters":{"name":"kb_knowledge","dependent_values":["Email"],"dependent_values_map":{"Email":"Outlook"}},"selected":false,"sequence":2.0,"label":"Outlook","used":false,"reference":false,"image":"","rawLabel":"Outlook","missing":false,"value":"Outlook"},{"parameters":{"name":"kb_knowledge","dependent_values":["Email"],"dependent_values_map":{"Email":"Tips and Tricks"}},"selected":false,"sequence":3.0,"label":"Tips and Tricks","used":false,"reference":false,"image":"","rawLabel":"Tips and Tricks","missing":false,"value":"Tips and Tricks"},{"parameters":{"name":"kb_knowledge","dependent_values":["Email"],"dependent_values_map":{"Email":"Blackberry"}},"selected":false,"sequence":4.0,"label":"Blackberry","used":false,"reference":false,"image":"","rawLabel":"Blackberry","missing":false,"value":"Blackberry"}],"usedInstances":{"c5276408-f4f0-4dd2-9a51-d51873868403":[null]}},{"name":"Created or Updated_1.current","label":"Trigger - Record Created or Updated➛Incident Record","reference":"incident","reference_display":"Incident","type":"reference","base_type":"reference","usedInstances":{"c5276408-f4f0-4dd2-9a51-d51873868403":["record"],"42d495d0-3a07-4cb8-98c6-f1ee9097132e":["record"]},"attributes":{}},{"name":"Created or Updated_1.current.short_description","label":"Trigger - Record Created or Updated➛Incident Record➛Short description","reference":"","reference_display":"Short description","type":"string","base_type":"string","parent_table_name":"incident","column_name":"short_description","usedInstances":{"5edc813b-342e-494c-8b6c-c7b20b0ca8e4":["short_description"]}},{"name":"5edc813b-342e-494c-8b6c-c7b20b0ca8e4.ai_recommendation","label":"3 - CampusDesk - Find Best Knowledge Article➛AI Recommendation","reference_display":"AI Recommendation","type":"string","base_type":"string","usedInstances":{},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"fc52fdff-4de0-4480-a22f-3b9e101722dc"}},{"name":"Created or Updated_1.current.u_incident_category","label":"Trigger - Record Created or Updated➛Incident Record➛Incident Category","reference":"x_1971543_campus_0_incident_category","reference_display":"Incident Category","type":"reference","base_type":"reference","parent_table_name":"incident","column_name":"u_incident_category","usedInstances":{"ec3ca5e8-0287-4132-b6e4-3c6b6212efc9":[null]}},{"name":"ec3ca5e8-0287-4132-b6e4-3c6b6212efc9.Record.sys_id","label":"1 - Look Up Record➛Knowledge Record➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"kb_knowledge","column_name":"sys_id","usedInstances":{"5a12a273-2f89-49c5-8cdd-b51b90dc46d9":[null]}},{"name":"ec3ca5e8-0287-4132-b6e4-3c6b6212efc9.Record.x_1971543_campus_0_ai_confidence","label":"1 - Look Up Record➛Knowledge Record➛AI Confidence","reference":"","reference_display":"AI Confidence","type":"decimal","base_type":"decimal","parent_table_name":"kb_knowledge","column_name":"x_1971543_campus_0_ai_confidence","usedInstances":{"c5276408-f4f0-4dd2-9a51-d51873868403":["u_ai_confidence"]}},{"name":"Created or Updated_1.current.description","label":"Trigger - Record Created or Updated➛Incident Record➛Description","reference":"","reference_display":"Description","type":"string","base_type":"string","parent_table_name":"incident","column_name":"description","usedInstances":{"5edc813b-342e-494c-8b6c-c7b20b0ca8e4":["description"]}},{"name":"Created or Updated_1.current.u_incident_category.category_name","label":"Trigger - Record Created or Updated➛Incident Record➛Incident Category➛Category Name","reference":"","reference_display":"Category Name","type":"string","base_type":"string","parent_table_name":"x_1971543_campus_0_incident_category","column_name":"category_name","usedInstances":{}},{"name":"ec3ca5e8-0287-4132-b6e4-3c6b6212efc9.Record","label":"1 - Look Up Record➛Knowledge Record","reference":"kb_knowledge","reference_display":"Knowledge","type":"reference","base_type":"reference","usedInstances":{"c5276408-f4f0-4dd2-9a51-d51873868403":["u_knowledge_article"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"5edc813b-342e-494c-8b6c-c7b20b0ca8e4.ai_confidence","label":"3 - CampusDesk - Find Best Knowledge Article➛AI Confidence","reference_display":"AI Confidence","type":"decimal","base_type":"decimal","usedInstances":{},"attributes":{"uiType":"decimal","uiTypeLabel":"Decimal","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"abc01c5a-dfa2-4cd9-92f2-12bc798d15ec"}}]</label_cache>
         <master>true</master>
         <name>CampusDesk Knowledge Suggestion</name>
         <natlang/>
@@ -679,7 +679,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>4d52760e2f62c7504674caba6fa4e3ba</sys_id>
-        <sys_mod_count>6</sys_mod_count>
+        <sys_mod_count>7</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
         <sys_package/>
@@ -687,7 +687,7 @@
         <sys_scope display_value="CampusDesk AI">28296cbb2f9607104674caba6fa4e352</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-08-09 15:31:22</sys_updated_on>
+        <sys_updated_on>2026-08-26 04:46:55</sys_updated_on>
         <type>flow</type>
         <version>2</version>
     </sys_hub_flow_snapshot>
@@ -772,14 +772,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-08-08 13:56:14</sys_created_on>
         <sys_id>0552760e2f62c7504674caba6fa4e3be</sys_id>
-        <sys_mod_count>11</sys_mod_count>
+        <sys_mod_count>13</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="CampusDesk AI">28296cbb2f9607104674caba6fa4e352</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-08-09 15:31:18</sys_updated_on>
+        <sys_updated_on>2026-08-26 04:46:55</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -942,14 +942,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-08-08 13:56:17</sys_created_on>
         <sys_id>7d52b60e2f62c7504674caba6fa4e359</sys_id>
-        <sys_mod_count>11</sys_mod_count>
+        <sys_mod_count>13</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="CampusDesk AI">28296cbb2f9607104674caba6fa4e352</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-08-09 15:31:18</sys_updated_on>
+        <sys_updated_on>2026-08-26 04:46:55</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -987,7 +987,7 @@
         <trigger_type>record_create_or_update</trigger_type>
         <updation_source/>
     </sys_hub_trigger_instance_v2>
-    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=4d52760e2f62c7504674caba6fa4e3ba^sys_idNOT IN4a52b60e2f62c7504674caba6fa4e36e,c252b60e2f62c7504674caba6fa4e36d,c814446e2f6a4b504674caba6fa4e3cc"/>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=4d52760e2f62c7504674caba6fa4e3ba^sys_idNOT IN4a52b60e2f62c7504674caba6fa4e36e,b53121f32f3e07104674caba6fa4e33b,c252b60e2f62c7504674caba6fa4e36d,c814446e2f6a4b504674caba6fa4e3cc"/>
     <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
         <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
         <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
@@ -997,21 +997,45 @@
         <display_text/>
         <flow display_value="CampusDesk Knowledge Suggestion">4d52760e2f62c7504674caba6fa4e3ba</flow>
         <generation_source/>
-        <order>3</order>
+        <order>4</order>
         <parent_ui_id/>
         <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-08-08 13:56:19</sys_created_on>
         <sys_id>4a52b60e2f62c7504674caba6fa4e36e</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_scope display_value="CampusDesk AI">28296cbb2f9607104674caba6fa4e352</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-08-09 14:31:54</sys_updated_on>
+        <sys_updated_on>2026-08-26 04:46:55</sys_updated_on>
         <ui_id>c5276408-f4f0-4dd2-9a51-d51873868403</ui_id>
         <updation_source/>
-        <values>H4sIAAAAAAAA/+1Y227jNhD9FULPlipZjhO7T0XSAEHTTbG7TR82W4GiKIcIRaoktYnXMND3fkKBfly/pMOLbDfOxSkWRYM6ARKLc+GZmTMcix8WEauiaTSiVZpNsjHJszwfpunwaJSV47zMhlWOKc2iQSRwQ0FTUSJVBc+fMO/swmJxrCg2tEJSoR/byn4ssoR0SlFhlktQrZhuOZ5fBgtYIdeMVyCPph8+DqIWK3BuqIqmi3uiXdFxXFIOqm97ePfhmnlrnytJugZwFaxfPA+WJ0GCzk5AAkYWTpYOInpnqKgoAKkx13QQNVhAlFLNo6lRHSxA/NWF4POVxjUTxgfa4DvNPsPOo9Tq1RQiIyEJq8ciJMgv1yfY4HfgmZhOrfIlGaHa56SiNe64Od5c8woXrWFSeBODS95bS9414o3PSLRysFGPTgMI2to4LXIfVv3uWt6+7UGeMuFSEkLkkmC+esLGKFZ2xsJZRJRTl+MGty0Ts6JV8hNzxgClSWYcHpKay1vYU7OZSDCxuBPIKk5OYf3ELV9ixWwQ34MbMF4OIj3XxxxrvQ4Fclj80lkkPrAQQuGy4FJQOCZYY6JYa76BrT7RAHw5CPwvD55iGJmsCbXhc90DTBDmMrfF9bO15GWc3wFRz/n3rtIPIwy031o737RFb7wgkP7gi5H+6DWRPoTx6ln/HNfT4ZOn6QaTHL31Bs+74kbIW06rGS2wMoxwetWlaV4tFpTkBB/Qoxj8HcajLB/G5ZiO4pyMy/EwG9KaTBJ/Oi+XP3cFZoXuZjOq7bggMDRmwK3e2VMTJemVwc1dkU0Os4NRDh6attNFav3aM7+BUoAh5Nf7dH9Ji2yyY8PEvCFUSWlKqOhNUIng137yMRHdYoGITXwvt8YFNK5Ndcs4v4qQNvM+B1d9708RE5wJ+jXIiRTQSBAAc9TsNV1FQOzgWFcuw710sairwigsdC1VMyWTg5pCv8bkcHIUj+ohiSdZWcZHeVrTnKY1zsrlcjfwsBVCmBDaGr3eoqg74cioARMAtaS/6w3TfzmMUCNgBqt6V/Z0+AH8n1W7hOmgxAGz+4+hHOo5U2uld1ECcHdmBVRKblgbr8Hi6yIsvpftfbWAqtcdohidS3kDPEe+O5DfH30HnSbQt0pBE4Reu6fxk1Q3WMlOPJsUB1obcNNrbu/rbb+yxjs4w4DrdvdauFEVE2gd81Kjv+305x+/P4JzYyFJkv8Yopfllq4LulHif7oJzCcjBVrTc7vrixoTXNFilw61h8Em4ke9ISE3DhgYZpxR0Ed2vPlE9i4uYHyhlSrq/aCWkRuqECyibbpC3h/vEBDu3hz+sI79yIwZNOgDFg+f80K6Uz4w4dffdi6SL8rLCrm90PonP00Bd22/apIAc5Jufxvdz+/9/N7P7/383s/v/fzez+9XML9fdme0w5t9f2d0yiiv9AOv+v2FEW0gRYYW/tX/3qVREKLLIFzdln6xm6NsnLqfV3R/9L+5NP34F9UYTgM2GAAA</values>
+        <values>H4sIAAAAAAAA/+1Y227jNhD9FULPliv5El/2KU0QIOh2U2TTvOxuBYocOUQkUiWpJF7DQN/7CQX6cf2SDinJduIkaxeLtgs4ARJzODM8M3OGI/nDIhA8mAZRj0fxJD5i/bjf70VRbzyI06N+Gvd4nwJA0AkkLQA172hegcG1/4CCKrmV6j4HPoOEaitYDh+rKOrzxWIInI3jfhr2Bz0IB5MBC8fpEQvZKO1FacToGAbdLevl8pcqoSIx1WwGxgJPGLUwU3re+j3RgBJOlCY/l9x9TOIuq7QGabutcuuGKZkJDpLtB+uRJfp6SOLJKB4O+oimKCuTRM65BqaKAiSCEErWB/i/rCQoo6EVcl4w0ErZNFfstlEJ8Nd9qjExU1JJWE6NafedcVJSF1FSijz/GBBj521qcV+YMqfzKREyFxLe4D7CtagOXFiarjUzmhvAbQ/HufKFa3cXi4wnVlNpMqWL6QgZMOHZOByPXWrS0ShMe8DCEc2GdBINomiYLpe7gcejCKGMQWnN+ogkqyRzyTKICYEKyeGhNYz+5TCaGiHLBG9dnaLoJ/R/zncJ00MJG8z+P8Vy6C+ZOiuzixKCe7AroErlVpThGiy9SRrhlSqfqjWoWt0+CcmJ5+4pmFtcnGHuyfcYPPmh7UFyXPcgcUa9o5l9Q47PyeVjlu8C21js5lZzn5Nrr985tzscQ7VW97vXKacpYLWwrey+Ro9O+uvPP17A+WXBC5Fgdlvv2xn/p2ellbVKkjVfttswySijHJJdWsZ15ybwF70RqTY6npZlLgD1CdWC1vlsXVyUIMlKlbR+SCnYLWiCQrIPe7Awe/O1vkFDw7QobSjYsxbPX75S+au3IcVvv+9cqLow+xVzW1DWKxzGDaLrw0w+zOTDTD7M5MNMPszkw0z+b2cyuxE5x2ERTD986gQ4N/AF2oIOposnW7u+gfsioeqZgJybZ17J7bx0awsFpsJCUr+i1/K3jfFVs0mum02luQMVR1EnwHsNKwSIx1/tnaCgrmA4uYOp1RUKcMrzC5nPVxo3Qlp0GzjdByM+I4D4KPI/TjsD7YZ1rbFaJk21anHmrvf36J/ZSjeq7EYJhkH5BHHIaJXbk01ZrXBROjbVJn40NdYqrwr5rk5PsHLQPh6hpDIIAkoXrcNfB5e9v1H3ly1IR2mXmSZQfFKg+WpFrdUCGePgLALIoXBPBQW2lZCzpNTqTnhjhFJ0Zzkuulmu7vFMI2ayS31Hdd2F1j1D+akXX7texCB+RDdovOwEZm5OXF+sQ8EcJr9WDkkdWBNC4rPgU5B4Wjhj3z3HeNQdNMCXneYLnwG8Srd4zS73OKX5xhc+rz/rLZfbj6N7N8MO6NpmuGzhPYXbNANXrPK1EfxJJ5w2O+T8dLMNvlYXDA78/x/zPx2+xjA2WRNqw+e6B4Rkwmdui+vn6539OL8DopbzV77SzyNsZ8BT2dtNW/Ku3mhIP/xqpB9/S6RvwvjmWf8S1z/9DSsDswneFwAA</values>
     </sys_hub_action_instance_v2>
     <sys_hub_alias_mapping action="delete_multiple" query="source_id=4a52b60e2f62c7504674caba6fa4e36e"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="CampusDesk - Find Best Knowledge Article">9b983eee2fae8b504674caba6fa4e3f2</action_type>
+        <action_type_parent display_value="CampusDesk - Find Best Knowledge Article">b339206e2f6e4b504674caba6fa4e342</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>9b983eee2fae8b504674caba6fa4e3f2</compiled_snapshot>
+        <display_text/>
+        <flow display_value="CampusDesk Knowledge Suggestion">4d52760e2f62c7504674caba6fa4e3ba</flow>
+        <generation_source/>
+        <order>3</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-26 04:46:55</sys_created_on>
+        <sys_id>b53121f32f3e07104674caba6fa4e33b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="CampusDesk AI">28296cbb2f9607104674caba6fa4e352</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-26 04:46:55</sys_updated_on>
+        <ui_id>5edc813b-342e-494c-8b6c-c7b20b0ca8e4</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1VXU/bMBT9K8jPTZUPt3F5m4qQJm1DGoOXCVU38XVryU2C4wBd1f++6yZpN0CoFJ4Qb/Hx/TrH9yi/10xLdspG6USkiBgrQJGNQj5OeQ4ZjBVwTKKQDVgBS6TIHBzOS7si5A5M46H1emqRYHlS2pOrSvrPWTTMG2uxcMM+Y7OhHKnrysDq+ojUfKGNJJid/r4ZsAosDeTQstP1o6tDGRnI0FDodE/pKUm3qjxSO6uLeXf+1iVe9mBppR8kGjB8cFhIpAkUmBoHbAkFsfK1eoQIy4vC7IGFLhxVYz74odZ/qJ8Iw9BHKiRWOba3u+OsU7GF1Rk4oFGa3DW2C80Xpc6xbvWQqKAxbvov1gZcVE6XRZviIDN9dmmaZfGj1YLtCvSPRkhT0xBYeap+9o6IulyU9z/7Kc91sVWluzRlDmZ3AkfaZY3z86xZo389krlFngiNBpfUcbaEqiJkVtnyTm+70NDL4dzQYahMeU/T1XpeDCH3DIf0BDA8J/xsC1+D1Z7udypDyb7dVaFvG/zqVydUkxjTNAlUIlTAccQDMZYYiEk+jgVmnCeCbQasXtVTA3W9F4peaHbbeJqtbJ1As1Zjn5JbXbkvNNQd7rRowe0e93tH38+EbjabQWfYNHtxvcV+l+tFaZ2XY1vPP/fBzn2SeoSFn6/xOi8fQLb38qVvd3L2H9sXhHiNu+NPd38Ed4tsEvJ4zIMsHkcBF2kUAGaTAHhCsJwoAfH7uXtnWC7ghR0War+nR1n1bSZ9mz0PoNbb81ljHm/J5NOSH8GSPE2SNAZBv9kYAw6SfriRzIIslGmUhJFKYfSOlrz5C21XTjv2CgAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=b53121f32f3e07104674caba6fa4e33b"/>
     <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
         <action_type display_value="Look Up Record">9d09f99587003300663ca1bb36cb0ba3</action_type>
         <action_type_parent display_value="Look Up Record">b93f42810b30030085c083eb37673a63</action_type_parent>
@@ -1062,7 +1086,7 @@
     <sys_hub_alias_mapping action="delete_multiple" query="source_id=c814446e2f6a4b504674caba6fa4e3cc"/>
     <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=4d52760e2f62c7504674caba6fa4e3ba"/>
     <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=4d52760e2f62c7504674caba6fa4e3ba"/>
-    <sys_hub_pill_compound action="delete_multiple" query="attached_to=4d52760e2f62c7504674caba6fa4e3ba^sys_idNOT IN4ed74bda2fa24b504674caba6fa4e328,5914846e2f6a4b504674caba6fa4e35f,9d14846e2f6a4b504674caba6fa4e35f"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=4d52760e2f62c7504674caba6fa4e3ba^sys_idNOT IN4ed74bda2fa24b504674caba6fa4e328,5914846e2f6a4b504674caba6fa4e35f,793121f32f3e07104674caba6fa4e378,9d14846e2f6a4b504674caba6fa4e35f,bd3121f32f3e07104674caba6fa4e378"/>
     <sys_hub_pill_compound action="INSERT_OR_UPDATE">
         <attached_to>4d52760e2f62c7504674caba6fa4e3ba</attached_to>
         <extra_info/>
@@ -1101,6 +1125,23 @@
         <attached_to>4d52760e2f62c7504674caba6fa4e3ba</attached_to>
         <extra_info/>
         <order>0</order>
+        <prescription>{{5edc813b-342e-494c-8b6c-c7b20b0ca8e4.ai_recommendation}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-26 04:46:55</sys_created_on>
+        <sys_id>793121f32f3e07104674caba6fa4e378</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="CampusDesk AI">28296cbb2f9607104674caba6fa4e352</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-26 04:46:55</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>76c39df8-882e-4b77-b2ec-7af5a904005b</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>4d52760e2f62c7504674caba6fa4e3ba</attached_to>
+        <extra_info/>
+        <order>0</order>
         <prescription>{{ec3ca5e8-0287-4132-b6e4-3c6b6212efc9.Record.category}}</prescription>
         <source_ui_id/>
         <sys_created_by>admin</sys_created_by>
@@ -1113,6 +1154,23 @@
         <transform_compositions>[]</transform_compositions>
         <transform_definition_id/>
         <ui_id>3e186330-eb44-4142-af44-dfc25ebf60b3</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>4d52760e2f62c7504674caba6fa4e3ba</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{5edc813b-342e-494c-8b6c-c7b20b0ca8e4.ai_confidence}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-26 04:46:55</sys_created_on>
+        <sys_id>bd3121f32f3e07104674caba6fa4e378</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="CampusDesk AI">28296cbb2f9607104674caba6fa4e352</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-26 04:46:55</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>30b6b37f-d882-4271-8899-520344e66dae</ui_id>
     </sys_hub_pill_compound>
     <sys_hub_flow_variable action="delete_multiple" query="model=4d52760e2f62c7504674caba6fa4e3ba"/>
     <sys_documentation action="INSERT_OR_UPDATE">
@@ -1203,11 +1261,11 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>f252b60e2f62c7504674caba6fa4e3d2</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_overrides/>
         <sys_scope/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-08-09 06:16:09</sys_updated_on>
+        <sys_updated_on>2026-08-26 04:46:56</sys_updated_on>
         <trigger display_value="">7c3922b02f2a4f104674caba6fa4e3ed</trigger>
     </sys_flow_trigger_plan>
     <sys_flow_subflow_plan action="delete_multiple" query="plan_id=77ae8a852f26cf104674caba6fa4e385"/>

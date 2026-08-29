@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="par_dashboard_canvas">
+    <par_dashboard_canvas action="DELETE">
+        <dashboard display_value="CampusDesk - Incident Operations">9840b64c2f47c7104674caba6fa4e398</dashboard>
+        <dashboard_tab display_value="New Tab 2">6840fa4c2f47c7104674caba6fa4e33b</dashboard_tab>
+        <layout>[]</layout>
+        <sys_class_name>par_dashboard_canvas</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-27 05:10:44</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>6c40fa4c2f47c7104674caba6fa4e359</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package display_value="CampusDesk AI" source="x_1971543_campus_0">28296cbb2f9607104674caba6fa4e352</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CampusDesk AI">28296cbb2f9607104674caba6fa4e352</sys_scope>
+        <sys_update_name>par_dashboard_canvas_6c40fa4c2f47c7104674caba6fa4e359</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-27 05:10:44</sys_updated_on>
+    </par_dashboard_canvas>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="CampusDesk AI">28296cbb2f9607104674caba6fa4e352</application>
+        <file_path/>
+        <instance_id>61376ff2ebce879056eafddacad0cd95</instance_id>
+        <instance_name>dev440008</instance_name>
+        <name>par_dashboard_canvas_6c40fa4c2f47c7104674caba6fa4e359</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="par_dashboard_canvas"><par_dashboard_canvas action="INSERT_OR_UPDATE"><dashboard display_value="CampusDesk - Incident Operations">9840b64c2f47c7104674caba6fa4e398</dashboard><dashboard_tab display_value="New Tab 2">6840fa4c2f47c7104674caba6fa4e33b</dashboard_tab><layout>[]</layout><sys_class_name>par_dashboard_canvas</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-08-27 05:10:44</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>6c40fa4c2f47c7104674caba6fa4e359</sys_id><sys_mod_count>0</sys_mod_count><sys_name/><sys_overrides/><sys_package display_value="CampusDesk AI" source="x_1971543_campus_0">28296cbb2f9607104674caba6fa4e352</sys_package><sys_policy/><sys_scope display_value="CampusDesk AI">28296cbb2f9607104674caba6fa4e352</sys_scope><sys_update_name>par_dashboard_canvas_6c40fa4c2f47c7104674caba6fa4e359</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-08-27 05:10:44</sys_updated_on></par_dashboard_canvas></record_update>]]></payload>
+        <payload_hash>-1725667950</payload_hash>
+        <record_name/>
+        <reverted_from/>
+        <source>3b72457f2f5a07104674caba6fa4e39f</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-27 05:10:44</sys_created_on>
+        <sys_id>2040fa4c2f47c7104674caba6fa4e35d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1a041a0ad330000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-27 05:10:44</sys_updated_on>
+        <type>PAR Dashboard Page Canvas</type>
+        <update_guid>ec40fa4c1247c710b0e9fa7664c8945b</update_guid>
+        <update_guid_history>ec40fa4c1247c710b0e9fa7664c8945b:-1725667950</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="">74d7b64c2f87c7104674caba6fa4e300</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-27 05:43:48</sys_created_on>
+        <sys_db_object display_value="" name="par_dashboard_canvas">par_dashboard_canvas</sys_db_object>
+        <sys_id>0fded38c646449409ad5738a24b3e400</sys_id>
+        <sys_metadata>6c40fa4c2f47c7104674caba6fa4e359</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="CampusDesk AI" source="x_1971543_campus_0">28296cbb2f9607104674caba6fa4e352</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="CampusDesk AI">28296cbb2f9607104674caba6fa4e352</sys_scope>
+        <sys_scope_delete display_value="">00f198debf51430880043b00f9ed0910</sys_scope_delete>
+        <sys_update_name>par_dashboard_canvas_6c40fa4c2f47c7104674caba6fa4e359</sys_update_name>
+        <sys_update_version display_value="par_dashboard_canvas_6c40fa4c2f47c7104674caba6fa4e359">2040fa4c2f47c7104674caba6fa4e35d</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-27 05:43:48</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

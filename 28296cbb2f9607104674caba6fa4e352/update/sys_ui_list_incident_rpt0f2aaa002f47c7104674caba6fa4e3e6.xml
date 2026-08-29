@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_list parent="" relationship="" sys_domain="global" table="incident" version="2" view="RPT0f2aaa002f47c7104674caba6fa4e3e6">
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>number</element>
+            <list_id display_value="incident" element="NULL" name="incident" parent="NULL" relationship="NULL" sys_domain="global" view="9b2a6a402f47c7104674caba6fa4e32c">5b2a6a402f47c7104674caba6fa4e32e</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>0</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-08-27 04:44:09</sys_created_on>
+            <sys_id>972a6a402f47c7104674caba6fa4e32f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-08-27 04:44:09</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>opened_at</element>
+            <list_id display_value="incident" element="NULL" name="incident" parent="NULL" relationship="NULL" sys_domain="global" view="9b2a6a402f47c7104674caba6fa4e32c">5b2a6a402f47c7104674caba6fa4e32e</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>1</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-08-27 04:44:09</sys_created_on>
+            <sys_id>1f2a6a402f47c7104674caba6fa4e32f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-08-27 04:44:09</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>short_description</element>
+            <list_id display_value="incident" element="NULL" name="incident" parent="NULL" relationship="NULL" sys_domain="global" view="9b2a6a402f47c7104674caba6fa4e32c">5b2a6a402f47c7104674caba6fa4e32e</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>2</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-08-27 04:44:09</sys_created_on>
+            <sys_id>932a6a402f47c7104674caba6fa4e330</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-08-27 04:44:09</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>caller_id</element>
+            <list_id display_value="incident" element="NULL" name="incident" parent="NULL" relationship="NULL" sys_domain="global" view="9b2a6a402f47c7104674caba6fa4e32c">5b2a6a402f47c7104674caba6fa4e32e</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>3</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-08-27 04:44:09</sys_created_on>
+            <sys_id>1b2a6a402f47c7104674caba6fa4e330</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-08-27 04:44:09</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>priority</element>
+            <list_id display_value="incident" element="NULL" name="incident" parent="NULL" relationship="NULL" sys_domain="global" view="9b2a6a402f47c7104674caba6fa4e32c">5b2a6a402f47c7104674caba6fa4e32e</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>4</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-08-27 04:44:09</sys_created_on>
+            <sys_id>9f2a6a402f47c7104674caba6fa4e330</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-08-27 04:44:09</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>state</element>
+            <list_id display_value="incident" element="NULL" name="incident" parent="NULL" relationship="NULL" sys_domain="global" view="9b2a6a402f47c7104674caba6fa4e32c">5b2a6a402f47c7104674caba6fa4e32e</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>5</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-08-27 04:44:09</sys_created_on>
+            <sys_id>172a6a402f47c7104674caba6fa4e331</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-08-27 04:44:09</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>category</element>
+            <list_id display_value="incident" element="NULL" name="incident" parent="NULL" relationship="NULL" sys_domain="global" view="9b2a6a402f47c7104674caba6fa4e32c">5b2a6a402f47c7104674caba6fa4e32e</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>6</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-08-27 04:44:09</sys_created_on>
+            <sys_id>972a6a402f47c7104674caba6fa4e363</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-08-27 04:44:09</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>assignment_group</element>
+            <list_id display_value="incident" element="NULL" name="incident" parent="NULL" relationship="NULL" sys_domain="global" view="9b2a6a402f47c7104674caba6fa4e32c">5b2a6a402f47c7104674caba6fa4e32e</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>7</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-08-27 04:44:09</sys_created_on>
+            <sys_id>1f2a6a402f47c7104674caba6fa4e363</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-08-27 04:44:09</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>assigned_to</element>
+            <list_id display_value="incident" element="NULL" name="incident" parent="NULL" relationship="NULL" sys_domain="global" view="9b2a6a402f47c7104674caba6fa4e32c">5b2a6a402f47c7104674caba6fa4e32e</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>8</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-08-27 04:44:09</sys_created_on>
+            <sys_id>932a6a402f47c7104674caba6fa4e364</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-08-27 04:44:09</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>sys_updated_on</element>
+            <list_id display_value="incident" element="NULL" name="incident" parent="NULL" relationship="NULL" sys_domain="global" view="9b2a6a402f47c7104674caba6fa4e32c">5b2a6a402f47c7104674caba6fa4e32e</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>9</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-08-27 04:44:09</sys_created_on>
+            <sys_id>1b2a6a402f47c7104674caba6fa4e364</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-08-27 04:44:09</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>sys_updated_by</element>
+            <list_id display_value="incident" element="NULL" name="incident" parent="NULL" relationship="NULL" sys_domain="global" view="9b2a6a402f47c7104674caba6fa4e32c">5b2a6a402f47c7104674caba6fa4e32e</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>10</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-08-27 04:44:09</sys_created_on>
+            <sys_id>9f2a6a402f47c7104674caba6fa4e364</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-08-27 04:44:09</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>x_1971543_campus_0_ai_recommendation</element>
+            <list_id display_value="incident" element="NULL" name="incident" parent="NULL" relationship="NULL" sys_domain="global" view="9b2a6a402f47c7104674caba6fa4e32c">5b2a6a402f47c7104674caba6fa4e32e</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>11</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-08-27 04:44:09</sys_created_on>
+            <sys_id>172a6a402f47c7104674caba6fa4e365</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-08-27 04:44:09</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>active</element>
+            <list_id display_value="incident" element="NULL" name="incident" parent="NULL" relationship="NULL" sys_domain="global" view="9b2a6a402f47c7104674caba6fa4e32c">5b2a6a402f47c7104674caba6fa4e32e</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>12</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-08-27 04:44:09</sys_created_on>
+            <sys_id>9b2a6a402f47c7104674caba6fa4e365</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-08-27 04:44:09</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element/>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <name>incident</name>
+            <parent/>
+            <position/>
+            <relationship/>
+            <sum>false</sum>
+            <sys_class_name>sys_ui_list</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-08-27 04:44:09</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>5b2a6a402f47c7104674caba6fa4e32e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>incident</sys_name>
+            <sys_package display_value="CampusDesk AI" source="x_1971543_campus_0">28296cbb2f9607104674caba6fa4e352</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="CampusDesk AI">28296cbb2f9607104674caba6fa4e352</sys_scope>
+            <sys_update_name>sys_ui_list_incident_RPT0f2aaa002f47c7104674caba6fa4e3e6</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-08-27 04:44:09</sys_updated_on>
+            <sys_user/>
+            <view display_value="Rpt0f2aaa002f47c7104674caba6fa4e3e6" name="RPT0f2aaa002f47c7104674caba6fa4e3e6">9b2a6a402f47c7104674caba6fa4e32c</view>
+            <view_name/>
+        </sys_ui_list>
+    </sys_ui_list>
+</record_update>

@@ -2,7 +2,7 @@
     <sys_app action="INSERT_OR_UPDATE">
         <active>true</active>
         <can_edit_in_studio>true</can_edit_in_studio>
-        <enforce_license>none</enforce_license>
+        <enforce_license>log</enforce_license>
         <guided_setup_guid/>
         <hide_on_ui>false</hide_on_ui>
         <ide_created>SNS</ide_created>
@@ -33,9 +33,9 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-08-01 04:10:30</sys_created_on>
         <sys_id>28296cbb2f9607104674caba6fa4e352</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-08-01 04:10:38</sys_updated_on>
+        <sys_updated_on>2026-08-17 04:14:52</sys_updated_on>
         <template/>
         <trackable>true</trackable>
         <uninstall_blocked>false</uninstall_blocked>

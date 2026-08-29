@@ -1,8 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element attributes="enforce_dot_walk_cross_scope_access=true" db_object_id="0b6ddd7c2fae0f104674caba6fa4e3ba" label="AI Recommendation" max_length="40" name="x_1971543_campus_0_ai_recommendation" type="collection">
+        <element label="AI Priority Reason" max_length="4000" name="ai_priority_reason" type="string"/>
         <element label="Active" max_length="40" name="active" type="boolean"/>
-        <element label="Category" max_length="32" name="category" reference="x_1971543_campus_0_incident_category" type="reference"/>
+        <element label="AI Resolution Guidance" max_length="65536" name="ai_resolution_guidance" type="html"/>
+        <element choice="3" label="AI Suggested Priority" max_length="255" name="ai_suggested_priority" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="5 - Planning" sequence="4" value="5 - Planning"/>
+                <element inactive_on_update="false" label="3 - Moderate" sequence="2" value="3 - Moderate"/>
+                <element inactive_on_update="false" label="2 - High" sequence="1" value="2 - High"/>
+                <element inactive_on_update="false" label="1 - Critical" sequence="0" value="1 - Critical"/>
+                <element inactive_on_update="false" label="4 - Low" sequence="3" value="4 - Low"/>
+            </choice>
+        </element>
+        <element choice="1" label="Category" max_length="32" name="category" reference="x_1971543_campus_0_incident_category" type="reference">
+            <choice/>
+        </element>
+        <element choice="3" label="AI Suggested Urgency" max_length="255" name="ai_suggested_urgency" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="2 - Medium" sequence="1" value="2 - Medium"/>
+                <element inactive_on_update="false" label="1 - High" sequence="0" value="1 - High"/>
+                <element inactive_on_update="false" label="3 - Low" sequence="2" value="3 - Low"/>
+            </choice>
+        </element>
+        <element label="AI Confidence" max_length="40" name="ai_confidence" type="string"/>
         <element label="Recommendation" max_length="8000" name="recommendation" type="html"/>
+        <element choice="3" label="AI Suggested Impact" max_length="255" name="ai_suggested_impact" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="2 - Medium" sequence="1" value="2 - Medium"/>
+                <element inactive_on_update="false" label="3 - Low" sequence="2" value="3 - Low"/>
+                <element inactive_on_update="false" label="1 - High" sequence="0" value="1 - High"/>
+            </choice>
+        </element>
         <index name="index">
             <element name="category"/>
         </index>

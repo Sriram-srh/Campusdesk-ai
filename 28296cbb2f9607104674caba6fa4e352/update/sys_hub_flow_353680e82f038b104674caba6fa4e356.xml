@@ -1,0 +1,769 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <allow_high_security_roles>false</allow_high_security_roles>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=1041000,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>29000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description>Automates fulfillment of the CampusIT Wi-Fi Support catalog item.
+Creates and coordinates catalog fulfillment tasks through Workflow Studio.</description>
+        <display_name_after_preview/>
+        <flow_priority>MEDIUM</flow_priority>
+        <generation_source/>
+        <internal_name>campusit__wifi_support_fulfillment</internal_name>
+        <label_cache>[{"name":"Service Catalog_1.request_item","label":"Trigger - Service Catalog➛Requested Item Record","reference":"sc_req_item","reference_display":"Requested Item","type":"reference","base_type":"reference","usedInstances":{"4db4f88e-39a7-4a42-914d-a97ba63127bf":["ah_requested_item"],"3eaa4c45-4ffb-4e3d-a7eb-d44807b72cb0":["ah_requested_item"]},"attributes":{"default_search_field":"number"}}]</label_cache>
+        <master_snapshot>8c3a48e02f438b104674caba6fa4e3fb</master_snapshot>
+        <master_snapshot_digest/>
+        <name>CampusIT - Wi-Fi Support Fulfillment</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id>e83a88e02f438b104674caba6fa4e34c</remote_trigger_id>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>published</status>
+        <substatus/>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-28 06:04:46</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>353680e82f038b104674caba6fa4e356</sys_id>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_name>CampusIT - Wi-Fi Support Fulfillment</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="CampusDesk AI" source="x_1971543_campus_0">28296cbb2f9607104674caba6fa4e352</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CampusDesk AI">28296cbb2f9607104674caba6fa4e352</sys_scope>
+        <sys_update_name>sys_hub_flow_353680e82f038b104674caba6fa4e356</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-28 06:22:09</sys_updated_on>
+        <type>flow</type>
+        <updation_source/>
+        <version>2</version>
+        <version_record>383a88e02f438b104674caba6fa4e3db</version_record>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=353680e82f038b104674caba6fa4e356"/>
+    <sys_variable_value action="delete_multiple" query="document_key=353680e82f038b104674caba6fa4e356"/>
+    <sys_flow_catalog_trigger action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <catalog_item/>
+        <name/>
+        <published_version/>
+        <run_flow_in>background</run_flow_in>
+        <sys_class_name>sys_flow_catalog_trigger</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-28 06:22:09</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>e83a88e02f438b104674caba6fa4e34c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-28 06:22:09</sys_updated_on>
+        <trigger_definition/>
+    </sys_flow_catalog_trigger>
+    <sys_trigger_runner_mapping action="delete_multiple" query="identifier=353680e82f038b104674caba6fa4e356"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=353680e82f038b104674caba6fa4e356"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=353680e82f038b104674caba6fa4e356^sys_idNOT IN793680e82f038b104674caba6fa4e357"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>353680e82f038b104674caba6fa4e356</id>
+        <name>CampusIT - Wi-Fi Support Fulfillment</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-28 06:04:46</sys_created_on>
+        <sys_id>793680e82f038b104674caba6fa4e357</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-28 06:04:46</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=793680e82f038b104674caba6fa4e357"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=353680e82f038b104674caba6fa4e356^sys_idNOT IN7f8744ac2f038b104674caba6fa4e3f7,8c9784ac2f038b104674caba6fa4e34f"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>default_search_field=number,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>request_item</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>Request Item</label>
+        <mandatory>true</mandatory>
+        <max_length>32</max_length>
+        <model display_value="CampusIT - Wi-Fi Support Fulfillment">353680e82f038b104674caba6fa4e356</model>
+        <model_id>353680e82f038b104674caba6fa4e356</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_353680e82f038b104674caba6fa4e356</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_only_option/>
+        <read_roles/>
+        <reference display_value="" name="sc_req_item">sc_req_item</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-28 06:10:38</sys_created_on>
+        <sys_id>7f8744ac2f038b104674caba6fa4e3f7</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="CampusDesk AI">28296cbb2f9607104674caba6fa4e352</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-28 06:22:07</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=7f8744ac2f038b104674caba6fa4e3f7"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name,uiTypeLabel=Table Name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value>sc_req_item</default_value>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="CampusIT - Wi-Fi Support Fulfillment">353680e82f038b104674caba6fa4e356</model>
+        <model_id>353680e82f038b104674caba6fa4e356</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_353680e82f038b104674caba6fa4e356</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_only_option/>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-28 06:10:39</sys_created_on>
+        <sys_id>8c9784ac2f038b104674caba6fa4e34f</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="CampusDesk AI">28296cbb2f9607104674caba6fa4e352</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-28 06:22:07</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=8c9784ac2f038b104674caba6fa4e34f"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=353680e82f038b104674caba6fa4e356"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=353680e82f038b104674caba6fa4e356"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=353680e82f038b104674caba6fa4e356^sys_idNOT IN2448c8ec2f038b104674caba6fa4e310"/>
+    <sys_hub_trigger_instance_v2 action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="CampusIT - Wi-Fi Support Fulfillment">353680e82f038b104674caba6fa4e356</flow>
+        <generation_source/>
+        <name>Service Catalog</name>
+        <published_version/>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-28 06:13:42</sys_created_on>
+        <sys_id>2448c8ec2f038b104674caba6fa4e310</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-28 06:22:07</sys_updated_on>
+        <trigger_definition display_value="Service Catalog">c43a1011c36813002841b63b12d3ae15</trigger_definition>
+        <trigger_inputs>H4sIAAAAAAAA/61TXWvbMBT9K0FPG3hgJ2uz+G0UCoFuhabrSxlGka4SMVlyJdmtF/rfd29sJ2nnjUH3Jt2vc3TP0f2OGb4Gw3J2U9vJpXGPk6VlCdM2grfc3LYVYFJsnRaA8e5wpUNk+f2OqRU81GAxlX/IEqbuuKmpfs3Fj413tZXYo65OIBRBaDs5VkzeSVC8NvE91S5LvqEJdF6BARFBslxxEwAj38Lp7YsOQdtNH3hO/sxHOQ9/5/Oy4g0svies5Fby6Hx7LPKuvIWyMjzCIei8BM/yLE0T1hDRVRuWskO1vCR8X9uCGBaaRGn61+BR6oDD2rtjRGy1kR4s6oIUKu5xQqT5u1epiJIWg+oXg7CagM/TRSrm08V8Pk1nszRVZ2sllBDzT1l6np0tsG7cLqN04yvvnL4XniJYebLG33fmgctra46BLZqye2vJn4L+icM/plSnwHeaU+5wLfodDeshFmHvWvPvfmzGDN0/JCXHjc164aVmzILDKsgtPdrF/yeYvZnglAh2q7uuonZoITYjafnaUE9oQye4B4EtRfR6s8FGbHKmLu3XMV/07E+8WwdUCypyBEk8fJrV1j3eDHJearun1CeNE9wcbjwi8rqOtL8d47Lh2EGOjh4xnveuKB5q6tj/ngGr2L+ICoLwuoqfRdQNHL7yL2htBDgfBQAA</trigger_inputs>
+        <trigger_outputs/>
+        <trigger_type>service_catalog</trigger_type>
+        <updation_source/>
+    </sys_hub_trigger_instance_v2>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=353680e82f038b104674caba6fa4e356^sys_idNOT IN1bd700ec2f038b104674caba6fa4e365,2e494c602f438b104674caba6fa4e34a"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Create Catalog Task">af51fd0e73141300612c273ffff6a785</action_type>
+        <action_type_parent display_value="Create Catalog Task">f597c41073081300612c273ffff6a767</action_type_parent>
+        <attributes>timeFromCreateToActivate=5000</attributes>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="CampusIT - Wi-Fi Support Fulfillment">353680e82f038b104674caba6fa4e356</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-28 06:11:58</sys_created_on>
+        <sys_id>1bd700ec2f038b104674caba6fa4e365</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="CampusDesk AI">28296cbb2f9607104674caba6fa4e352</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-28 06:22:07</sys_updated_on>
+        <ui_id>4db4f88e-39a7-4a42-914d-a97ba63127bf</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1Y32/bNhD+VwQ9bYDg6UdiB3lrFxjYw1pgLrKHuhBo6WQTpUSVlOxmRv73HSlSlmJbMRynWND5zUce777j95E8fd66NHVvXZJdB1nqwyQKroLI98dBmISTKMPfmExublzPLUgOauYqrsiCQaz/e+6asFrZZYJ2+RUtKZUlIw/3ewPJirJUQOHefv7iuSURuEIFwr3dPhmqHkqIGVkAQ/9PKprzoYl2arIHnY8gUNHQ3LNxkarEfM+F7xUUKWDcjDAJnpuTIiUVFw+tRQBJPxZsZ1jRosIVXTX5u6T/4PI3vpqXAWJMoBlr/8amYo05WXGawMeyorxoLDozM8hZnRcfGiCq1pCRmlX7tTYDd8f2opYYFkoFTeVqEs9mK775y+Y1pYWughlkPCGs/UeqStBFXYFU+wcMclwozklZ0mIZl4KvqXbGlPPRkuGfUcb4BoNKuixGJFH4RlhJMpqi/U6b74mgCuyfuAw6YxSmfHTaaJZqm0StiSDRKmhpa6Ozch91VeNvtUq0qY+BGDfFxAmN2zuMvwaD5tEzMphEQ8wifo9EAr7VICtIY1pB3pHCdjsDscZNdH5HeIwv42BkJuupj4/7KjlbHu1uWXWcgGHnaxA4fzQIBsAZlYhOOCOSYFgkasNO00gU9jWC245p2AQOyWUPwEvE83ZUwbGQcSp4WRpwWhQvJX80GSTOuMcPueKiUmnrBVW1d/x/JyVI6XDhzBJegvPp4L1wZNZ5Kphh2YullcAJSFpHhcO56+EYRmmEIG1Eo4LwYldFEPr+D7kt3grhX3yqD9Mh6W15RoGlssNmIlVKGtZS8Lqc174fpdu55fPcvZ27U+XlmGNfzl1v3vjrwckVSYMsi5JxEIThJPWDNLzOgCQhycZ+lOnp8kHGND1x/oEL5L+a5pmPPsgx6QqcBp538kbaBaZ2Gw/srH3wmRjx2sQwSo4upuTx9Z6Sdy+wQ4I274XdWXhJcTcX8RvTdv+x/ozQs0F+LMIeHTaEVh2ZB/uSMk/NMxmMzr9N9avUOzk76/x3k9tesoa5C84ZkGJH2auLUfbqh9w8prKHmxQz+FNcTc9wotN3t6dVYnqKJ03Ha7YUJ2S5d3Dbo6zfWRxDcby7uL4YtQ+0F5jFUHvxBMPP8NZCuq5Uxw1EJKtLdRaTxSB/Ot9mLC3WJiv5OgyfsVqunPd18hWq9nHxfJLW3fLivpPlAADbMaigCxvT0Hv8f9uwVR9zMjwVsAy7usUFgC6K+bTjvRrhaZGwOoU4R4xUoHubA1SdL04Kc2d1EPFGNEu0UySvBVballKdLDHXNUY0G9eKBIc22S7KL7+eLbAv/wKnYtqSwBUAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=1bd700ec2f038b104674caba6fa4e365"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Create Catalog Task">af51fd0e73141300612c273ffff6a785</action_type>
+        <action_type_parent display_value="Create Catalog Task">f597c41073081300612c273ffff6a767</action_type_parent>
+        <attributes>timeFromCreateToActivate=5000</attributes>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="CampusIT - Wi-Fi Support Fulfillment">353680e82f038b104674caba6fa4e356</flow>
+        <generation_source/>
+        <order>2</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-28 06:18:12</sys_created_on>
+        <sys_id>2e494c602f438b104674caba6fa4e34a</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="CampusDesk AI">28296cbb2f9607104674caba6fa4e352</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-28 06:22:07</sys_updated_on>
+        <ui_id>3eaa4c45-4ffb-4e3d-a7eb-d44807b72cb0</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1YUW/bNhD+K4KeNkDwJNuxjbxtCwLsYe0wF9lDXQi0dLKIUqJKUnYzI/+9R4mUpchRDMcpFnR+85HHu+/4fSRPH/cujd1rlyRXQRL7MJ8E02Di+7NgHI3nkwR/MzJfLFzPzUkGemYaKrJmEFb/PXdLWKntMkK7/IyWmMqCkfu73kCUUhYLyN3rj588tyACV1Ag3Ov9oyF1X0DIyBoY+n/Q0Zx3dbRTkz3q/AQCHQ3NHRsXsU7M91z4qiCPAeMmhEnw3IzkMVFc3DcWASR+n7ODIaW5whVdPfmrpP/i8gtfz0sAMUZQjzV/Q1Ox2hylnEbwvlCU57WlyswMclZm+bsaiK41JKRkql9rM3Dz1F6UEsNCoaHpXE3iyTLlu79tXrc0r6pgBhmPCGv+EaUEXZcKpN4/YJDhQmFGioLmm7AQfEsrZ0w5G20Y/hkljO8wqKSbfEQijW+ElSSjW7TfVOY7IqgG+ycug84YhWmfKm00S71NoqyIINEqaGFrU2XlPlRVDb+UOtG6PgZiWBcTJ9Ruv2L8LRg0D56RwXwyxCzid0gk4EsJUkEcUgVZSwr7/RLEFjfR+R3hMb4Jg5GZXE19eOir5Gx5NLtl1XEChoOvQeD8USMYAGdUIlrhjEiCYZHoDTtNI5NxVyO47ZiGTeCYXHoAXiKet6MKjoUMY8GLwoCrRPFS8k/mg8SZdfghUy6UTrtaUFf7wP+/aphOwyFH1nro035o6nl6WOIG5BsrhhMwNY4akXPTQTSM10hC2ohGD+OLXRrB2Pe/y73xVqj/4vN9mA5RZ8sTCiyWLV4TqVOqYG0EL4tV6fuTeL+ypF651yt3yRO1IwJWrreqPSvzgkzjGONGsyAYj+cLP0D2keka3zLTOSHzarq8lyGNT5x/5BL57yV45pMPMkxXgVMD807ePLvArd26I7tpn3smRrg1MYx6JxdT7+yqp97D++uYiM1rwflgn8uXFHR9Db8xPXef6s+IOxnkx3rcocOOUNWSdtAXk3lonslgdP7ltnqTeidnZ53/qXPrJWuYu+acAckPlJ1ejLLT73LbmMoeb1HM4A9xHT3DiVbX3ZxWkekoHrUcr9lQnJBl7+C2R1m3r3gKxdO9xdXFqH2kucAshpqLRxh+hPcV0jXV/TYQEaWX6ivm60H+tL7MWFpsTVbydRi+ZKVMnd/K6DOo5nHxfJLW3fLirpXlAADbJeigaxvT0Hv2f6uw159yEjwVsAyHuoU5QFUU82HHezXC0zxiZQxhhhipQPcmB1Ct700ac2t1EOFO1Es0UyQvBVballKfLCGvaoxodq4VCQ7tkkOUn34+W2CfvgFMj/RwvhUAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=2e494c602f438b104674caba6fa4e34a"/>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=353680e82f038b104674caba6fa4e356"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=353680e82f038b104674caba6fa4e356"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=353680e82f038b104674caba6fa4e356"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=353680e82f038b104674caba6fa4e356"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>request_item</element>
+        <help/>
+        <hint/>
+        <label>Request Item</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_353680e82f038b104674caba6fa4e356</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-28 06:10:39</sys_created_on>
+        <sys_id>489784ac2f038b104674caba6fa4e34a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="CampusDesk AI" source="x_1971543_campus_0">28296cbb2f9607104674caba6fa4e352</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CampusDesk AI">28296cbb2f9607104674caba6fa4e352</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-28 06:10:39</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_353680e82f038b104674caba6fa4e356</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-28 06:10:39</sys_created_on>
+        <sys_id>4c9784ac2f038b104674caba6fa4e376</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="CampusDesk AI" source="x_1971543_campus_0">28296cbb2f9607104674caba6fa4e352</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CampusDesk AI">28296cbb2f9607104674caba6fa4e352</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-28 06:10:39</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_353680e82f038b104674caba6fa4e356"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_353680e82f038b104674caba6fa4e356"/>
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <allow_high_security_roles>false</allow_high_security_roles>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=5000,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>29000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description>Automates fulfillment of the CampusIT Wi-Fi Support catalog item.
+Creates and coordinates catalog fulfillment tasks through Workflow Studio.</description>
+        <flow_priority>MEDIUM</flow_priority>
+        <internal_name>campusit__wifi_support_fulfillment</internal_name>
+        <label_cache>[{"name":"Service Catalog_1.request_item","label":"Trigger - Service Catalog➛Requested Item Record","reference":"sc_req_item","reference_display":"Requested Item","type":"reference","base_type":"reference","usedInstances":{"4db4f88e-39a7-4a42-914d-a97ba63127bf":["ah_requested_item"],"3eaa4c45-4ffb-4e3d-a7eb-d44807b72cb0":["ah_requested_item"]},"attributes":{"default_search_field":"number"}}]</label_cache>
+        <master>true</master>
+        <name>CampusIT - Wi-Fi Support Fulfillment</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="CampusIT - Wi-Fi Support Fulfillment">353680e82f038b104674caba6fa4e356</parent_flow>
+        <remote_trigger_id/>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-28 06:22:08</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>8c3a48e02f438b104674caba6fa4e3fb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="CampusDesk AI">28296cbb2f9607104674caba6fa4e352</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-28 06:22:08</sys_updated_on>
+        <type>flow</type>
+        <version>2</version>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=8c3a48e02f438b104674caba6fa4e3fb"/>
+    <sys_variable_value action="delete_multiple" query="document_key=8c3a48e02f438b104674caba6fa4e3fb"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=8c3a48e02f438b104674caba6fa4e3fb"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=8c3a48e02f438b104674caba6fa4e3fb^sys_idNOT INc43a48e02f438b104674caba6fa4e3fd"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>8c3a48e02f438b104674caba6fa4e3fb</id>
+        <name>CampusIT - Wi-Fi Support Fulfillment</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-28 06:22:08</sys_created_on>
+        <sys_id>c43a48e02f438b104674caba6fa4e3fd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-28 06:22:08</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=c43a48e02f438b104674caba6fa4e3fd"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=8c3a48e02f438b104674caba6fa4e3fb^sys_idNOT IN903a88e02f438b104674caba6fa4e316,cc3a48e02f438b104674caba6fa4e3fe"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>default_search_field=number,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>request_item</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>Request Item</label>
+        <mandatory>true</mandatory>
+        <max_length>32</max_length>
+        <model display_value="CampusIT - Wi-Fi Support Fulfillment">8c3a48e02f438b104674caba6fa4e3fb</model>
+        <model_id>8c3a48e02f438b104674caba6fa4e3fb</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_8c3a48e02f438b104674caba6fa4e3fb</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_only_option/>
+        <read_roles/>
+        <reference display_value="" name="sc_req_item">sc_req_item</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-28 06:22:08</sys_created_on>
+        <sys_id>903a88e02f438b104674caba6fa4e316</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="CampusDesk AI">28296cbb2f9607104674caba6fa4e352</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-28 06:22:08</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=903a88e02f438b104674caba6fa4e316"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name,uiTypeLabel=Table Name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value>sc_req_item</default_value>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="CampusIT - Wi-Fi Support Fulfillment">8c3a48e02f438b104674caba6fa4e3fb</model>
+        <model_id>8c3a48e02f438b104674caba6fa4e3fb</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_8c3a48e02f438b104674caba6fa4e3fb</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_only_option/>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-28 06:22:08</sys_created_on>
+        <sys_id>cc3a48e02f438b104674caba6fa4e3fe</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="CampusDesk AI">28296cbb2f9607104674caba6fa4e352</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-28 06:22:08</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=cc3a48e02f438b104674caba6fa4e3fe"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=8c3a48e02f438b104674caba6fa4e3fb"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=8c3a48e02f438b104674caba6fa4e3fb"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=8c3a48e02f438b104674caba6fa4e3fb^sys_idNOT INd03a88e02f438b104674caba6fa4e32c"/>
+    <sys_hub_trigger_instance_v2 action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="CampusIT - Wi-Fi Support Fulfillment">8c3a48e02f438b104674caba6fa4e3fb</flow>
+        <generation_source/>
+        <name>Service Catalog</name>
+        <published_version/>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-28 06:22:08</sys_created_on>
+        <sys_id>d03a88e02f438b104674caba6fa4e32c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-28 06:22:08</sys_updated_on>
+        <trigger_definition display_value="Service Catalog">c43a1011c36813002841b63b12d3ae15</trigger_definition>
+        <trigger_inputs>H4sIAAAAAAAA/61TXWvbMBT9K0FPG3hgJ2uz+G0UCoFuhabrSxlGka4SMVlyJdmtF/rfd29sJ2nnjUH3Jt2vc3TP0f2OGb4Gw3J2U9vJpXGPk6VlCdM2grfc3LYVYFJsnRaA8e5wpUNk+f2OqRU81GAxlX/IEqbuuKmpfs3Fj413tZXYo65OIBRBaDs5VkzeSVC8NvE91S5LvqEJdF6BARFBslxxEwAj38Lp7YsOQdtNH3hO/sxHOQ9/5/Oy4g0svies5Fby6Hx7LPKuvIWyMjzCIei8BM/yLE0T1hDRVRuWskO1vCR8X9uCGBaaRGn61+BR6oDD2rtjRGy1kR4s6oIUKu5xQqT5u1epiJIWg+oXg7CagM/TRSrm08V8Pk1nszRVZ2sllBDzT1l6np0tsG7cLqN04yvvnL4XniJYebLG33fmgctra46BLZqye2vJn4L+icM/plSnwHeaU+5wLfodDeshFmHvWvPvfmzGDN0/JCXHjc164aVmzILDKsgtPdrF/yeYvZnglAh2q7uuonZoITYjafnaUE9oQye4B4EtRfR6s8FGbHKmLu3XMV/07E+8WwdUCypyBEk8fJrV1j3eDHJearun1CeNE9wcbjwi8rqOtL8d47Lh2EGOjh4xnveuKB5q6tj/ngGr2L+ICoLwuoqfRdQNHL7yL2htBDgfBQAA</trigger_inputs>
+        <trigger_outputs/>
+        <trigger_type>service_catalog</trigger_type>
+        <updation_source/>
+    </sys_hub_trigger_instance_v2>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=8c3a48e02f438b104674caba6fa4e3fb^sys_idNOT IN5c3a88e02f438b104674caba6fa4e32a,dc3a88e02f438b104674caba6fa4e329"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Create Catalog Task">af51fd0e73141300612c273ffff6a785</action_type>
+        <action_type_parent display_value="Create Catalog Task">f597c41073081300612c273ffff6a767</action_type_parent>
+        <attributes>timeFromCreateToActivate=5000</attributes>
+        <comment/>
+        <compiled_snapshot>af51fd0e73141300612c273ffff6a785</compiled_snapshot>
+        <display_text/>
+        <flow display_value="CampusIT - Wi-Fi Support Fulfillment">8c3a48e02f438b104674caba6fa4e3fb</flow>
+        <generation_source/>
+        <order>2</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-28 06:22:08</sys_created_on>
+        <sys_id>5c3a88e02f438b104674caba6fa4e32a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="CampusDesk AI">28296cbb2f9607104674caba6fa4e352</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-28 06:22:08</sys_updated_on>
+        <ui_id>3eaa4c45-4ffb-4e3d-a7eb-d44807b72cb0</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1YbY/aOBD+K8ifrhLiEmAJ2m93u0Kq1JfTUu19KFXkJA5YdeLUdqB7aP/7jWMbAmGz0GNXVFe+MTO2n3l5xp58XiOaoGuE0ys/TTwSDPyhP/C8kd+P+8Eghd8IB+Mx6qIcZ0RbLkKFI0bC6n8XLTErtVzGIJdfQZJQWTD8cN9QxAvKEkFydP35SxcVWMAOigh0vd5THQuJ4YgwMP2kAXU+GEBP4FQPhRY3ZO8O7cFFonF5XUS+K5InBAClmEnSRRnOE6y4eNhIBMHJx5yBQIkS/i9ormBDpG2/S/oPHDv2tFlKwMOYGN3mb2jjZcTpLVZ4ChvFqhTWNF5wGhNpYpOQFJdM3dRlxuBjoSjPzZLKTbuaszLLP5iooM0GzfRYxe1T6SslYCWFDod20HqfThd8deecmdC8ipxVMh5jtvmHlRI0KpWGvUaEkQw2CjNcFDSfh4XgS1otBshZb87gTy9lfAWHSjrPezjW/vUg+rg3AfltJb7Hgmpn38M2sBhOYXpNBRvEUucc0gIKKkEqaOFiU6FCj10kH+QNw1JuYwTJCb+VGrqJmHU6NOHVS6qN/gBES2L9e+xaLgWDtsLF3k6NCvKtJFKRJKSKZDU+rddTIpaQ1s4NOMz4PPR71rgyfXxsUu1kjh0B1XHszgHtvDVAW3ywXNtW/C7V7mpyyzS/nWmGWFuiWYsDTBv0d5kGdQDwHLBDpGs49uoUPAe30inBIl5MKGE6sXmZRYYNr8I5DlkJE8GLwjpdUe781BoErfU62ilLueBCaUeqDXVetuz6yzje2ZRuRxq2NUnVZnoa245A79g21dg7tzvY2z2znJOQ7ny+R7ipE1q29U+8156mm9/3vMu9236WS+sF7qD2Uot3yinVTUPW2AE4AGTl6FzwspiVnjdI1jNHjRm6nqEpT9UKCzJD3ZlZWYnHeJgkcG488v1+Pxh7PlQ2HkbwnBsGGAeVOXgb0uRI+wMX3eUBPPHefT49rhNMXHIO5Mu9aUkGTisSmvztvWutsnNvlbYHDM7WA0ZXjR6wfTQeagX2QdP5ZEwuoC2Y98VP3xVoXpRK9nZHn2c6RdpailF/p/JWmKpan/CbzLRv7dPocAQGR4e/DYIGJEuFiHNGcL7PAQD1+6R67m/qf3i2+h9e7gVos3F4srPK/+kN+UzN1b54bNprbAexvUntDHPYEWDYfj93XXR3HHsK7Okj2dXZCHJgJgN0bTPZnm8XcEP894nMfFl6nXkMBoRVKKvzX24YC6LWoq19i3O1uLQ45XnZcwQQxx5XWPc1JC0g3VDFSrmIyvgrUXu8mWpN50+nstQZ/ZqvfvD2oDJMoX1B7LZ5CHNCqkjaL3bdl6MNLwUE1QVAN6iQV5EBDCvk6ACqVbrF99sb/XExj1mZkDCD8FABJ2/URNW+Qepw1YAREa6EOf3sNP3yL7+7zHfcFwAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=5c3a88e02f438b104674caba6fa4e32a"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Create Catalog Task">af51fd0e73141300612c273ffff6a785</action_type>
+        <action_type_parent display_value="Create Catalog Task">f597c41073081300612c273ffff6a767</action_type_parent>
+        <attributes>timeFromCreateToActivate=5000</attributes>
+        <comment/>
+        <compiled_snapshot>af51fd0e73141300612c273ffff6a785</compiled_snapshot>
+        <display_text/>
+        <flow display_value="CampusIT - Wi-Fi Support Fulfillment">8c3a48e02f438b104674caba6fa4e3fb</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-28 06:22:08</sys_created_on>
+        <sys_id>dc3a88e02f438b104674caba6fa4e329</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="CampusDesk AI">28296cbb2f9607104674caba6fa4e352</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-28 06:22:08</sys_updated_on>
+        <ui_id>4db4f88e-39a7-4a42-914d-a97ba63127bf</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1YW2/bNhT+KwKfNsDwdEnsIG9dAgMDthaIi+yhLgRaomyilKiSlN3MyH/fIUXaki+K3TqBi01vOoeX71y+Qx5+WiGaoluEs+sgS30yjIKrIPL9QRAm4TDK4Bvg4c0N6qEC50SPnMcKTxmJzX8PLTCrtFwmIJdfQJJSWTL89LijSOaUpYIU6PbT5x4qsYAVFBHodrWlOhYSw1PCYOhHDch7XwM6gFM9lVq8I/tz3xpcpBqX30PkmyJFSgBQhpkkPZTjIsWKi6e1RBCcfigYCJSo4H9OCwULIj32m6T/wLY3vh6WEbAwIbVu/Rtbf9Xi7B4rPIaFElUJOzSZc5oQWfsmJRmumLpryuoBH0pFeVFPMWba2ZxVefG+9gpaL7AbHqu4PxS+SgJWUmp3aAOt9dl4zpcPzpgRLYznrJLxBLP1H1ZK0GmlNOwVIozksFCc47KkxSwuBV9QMxkg5/0Zg59+xvgSNpV0VvRxou3rg/dxfwTyeyN+xIJqY/+CZWAy7ML0HAMbxFLHHMICCipBKmjpfGNQoecekk/yjmEpNz6C4MRfKw299pg1Oq7dq6eYhd4BogWx9j33LJeGUVfiYr+Vo4J8rYhUJI2pInmDT6vVmIgFhNW7A4MZn8VB3w42Q5+fd6l2MseOgOo49uCAen/UQDtssFzbZHybag8NuWVa0M20mlgbotkRe5gWhW2mQR4APAdsH+l2DHtzCp6DW9mYYJHMR5QwHdiiyqc1G96EcxyiEqeCl6U12lDu/NSKhp35OmilpZxzobQhZkEdlw273klJpPS48MYJL4n3ce/RdWDUaRw7ArPj2Fgj9u5biLvtsUyTEORitkWzsRNajoUnnmaHSRaEvn+5J9rPclS9wsnTnWpJK50yXSpkgxOAA0AaQ2eCV+Wk8v0oXU0cKybodoJMgfHs0SQnqDep5xvl8AqnQZZFySAIwnCY+kEaXmcEJyHOBn6UmeFgc0zTI8fvOeQuFeaJJ+/LoXJVYeQCtSd27lZLcjBdkbiO5dbN1iq9R6u09SA6Wz0YXO/Ug821cV9ZsFcaV1AvoETUN4yfvkLQoqyU7LebnxeqRtaZitOwlXlLTFWjZgS7/LS37dPocAQGR4e/awQ7kCwVppwzgottDgCo30bmwr/O/6uz5f/V5R6GNhr7ezur/I+eli/kXOPNY11eE9uKbfVqZ+jEjgDDtuu5q6LthuwQ2NObsuuzEWRPVwbourqyLdsu4IT48Z6sflt6m44MmoVlLM3+r9eODaedSdt4jXO5uLA45XnZcwQQxx6XWI8NJB0gXYPFKjmfVskXorZ4M9Ya73enstQZ/N9rfefpQWWcQfkC323iEBeEGE/aN7ve69GGVwKc6hygC1TMjWcAwxI5OoBqmW3w/fKrfl4sElalJM7BPVTAzms1UY1XSO2uBjAi4qWodz87TT//C8FaXkPeFwAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=dc3a88e02f438b104674caba6fa4e329"/>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=8c3a48e02f438b104674caba6fa4e3fb"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=8c3a48e02f438b104674caba6fa4e3fb"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=8c3a48e02f438b104674caba6fa4e3fb"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=8c3a48e02f438b104674caba6fa4e3fb"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>request_item</element>
+        <help/>
+        <hint/>
+        <label>Request Item</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_8c3a48e02f438b104674caba6fa4e3fb</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-28 06:22:08</sys_created_on>
+        <sys_id>143a88e02f438b104674caba6fa4e31d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="CampusDesk AI" source="x_1971543_campus_0">28296cbb2f9607104674caba6fa4e352</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CampusDesk AI">28296cbb2f9607104674caba6fa4e352</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-28 06:22:08</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_8c3a48e02f438b104674caba6fa4e3fb</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-28 06:22:08</sys_created_on>
+        <sys_id>983a88e02f438b104674caba6fa4e311</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="CampusDesk AI" source="x_1971543_campus_0">28296cbb2f9607104674caba6fa4e352</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CampusDesk AI">28296cbb2f9607104674caba6fa4e352</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-28 06:22:08</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_8c3a48e02f438b104674caba6fa4e3fb"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_8c3a48e02f438b104674caba6fa4e3fb"/>
+    <sys_hub_flow action="UPDATE">
+        <sys_id>353680e82f038b104674caba6fa4e356</sys_id>
+        <latest_snapshot>8c3a48e02f438b104674caba6fa4e3fb</latest_snapshot>
+        <compiler_build/>
+        <version_record/>
+    </sys_hub_flow>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=353680e82f038b104674caba6fa4e356^sys_idNOT IN6c3a88e02f438b104674caba6fa4e34d"/>
+    <sys_flow_trigger_plan action="INSERT_OR_UPDATE">
+        <binding_strategy>com.snc.process_flow.engine.binding.RunAlways</binding_strategy>
+        <plan/>
+        <plan_id>353680e82f038b104674caba6fa4e356</plan_id>
+        <snapshot>8c3a48e02f438b104674caba6fa4e3fb</snapshot>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-28 06:22:09</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>6c3a88e02f438b104674caba6fa4e34d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-28 06:22:09</sys_updated_on>
+        <trigger display_value="">e83a88e02f438b104674caba6fa4e34c</trigger>
+    </sys_flow_trigger_plan>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=353680e82f038b104674caba6fa4e356"/>
+</record_update>

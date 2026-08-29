@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_category">
+    <sc_cat_item_category action="INSERT_OR_UPDATE">
+        <sc_cat_item display_value="VPN Access">4d99e3c42f4fc7104674caba6fa4e314</sc_cat_item>
+        <sc_category display_value="Connectivity">9bf2af082f0fc7104674caba6fa4e35d</sc_category>
+        <sys_class_name>sc_cat_item_category</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-27 09:23:32</sys_created_on>
+        <sys_id>b71aef082f4fc7104674caba6fa4e3bf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Connectivity.VPN Access</sys_name>
+        <sys_package display_value="CampusDesk AI" source="x_1971543_campus_0">28296cbb2f9607104674caba6fa4e352</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CampusDesk AI">28296cbb2f9607104674caba6fa4e352</sys_scope>
+        <sys_update_name>sc_cat_item_category_b71aef082f4fc7104674caba6fa4e3bf</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-27 09:23:32</sys_updated_on>
+    </sc_cat_item_category>
+</record_update>

@@ -5,7 +5,7 @@
         <active>true</active>
         <allow_high_security_roles>false</allow_high_security_roles>
         <annotation/>
-        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=627298000,viewActivatedIn=naturalLanguage</attributes>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=1122406000,viewActivatedIn=naturalLanguage</attributes>
         <authored_on_release_version>29000</authored_on_release_version>
         <callable_by_client_api>false</callable_by_client_api>
         <category/>
@@ -16,20 +16,20 @@
         <flow_priority>MEDIUM</flow_priority>
         <generation_source/>
         <internal_name>campusdesk_ai_resolution_v2</internal_name>
-        <label_cache>[{"name":"0417e3b4-396c-4c48-97d7-eabf112c9ace.Record","label":"2 - Look Up Record➛AI Resolution Record","reference":"x_1971543_campus_0_ai_resolution","reference_display":"AI Resolution","type":"reference","base_type":"reference","usedInstances":{"e7e4cc68-1727-4dd2-81b7-fc76e7c00a92":["condition"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Created or Updated_1.current.category","label":"Trigger - Record Created or Updated➛Incident Record➛Category","reference":"","reference_display":"Category","type":"choice","base_type":"choice","parent_table_name":"incident","column_name":"category","choices":[{"label":"-- None --","sequence":-1.0,"selected":false,"used":false,"rawLabel":"-- None --","missing":false,"image":"","reference":false,"value":""},{"parameters":{"name":"incident","dependent_values":[""],"dependent_values_map":{"":"Inquiry / Help"}},"sequence":1.0,"selected":false,"label":"Inquiry / Help","used":false,"rawLabel":"Inquiry / Help","missing":false,"image":"","reference":false,"value":"inquiry"},{"parameters":{"name":"incident","dependent_values":[""],"dependent_values_map":{"":"Software"}},"sequence":2.0,"selected":false,"label":"Software","used":false,"rawLabel":"Software","missing":false,"image":"","reference":false,"value":"software"},{"parameters":{"name":"incident","dependent_values":[""],"dependent_values_map":{"":"Hardware"}},"sequence":3.0,"selected":false,"label":"Hardware","used":false,"rawLabel":"Hardware","missing":false,"image":"","reference":false,"value":"hardware"},{"parameters":{"name":"incident","dependent_values":[""],"dependent_values_map":{"":"Network"}},"sequence":4.0,"selected":false,"label":"Network","used":false,"rawLabel":"Network","missing":false,"image":"","reference":false,"value":"network"},{"parameters":{"name":"incident","dependent_values":[""],"dependent_values_map":{"":"Database"}},"sequence":5.0,"selected":false,"label":"Database","used":false,"rawLabel":"Database","missing":false,"image":"","reference":false,"value":"database"},{"parameters":{"name":"incident","dependent_values":[""],"dependent_values_map":{"":"Password Reset"}},"sequence":100.0,"selected":false,"label":"Password Reset","used":false,"rawLabel":"Password Reset","missing":false,"image":"","reference":false,"value":"password_reset"}],"usedInstances":{"3b7d3b1e-071b-43b5-893b-ce38018223db":[null]}},{"name":"Created or Updated_1.current.u_incident_category","label":"Trigger - Record Created or Updated➛Incident Record➛Incident Category","reference":"x_1971543_campus_0_incident_category","reference_display":"Incident Category","type":"reference","base_type":"reference","parent_table_name":"incident","column_name":"u_incident_category","usedInstances":{"0417e3b4-396c-4c48-97d7-eabf112c9ace":[null]}},{"name":"Created or Updated_1.current","label":"Trigger - Record Created or Updated➛Incident Record","reference":"incident","reference_display":"Incident","type":"reference","base_type":"reference","usedInstances":{"9e9df25d-5df7-4e51-9ecd-25d60f782ec7":["record"],"0417e3b4-396c-4c48-97d7-eabf112c9ace":[null]},"attributes":{}},{"name":"0417e3b4-396c-4c48-97d7-eabf112c9ace.Record.resolution","label":"2 - Look Up Record➛AI Resolution Record➛Resolution","reference":"","reference_display":"Resolution","type":"html","base_type":"html","parent_table_name":"x_1971543_campus_0_ai_resolution","column_name":"resolution","usedInstances":{"9e9df25d-5df7-4e51-9ecd-25d60f782ec7":[null]}},{"name":"0417e3b4-396c-4c48-97d7-eabf112c9ace.Record.confidence","label":"2 - Look Up Record➛AI Resolution Record➛Confidence","reference":"","reference_display":"Confidence","type":"decimal","base_type":"decimal","parent_table_name":"x_1971543_campus_0_ai_resolution","column_name":"confidence","usedInstances":{"9e9df25d-5df7-4e51-9ecd-25d60f782ec7":["u_ai_confidence"]}},{"name":"0417e3b4-396c-4c48-97d7-eabf112c9ace.Record.estimated_resolution_time","label":"2 - Look Up Record➛AI Resolution Record➛Estimated Resolution Time","reference":"","reference_display":"Estimated Resolution Time","type":"string","base_type":"string","parent_table_name":"x_1971543_campus_0_ai_resolution","column_name":"estimated_resolution_time","usedInstances":{"9e9df25d-5df7-4e51-9ecd-25d60f782ec7":["u_estimated_resolution_time"]}},{"name":"3b7d3b1e-071b-43b5-893b-ce38018223db.Record","label":"1 - Look Up Record➛Incident Category Record","reference":"x_1971543_campus_0_incident_category","reference_display":"Incident Category","type":"reference","base_type":"reference","usedInstances":{"0417e3b4-396c-4c48-97d7-eabf112c9ace":[null],"9e9df25d-5df7-4e51-9ecd-25d60f782ec7":["u_ai_suggested_category"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"3b7d3b1e-071b-43b5-893b-ce38018223db.Record.category_name","label":"1 - Look Up Record➛Incident Category Record➛Category Name","reference":"","reference_display":"Category Name","type":"string","base_type":"string","parent_table_name":"x_1971543_campus_0_incident_category","column_name":"category_name","usedInstances":{"9e9df25d-5df7-4e51-9ecd-25d60f782ec7":["u_ai_suggested_category"]}}]</label_cache>
+        <label_cache>[{"name":"3b7d3b1e-071b-43b5-893b-ce38018223db.Record.category_name","label":"1 - Look Up Record➛Incident Category Record➛Category Name","reference":"","reference_display":"Category Name","type":"string","base_type":"string","parent_table_name":"x_1971543_campus_0_incident_category","column_name":"category_name","usedInstances":{"9e9df25d-5df7-4e51-9ecd-25d60f782ec7":["u_ai_suggested_category"]}},{"name":"3b7d3b1e-071b-43b5-893b-ce38018223db.Record","label":"1 - Look Up Record➛Incident Category Record","reference":"x_1971543_campus_0_incident_category","reference_display":"Incident Category","type":"reference","base_type":"reference","usedInstances":{"0417e3b4-396c-4c48-97d7-eabf112c9ace":[null],"9e9df25d-5df7-4e51-9ecd-25d60f782ec7":["u_ai_suggested_category"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"0417e3b4-396c-4c48-97d7-eabf112c9ace.Record.estimated_resolution_time","label":"2 - Look Up Record➛AI Resolution Record➛Estimated Resolution Time","reference":"","reference_display":"Estimated Resolution Time","type":"string","base_type":"string","parent_table_name":"x_1971543_campus_0_ai_resolution","column_name":"estimated_resolution_time","usedInstances":{"9e9df25d-5df7-4e51-9ecd-25d60f782ec7":["u_estimated_resolution_time"]}},{"name":"0417e3b4-396c-4c48-97d7-eabf112c9ace.Record.confidence","label":"2 - Look Up Record➛AI Resolution Record➛Confidence","reference":"","reference_display":"Confidence","type":"decimal","base_type":"decimal","parent_table_name":"x_1971543_campus_0_ai_resolution","column_name":"confidence","usedInstances":{"9e9df25d-5df7-4e51-9ecd-25d60f782ec7":["u_ai_confidence"]}},{"name":"0417e3b4-396c-4c48-97d7-eabf112c9ace.Record.resolution","label":"2 - Look Up Record➛AI Resolution Record➛Resolution","reference":"","reference_display":"Resolution","type":"html","base_type":"html","parent_table_name":"x_1971543_campus_0_ai_resolution","column_name":"resolution","usedInstances":{"9e9df25d-5df7-4e51-9ecd-25d60f782ec7":[null]}},{"name":"Created or Updated_1.current","label":"Trigger - Record Created or Updated➛Incident Record","reference":"incident","reference_display":"Incident","type":"reference","base_type":"reference","usedInstances":{"9e9df25d-5df7-4e51-9ecd-25d60f782ec7":["record"],"0417e3b4-396c-4c48-97d7-eabf112c9ace":[null]},"attributes":{}},{"name":"Created or Updated_1.current.u_incident_category","label":"Trigger - Record Created or Updated➛Incident Record➛Incident Category","reference":"x_1971543_campus_0_incident_category","reference_display":"Incident Category","type":"reference","base_type":"reference","parent_table_name":"incident","column_name":"u_incident_category","usedInstances":{"0417e3b4-396c-4c48-97d7-eabf112c9ace":[null]}},{"name":"Created or Updated_1.current.category","label":"Trigger - Record Created or Updated➛Incident Record➛Category","reference":"","reference_display":"Category","type":"choice","base_type":"choice","parent_table_name":"incident","column_name":"category","choices":[{"label":"-- None --","sequence":-1.0,"selected":false,"used":false,"rawLabel":"-- None --","missing":false,"image":"","reference":false,"value":""},{"parameters":{"name":"incident","dependent_values":[""],"dependent_values_map":{"":"Inquiry / Help"}},"sequence":1.0,"selected":false,"label":"Inquiry / Help","used":false,"rawLabel":"Inquiry / Help","missing":false,"image":"","reference":false,"value":"inquiry"},{"parameters":{"name":"incident","dependent_values":[""],"dependent_values_map":{"":"Software"}},"sequence":2.0,"selected":false,"label":"Software","used":false,"rawLabel":"Software","missing":false,"image":"","reference":false,"value":"software"},{"parameters":{"name":"incident","dependent_values":[""],"dependent_values_map":{"":"Hardware"}},"sequence":3.0,"selected":false,"label":"Hardware","used":false,"rawLabel":"Hardware","missing":false,"image":"","reference":false,"value":"hardware"},{"parameters":{"name":"incident","dependent_values":[""],"dependent_values_map":{"":"Network"}},"sequence":4.0,"selected":false,"label":"Network","used":false,"rawLabel":"Network","missing":false,"image":"","reference":false,"value":"network"},{"parameters":{"name":"incident","dependent_values":[""],"dependent_values_map":{"":"Database"}},"sequence":5.0,"selected":false,"label":"Database","used":false,"rawLabel":"Database","missing":false,"image":"","reference":false,"value":"database"},{"parameters":{"name":"incident","dependent_values":[""],"dependent_values_map":{"":"Password Reset"}},"sequence":100.0,"selected":false,"label":"Password Reset","used":false,"rawLabel":"Password Reset","missing":false,"image":"","reference":false,"value":"password_reset"}],"usedInstances":{"3b7d3b1e-071b-43b5-893b-ce38018223db":[null]}},{"name":"0417e3b4-396c-4c48-97d7-eabf112c9ace.Record","label":"2 - Look Up Record➛AI Resolution Record","reference":"x_1971543_campus_0_ai_resolution","reference_display":"AI Resolution","type":"reference","base_type":"reference","usedInstances":{"e7e4cc68-1727-4dd2-81b7-fc76e7c00a92":["condition"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}}]</label_cache>
         <master_snapshot>690f41852f2e8f104674caba6fa4e320</master_snapshot>
         <master_snapshot_digest/>
         <name>CampusDesk AI Resolution V2</name>
         <natlang/>
         <outputs/>
         <pre_compiled>false</pre_compiled>
-        <remote_trigger_id>ba962e932fe603904674caba6fa4e354</remote_trigger_id>
+        <remote_trigger_id>e65788552ff28f904674caba6fa4e3c8</remote_trigger_id>
         <run_as>user</run_as>
         <run_with_roles/>
         <sc_callable>false</sc_callable>
         <show_draft_actions>false</show_draft_actions>
         <show_triggered_flows>false</show_triggered_flows>
-        <status>published</status>
+        <status>draft</status>
         <substatus/>
         <sys_class_name>sys_hub_flow</sys_class_name>
         <sys_created_by>admin</sys_created_by>
@@ -37,7 +37,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>299d01012f2e8f104674caba6fa4e351</sys_id>
-        <sys_mod_count>46</sys_mod_count>
+        <sys_mod_count>54</sys_mod_count>
         <sys_name>CampusDesk AI Resolution V2</sys_name>
         <sys_overrides/>
         <sys_package display_value="CampusDesk AI" source="x_1971543_campus_0">28296cbb2f9607104674caba6fa4e352</sys_package>
@@ -45,11 +45,11 @@
         <sys_scope display_value="CampusDesk AI">28296cbb2f9607104674caba6fa4e352</sys_scope>
         <sys_update_name>sys_hub_flow_299d01012f2e8f104674caba6fa4e351</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-08-12 10:17:26</sys_updated_on>
+        <sys_updated_on>2026-08-18 03:52:42</sys_updated_on>
         <type>flow</type>
         <updation_source/>
         <version>2</version>
-        <version_record>37966e932fe603904674caba6fa4e322</version_record>
+        <version_record>f01880d52ff28f904674caba6fa4e380</version_record>
     </sys_hub_flow>
     <sys_translated_text action="delete_multiple" query="documentkey=299d01012f2e8f104674caba6fa4e351"/>
     <sys_variable_value action="delete_multiple" query="document_key=299d01012f2e8f104674caba6fa4e351"/>
@@ -69,15 +69,15 @@
         <run_when_user_setting>any</run_when_user_setting>
         <sys_class_name>sys_flow_record_trigger</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2026-08-12 10:17:26</sys_created_on>
+        <sys_created_on>2026-08-18 03:49:29</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
-        <sys_id>ba962e932fe603904674caba6fa4e354</sys_id>
+        <sys_id>e65788552ff28f904674caba6fa4e3c8</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_overrides/>
         <sys_scope display_value="CampusDesk AI">28296cbb2f9607104674caba6fa4e352</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-08-12 10:17:26</sys_updated_on>
+        <sys_updated_on>2026-08-18 03:49:29</sys_updated_on>
         <table>incident</table>
         <trigger_definition/>
     </sys_flow_record_trigger>
@@ -88,14 +88,14 @@
         <identifier_type>flow</identifier_type>
         <runner>FDTriggerRunner</runner>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2026-08-12 10:17:26</sys_created_on>
-        <sys_id>fe962e932fe603904674caba6fa4e355</sys_id>
+        <sys_created_on>2026-08-18 03:49:29</sys_created_on>
+        <sys_id>2e5788552ff28f904674caba6fa4e3c9</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-08-12 10:17:26</sys_updated_on>
-        <trigger display_value="">ba962e932fe603904674caba6fa4e354</trigger>
+        <sys_updated_on>2026-08-18 03:49:29</sys_updated_on>
+        <trigger display_value="">e65788552ff28f904674caba6fa4e3c8</trigger>
     </sys_trigger_runner_mapping>
-    <sys_trigger_runner_mapping action="delete_multiple" query="identifier=299d01012f2e8f104674caba6fa4e351^sys_idNOT INfe962e932fe603904674caba6fa4e355"/>
+    <sys_trigger_runner_mapping action="delete_multiple" query="identifier=299d01012f2e8f104674caba6fa4e351^sys_idNOT IN2e5788552ff28f904674caba6fa4e3c9"/>
     <sys_hub_flow_stage action="delete_multiple" query="flow=299d01012f2e8f104674caba6fa4e351"/>
     <sys_flow_cat_variable_model action="delete_multiple" query="id=299d01012f2e8f104674caba6fa4e351^sys_idNOT IN659d49812f2e8f104674caba6fa4e3ab"/>
     <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
@@ -406,10 +406,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-08-12 08:12:14</sys_created_on>
         <sys_id>74f9069b2fe203904674caba6fa4e3dd</sys_id>
-        <sys_mod_count>8</sys_mod_count>
+        <sys_mod_count>10</sys_mod_count>
         <sys_scope display_value="CampusDesk AI">28296cbb2f9607104674caba6fa4e352</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-08-12 16:50:59</sys_updated_on>
+        <sys_updated_on>2026-08-18 03:54:15</sys_updated_on>
         <ui_id>3b7d3b1e-071b-43b5-893b-ce38018223db</ui_id>
         <updation_source/>
         <values>H4sIAAAAAAAA/+VYXW/iOhD9K1GeKTfhK9C3KyqkSrtbadvdl92V5dgOWGvsrO20pYj/fsdJDAgoEC2VWt03PB7bZ2bOGTv8WIachtchHUWjbDTqD5Mo6najaDDoEhynaXdA0ijFvbAVSjxn4GlxKhgMH7Eo3PgZxaMk7ve6iOB5XhgUIS4Jp0xasFg2VXoB7pSbXODF93rVbe0SjDcuZMYF1UyG1z9+tcIcazjQMh1eL3emzkUscMoEuD7UkHcisIt8PUTlXGX7tL0s+FJNKE0dlKgVsmfLJGWAIcPCsFY4x5Ji62LwFs0wvZNiY5hxaWHH0Dk/G/4C5w4j55cxiIqwam49RHW2KnN2gy2+t7ogttC1K5kpTpip8kFZhgthx9u2yuEut1zJakkVdrVaiWIuv1TpCNcb+OKApTAAguUuUIe8DiO7n6mnrx7lhMsyJ/WkUASL9Qhbq3laWIdnGTLB5o4Qc5znXE5RrtUjLxcDlnl7KmDQzoR6gkMNn8o2Jg54G/KK2xOw35Tm71hzF8Vn2AYWAyAugCGoKqFRhS5T+YiIKEw5obE01V7hqhWahRkLbMwmckg5+lM43FUe6ohRlTS3hGie239hi0dWB7dqedH0j1JwtKEcUZJyh8JsKcero+TezwL2oMvlGLhjGQ2UDr7l1P1EcZsUGjJu237FarWvqL/craH4TkfuxTfeDv1QOmoZ7tk+HdqglmF8MRn2ougjCREOf386bK6sKgUn5BXToySjGz4ZpeGyKXO5pa99jTTm+RkQPM/vHDODdPEaqprmGWeCHrptJm5i57bp/D9vm3dJcgBEUVU9LgWX5dMBgL4V+/tHqZfGOzwr6bXhfmnDhuxrAAdWBS+NlXAGHK+Eezg7eKjwHIDo+31Jmd1e7421ALoXE0C3cxkBLNdhrhN5IOf+teiq6f1fnD/e9QcKbi2IV4cE1ujMuOmZndW+gLuNFLxNtmrm5hXOXfhZ+YoiW2/ZAmawtD4PVfpFT5xOmd2c7r2osk9Y/D40XzMO+UKV4b3BEzU++pWUbj1ReYbmUDmew0taMwLkMAhrhjJVSIrqN/SGSK6SGdfG1s77jeYrA/3IQIEwAztjQekdrL0bXsSn4/CpvM0CH0h9mgkgkKAMJFgH0izsJk2rd8HH6aWb1gRzUVYDPo/yrXIyrZV+pXGdKOQRRpzZ1c4EFV8U1N+3vUMSONj+TmD9EN/al29NhOG018GDpBvHURRHNImGSRIPB2k2wEkv22gUISMJdFPYOQOqwPbIU8PXOd7vP3WzbdZnzgDlGXijpPvM7iQ2cKigvIFHdRp33U9SpQTDcqehPADyfybljbCma//dNZUP8cdTwR92M12ZDub6rZ4NBf8m+Z+C3TqKDVnUGcaUXA2TOLnqZXRwNaK4f4VHaT/pUkZ62SVfAr/+AxwBixnjFQAA</values>
@@ -430,13 +430,13 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-08-05 04:05:55</sys_created_on>
         <sys_id>a07e8d052f2e8f104674caba6fa4e395</sys_id>
-        <sys_mod_count>15</sys_mod_count>
+        <sys_mod_count>19</sys_mod_count>
         <sys_scope display_value="CampusDesk AI">28296cbb2f9607104674caba6fa4e352</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-08-12 16:50:59</sys_updated_on>
+        <sys_updated_on>2026-08-18 03:54:16</sys_updated_on>
         <ui_id>9e9df25d-5df7-4e51-9ecd-25d60f782ec7</ui_id>
         <updation_source/>
-        <values>H4sIAAAAAAAA/+1Y3W7bNhR+FULXlqa/xD+7KhIECJA1Q9vlpu0EiqIcIpSokVQazzCw+z3CgD3cnmSHFCV7sdMqRTEsmBMgMc8fv3P4kTzm+7XHCm/hpbQIo3l0SpIoSeIwjGdplJ8meRQXCaY08iZejSsKlpISIQsY32PeGsF6fSYp1rRAQqKfmsJ8zKKAtFLSWm82YFow1XC8unEeICG3jBeg9xbvP068BksIrqn0FutHqrHoOM4pB9M3PbzHcPWqMeNCkLYCXBnrhVfO89xp0OU5aMDJwInCiUcfNK0LCkBKzBWdeBWuIUshV95CyxYEkH9xXfPVYHHLat0lWuEHxX6FmdPQ2JUUMiOuCMMwcwXqxOU51vgtRCa6lUO9BCNUdTUpaIlbrs92ZZ3BdaOZqDsXjXPeewveVvXrriLeEGBnPVoFIGhj8jTIu7TKt7fi05se5AWrbUlcilwQzIcR1lqyvNUGztqjnNoaV7hpWL3MGinumXUGKFWw5DAISi4+wZyKLesAE4M7gKri4ALk51Z8gyUzSfwAYcB5M/HUSp1xrNQ2Fahh9ktrkHSJuRQyWwVbgswywTgTyRr9Cqa6pw74ZuL4n598jmFkviXUTsztHmA1YbZye1y/3Gqex/kRiHrOv7MrfRiho/2e7GrXF73uFI70J9+M9LOXRHqXxotn/Ze4HsafPU13mGTprXZ4/pBF82l0kiYZwVXTqizMMMvMGVtB6pAI5POhDcOksH9Jg0xyvmb1qiJUCqFzqOCdM/Hg13yinbFqcI2ISbTXG+cMNopJrWGcf/CQ0itOB33HoAViNWc1/R70RNRAXLiCmKVCb2krAGoLx4SyGfXa9bosMi1xrUohq0Ucl0lK07kfkTT3U1ImPp5FkR/n0yJMwxjP83SzGQcepkIIE0IbrbZTZGVb28VXgAmAGpI99I7hv5yGWyOqNCv6UGY3/gjxL4sxaVoovsNs/2NYDvklV+OlxhgBuAc9ABWCa9b4W7D4NnPCd6J5bOZQ9bYx8tGVEHfQqaCuV0Dd/OjVJQgUHBpmXR7ptopRcJXGUveW+zN2vt8Z5xHBsJTi0/hVsJeCT2DT6Oc6/WOmv/784wmcO4IgCP5jiJ5XWziz+ug7S/y1k8BNoIE6W2Lu7/esxAQXNBuzN80xsIv4yWioFjtHC1wbnFGwR+Yi6QrZh7iGiwINpqiPgxpG7qhEIET7dIW6H9obIB6/LboD2u+uJZ+Rgx6Hz/Za2JPdceC330cvT7ccz1vCfUHTjX5uzU0HuEvTzhEHc70O02hKkzz1k/kpgYVMZ/58Wkx9ivMyimIyx4QGXcGCrfdmA/HMgVvZb0tyqGMGoq+K/WQwOxVAV+1yCUZgQMBsCY1cP00CnIPbn/rhNAIuJvmJP5snuU9oMgujWRwnRT6k4HxtK3nou92xQzh2CMcO4dghHDuEY4dw7BCOHcKz371GvE70714XjPJCHXiu6B+9aAUE0TTrni8ePXw5JbpxyuHF95u9fkWnof15QW9g/5uH349/A5g6NXT6GAAA</values>
+        <values>H4sIAAAAAAAA/+1aW2/bNhT+K4SeLU83X+Q+FQkCBMiaIW3z0nYCRVIOEd1GUkk8w8De9xMG7Mftl+yQkizPjjulCIpkUwIk1rnx47nwHNr+tLY4tRaW41HHDd0p8V3f9xzHmwduPPVj16M+ZoxZIyvHGQPJO5xWTMKzeQGEh8gNZ+4k8COCs7KSkRNhHglGiixjOcWKF/nnynF8av6SEgEN24rnq4wwURQqTgty24hY8KtfsVpYljhHJMVStnytHJVYsFxFJU/TzxaSapWyLZ/LMsWrBeJ5ynP2BvikyBWIM8oVjjvJBKeSAdvA0abMjlruep3QSAmcy6QQ2cLzEj9gQWi7JIjtgCS+jeeua3vxjDqB4+EwDjabfuBhKYQwIaxUslsiSqqcaGdJwARAeU7ZQ6vofOdtNDFiUnHamjoF0k9g/5z22aaBYjeYzX8M4RD/pqq1ZB8hAPegtkCLIlW8tDuw+CZqiB+Kcl+sQdXKeshGF0Vxiz6W6AryVlBUr4/engNBFmml47LH6xi94EqFhWolD1esdX/Qyj2MYSGK+/5RSHHMIBZQNOqpSv9Y6a8//ziCc4cwHo9fGKKn+RbOrNb6Toi/dZG4UgpSp0vMw3qPEkwwZVGf2tTHwC7io9ZQXuwcLbgsU85AHmHBce3I1sRlyXK0FUWtHVRycssEAiI6TFfw+2O1AeT+ZVEf0LYkgpfK5uRRjcfP9rwwJ3uTA7/93js8dTieFsJDQlk//VzpTge4E05ZThqY67UTuDPmx4Hth1MCgQzmdjijM5vhOHFdj4SYsHHtsHGnvdmAPX3gZhjOeGigrR8jIH2T7aPGzFIAXVbLJQiBAAGxZSFW7TI+5Bx0f2Y7Mxdy0Y8n9jz0Y5swf+64c8/zabzdQqMb6QkBTB8bCLYQlhWneOuv1zwVTMFJAXEndjgNXIgGZVCyU98OvMCfhVNnEs/iVzAV9N3GMBXAZDxdqjfHB4OaPcwGw2zwrLNBnwodZoMXNBvABblBdD3ck4d78n+5Iw735KEXDvfkoRcO9+ThnnyknQ735P/dVDDck4fZ4PvPBsM9+ZXNBnBPJjc8pdCRrMWnLyMLmhO0R8WEtVjvsfp+Um1CA6JnnKVUPvLRtVqV+lmxDFyhWFR/lF3TLxrlDw0TXTdMCI0G5TrOyILDE1KcAR7TP0ZWhvUNHpq7tVCiAoJgmF7m6WorccNzBWYtLfsg+a8AwJ065kdLJ0zo4aaW2D5GTbRqcqJ7yHuwT1QlGlFyU3ACmzIOoizBVapOdmm1wGWps6lWMf2v0YY0y/J3tXusrYH2LQugVBJAsFLvVuOvN5e8vynur1qQZ7rXiu1GYRzB6fYJKyU4ZIyGs7ZYyjI9emRQTDxfRqUo7rhRBijZeJnCwzhJi3tYU/JlPsamjsb6/BqfAf3UkK91BcImfgQzoLwZWXIlT3RddFsBH0a/VBpJvbFmC5HxgnGBmcOMsqmet7DUHWuAb0bNFyMC9tV0c7vsEqZ6d74YsV6fQBbAxIGg/D+W1EyY7phUQo9fm83hW0RPLoYe6NpiuGrh7cNtioEWpDKx4XSvEk4bDjo/3S2D56qCYMj/F5z/8eRrGUbCLqF2bHY1wHPCjecOcv284zwt53sganP+g4n04wjbHrBPu9jVRe9qRpP0k2dL+vlrSvpmG68+64/l+pe/AXeqirkGJwAA</values>
     </sys_hub_action_instance_v2>
     <sys_hub_alias_mapping action="delete_multiple" query="source_id=a07e8d052f2e8f104674caba6fa4e395"/>
     <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
@@ -454,10 +454,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-08-05 04:04:14</sys_created_on>
         <sys_id>b70e01012f2e8f104674caba6fa4e345</sys_id>
-        <sys_mod_count>16</sys_mod_count>
+        <sys_mod_count>18</sys_mod_count>
         <sys_scope display_value="CampusDesk AI">28296cbb2f9607104674caba6fa4e352</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-08-12 16:50:59</sys_updated_on>
+        <sys_updated_on>2026-08-18 03:54:15</sys_updated_on>
         <ui_id>0417e3b4-396c-4c48-97d7-eabf112c9ace</ui_id>
         <updation_source/>
         <values>H4sIAAAAAAAA/+VYXW/iOhD9K1GegRsTINC3VSukSnu3Utu7L7sry7EdsK5xsrbTliL++518EkEKREulVvfR47F9ZuacycCPjSuYe+WymTeLZrPxNPA83/e8ycSnBIWhP6GhF5KR23MVWXHwtCSUHJZPRKbZ+gWjWYDGIx9TskpSgz1MBNbcxDK1IlbgyoRJJFl/L098uXXum9t0KSTTXLlXP3713IRoeMhy7V5t9rbORSpJyCW4PpZQ95DbdVIvcb5X2L42jznfio1YswyK13P5i+WKccAQEWl4z10RxYiN9bq2aE7YnZI7w1IoCze6mfOLEa/w7tTL/CIOUVFe7NVLXGaqMEc3xJIHq1NqU1260mUsKDdFPhiPSCrtddNWONwleW7zI0XYxWlI+kp9K9Lh1hdUhQFLagAET7JAM+RlGNHDMn6+r1DOhcpzUm7KmBJZr4i1WoSpzfBsXC75Ci7CK5IkQi1wouMnkR8GLKvBQsJiEMn4GR41YqEGhGbAB5BXMpiD/SY3fydaZFH8DdfAYQAkJDAEFyU0carzVD5hKlOTb2iiTHGXu+25Zm2uJTFmFzmkHP9OM9xFHsqIcZG07AjVIrFf4IonXga37VViGR+l4GxHORorJjIUpqEYSixfAG1+pnCcbTZ+GDA/RLzvBSjsj/xw3J/O/LBPuT/10HQ49Fk4uOcUqLjdHsrpT6/rKL/TsVfyu24G35aQUogHtq9tF5RCRBcT4sjzPpMU4fGPp8Tu2ipScEJgiB0lGdvxycTa4iKXDYUdiqQzz8+AUPH8LmOmE67fQlXSPBJcsrbvzTzb2PveDP+f35sPSXIAxHBRPaGkUPnwAEDfi/3jo9QL0R7PcnrtuJ/biKGHGiCOjZ3Xzko4A06lhAd423ks8LRArPp9Tpn9Xl8ZSwH4FxOAP7yMADZ1mHUiW3JezYtZNSv/18yf7PsDBRsH0LZNYJ3eRF3fHG4PBex3UnCTbMXOzRucu/Bg+YYie+/ZApZwtHwPF/rFz4ItuN29Xnmx2D4T+W/bfsk4XBUqD+8dhlR09HdS2BhSRYRXUDmRwCyt87nQYKI5juJUMVxO0TsiZZWMhDa2dD5sNPcc9KOcGITp2CV3cm+n9u74IT4dR5XK28ipAilfMw4E4uSBOHUg3cLu0rRGFxxOL9205kTIvBrwAylplJNrHes3GteJQh5hxJld7UxQ6KKg/rzttUmgtf2dwPopfm1fvjVRTsLRkEwCHyHPQx4LvGkQoOkkjCYkGEU7jWJsFIVuCjdHQBW4HlfUqOqMDvtP2Wy79ZkzQFUMvIlV9mN7GFgnQwXldSpUp3GX/SSMY8mJ2msoj4D8r3n+RajpOv5wTeVT/PWUisf9TBem1ly/19iQin+U+J3y24xiU+4Np4jR/jRAQX8UsUl/xsi4T2bhOPAZp6PokpPAr/8A9kAYzN0VAAA=</values>
@@ -483,16 +483,16 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-08-12 08:40:12</sys_created_on>
         <sys_id>6e50d2d72f2603904674caba6fa4e3fe</sys_id>
-        <sys_mod_count>8</sys_mod_count>
+        <sys_mod_count>9</sys_mod_count>
         <sys_scope display_value="CampusDesk AI">28296cbb2f9607104674caba6fa4e352</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-08-12 10:17:07</sys_updated_on>
+        <sys_updated_on>2026-08-18 03:48:56</sys_updated_on>
         <ui_id>e7e4cc68-1727-4dd2-81b7-fc76e7c00a92</ui_id>
         <updation_source/>
         <values>H4sIAAAAAAAA/+1UXW/aQBD8K5WfDfIXEHiL2kaK1IQqoEhRFVnr8xpOPd+5d2cIRfz37vkDUEPUqu1j33yzt7szcyPvPVXbqrZmqa6N4Svpzb48+x6XDqPvvSehRG/mMSVzbrmSaQP43gZE7Qr0mXNTCdg9nhC25iLX2E2rQFOPRe3N9j+V7K7CVECGghoXVnO5onae06kIoAinLGRxNI6jIIiukjAbx1kY5TEgxHSvb3zfk3v3qUH8N1m7fYSbfpPSuaMVBr6HLxZljrS6AGHQ90qQOVild0dEI+RzKU7AmkvbKi7hxfDvNDsajdzFAkkj6+w4HtPOqt4lxRnOK0ewRSxkordQibqU960OZzIWUAt7ZnJtaB5WjrRj0VEqFmu1fegX3nDZCOyKQjEQxxNYsiGrLRr3MCiwpEFpCVVF5qSVVhveNBOXcrgSdBgWQm1pqUvKEJgjPiSPYHhD+IcGfgTNnYo7GkPNLc0MDGdpkyoaZzVJODS2pN9qR6gV2ElJWzfogmGaV/aa9mywY33wX0fyLI37fZCEE4yzZBBPx2yQsORqMJ3kkwFCVoRhxKbAcPiAjF7+cLhd3M+XH+8+L59ex/hvRv2L/E9hVIzCYHQ5/8n4Uv4vJP/t0Ee/CL17pt/MfBAE/0N/Hnpu0ja8nbZm+R9n/tkFvN1g2tzkyLghIkuH3fZ/a1fYUQA4O4e2Sn91Ek7Y4Qc2eIgM9wUAAA==</values>
         <workflow_reference/>
     </sys_hub_flow_logic_instance_v2>
-    <sys_hub_pill_compound action="delete_multiple" query="attached_to=299d01012f2e8f104674caba6fa4e351^sys_idNOT IN78fe8d052f2e8f104674caba6fa4e3ec"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=299d01012f2e8f104674caba6fa4e351^sys_idNOT IN78fe8d052f2e8f104674caba6fa4e3ec,af6040d52fb28f904674caba6fa4e353"/>
     <sys_hub_pill_compound action="INSERT_OR_UPDATE">
         <attached_to>299d01012f2e8f104674caba6fa4e351</attached_to>
         <extra_info/>
@@ -509,6 +509,23 @@
         <transform_compositions>[]</transform_compositions>
         <transform_definition_id/>
         <ui_id>22f34e49-1c4b-4cf3-a811-2b7d0402a9b4</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>299d01012f2e8f104674caba6fa4e351</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{0417e3b4-396c-4c48-97d7-eabf112c9ace.Record.resolution}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-18 03:19:15</sys_created_on>
+        <sys_id>af6040d52fb28f904674caba6fa4e353</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="CampusDesk AI">28296cbb2f9607104674caba6fa4e352</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-18 03:19:15</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>6d3b4c15-9641-4cde-a863-424379605b7b</ui_id>
     </sys_hub_pill_compound>
     <sys_hub_flow_variable action="delete_multiple" query="model=299d01012f2e8f104674caba6fa4e351"/>
     <sys_documentation action="INSERT_OR_UPDATE">
@@ -597,7 +614,7 @@
         <description/>
         <flow_priority>MEDIUM</flow_priority>
         <internal_name>campusdesk_ai_resolution_v2</internal_name>
-        <label_cache>[{"name":"0417e3b4-396c-4c48-97d7-eabf112c9ace.Record","label":"2 - Look Up Record➛AI Resolution Record","reference":"x_1971543_campus_0_ai_resolution","reference_display":"AI Resolution","type":"reference","base_type":"reference","usedInstances":{"e7e4cc68-1727-4dd2-81b7-fc76e7c00a92":["condition"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Created or Updated_1.current.category","label":"Trigger - Record Created or Updated➛Incident Record➛Category","reference":"","reference_display":"Category","type":"choice","base_type":"choice","parent_table_name":"incident","column_name":"category","choices":[{"label":"-- None --","sequence":-1.0,"selected":false,"used":false,"rawLabel":"-- None --","missing":false,"image":"","reference":false,"value":""},{"parameters":{"name":"incident","dependent_values":[""],"dependent_values_map":{"":"Inquiry / Help"}},"sequence":1.0,"selected":false,"label":"Inquiry / Help","used":false,"rawLabel":"Inquiry / Help","missing":false,"image":"","reference":false,"value":"inquiry"},{"parameters":{"name":"incident","dependent_values":[""],"dependent_values_map":{"":"Software"}},"sequence":2.0,"selected":false,"label":"Software","used":false,"rawLabel":"Software","missing":false,"image":"","reference":false,"value":"software"},{"parameters":{"name":"incident","dependent_values":[""],"dependent_values_map":{"":"Hardware"}},"sequence":3.0,"selected":false,"label":"Hardware","used":false,"rawLabel":"Hardware","missing":false,"image":"","reference":false,"value":"hardware"},{"parameters":{"name":"incident","dependent_values":[""],"dependent_values_map":{"":"Network"}},"sequence":4.0,"selected":false,"label":"Network","used":false,"rawLabel":"Network","missing":false,"image":"","reference":false,"value":"network"},{"parameters":{"name":"incident","dependent_values":[""],"dependent_values_map":{"":"Database"}},"sequence":5.0,"selected":false,"label":"Database","used":false,"rawLabel":"Database","missing":false,"image":"","reference":false,"value":"database"},{"parameters":{"name":"incident","dependent_values":[""],"dependent_values_map":{"":"Password Reset"}},"sequence":100.0,"selected":false,"label":"Password Reset","used":false,"rawLabel":"Password Reset","missing":false,"image":"","reference":false,"value":"password_reset"}],"usedInstances":{"3b7d3b1e-071b-43b5-893b-ce38018223db":[null]}},{"name":"Created or Updated_1.current.u_incident_category","label":"Trigger - Record Created or Updated➛Incident Record➛Incident Category","reference":"x_1971543_campus_0_incident_category","reference_display":"Incident Category","type":"reference","base_type":"reference","parent_table_name":"incident","column_name":"u_incident_category","usedInstances":{"0417e3b4-396c-4c48-97d7-eabf112c9ace":[null]}},{"name":"Created or Updated_1.current","label":"Trigger - Record Created or Updated➛Incident Record","reference":"incident","reference_display":"Incident","type":"reference","base_type":"reference","usedInstances":{"9e9df25d-5df7-4e51-9ecd-25d60f782ec7":["record"],"0417e3b4-396c-4c48-97d7-eabf112c9ace":[null]},"attributes":{}},{"name":"0417e3b4-396c-4c48-97d7-eabf112c9ace.Record.resolution","label":"2 - Look Up Record➛AI Resolution Record➛Resolution","reference":"","reference_display":"Resolution","type":"html","base_type":"html","parent_table_name":"x_1971543_campus_0_ai_resolution","column_name":"resolution","usedInstances":{"9e9df25d-5df7-4e51-9ecd-25d60f782ec7":[null]}},{"name":"0417e3b4-396c-4c48-97d7-eabf112c9ace.Record.confidence","label":"2 - Look Up Record➛AI Resolution Record➛Confidence","reference":"","reference_display":"Confidence","type":"decimal","base_type":"decimal","parent_table_name":"x_1971543_campus_0_ai_resolution","column_name":"confidence","usedInstances":{"9e9df25d-5df7-4e51-9ecd-25d60f782ec7":["u_ai_confidence"]}},{"name":"0417e3b4-396c-4c48-97d7-eabf112c9ace.Record.estimated_resolution_time","label":"2 - Look Up Record➛AI Resolution Record➛Estimated Resolution Time","reference":"","reference_display":"Estimated Resolution Time","type":"string","base_type":"string","parent_table_name":"x_1971543_campus_0_ai_resolution","column_name":"estimated_resolution_time","usedInstances":{"9e9df25d-5df7-4e51-9ecd-25d60f782ec7":["u_estimated_resolution_time"]}},{"name":"3b7d3b1e-071b-43b5-893b-ce38018223db.Record","label":"1 - Look Up Record➛Incident Category Record","reference":"x_1971543_campus_0_incident_category","reference_display":"Incident Category","type":"reference","base_type":"reference","usedInstances":{"0417e3b4-396c-4c48-97d7-eabf112c9ace":[null],"9e9df25d-5df7-4e51-9ecd-25d60f782ec7":["u_ai_suggested_category"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"3b7d3b1e-071b-43b5-893b-ce38018223db.Record.category_name","label":"1 - Look Up Record➛Incident Category Record➛Category Name","reference":"","reference_display":"Category Name","type":"string","base_type":"string","parent_table_name":"x_1971543_campus_0_incident_category","column_name":"category_name","usedInstances":{"9e9df25d-5df7-4e51-9ecd-25d60f782ec7":["u_ai_suggested_category"]}}]</label_cache>
+        <label_cache>[{"name":"3b7d3b1e-071b-43b5-893b-ce38018223db.Record.category_name","label":"1 - Look Up Record➛Incident Category Record➛Category Name","reference":"","reference_display":"Category Name","type":"string","base_type":"string","parent_table_name":"x_1971543_campus_0_incident_category","column_name":"category_name","usedInstances":{"9e9df25d-5df7-4e51-9ecd-25d60f782ec7":["u_ai_suggested_category"]}},{"name":"3b7d3b1e-071b-43b5-893b-ce38018223db.Record","label":"1 - Look Up Record➛Incident Category Record","reference":"x_1971543_campus_0_incident_category","reference_display":"Incident Category","type":"reference","base_type":"reference","usedInstances":{"0417e3b4-396c-4c48-97d7-eabf112c9ace":[null],"9e9df25d-5df7-4e51-9ecd-25d60f782ec7":["u_ai_suggested_category"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"0417e3b4-396c-4c48-97d7-eabf112c9ace.Record.estimated_resolution_time","label":"2 - Look Up Record➛AI Resolution Record➛Estimated Resolution Time","reference":"","reference_display":"Estimated Resolution Time","type":"string","base_type":"string","parent_table_name":"x_1971543_campus_0_ai_resolution","column_name":"estimated_resolution_time","usedInstances":{"9e9df25d-5df7-4e51-9ecd-25d60f782ec7":["u_estimated_resolution_time"]}},{"name":"0417e3b4-396c-4c48-97d7-eabf112c9ace.Record.confidence","label":"2 - Look Up Record➛AI Resolution Record➛Confidence","reference":"","reference_display":"Confidence","type":"decimal","base_type":"decimal","parent_table_name":"x_1971543_campus_0_ai_resolution","column_name":"confidence","usedInstances":{"9e9df25d-5df7-4e51-9ecd-25d60f782ec7":["u_ai_confidence"]}},{"name":"0417e3b4-396c-4c48-97d7-eabf112c9ace.Record.resolution","label":"2 - Look Up Record➛AI Resolution Record➛Resolution","reference":"","reference_display":"Resolution","type":"html","base_type":"html","parent_table_name":"x_1971543_campus_0_ai_resolution","column_name":"resolution","usedInstances":{"9e9df25d-5df7-4e51-9ecd-25d60f782ec7":[null]}},{"name":"Created or Updated_1.current","label":"Trigger - Record Created or Updated➛Incident Record","reference":"incident","reference_display":"Incident","type":"reference","base_type":"reference","usedInstances":{"9e9df25d-5df7-4e51-9ecd-25d60f782ec7":["record"],"0417e3b4-396c-4c48-97d7-eabf112c9ace":[null]},"attributes":{}},{"name":"Created or Updated_1.current.u_incident_category","label":"Trigger - Record Created or Updated➛Incident Record➛Incident Category","reference":"x_1971543_campus_0_incident_category","reference_display":"Incident Category","type":"reference","base_type":"reference","parent_table_name":"incident","column_name":"u_incident_category","usedInstances":{"0417e3b4-396c-4c48-97d7-eabf112c9ace":[null]}},{"name":"Created or Updated_1.current.category","label":"Trigger - Record Created or Updated➛Incident Record➛Category","reference":"","reference_display":"Category","type":"choice","base_type":"choice","parent_table_name":"incident","column_name":"category","choices":[{"label":"-- None --","sequence":-1.0,"selected":false,"used":false,"rawLabel":"-- None --","missing":false,"image":"","reference":false,"value":""},{"parameters":{"name":"incident","dependent_values":[""],"dependent_values_map":{"":"Inquiry / Help"}},"sequence":1.0,"selected":false,"label":"Inquiry / Help","used":false,"rawLabel":"Inquiry / Help","missing":false,"image":"","reference":false,"value":"inquiry"},{"parameters":{"name":"incident","dependent_values":[""],"dependent_values_map":{"":"Software"}},"sequence":2.0,"selected":false,"label":"Software","used":false,"rawLabel":"Software","missing":false,"image":"","reference":false,"value":"software"},{"parameters":{"name":"incident","dependent_values":[""],"dependent_values_map":{"":"Hardware"}},"sequence":3.0,"selected":false,"label":"Hardware","used":false,"rawLabel":"Hardware","missing":false,"image":"","reference":false,"value":"hardware"},{"parameters":{"name":"incident","dependent_values":[""],"dependent_values_map":{"":"Network"}},"sequence":4.0,"selected":false,"label":"Network","used":false,"rawLabel":"Network","missing":false,"image":"","reference":false,"value":"network"},{"parameters":{"name":"incident","dependent_values":[""],"dependent_values_map":{"":"Database"}},"sequence":5.0,"selected":false,"label":"Database","used":false,"rawLabel":"Database","missing":false,"image":"","reference":false,"value":"database"},{"parameters":{"name":"incident","dependent_values":[""],"dependent_values_map":{"":"Password Reset"}},"sequence":100.0,"selected":false,"label":"Password Reset","used":false,"rawLabel":"Password Reset","missing":false,"image":"","reference":false,"value":"password_reset"}],"usedInstances":{"3b7d3b1e-071b-43b5-893b-ce38018223db":[null]}},{"name":"0417e3b4-396c-4c48-97d7-eabf112c9ace.Record","label":"2 - Look Up Record➛AI Resolution Record","reference":"x_1971543_campus_0_ai_resolution","reference_display":"AI Resolution","type":"reference","base_type":"reference","usedInstances":{"e7e4cc68-1727-4dd2-81b7-fc76e7c00a92":["condition"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}}]</label_cache>
         <master>true</master>
         <name>CampusDesk AI Resolution V2</name>
         <natlang/>
@@ -614,7 +631,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>690f41852f2e8f104674caba6fa4e320</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
         <sys_package/>
@@ -622,7 +639,7 @@
         <sys_scope display_value="CampusDesk AI">28296cbb2f9607104674caba6fa4e352</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-08-12 10:17:20</sys_updated_on>
+        <sys_updated_on>2026-08-18 03:49:21</sys_updated_on>
         <type>flow</type>
         <version>2</version>
     </sys_hub_flow_snapshot>
@@ -792,14 +809,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-08-05 04:08:27</sys_created_on>
         <sys_id>390f41852f2e8f104674caba6fa4e34f</sys_id>
-        <sys_mod_count>7</sys_mod_count>
+        <sys_mod_count>9</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="CampusDesk AI">28296cbb2f9607104674caba6fa4e352</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-08-12 10:17:18</sys_updated_on>
+        <sys_updated_on>2026-08-18 03:49:16</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -877,14 +894,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-08-05 04:08:27</sys_created_on>
         <sys_id>e90f41852f2e8f104674caba6fa4e323</sys_id>
-        <sys_mod_count>7</sys_mod_count>
+        <sys_mod_count>9</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="CampusDesk AI">28296cbb2f9607104674caba6fa4e352</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-08-12 10:17:18</sys_updated_on>
+        <sys_updated_on>2026-08-18 03:49:17</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -938,13 +955,13 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-08-05 04:08:28</sys_created_on>
         <sys_id>3d0f41852f2e8f104674caba6fa4e37d</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_scope display_value="CampusDesk AI">28296cbb2f9607104674caba6fa4e352</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-08-12 10:17:20</sys_updated_on>
+        <sys_updated_on>2026-08-18 03:49:20</sys_updated_on>
         <ui_id>9e9df25d-5df7-4e51-9ecd-25d60f782ec7</ui_id>
         <updation_source/>
-        <values>H4sIAAAAAAAA/+1Y3W7bNhR+FULXlqa/xD+7KhIECJA1Q9vlpu0EiqIcIpSokVQazzCw+z3CgD3cnmSHFCV7sdMqRTEsmBMgMc8fv3P4kTzm+7XHCm/hpbQIo3l0SpIoSeIwjGdplJ8meRQXCaY08iZejSsKlpISIQsY32PeGsF6fSYp1rRAQqKfmsJ8zKKAtFLSWm82YFow1XC8unEeICG3jBeg9xbvP068BksIrqn0FutHqrHoOM4pB9M3PbzHcPWqMeNCkLYCXBnrhVfO89xp0OU5aMDJwInCiUcfNK0LCkBKzBWdeBWuIUshV95CyxYEkH9xXfPVYHHLat0lWuEHxX6FmdPQ2JUUMiOuCMMwcwXqxOU51vgtRCa6lUO9BCNUdTUpaIlbrs92ZZ3BdaOZqDsXjXPeewveVvXrriLeEGBnPVoFIGhj8jTIu7TKt7fi05se5AWrbUlcilwQzIcR1lqyvNUGztqjnNoaV7hpWL3MGinumXUGKFWw5DAISi4+wZyKLesAE4M7gKri4ALk51Z8gyUzSfwAYcB5M/HUSp1xrNQ2Fahh9ktrkHSJuRQyWwVbgswywTgTyRr9Cqa6pw74ZuL4n598jmFkviXUTsztHmA1YbZye1y/3Gqex/kRiHrOv7MrfRiho/2e7GrXF73uFI70J9+M9LOXRHqXxotn/Ze4HsafPU13mGTprXZ4/pBF82l0kiYZwVXTqizMMMvMGVtB6pAI5POhDcOksH9Jg0xyvmb1qiJUCqFzqOCdM/Hg13yinbFqcI2ISbTXG+cMNopJrWGcf/CQ0itOB33HoAViNWc1/R70RNRAXLiCmKVCb2krAGoLx4SyGfXa9bosMi1xrUohq0Ucl0lK07kfkTT3U1ImPp5FkR/n0yJMwxjP83SzGQcepkIIE0IbrbZTZGVb28VXgAmAGpI99I7hv5yGWyOqNCv6UGY3/gjxL4sxaVoovsNs/2NYDvklV+OlxhgBuAc9ABWCa9b4W7D4NnPCd6J5bOZQ9bYx8tGVEHfQqaCuV0Dd/OjVJQgUHBpmXR7ptopRcJXGUveW+zN2vt8Z5xHBsJTi0/hVsJeCT2DT6Oc6/WOmv/784wmcO4IgCP5jiJ5XWziz+ug7S/y1k8BNoIE6W2Lu7/esxAQXNBuzN80xsIv4yWioFjtHC1wbnFGwR+Yi6QrZh7iGiwINpqiPgxpG7qhEIET7dIW6H9obIB6/LboD2u+uJZ+Rgx6Hz/Za2JPdceC330cvT7ccz1vCfUHTjX5uzU0HuEvTzhEHc70O02hKkzz1k/kpgYVMZ/58Wkx9ivMyimIyx4QGXcGCrfdmA/HMgVvZb0tyqGMGoq+K/WQwOxVAV+1yCUZgQMBsCY1cP00CnIPbn/rhNAIuJvmJP5snuU9oMgujWRwnRT6k4HxtK3nou92xQzh2CMcO4dghHDuEY4dw7BCOHcKz371GvE70714XjPJCHXiu6B+9aAUE0TTrni8ePXw5JbpxyuHF95u9fkWnof15QW9g/5uH349/A5g6NXT6GAAA</values>
+        <values>H4sIAAAAAAAA/+1aW2/bNhT+K4SeLU83X+Q+FQkCBMiaIW3z0nYCRVIOEd1GUkk8w8De9xMG7Mftl+yQkizPjjulCIpkUwIk1rnx47nwHNr+tLY4tRaW41HHDd0p8V3f9xzHmwduPPVj16M+ZoxZIyvHGQPJO5xWTMKzeQGEh8gNZ+4k8COCs7KSkRNhHglGiixjOcWKF/nnynF8av6SEgEN24rnq4wwURQqTgty24hY8KtfsVpYljhHJMVStnytHJVYsFxFJU/TzxaSapWyLZ/LMsWrBeJ5ynP2BvikyBWIM8oVjjvJBKeSAdvA0abMjlruep3QSAmcy6QQ2cLzEj9gQWi7JIjtgCS+jeeua3vxjDqB4+EwDjabfuBhKYQwIaxUslsiSqqcaGdJwARAeU7ZQ6vofOdtNDFiUnHamjoF0k9g/5z22aaBYjeYzX8M4RD/pqq1ZB8hAPegtkCLIlW8tDuw+CZqiB+Kcl+sQdXKeshGF0Vxiz6W6AryVlBUr4/engNBFmml47LH6xi94EqFhWolD1esdX/Qyj2MYSGK+/5RSHHMIBZQNOqpSv9Y6a8//ziCc4cwHo9fGKKn+RbOrNb6Toi/dZG4UgpSp0vMw3qPEkwwZVGf2tTHwC7io9ZQXuwcLbgsU85AHmHBce3I1sRlyXK0FUWtHVRycssEAiI6TFfw+2O1AeT+ZVEf0LYkgpfK5uRRjcfP9rwwJ3uTA7/93js8dTieFsJDQlk//VzpTge4E05ZThqY67UTuDPmx4Hth1MCgQzmdjijM5vhOHFdj4SYsHHtsHGnvdmAPX3gZhjOeGigrR8jIH2T7aPGzFIAXVbLJQiBAAGxZSFW7TI+5Bx0f2Y7Mxdy0Y8n9jz0Y5swf+64c8/zabzdQqMb6QkBTB8bCLYQlhWneOuv1zwVTMFJAXEndjgNXIgGZVCyU98OvMCfhVNnEs/iVzAV9N3GMBXAZDxdqjfHB4OaPcwGw2zwrLNBnwodZoMXNBvABblBdD3ck4d78n+5Iw735KEXDvfkoRcO9+ThnnyknQ735P/dVDDck4fZ4PvPBsM9+ZXNBnBPJjc8pdCRrMWnLyMLmhO0R8WEtVjvsfp+Um1CA6JnnKVUPvLRtVqV+lmxDFyhWFR/lF3TLxrlDw0TXTdMCI0G5TrOyILDE1KcAR7TP0ZWhvUNHpq7tVCiAoJgmF7m6WorccNzBWYtLfsg+a8AwJ065kdLJ0zo4aaW2D5GTbRqcqJ7yHuwT1QlGlFyU3ACmzIOoizBVapOdmm1wGWps6lWMf2v0YY0y/J3tXusrYH2LQugVBJAsFLvVuOvN5e8vynur1qQZ7rXiu1GYRzB6fYJKyU4ZIyGs7ZYyjI9emRQTDxfRqUo7rhRBijZeJnCwzhJi3tYU/JlPsamjsb6/BqfAf3UkK91BcImfgQzoLwZWXIlT3RddFsBH0a/VBpJvbFmC5HxgnGBmcOMsqmet7DUHWuAb0bNFyMC9tV0c7vsEqZ6d74YsV6fQBbAxIGg/D+W1EyY7phUQo9fm83hW0RPLoYe6NpiuGrh7cNtioEWpDKx4XSvEk4bDjo/3S2D56qCYMj/F5z/8eRrGUbCLqF2bHY1wHPCjecOcv284zwt53sganP+g4n04wjbHrBPu9jVRe9qRpP0k2dL+vlrSvpmG68+64/l+pe/AXeqirkGJwAA</values>
     </sys_hub_action_instance_v2>
     <sys_hub_alias_mapping action="delete_multiple" query="source_id=3d0f41852f2e8f104674caba6fa4e37d"/>
     <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
@@ -1015,16 +1032,16 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-08-12 09:04:01</sys_created_on>
         <sys_id>dfc5da532f6603904674caba6fa4e310</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_mod_count>7</sys_mod_count>
         <sys_scope display_value="CampusDesk AI">28296cbb2f9607104674caba6fa4e352</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-08-12 10:17:20</sys_updated_on>
+        <sys_updated_on>2026-08-18 03:49:20</sys_updated_on>
         <ui_id>e7e4cc68-1727-4dd2-81b7-fc76e7c00a92</ui_id>
         <updation_source/>
         <values>H4sIAAAAAAAA/+1VXWvbMBT9K0PPjvFXkiZvJV2h0DajDYUyirmW5URMljxJTpqF/Pdd2Y4T1oytdI97s450r845ugfviKptVVuzUJfG8KUk068vHuHSYfi9IxJKRqaEKplzy5VMG8AjaxC128DPnJtKwPbpiNAVF7lmXbcKNNZYpsl098sWz7GgCKAIJzSkcTSKoyCILpIwG8VZGOUxMIixoYCMCTw6O9D4dNsg3m/52W3lcGM1l8tufdt1eTyASueOVRh4hL1aJnOGfAoQhnmkBJmDVXrbI5pBPpfiCKy4tK3gEl4N/4EXRsOhO1gwlEg7N/pl2jnVwsUVWEAqNbW17o1TnDLTmpOzAmphZ6dYe2BeOaltiYVMHKqVqEt53zpC+gYnD1MbJMEqp9RR73QUjyu1eTiwvOaycaXbFIqC6Fdg0busto7PjjDBSmyUllBV6GhaabXmTTFyKf2lwIVfCLXBS910+UAdcR+NBf8a8asGfgLNnYo7bIPFLc0MDKdpM4nYDm1iZO8RszUzAcYcRaK76ffaUWwld+LS1h9XQjWv7CXevGadjr33drBPZnq3C5JwzOIsGcSTER0kNLkYTMb5eMAgK8IwohOgzH9gFAdov795vJ8vPt99WTy/DcNHWr0vRRMYFsMwGJ5PUTI6l6Iz+XlndKI/RMe9218mJwiC/9H5cHS4SduB77Q1l//D5Ly4mLR39l5TbpDawmE3hz+H29jicHF6Cm2U/uZEHbH9T9Wr9uKDBgAA</values>
         <workflow_reference/>
     </sys_hub_flow_logic_instance_v2>
-    <sys_hub_pill_compound action="delete_multiple" query="attached_to=690f41852f2e8f104674caba6fa4e320^sys_idNOT IN750f41852f2e8f104674caba6fa4e380"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=690f41852f2e8f104674caba6fa4e320^sys_idNOT IN750f41852f2e8f104674caba6fa4e380,a05748552ff28f904674caba6fa4e3af"/>
     <sys_hub_pill_compound action="INSERT_OR_UPDATE">
         <attached_to>690f41852f2e8f104674caba6fa4e320</attached_to>
         <extra_info/>
@@ -1041,6 +1058,23 @@
         <transform_compositions>[]</transform_compositions>
         <transform_definition_id/>
         <ui_id>22f34e49-1c4b-4cf3-a811-2b7d0402a9b4</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>690f41852f2e8f104674caba6fa4e320</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{0417e3b4-396c-4c48-97d7-eabf112c9ace.Record.resolution}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-18 03:49:20</sys_created_on>
+        <sys_id>a05748552ff28f904674caba6fa4e3af</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="CampusDesk AI">28296cbb2f9607104674caba6fa4e352</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-18 03:49:20</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>6d3b4c15-9641-4cde-a863-424379605b7b</ui_id>
     </sys_hub_pill_compound>
     <sys_hub_flow_variable action="delete_multiple" query="model=690f41852f2e8f104674caba6fa4e320"/>
     <sys_documentation action="INSERT_OR_UPDATE">
@@ -1125,18 +1159,18 @@
         <binding_strategy>com.snc.process_flow.engine.binding.OncePerRecord</binding_strategy>
         <plan>{"@class":"com.snc.process_flow.engine.serialization.plan_data.ChunkingPlanData","chunk_data":{"table":"sys_flow_trigger_plan","id":"420f41852f2e8f104674caba6fa4e396","name":"plan","plan_signature":null},"plan_data":"CHUNKING_PLAN"}</plan>
         <plan_id>299d01012f2e8f104674caba6fa4e351</plan_id>
-        <snapshot>03a0482f2f6243904674caba6fa4e331</snapshot>
+        <snapshot>b76800192ff28f904674caba6fa4e310</snapshot>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-08-05 04:08:28</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>420f41852f2e8f104674caba6fa4e396</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_overrides/>
         <sys_scope/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-08-12 10:17:26</sys_updated_on>
-        <trigger display_value="">ba962e932fe603904674caba6fa4e354</trigger>
+        <sys_updated_on>2026-08-18 03:49:29</sys_updated_on>
+        <trigger display_value="">e65788552ff28f904674caba6fa4e3c8</trigger>
     </sys_flow_trigger_plan>
     <sys_flow_subflow_plan action="delete_multiple" query="plan_id=299d01012f2e8f104674caba6fa4e351"/>
 </record_update>

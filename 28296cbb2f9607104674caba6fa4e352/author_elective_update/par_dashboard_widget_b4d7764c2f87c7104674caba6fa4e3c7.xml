@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="par_dashboard_widget">
+    <par_dashboard_widget action="DELETE">
+        <canvas display_value="">2cd7764c2f87c7104674caba6fa4e3c3</canvas>
+        <component display_value="Donut">a2b0596cec6b9d49dd1ff9bf76b5084b</component>
+        <component_props>{"configVersion":"23.0.0-ci-SNAPSHOT","showDataLabels":false,"dataLabelsType":"both","truncationType":"end","showRegister":true,"registerPosition":"bottom","registerOrientation":"horizontal","showRegisterOnSameLine":false,"showRegisterValue":false,"legendHorizontalAlignment":"center","legendExpandToFit":false,"showRegisterPercentage":false,"showPercentageOfTotalInTooltip":true,"colorConfig":{"type":"default"},"newReporting":false,"enableAddZerosAtApi":true,"additionalGroupByConfig":[],"dataSources":[{"isDatabaseView":false,"allowRealTime":true,"label":"Incident","sourceType":"table","tableOrViewName":"incident","preferredVisualizations":["d24d53f60350de7a652caf3188a46ed2"],"id":"dGFibGVpbmNpZGVudDE3ODc4MDg1MTgyNzk=","dataCategories":["trend","group","simple"]}],"showHeader":true,"showTotalAggregate":false,"showSubAggregate":false,"showFirstGroupAggregate":false,"showSecondGroupAggregate":false,"hideMatrixAggregate":false,"lineClamp":1,"headerTitleAlignment":"start","wrapTitle":false,"showLoadingIndicator":false,"showHeaderSeparator":false,"contextMenuActions":[],"headerTitle":"Incident State Distribution","headingLevel":2,"showBorder":true,"bareBorder":false,"telemetry":null,"showDataPassthrough":false,"showAdditionalGroupBySelector":false,"allowAdditionalGroupByPerMetric":false,"metrics":[{"dataSource":"dGFibGVpbmNpZGVudDE3ODc4MDg1MTgyNzk=","id":"ZEdGaWJHVnBibU5wWkdWdWRERTNPRGM0TURnMU1UZ3lOems9MTc4NzgwODUxOTcwNg==","aggregateFunction":"COUNT","numberFormat":{"customFormat":false},"axisId":"primary"}],"groupBy":[{"groupBy":[{"dataSource":"dGFibGVpbmNpZGVudDE3ODc4MDg1MTgyNzk=","groupByField":"state","isRange":false,"isChoice":true,"isPaBucket":false}],"maxNumberOfGroups":20,"numberOfGroupsBasedOn":"NO_OF_GROUP_BASED_ON_PER_METRIC","showOthers":false,"disableRanges":false}],"filterPerMetric":[],"headerColor":null,"titleColor":null,"sortBy":"value","sortByOrder":"desc","trendBy":null,"showChange":false,"showChangePercentage":false,"showTarget":false,"showForecast":false,"showForecastRange":false,"showTrend":false,"showConfidenceBand":false,"showGapPercentage":false,"showSparkline":false,"showMetricLabel":false,"showThreshold":false,"showComment":false,"showTotalValue":false,"followFilters":true,"showFilterIcon":true,"enableRealTimeUpdate":false,"enableDrilldown":true,"enableClickAndStay":false,"showDataTable":false,"enableCustomEmptyState":false,"componentId":"11qajmea","emptyStateIllustration":"no-data","emptyStateHeading":"No data available.","emptyStateHeadingLevel":3,"emptyStateContent":"There are no scores available for the selected criteria. Contact your admin for more info.","emptyStateAlignment":"vertical-centered","refreshFrequency":null,"hideDevSettings":false,"configPropModifiers":{},"filterConfigurations":"@state.parFilters","showMaximumRange":false,"allowChangeDateRange":false,"showDateRangeByDefault":false,"applyDateRange":false,"numberOfPeriods":3,"showAbsolutePeriod":false,"autoAggregatePeriods":false,"scoreType":null,"showChangeFrom":"previous","useCurrentDateForEnd":false,"period":"M","useDataCache":false,"cacheExpirationTime":0,"showCacheTime":true,"dateFormat":"default","showRefresh":true,"showExportOptions":true,"showFilterAsSeparateSeries":false,"userInfo":"@context.session.user","colors":{},"originalShowHeader":true}</component_props>
+        <h>24</h>
+        <name/>
+        <required_translations>[{"message":"Incident","comment":"","code":"PAR_DASHBOARD.2cd7764c2f87c7104674caba6fa4e3c3.b4d7764c2f87c7104674caba6fa4e3c7"},{"message":"Incident State Distribution","comment":"","code":"PAR_DASHBOARD.2cd7764c2f87c7104674caba6fa4e3c3.b4d7764c2f87c7104674caba6fa4e3c7"},{"message":"No data available.","comment":"","code":"PAR_DASHBOARD.2cd7764c2f87c7104674caba6fa4e3c3.b4d7764c2f87c7104674caba6fa4e3c7"},{"message":"There are no scores available for the selected criteria. Contact your admin for more info.","comment":"","code":"PAR_DASHBOARD.2cd7764c2f87c7104674caba6fa4e3c3.b4d7764c2f87c7104674caba6fa4e3c7"}]</required_translations>
+        <stored_component/>
+        <sys_class_name>par_dashboard_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-27 05:43:47</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>b4d7764c2f87c7104674caba6fa4e3c7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package display_value="CampusDesk AI" source="x_1971543_campus_0">28296cbb2f9607104674caba6fa4e352</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CampusDesk AI">28296cbb2f9607104674caba6fa4e352</sys_scope>
+        <sys_update_name>par_dashboard_widget_b4d7764c2f87c7104674caba6fa4e3c7</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-27 05:43:47</sys_updated_on>
+        <visualization/>
+        <w>24</w>
+        <widget_props/>
+        <x>0</x>
+        <y>0</y>
+    </par_dashboard_widget>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="CampusDesk AI">28296cbb2f9607104674caba6fa4e352</application>
+        <file_path/>
+        <instance_id>61376ff2ebce879056eafddacad0cd95</instance_id>
+        <instance_name>dev440008</instance_name>
+        <name>par_dashboard_widget_b4d7764c2f87c7104674caba6fa4e3c7</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="par_dashboard_widget"><par_dashboard_widget action="INSERT_OR_UPDATE"><canvas display_value="">2cd7764c2f87c7104674caba6fa4e3c3</canvas><component display_value="Donut">a2b0596cec6b9d49dd1ff9bf76b5084b</component><component_props>{"configVersion":"23.0.0-ci-SNAPSHOT","showDataLabels":false,"dataLabelsType":"both","truncationType":"end","showRegister":true,"registerPosition":"bottom","registerOrientation":"horizontal","showRegisterOnSameLine":false,"showRegisterValue":false,"legendHorizontalAlignment":"center","legendExpandToFit":false,"showRegisterPercentage":false,"showPercentageOfTotalInTooltip":true,"colorConfig":{"type":"default"},"newReporting":false,"enableAddZerosAtApi":true,"additionalGroupByConfig":[],"dataSources":[{"isDatabaseView":false,"allowRealTime":true,"label":"Incident","sourceType":"table","tableOrViewName":"incident","preferredVisualizations":["d24d53f60350de7a652caf3188a46ed2"],"id":"dGFibGVpbmNpZGVudDE3ODc4MDg1MTgyNzk=","dataCategories":["trend","group","simple"]}],"showHeader":true,"showTotalAggregate":false,"showSubAggregate":false,"showFirstGroupAggregate":false,"showSecondGroupAggregate":false,"hideMatrixAggregate":false,"lineClamp":1,"headerTitleAlignment":"start","wrapTitle":false,"showLoadingIndicator":false,"showHeaderSeparator":false,"contextMenuActions":[],"headerTitle":"Incident State Distribution","headingLevel":2,"showBorder":true,"bareBorder":false,"telemetry":null,"showDataPassthrough":false,"showAdditionalGroupBySelector":false,"allowAdditionalGroupByPerMetric":false,"metrics":[{"dataSource":"dGFibGVpbmNpZGVudDE3ODc4MDg1MTgyNzk=","id":"ZEdGaWJHVnBibU5wWkdWdWRERTNPRGM0TURnMU1UZ3lOems9MTc4NzgwODUxOTcwNg==","aggregateFunction":"COUNT","numberFormat":{"customFormat":false},"axisId":"primary"}],"groupBy":[{"groupBy":[{"dataSource":"dGFibGVpbmNpZGVudDE3ODc4MDg1MTgyNzk=","groupByField":"state","isRange":false,"isChoice":true,"isPaBucket":false}],"maxNumberOfGroups":20,"numberOfGroupsBasedOn":"NO_OF_GROUP_BASED_ON_PER_METRIC","showOthers":false,"disableRanges":false}],"filterPerMetric":[],"headerColor":null,"titleColor":null,"sortBy":"value","sortByOrder":"desc","trendBy":null,"showChange":false,"showChangePercentage":false,"showTarget":false,"showForecast":false,"showForecastRange":false,"showTrend":false,"showConfidenceBand":false,"showGapPercentage":false,"showSparkline":false,"showMetricLabel":false,"showThreshold":false,"showComment":false,"showTotalValue":false,"followFilters":true,"showFilterIcon":true,"enableRealTimeUpdate":false,"enableDrilldown":true,"enableClickAndStay":false,"showDataTable":false,"enableCustomEmptyState":false,"componentId":"11qajmea","emptyStateIllustration":"no-data","emptyStateHeading":"No data available.","emptyStateHeadingLevel":3,"emptyStateContent":"There are no scores available for the selected criteria. Contact your admin for more info.","emptyStateAlignment":"vertical-centered","refreshFrequency":null,"hideDevSettings":false,"configPropModifiers":{},"filterConfigurations":"@state.parFilters","showMaximumRange":false,"allowChangeDateRange":false,"showDateRangeByDefault":false,"applyDateRange":false,"numberOfPeriods":3,"showAbsolutePeriod":false,"autoAggregatePeriods":false,"scoreType":null,"showChangeFrom":"previous","useCurrentDateForEnd":false,"period":"M","useDataCache":false,"cacheExpirationTime":0,"showCacheTime":true,"dateFormat":"default","showRefresh":true,"showExportOptions":true,"showFilterAsSeparateSeries":false,"userInfo":"@context.session.user","colors":{},"originalShowHeader":true}</component_props><h>24</h><name/><required_translations>[{"message":"Incident","comment":"","code":"PAR_DASHBOARD.2cd7764c2f87c7104674caba6fa4e3c3.b4d7764c2f87c7104674caba6fa4e3c7"},{"message":"Incident State Distribution","comment":"","code":"PAR_DASHBOARD.2cd7764c2f87c7104674caba6fa4e3c3.b4d7764c2f87c7104674caba6fa4e3c7"},{"message":"No data available.","comment":"","code":"PAR_DASHBOARD.2cd7764c2f87c7104674caba6fa4e3c3.b4d7764c2f87c7104674caba6fa4e3c7"},{"message":"There are no scores available for the selected criteria. Contact your admin for more info.","comment":"","code":"PAR_DASHBOARD.2cd7764c2f87c7104674caba6fa4e3c3.b4d7764c2f87c7104674caba6fa4e3c7"}]</required_translations><stored_component/><sys_class_name>par_dashboard_widget</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-08-27 05:43:47</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>b4d7764c2f87c7104674caba6fa4e3c7</sys_id><sys_mod_count>0</sys_mod_count><sys_name/><sys_overrides/><sys_package display_value="CampusDesk AI" source="x_1971543_campus_0">28296cbb2f9607104674caba6fa4e352</sys_package><sys_policy/><sys_scope display_value="CampusDesk AI">28296cbb2f9607104674caba6fa4e352</sys_scope><sys_update_name>par_dashboard_widget_b4d7764c2f87c7104674caba6fa4e3c7</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-08-27 05:43:47</sys_updated_on><visualization/><w>24</w><widget_props/><x>0</x><y>0</y></par_dashboard_widget></record_update>]]></payload>
+        <payload_hash>745335914</payload_hash>
+        <record_name/>
+        <reverted_from/>
+        <source>3b72457f2f5a07104674caba6fa4e39f</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-27 05:43:47</sys_created_on>
+        <sys_id>bcd7764c2f87c7104674caba6fa4e3d9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1a041bef18e0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-27 05:43:47</sys_updated_on>
+        <type>PAR Dashboard Widget</type>
+        <update_guid>3cd7764c5687c71058c51fc2cd3a71d8</update_guid>
+        <update_guid_history>3cd7764c5687c71058c51fc2cd3a71d8:745335914</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="">c9d7b64c2f87c7104674caba6fa4e35f</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-27 05:43:49</sys_created_on>
+        <sys_db_object display_value="" name="par_dashboard_widget">par_dashboard_widget</sys_db_object>
+        <sys_id>dc9905459d764680982acd492efa8900</sys_id>
+        <sys_metadata>b4d7764c2f87c7104674caba6fa4e3c7</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="CampusDesk AI" source="x_1971543_campus_0">28296cbb2f9607104674caba6fa4e352</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="CampusDesk AI">28296cbb2f9607104674caba6fa4e352</sys_scope>
+        <sys_scope_delete display_value="">00f198debf51430880043b00f9ed0910</sys_scope_delete>
+        <sys_update_name>par_dashboard_widget_b4d7764c2f87c7104674caba6fa4e3c7</sys_update_name>
+        <sys_update_version display_value="par_dashboard_widget_b4d7764c2f87c7104674caba6fa4e3c7">bcd7764c2f87c7104674caba6fa4e3d9</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-27 05:43:49</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

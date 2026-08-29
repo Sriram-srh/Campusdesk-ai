@@ -10,7 +10,7 @@
 	return '';  // return the calculated value
 
 })(current);]]></calculation>
-        <choice/>
+        <choice>1</choice>
         <choice_field/>
         <choice_table/>
         <column_label>Category</column_label>
@@ -59,7 +59,7 @@
         <sys_scope display_value="CampusDesk AI">28296cbb2f9607104674caba6fa4e352</sys_scope>
         <sys_update_name>sys_dictionary_x_1971543_campus_0_ai_recommendation_category</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-08-04 10:40:48</sys_updated_on>
+        <sys_updated_on>2026-08-26 07:04:48</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>

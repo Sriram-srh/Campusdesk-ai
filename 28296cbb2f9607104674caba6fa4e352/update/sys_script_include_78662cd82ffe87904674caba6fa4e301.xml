@@ -53,6 +53,44 @@ CampusDeskAIRecommendationEngine.prototype = {
 
         /*
          * ---------------------------------------------------------
+         * DATABASE
+         * ---------------------------------------------------------
+         */
+
+        } else if (category == 'Database') {
+
+            guidance =
+                '<b>AI Resolution Guidance</b><br>' +
+                '1. Identify the affected database or database service.<br>' +
+                '2. Verify whether the database server is reachable.<br>' +
+                '3. Check database service and connection status.<br>' +
+                '4. Verify user access permissions and authentication.<br>' +
+                '5. Check whether multiple users are experiencing the same issue.<br>' +
+                '6. Review recent database or configuration changes when appropriate.<br>' +
+                '7. Escalate to the appropriate database support team if the issue persists.';
+
+
+        /*
+         * ---------------------------------------------------------
+         * PASSWORD RESET
+         * ---------------------------------------------------------
+         */
+
+        } else if (category == 'Password Reset') {
+
+            guidance =
+                '<b>AI Resolution Guidance</b><br>' +
+                '1. Verify the identity of the requesting user.<br>' +
+                '2. Confirm the affected campus account.<br>' +
+                '3. Check whether the account is active and not locked.<br>' +
+                '4. Perform the password reset using the approved process.<br>' +
+                '5. Ask the user to sign in again with the new password.<br>' +
+                '6. Verify that the user can access the required campus service.<br>' +
+                '7. Escalate to the appropriate support team if the reset does not resolve the issue.';
+
+
+        /*
+         * ---------------------------------------------------------
          * HARDWARE
          * ---------------------------------------------------------
          */
@@ -91,7 +129,7 @@ CampusDeskAIRecommendationEngine.prototype = {
 
         /*
          * ---------------------------------------------------------
-         * GENERAL
+         * GENERAL / INQUIRY / HELP
          * ---------------------------------------------------------
          */
 
@@ -122,10 +160,12 @@ CampusDeskAIRecommendationEngine.prototype = {
      *
      * CampusDesk AI mapping:
      *
-     * Network  -> KB0010015
-     * Hardware -> Published Hardware article
-     * Software -> Published Software article
-     * General  -> No article
+     * Network       -> KB0010015
+     * Hardware      -> Published Hardware article
+     * Software      -> Published Software article
+     * Database      -> No article unless specifically configured
+     * Password Reset-> No article unless specifically configured
+     * General       -> No article
      *
      */
 
@@ -176,6 +216,34 @@ CampusDeskAIRecommendationEngine.prototype = {
                 'CONTAINS',
                 'Software'
             );
+
+
+        /*
+         * ---------------------------------------------------------
+         * DATABASE
+         * ---------------------------------------------------------
+         *
+         * No database article is currently configured.
+         *
+         */
+
+        } else if (category == 'Database') {
+
+            return '';
+
+
+        /*
+         * ---------------------------------------------------------
+         * PASSWORD RESET
+         * ---------------------------------------------------------
+         *
+         * No password-reset article is currently configured.
+         *
+         */
+
+        } else if (category == 'Password Reset') {
+
+            return '';
 
 
         /*
@@ -250,6 +318,7 @@ CampusDeskAIRecommendationEngine.prototype = {
             /*
              * AI Category Intelligence
              */
+
             suggested_category: '',
             confidence: 0,
             recommendation: '',
@@ -258,6 +327,7 @@ CampusDeskAIRecommendationEngine.prototype = {
             /*
              * AI Priority Intelligence
              */
+
             suggested_impact: '',
             suggested_urgency: '',
             suggested_priority: '',
@@ -266,6 +336,7 @@ CampusDeskAIRecommendationEngine.prototype = {
             /*
              * AI Resolution Intelligence
              */
+
             resolution_guidance: ''
         };
 
@@ -287,67 +358,326 @@ CampusDeskAIRecommendationEngine.prototype = {
 
 
         /*
-         * ---------------------------------------------------------
+         * =========================================================
          * CAMPUSDESK AI CATEGORY DETECTION
+         * =========================================================
+         *
+         * IMPORTANT:
+         *
+         * The actual Incident Category is authoritative when it
+         * is already selected.
+         *
+         * This prevents keyword conflicts such as:
+         *
+         * Database incident containing "computer"
+         * Password Reset incident containing "login"
+         *
+         * If no actual category exists, keyword classification
+         * is used as a fallback.
+         *
+         */
+
+
+        /*
+         * ---------------------------------------------------------
+         * READ ACTUAL INCIDENT CATEGORY
+         * ---------------------------------------------------------
+         */
+
+        var actualCategory = '';
+
+        try {
+
+            actualCategory =
+                incident.getDisplayValue('category');
+
+        } catch (categoryEx) {
+
+            actualCategory = '';
+        }
+
+        actualCategory =
+            (actualCategory || '').toString().trim();
+
+
+        /*
+         * ---------------------------------------------------------
+         * USE ACTUAL INCIDENT CATEGORY
          * ---------------------------------------------------------
          */
 
         if (
-            text.indexOf('wifi') >= 0 ||
-            text.indexOf('internet') >= 0 ||
-            text.indexOf('network') >= 0
+            actualCategory &&
+            actualCategory != '-- None --'
         ) {
 
-            result.suggested_category = 'Network';
+            /*
+             * Use the selected Incident Category as the
+             * authoritative AI category.
+             */
 
-            result.confidence = 0.90;
+            result.suggested_category =
+                actualCategory;
+
+            /*
+             * High confidence because the category was
+             * explicitly selected on the incident.
+             */
+
+            result.confidence =
+                0.95;
+
+
+            /*
+             * -----------------------------------------------------
+             * NETWORK
+             * -----------------------------------------------------
+             */
+
+            if (actualCategory == 'Network') {
+
+                result.recommendation =
+                    '<b>AI Recommendation</b><br>' +
+                    'This incident is classified as a network-related issue. ' +
+                    'Verify network connectivity, Wi-Fi availability, affected ' +
+                    'locations, and whether multiple users are experiencing the issue.';
+
+
+            /*
+             * -----------------------------------------------------
+             * DATABASE
+             * -----------------------------------------------------
+             */
+
+            } else if (actualCategory == 'Database') {
+
+                result.recommendation =
+                    '<b>AI Recommendation</b><br>' +
+                    'This incident is classified as a database-related issue. ' +
+                    'Verify database server connectivity, service status, ' +
+                    'user permissions, and database availability before escalation.';
+
+
+            /*
+             * -----------------------------------------------------
+             * PASSWORD RESET
+             * -----------------------------------------------------
+             */
+
+            } else if (actualCategory == 'Password Reset') {
+
+                result.recommendation =
+                    '<b>AI Recommendation</b><br>' +
+                    'This incident is classified as a password reset request. ' +
+                    'Verify the user identity, confirm the account status, ' +
+                    'perform the approved password reset process, and verify login access.';
+
+
+            /*
+             * -----------------------------------------------------
+             * HARDWARE
+             * -----------------------------------------------------
+             */
+
+            } else if (actualCategory == 'Hardware') {
+
+                result.recommendation =
+                    '<b>AI Recommendation</b><br>' +
+                    'This incident is classified as a hardware-related issue. ' +
+                    'Check the affected device, power status, peripherals, ' +
+                    'and hardware condition.';
+
+
+            /*
+             * -----------------------------------------------------
+             * SOFTWARE
+             * -----------------------------------------------------
+             */
+
+            } else if (actualCategory == 'Software') {
+
+                result.recommendation =
+                    '<b>AI Recommendation</b><br>' +
+                    'This incident is classified as a software-related issue. ' +
+                    'Verify the affected application, user access, authentication, ' +
+                    'and recent software changes.';
+
+
+            /*
+             * -----------------------------------------------------
+             * INQUIRY / HELP
+             * -----------------------------------------------------
+             */
+
+            } else if (actualCategory == 'Inquiry / Help') {
+
+                result.recommendation =
+                    '<b>AI Recommendation</b><br>' +
+                    'This incident is classified as an inquiry or help request. ' +
+                    'Review the user request and provide the appropriate campus support.';
+
+
+            /*
+             * -----------------------------------------------------
+             * OTHER CATEGORY
+             * -----------------------------------------------------
+             */
+
+            } else {
+
+                result.recommendation =
+                    '<b>AI Recommendation</b><br>' +
+                    'This incident is classified as ' +
+                    actualCategory +
+                    '. Review the incident details and assign it to the appropriate support team.';
+            }
+
+
+            /*
+             * -----------------------------------------------------
+             * LOG CATEGORY SOURCE
+             * -----------------------------------------------------
+             */
+
+            gs.info(
+                '[CampusDesk AI] Category determined from Incident Category: ' +
+                actualCategory
+            );
+        }
+
+
+        /*
+         * =========================================================
+         * FALLBACK AI KEYWORD CLASSIFICATION
+         * =========================================================
+         *
+         * Used only when Incident Category is empty.
+         *
+         */
+
+
+        else if (
+            text.indexOf('wifi') >= 0 ||
+            text.indexOf('wi-fi') >= 0 ||
+            text.indexOf('internet') >= 0 ||
+            text.indexOf('network') >= 0 ||
+            text.indexOf('router') >= 0 ||
+            text.indexOf('connectivity') >= 0
+        ) {
+
+            result.suggested_category =
+                'Network';
+
+            result.confidence =
+                0.90;
 
             result.recommendation =
                 '<b>AI Recommendation</b><br>' +
                 'This incident appears to be network related. ' +
                 'Verify the campus network connection, Wi-Fi availability, ' +
                 'and affected location before assigning to the network support team.';
+        }
 
 
-        } else if (
+        else if (
+            text.indexOf('database') >= 0 ||
+            text.indexOf('sql') >= 0 ||
+            text.indexOf('db connection') >= 0 ||
+            text.indexOf('database connection') >= 0 ||
+            text.indexOf('database server') >= 0 ||
+            text.indexOf('database access') >= 0
+        ) {
+
+            result.suggested_category =
+                'Database';
+
+            result.confidence =
+                0.90;
+
+            result.recommendation =
+                '<b>AI Recommendation</b><br>' +
+                'This incident appears to be database related. ' +
+                'Verify database server connectivity, service status, ' +
+                'user permissions, and database availability before escalation.';
+        }
+
+
+        else if (
+            text.indexOf('password reset') >= 0 ||
+            text.indexOf('reset password') >= 0 ||
+            text.indexOf('forgot password') >= 0 ||
+            text.indexOf('forgotten password') >= 0 ||
+            text.indexOf('password forgotten') >= 0
+        ) {
+
+            result.suggested_category =
+                'Password Reset';
+
+            result.confidence =
+                0.95;
+
+            result.recommendation =
+                '<b>AI Recommendation</b><br>' +
+                'This incident appears to be related to a password reset. ' +
+                'Verify the user identity, confirm the account status, ' +
+                'reset the password, and ask the user to authenticate again.';
+        }
+
+
+        else if (
             text.indexOf('computer') >= 0 ||
             text.indexOf('laptop') >= 0 ||
             text.indexOf('desktop') >= 0 ||
-            text.indexOf('system') >= 0
+            text.indexOf('system') >= 0 ||
+            text.indexOf('monitor') >= 0 ||
+            text.indexOf('keyboard') >= 0 ||
+            text.indexOf('mouse') >= 0 ||
+            text.indexOf('printer') >= 0 ||
+            text.indexOf('power') >= 0
         ) {
 
-            result.suggested_category = 'Hardware';
+            result.suggested_category =
+                'Hardware';
 
-            result.confidence = 0.85;
+            result.confidence =
+                0.85;
 
             result.recommendation =
                 '<b>AI Recommendation</b><br>' +
                 'This incident appears to involve a computer or hardware issue. ' +
                 'Check the affected device, power status, peripherals, and hardware condition.';
+        }
 
 
-        } else if (
+        else if (
             text.indexOf('software') >= 0 ||
             text.indexOf('application') >= 0 ||
-            text.indexOf('login') >= 0 ||
-            text.indexOf('password') >= 0
+            text.indexOf('app') >= 0 ||
+            text.indexOf('program') >= 0 ||
+            text.indexOf('crash') >= 0 ||
+            text.indexOf('error') >= 0
         ) {
 
-            result.suggested_category = 'Software';
+            result.suggested_category =
+                'Software';
 
-            result.confidence = 0.85;
+            result.confidence =
+                0.85;
 
             result.recommendation =
                 '<b>AI Recommendation</b><br>' +
                 'This incident appears to be software or application related. ' +
                 'Verify the application, user access, authentication status, and recent changes.';
+        }
 
 
-        } else {
+        else {
 
-            result.suggested_category = 'General';
+            result.suggested_category =
+                'General';
 
-            result.confidence = 0.50;
+            result.confidence =
+                0.50;
 
             result.recommendation =
                 '<b>AI Recommendation</b><br>' +
@@ -357,9 +687,9 @@ CampusDeskAIRecommendationEngine.prototype = {
 
 
         /*
-         * ---------------------------------------------------------
+         * =========================================================
          * KNOWLEDGE ARTICLE RECOMMENDATION
-         * ---------------------------------------------------------
+         * =========================================================
          */
 
         result.knowledge_article =
@@ -370,11 +700,10 @@ CampusDeskAIRecommendationEngine.prototype = {
 
 
         /*
-         * ---------------------------------------------------------
+         * =========================================================
          * AI RESOLUTION GUIDANCE
-         * ---------------------------------------------------------
+         * =========================================================
          *
-         * IMPORTANT:
          * This is generated AFTER category detection.
          *
          */
@@ -387,9 +716,9 @@ CampusDeskAIRecommendationEngine.prototype = {
 
 
         /*
-         * ---------------------------------------------------------
+         * =========================================================
          * SAFETY FALLBACK
-         * ---------------------------------------------------------
+         * =========================================================
          *
          * Ensure the field never remains empty when a category
          * has been detected.
@@ -407,9 +736,9 @@ CampusDeskAIRecommendationEngine.prototype = {
 
 
         /*
-         * ---------------------------------------------------------
+         * =========================================================
          * AI PRIORITY INTELLIGENCE
-         * ---------------------------------------------------------
+         * =========================================================
          *
          * Impact:
          * 1 = High
@@ -458,15 +787,18 @@ CampusDeskAIRecommendationEngine.prototype = {
 
         if (highImpact) {
 
-            result.suggested_impact = '1';
+            result.suggested_impact =
+                '1';
 
         } else if (mediumImpact) {
 
-            result.suggested_impact = '2';
+            result.suggested_impact =
+                '2';
 
         } else {
 
-            result.suggested_impact = '3';
+            result.suggested_impact =
+                '3';
         }
 
 
@@ -497,22 +829,25 @@ CampusDeskAIRecommendationEngine.prototype = {
 
         if (highUrgency) {
 
-            result.suggested_urgency = '1';
+            result.suggested_urgency =
+                '1';
 
         } else if (mediumUrgency) {
 
-            result.suggested_urgency = '2';
+            result.suggested_urgency =
+                '2';
 
         } else {
 
-            result.suggested_urgency = '3';
+            result.suggested_urgency =
+                '3';
         }
 
 
         /*
-         * ---------------------------------------------------------
+         * =========================================================
          * PRIORITY CALCULATION
-         * ---------------------------------------------------------
+         * =========================================================
          */
 
         if (
@@ -520,83 +855,96 @@ CampusDeskAIRecommendationEngine.prototype = {
             result.suggested_urgency == '1'
         ) {
 
-            result.suggested_priority = '1';
+            result.suggested_priority =
+                '1';
 
             result.priority_reason =
                 '<b>AI Priority Reason</b><br>' +
                 'High impact and high urgency were detected. ' +
                 'The incident appears to affect multiple users or an important ' +
                 'campus service and requires immediate attention.';
+        }
 
 
-        } else if (
+        else if (
             result.suggested_impact == '1' &&
             result.suggested_urgency == '2'
         ) {
 
-            result.suggested_priority = '2';
+            result.suggested_priority =
+                '2';
 
             result.priority_reason =
                 '<b>AI Priority Reason</b><br>' +
                 'The incident has a high potential impact but moderate urgency. ' +
                 'Multiple users or an important campus service may be affected.';
+        }
 
 
-        } else if (
+        else if (
             result.suggested_impact == '2' &&
             result.suggested_urgency == '1'
         ) {
 
-            result.suggested_priority = '2';
+            result.suggested_priority =
+                '2';
 
             result.priority_reason =
                 '<b>AI Priority Reason</b><br>' +
                 'The incident has moderate impact but high urgency. ' +
                 'The issue requires expedited support.';
+        }
 
 
-        } else if (
+        else if (
             result.suggested_impact == '2' &&
             result.suggested_urgency == '2'
         ) {
 
-            result.suggested_priority = '3';
+            result.suggested_priority =
+                '3';
 
             result.priority_reason =
                 '<b>AI Priority Reason</b><br>' +
                 'The incident has moderate impact and moderate urgency. ' +
                 'Normal support handling is appropriate.';
+        }
 
 
-        } else if (
+        else if (
             result.suggested_impact == '3' &&
             result.suggested_urgency == '1'
         ) {
 
-            result.suggested_priority = '3';
+            result.suggested_priority =
+                '3';
 
             result.priority_reason =
                 '<b>AI Priority Reason</b><br>' +
                 'The incident affects a limited number of users but requires ' +
                 'quick attention because of its urgency.';
+        }
 
 
-        } else if (
+        else if (
             result.suggested_impact == '3' &&
             result.suggested_urgency == '2'
         ) {
 
-            result.suggested_priority = '4';
+            result.suggested_priority =
+                '4';
 
             result.priority_reason =
                 '<b>AI Priority Reason</b><br>' +
                 'The incident has limited impact and moderate urgency. ' +
                 'Standard support handling is appropriate.';
+        }
 
 
-        } else {
+        else {
 
-            result.suggested_priority = '4';
+            result.suggested_priority =
+                '4';
 
             result.priority_reason =
                 '<b>AI Priority Reason</b><br>' +
@@ -606,9 +954,9 @@ CampusDeskAIRecommendationEngine.prototype = {
 
 
         /*
-         * ---------------------------------------------------------
+         * =========================================================
          * LOGGING
-         * ---------------------------------------------------------
+         * =========================================================
          */
 
         gs.info(
@@ -630,9 +978,9 @@ CampusDeskAIRecommendationEngine.prototype = {
 
 
         /*
-         * ---------------------------------------------------------
+         * =========================================================
          * FINAL RESULT
-         * ---------------------------------------------------------
+         * =========================================================
          */
 
         return result;
@@ -645,13 +993,13 @@ CampusDeskAIRecommendationEngine.prototype = {
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-08-15 03:39:13</sys_created_on>
         <sys_id>78662cd82ffe87904674caba6fa4e301</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_mod_count>7</sys_mod_count>
         <sys_name>CampusDeskAIRecommendationEngine</sys_name>
         <sys_package display_value="CampusDesk AI" source="x_1971543_campus_0">28296cbb2f9607104674caba6fa4e352</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="CampusDesk AI">28296cbb2f9607104674caba6fa4e352</sys_scope>
         <sys_update_name>sys_script_include_78662cd82ffe87904674caba6fa4e301</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-08-16 05:42:42</sys_updated_on>
+        <sys_updated_on>2026-08-19 08:03:25</sys_updated_on>
     </sys_script_include>
 </record_update>

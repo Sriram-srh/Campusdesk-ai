@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="par_dashboard_widget">
+    <par_dashboard_widget action="INSERT_OR_UPDATE">
+        <canvas display_value="">2cd7764c2f87c7104674caba6fa4e3c3</canvas>
+        <component display_value="Filter">226449101138d0dff1abe0e1566c8b2a</component>
+        <component_props>{"filterId":"1k114hq9898ejuac2iuo","filterName":"Assignment Group","filterCustomId":"","filterComponentType":"singleselect","datasource":{"type":"table","payload":{"table":"sys_user_group","primaryKey":"sys_id"}},"targets":[{"type":"table","payload":{"field":"assignment_group","table":"incident","primaryKey":"sys_id"}}],"defaultSelectedItems":[],"defaultSelectedDateRange":{"range":""},"dateFilterView":"calendar-reldates","sort":"ASC","filterElementType":"pill","isShowSelectedValueInPill":true,"filterElementLayout":"vertical","enableClearFilter":true,"primaryActionLabel":"Apply","maxElements":500,"filterConfigurations":"@state.parFilters","cascadeScope":"20d7764c2f87c7104674caba6fa4e3c0","isDashboard":true,"isGroup":false,"value":[]}</component_props>
+        <h>4</h>
+        <name/>
+        <required_translations>[{"message":"Assignment Group","comment":"","code":"PAR_DASHBOARD.2cd7764c2f87c7104674caba6fa4e3c3.66ad138c2fcbc7104674caba6fa4e394"},{"message":"Apply","comment":"","code":"PAR_DASHBOARD.2cd7764c2f87c7104674caba6fa4e3c3.66ad138c2fcbc7104674caba6fa4e394"}]</required_translations>
+        <stored_component/>
+        <sys_class_name>par_dashboard_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-27 08:29:07</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>66ad138c2fcbc7104674caba6fa4e394</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package display_value="CampusDesk AI" source="x_1971543_campus_0">28296cbb2f9607104674caba6fa4e352</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CampusDesk AI">28296cbb2f9607104674caba6fa4e352</sys_scope>
+        <sys_update_name>par_dashboard_widget_66ad138c2fcbc7104674caba6fa4e394</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-27 08:29:07</sys_updated_on>
+        <visualization/>
+        <w>12</w>
+        <widget_props/>
+        <x>24</x>
+        <y>0</y>
+    </par_dashboard_widget>
+</record_update>

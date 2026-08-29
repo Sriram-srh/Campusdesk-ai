@@ -5,7 +5,7 @@
         <cancel_condition/>
         <collection>incident</collection>
         <condition_class/>
-        <duration>1970-01-03 00:00:00</duration>
+        <duration>1970-01-01 00:01:00</duration>
         <duration_type/>
         <enable_logging>false</enable_logging>
         <flow display_value="Default SLA flow">828f267973333300e289235f04f6a7a3</flow>
@@ -17,14 +17,15 @@
         <resume_condition/>
         <retroactive>false</retroactive>
         <retroactive_pause>true</retroactive_pause>
-        <schedule display_value="8-5 weekdays excluding holidays">090eecae0a0a0b260077e1dfa71da828</schedule>
-        <schedule_source>sla_definition</schedule_source>
+        <schedule/>
+        <schedule_source>no_schedule</schedule_source>
         <schedule_source_field/>
         <set_start_to/>
-        <start_condition table="incident">priority=4^EQ<item display_value="4 - Low" endquery="false" field="priority" goto="false" newquery="false" operator="=" or="false" value="4"/>
+        <start_condition table="incident">priority=4^active=true^EQ<item display_value="4 - Low" endquery="false" field="priority" goto="false" newquery="false" operator="=" or="false" value="4"/>
+            <item endquery="false" field="active" goto="false" newquery="false" operator="=" or="false" value="true"/>
             <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
         </start_condition>
-        <stop_condition table="incident">state=6^EQ<item display_value="Resolved" endquery="false" field="state" goto="false" newquery="false" operator="=" or="false" value="6"/>
+        <stop_condition table="incident">incident_state=6^EQ<item display_value="Resolved" endquery="false" field="incident_state" goto="false" newquery="false" operator="=" or="false" value="6"/>
             <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
         </stop_condition>
         <sys_class_name>contract_sla</sys_class_name>
@@ -33,7 +34,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>1ed1ddc92f2e8f104674caba6fa4e327</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_name>CampusDesk P4 Resolution</sys_name>
         <sys_overrides/>
         <sys_package display_value="CampusDesk AI" source="x_1971543_campus_0">28296cbb2f9607104674caba6fa4e352</sys_package>
@@ -41,8 +42,8 @@
         <sys_scope display_value="CampusDesk AI">28296cbb2f9607104674caba6fa4e352</sys_scope>
         <sys_update_name>contract_sla_1ed1ddc92f2e8f104674caba6fa4e327</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-08-05 04:25:28</sys_updated_on>
-        <target/>
+        <sys_updated_on>2026-08-24 09:22:35</sys_updated_on>
+        <target>resolution</target>
         <timezone/>
         <timezone_source>task.caller_id.time_zone</timezone_source>
         <type>SLA</type>

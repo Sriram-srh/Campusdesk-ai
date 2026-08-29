@@ -5,7 +5,7 @@
         <active>true</active>
         <allow_high_security_roles>false</allow_high_security_roles>
         <annotation/>
-        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=1805000,viewActivatedIn=naturalLanguage</attributes>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=351595000,viewActivatedIn=naturalLanguage</attributes>
         <authored_on_release_version>29000</authored_on_release_version>
         <callable_by_client_api>false</callable_by_client_api>
         <category/>
@@ -16,14 +16,14 @@
         <flow_priority>MEDIUM</flow_priority>
         <generation_source/>
         <internal_name>campusdesk_ai__incident_routing</internal_name>
-        <label_cache>[{"name":"Created or Updated_1.current.u_ai_suggested_category","label":"Trigger - Record Created or Updated➛Incident Record➛AI Suggested Category","reference":"","reference_display":"AI Suggested Category","type":"string","base_type":"string","parent_table_name":"incident","column_name":"u_ai_suggested_category","usedInstances":{"03da9803-22bb-4ad6-ac4a-8b5839e36d38":["condition"],"d301d044-9a9b-4173-aa4c-48266f6c349a":["condition"],"441f608a-dc28-46fd-90f7-cc3cf7c8fd8e":["condition"],"0726c76c-af5d-4285-ac01-ad61feb5a7a2":["condition"]}},{"name":"Created or Updated_1.current","label":"Trigger - Record Created or Updated➛Incident Record","reference":"incident","reference_display":"Incident","type":"reference","base_type":"reference","usedInstances":{"d5308b95-8045-47dd-85aa-cbdd84f2e904":["record"],"10d114d3-9451-45bb-8dff-74c8da84ec3d":["record"],"309a46e5-f90b-4a3b-8d76-5cfb7794c29c":["record"],"d469f685-f5d2-4f70-915e-c20de0d53a63":["record"]},"attributes":{}}]</label_cache>
+        <label_cache>[{"name":"Created or Updated_1.current.u_ai_suggested_category","label":"Trigger - Record Created or Updated➛Incident Record➛AI Suggested Category","reference":"","reference_display":"AI Suggested Category","type":"string","base_type":"string","parent_table_name":"incident","column_name":"u_ai_suggested_category","usedInstances":{"03da9803-22bb-4ad6-ac4a-8b5839e36d38":["condition"],"d301d044-9a9b-4173-aa4c-48266f6c349a":["condition"],"441f608a-dc28-46fd-90f7-cc3cf7c8fd8e":["condition"],"0726c76c-af5d-4285-ac01-ad61feb5a7a2":["condition"],"d76217f3-5e33-449f-bc9f-4abbafe50fc6":["condition"],"e3adecdc-3a1f-4581-9a0b-6a6732f24e67":["condition"]}},{"name":"Created or Updated_1.current","label":"Trigger - Record Created or Updated➛Incident Record","reference":"incident","reference_display":"Incident","type":"reference","base_type":"reference","usedInstances":{"d5308b95-8045-47dd-85aa-cbdd84f2e904":["record"],"10d114d3-9451-45bb-8dff-74c8da84ec3d":["record"],"309a46e5-f90b-4a3b-8d76-5cfb7794c29c":["record"],"d469f685-f5d2-4f70-915e-c20de0d53a63":["record"],"8fa508f6-36a3-4e77-be13-3be281f7755c":["record"],"82ac4817-1e46-4efc-a0ff-ae317e02f4f4":["record"]},"attributes":{}}]</label_cache>
         <master_snapshot>33952d602f764b904674caba6fa4e3ac</master_snapshot>
         <master_snapshot_digest/>
         <name>CampusDesk AI - Incident Routing</name>
         <natlang/>
         <outputs/>
         <pre_compiled>false</pre_compiled>
-        <remote_trigger_id>bea5ad602f764b904674caba6fa4e383</remote_trigger_id>
+        <remote_trigger_id>06fb1eb52fb2c3d04674caba6fa4e333</remote_trigger_id>
         <run_as>user</run_as>
         <run_with_roles/>
         <sc_callable>false</sc_callable>
@@ -37,7 +37,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>ddbedda02f364b904674caba6fa4e328</sys_id>
-        <sys_mod_count>26</sys_mod_count>
+        <sys_mod_count>44</sys_mod_count>
         <sys_name>CampusDesk AI - Incident Routing</sys_name>
         <sys_overrides/>
         <sys_package display_value="CampusDesk AI" source="x_1971543_campus_0">28296cbb2f9607104674caba6fa4e352</sys_package>
@@ -45,11 +45,11 @@
         <sys_scope display_value="CampusDesk AI">28296cbb2f9607104674caba6fa4e352</sys_scope>
         <sys_update_name>sys_hub_flow_ddbedda02f364b904674caba6fa4e328</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-08-16 02:46:08</sys_updated_on>
+        <sys_updated_on>2026-08-20 03:55:46</sys_updated_on>
         <type>flow</type>
         <updation_source/>
         <version>2</version>
-        <version_record>ddb521a02f764b904674caba6fa4e368</version_record>
+        <version_record>37fb5eb52fb2c3d04674caba6fa4e341</version_record>
     </sys_hub_flow>
     <sys_translated_text action="delete_multiple" query="documentkey=ddbedda02f364b904674caba6fa4e328"/>
     <sys_variable_value action="delete_multiple" query="document_key=ddbedda02f364b904674caba6fa4e328"/>
@@ -69,15 +69,15 @@
         <run_when_user_setting>any</run_when_user_setting>
         <sys_class_name>sys_flow_record_trigger</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2026-08-16 02:46:07</sys_created_on>
+        <sys_created_on>2026-08-20 03:55:46</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
-        <sys_id>bea5ad602f764b904674caba6fa4e383</sys_id>
+        <sys_id>06fb1eb52fb2c3d04674caba6fa4e333</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_overrides/>
         <sys_scope display_value="CampusDesk AI">28296cbb2f9607104674caba6fa4e352</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-08-16 02:46:07</sys_updated_on>
+        <sys_updated_on>2026-08-20 03:55:46</sys_updated_on>
         <table>incident</table>
         <trigger_definition/>
     </sys_flow_record_trigger>
@@ -88,14 +88,14 @@
         <identifier_type>flow</identifier_type>
         <runner>FDTriggerRunner</runner>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2026-08-16 02:46:07</sys_created_on>
-        <sys_id>f2a5ad602f764b904674caba6fa4e385</sys_id>
+        <sys_created_on>2026-08-20 03:55:46</sys_created_on>
+        <sys_id>4afb1eb52fb2c3d04674caba6fa4e334</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-08-16 02:46:07</sys_updated_on>
-        <trigger display_value="">bea5ad602f764b904674caba6fa4e383</trigger>
+        <sys_updated_on>2026-08-20 03:55:46</sys_updated_on>
+        <trigger display_value="">06fb1eb52fb2c3d04674caba6fa4e333</trigger>
     </sys_trigger_runner_mapping>
-    <sys_trigger_runner_mapping action="delete_multiple" query="identifier=ddbedda02f364b904674caba6fa4e328^sys_idNOT INf2a5ad602f764b904674caba6fa4e385"/>
+    <sys_trigger_runner_mapping action="delete_multiple" query="identifier=ddbedda02f364b904674caba6fa4e328^sys_idNOT IN4afb1eb52fb2c3d04674caba6fa4e334"/>
     <sys_hub_flow_stage action="delete_multiple" query="flow=ddbedda02f364b904674caba6fa4e328"/>
     <sys_flow_cat_variable_model action="delete_multiple" query="id=ddbedda02f364b904674caba6fa4e328^sys_idNOT INd1be11e02f364b904674caba6fa4e348"/>
     <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
@@ -380,17 +380,17 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-08-16 02:16:08</sys_created_on>
         <sys_id>afce59a02f364b904674caba6fa4e3bf</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_scope/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-08-16 02:45:44</sys_updated_on>
+        <sys_updated_on>2026-08-19 18:05:54</sys_updated_on>
         <trigger_definition display_value="Created or Updated">a45d9180c32222002841b63b12d3aea7</trigger_definition>
-        <trigger_inputs>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</trigger_inputs>
+        <trigger_inputs>H4sIAAAAAAAA/9VZa2/bNhT9K4I+bYA76GFbcfYpy6MJkCaA43YYikKgSMomJlOuRCn1ivz3Xephy3rFjuTW7Yc0Jhny3MtzzyHNz99VDznUU8/VGXI8qg5UxgUNOPJm6xWFZiGbbY6Wsm+JOEHCD9bquQgiOlDdwF/O6HLlIQGDXeSF0OgHhAbquT5QY+RF9Gkd3hGYCf4+mSabU8264TPjmBHKBTQRFsJk609Zz922By+YRwLK1fPPXwbqCgUwl5DrfC91MbkYdnWqT840bBrwT9OMs6HujE1HN4iJKNJgwnLgJXCiJv5tZPSboJxQsgm6kpqAIvLIvXVhxLeQ/Qdznmmy16WAGNM0MZuPdpaAtBkvfIbp40own6ctKbq00/eiJX9IUcvUURdFnshTBy1RCPPRlQQKKcxxuE8L/3maL3jDeBJT1un5GHmbT0iIgDmRoKFMs8s8SLidZiT0oyBBP72+fJxe2X9fzC5vr6f29PppNr27nF1fqS9JXPbXSM6YIsyw2Gk4L5v9vmHUk9sW2TkXbAyUmst8DtQQB2wlLrBgcc6yl8GWuZc+JyxJUYW9OO8Kd9mbp6KNvprWSGBcWDEncWQjZofRfE5DQckG/sXDP7Pbu4f3BzPY0ixC9CYGY6fA4GICahCKmlwUg2zjctbSTOahpv0kOmcK9FY2L31CvavtdCp0wuYFwMBVJGSOnhEXoS18GxHYz2325NBIykGeONtf0UAmTPZ9uri/vL14eH/99Gf2/8308UP+++zx1bJIc1KtjdcLIYg4TGFv9rNaDskGbHbinoUQ+Geo7Cf6NUq37x2Im5snPVkBhrv32QrTiCs+8AB+KDgKIOdCyQXTvVuiebZVMKFHsShwyv0YFj99YGHI+LwQRBOGLNclCJvVgapKHnAKJeyI5UufSlHdkriU25LjHawTOh4amumMNUuqhA6/urpmaSPkElPTnLOCTlTBNKIUJcL0qBeHqUWYENTbg3/lxGaQtWKF7EWeeJd5eeiSGJkoXfYDTe8JmiGhlcTVPEhdN2RMm692OdkWWs9nDERiBH9B8hj3OUPsoYqu5z+DsHdXRAfhf+eBH3FS1iS5hMK4sh2h/Jal8/fjqaPrB7Qdz+6IU9LF7abktEZ83YMiGqZOrfFwrIEQmlIDR5OJg5HhutbYorpeUsQtjFpsJ6yEr1AuruNskyrW0iWuY9kBetgBYEUbDwbYXRUzOtZqYtr3a6jf84JyG6AGtif1rSKCcw+uXHlfvzVeWTreVnXXOsfOhIxGloUtuB1BnbtD6iB9aIzQxBqb1C3VeQVKG0xRk5kj3pnCdZgs36ABH9Ou0/o64JhkDakQ0no6+zWHY20yBUrXLJik3BslURY/UB58/u5uO055ouB9ye35SMa9Dyi57coPReX4YlE5SACSv6B9B4k8njbk7OTuXyVGxbuxdlUhZBhoopsNKmSN61RoC6YZ5omeO/asmrix/uoOIPuyPq4tnsYTwxuIWyJH8SjRctbpKyl670kxjpcUs/P5Kq/AxkvnW8D+Qi6XHDh6tDoJgdq+W1TwK1+BDgXWVJirZN9xUqI4a0UsKGTYg3M1rK9IMF2lu8VZqsg2/P6puNJzfMXwoFnJDmSn52Ul3vR7e6bExBPS5GdDq/FU3Wxqpe4TdbaDKyWuK7xWezts3vKctQZXIOouD/a0rl6jrvevblHXOthrUXf3pra7fw2K03cdCXqWbkN3r/E5Ll1b8BGfgCLOoN3GC8Tn6fNOvu4N7AJFeKGkQ5R0yBHdwntG61AtuxgwXBZR9t04NEA58VTsjgSExjRYVzIhG5VoRaSx/GDjMlqMK39ZDUUgX8XXO9WO+3gEM5wJlOpIw6aum5XH8lHxsXy3DpoRNriU8VaXWrDklbmwfLZfgi1poombJ2ZliQRe0HCgwKYmDy+JZLIgFMnoP9Qer3OYVrejzsQaSy1uqtJGU2gpl7hcaHUuUMP1uFQXRR9ovbi1hK/3Er7RR/jm28IfdrbBvD5rfTDLXr/e91ar+/I/fg8sGswmAAA=</trigger_inputs>
         <trigger_outputs/>
         <trigger_type>record_create_or_update</trigger_type>
         <updation_source/>
     </sys_hub_trigger_instance_v2>
-    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=ddbedda02f364b904674caba6fa4e328^sys_idNOT IN2500a9642f364b904674caba6fa4e3a1,46cf51242f364b904674caba6fa4e354,aa7f11e02f364b904674caba6fa4e3e5,ef6069642f364b904674caba6fa4e3dd"/>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=ddbedda02f364b904674caba6fa4e328^sys_idNOT IN2500a9642f364b904674caba6fa4e3a1,46cf51242f364b904674caba6fa4e354,9aec04352f7283d04674caba6fa4e31e,aa7f11e02f364b904674caba6fa4e3e5,e48ccc392f3283d04674caba6fa4e3d4,ef6069642f364b904674caba6fa4e3dd"/>
     <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
         <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
         <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
@@ -406,10 +406,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-08-16 02:21:27</sys_created_on>
         <sys_id>2500a9642f364b904674caba6fa4e3a1</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>7</sys_mod_count>
         <sys_scope display_value="CampusDesk AI">28296cbb2f9607104674caba6fa4e352</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-08-16 03:40:35</sys_updated_on>
+        <sys_updated_on>2026-08-20 04:28:52</sys_updated_on>
         <ui_id>309a46e5-f90b-4a3b-8d76-5cfb7794c29c</ui_id>
         <updation_source/>
         <values>H4sIAAAAAAAA/+VVXU/bMBT9K5Wfoypp0lL6NlEhITGQ6MYLRdGN7RRLTuw5NtBV/e+7cZy2AsSKxMPQ+hTfD/uc49Pruw0RjMxIxlmcnCYTmiZpOorj0TRLiklaJCOWAucJiUgNFcdKw6kyDNePIF0b2GzODAfL2UCZwU/N2s88GVJnDK/tdoulTDRawvo2dGCEPgjJME9md/cR0WBwc8sNmW1epI5FJ6HgEktvengv4dq1btdMUVchrlz0wcvQOQ+ZwcUcM9jUwkniiPBny2vGEUgJsuERqaBGlsqsycwahwHkz65rud5VPIjadkQreG7Ebzw5i9u6kiMzGkTYLfMgUBcu52BhgTtT68xOLyUobzpNGC/BSXt2GOsKrrUVqu5aLBSy71bSVfVVpwjZbXBwH65BEFy3PFvkHa1y8aCebnqQ56L2kgSKUlGQuxVYa0ThbAtnQ7jkXuMKtBb1KtdGPQrfjFCq4UriYlhK9YRnNmJVD4G2uIeoKgzPMT734VswoiXxHbfB5m1EmnVzJqFp9lRQw/yXa5F0xAKF3KvgJci9E9pmaoS23/CoRx6Ab6Pg/2L8nsPo6d5QB3vu/wOipsIr98rrF/vMxzx/BKLe8z/8Tb+NMNj+VezysHdw1SWC6cefZvrpVzJ9oPHlXf83r8ejd6fpgZO8vZsDnyMIROhZroxyeuniOGWbZe/6JZktyUKV9gkMHyyc1srYJYmW3Q4+PZrCeDo+SUflKcQnSZxNTjIKBUxKyHg6znw5UsYJfWT9G0/Mvwv0Y1PgiLvqp8C54JI1b1xePwJ4hcwtz7vLfDEGQnJwG5K79+/TZkEyif3vC02E/+YZvP8D2pWfaQgKAAA=</values>
@@ -430,15 +430,39 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-08-16 02:20:24</sys_created_on>
         <sys_id>46cf51242f364b904674caba6fa4e354</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>7</sys_mod_count>
         <sys_scope display_value="CampusDesk AI">28296cbb2f9607104674caba6fa4e352</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-08-16 03:40:35</sys_updated_on>
+        <sys_updated_on>2026-08-20 04:28:52</sys_updated_on>
         <ui_id>10d114d3-9451-45bb-8dff-74c8da84ec3d</ui_id>
         <updation_source/>
         <values>H4sIAAAAAAAA/+VVTU/jMBD9K5XPUZW0pdDeEBVaJBYk2OVCUTSxJ8WSE3sdB+hW/e87cZy2KogtEodF21M8H/Z7z6/j+xWTgk3ZCEWcTJIxHybD4SCOByejJBsPs2QghoCYsIiVUCBVWuTaClo/gaqbwGp1ZhEcip62vZ9GNJ9p0ue1tVi69ZpKhayMguVd6KAIf5RKUJ5N7x8iZsDS5g4tm672UoeiU5ChotKbDt4+XLc0zVpoXheEK5Vd8DJ0zkKmdzGjDDU1cJI4YvjisBRIQHJQFUasgJJYartkU2drChB/cV2q5abiUZauJVrASyV/08mjuKnLkZjxIMJmmQaB2nA+Awe3tDN3td3opSXHqtVEYA61cme7sbbg2jipy7bFQaa6bq3qorxqFWGbDXbuo64IBJqGZ4O8pZXfPurnmw7kuSy9JIGi0hzUZgXOWZnVroGzYqjQa1yAMbJcpMbqJ+mbCUrRXyha9HOln+nMSi7KPvAGd59Uhf45xWc+fAdWNiS+0zbUvI5YtazOFFTVlgppmP6qGyQtsUAh9Sp4CVLvhKaZW2ncKR31hAH4Ogr+z47ecxifbA21s+f2PyBLLr1yr7x+sc18zPMHIOo8/8Pf9NsIg+1fxS53e3tXbSKY/ujTTH/ylUwfaHx51//N6/Hg3Wm64yRv72rH5wSCEHqWC6trM6/jeChW8871czads29gxTNY7N3Wxmjr5iyatzv49MkkO4on+fEgn0B8nMSj8fGIQwbjHEZIgHw5UaYJfWD9G0/Mvwv0Y1PggLvqpsC5RCWqNy6vGwFYEHOHaXuZe2MgJHt3Ibl5/z5tFiTj2P++0ET4b57Bhz/tdiiwCAoAAA==</values>
     </sys_hub_action_instance_v2>
     <sys_hub_alias_mapping action="delete_multiple" query="source_id=46cf51242f364b904674caba6fa4e354"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="CampusDesk AI - Incident Routing">ddbedda02f364b904674caba6fa4e328</flow>
+        <generation_source/>
+        <order>12</order>
+        <parent_ui_id>e3adecdc-3a1f-4581-9a0b-6a6732f24e67</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-19 17:30:44</sys_created_on>
+        <sys_id>9aec04352f7283d04674caba6fa4e31e</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_scope display_value="CampusDesk AI">28296cbb2f9607104674caba6fa4e352</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-20 04:28:52</sys_updated_on>
+        <ui_id>82ac4817-1e46-4efc-a0ff-ae317e02f4f4</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VVXW/aMBT9K8jPEXISoMBbBUKq1LVS2XgpVWTsG7DmfMxxaBniv+/GcQBR1FGpD0PjCd8P55xzj+3nLZGCDEkHBPUHfo+HfhgGlAb9jr/ohQs/ECED8IlHUpYAVmrgmRa4XjNVVoHtdqSBGRCtTLd+5KL6G/ltXmoNqdntsFTIIldsM3MdGOErqQTmyfD5xSM507i5AU2G25PUpegUW4DC0qcG3ilcs8mrtch4mSCuSDbBe9c5dpnW3Rgz2FTB8alH4M1AKgCBxEwV4JGEpcgy0xsyNLrEAPIXj6na7CtWMjU10YS9FfI3frlDq7oYkBl3IuyXkROoDsdjZtgUd+am1Hu9MsmhqDURELNSmdFxrC54zI3M0rrFsIVqujNVJulDrQjZb3A0j7JAEJBXPCvkNa14uspenxqQE5laSRxFlXGm9itmjJaL0lRwtgQUWI0TlucyXUa5ztbSNiOUpL1UuGjHKnvFbxZymbYZr3C3UVXWnmB8bMMzpmVF4htug807jxSbYqRYURyooIbRr7JCUhNzFCKrgpUgsk6omrmWubnFT63BAd95zv+L7kcO44ODoY72PJwBmXJplXvn9btD5nOevwBR4/nvdtLnETrbv4vdH/e2HuqEM333y0zfvybTOxpX7/q/eZ0GH96mR06y9i6OfI4gEKFludRZmc9LSkOxnTeun5PhnExBr3EsLaTzc068ed1tU6IXdAXnwCnrU793QykLgoDR+GZAqaA9W4508Xa+sP7M8/Jvgvzc6b9gRs3pn0hQojgztOboQ4KsDUT1EE+Ov0u2Zi65f/e+7A7we9T+rugm+G+ev5c/hAS/NAAKAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=9aec04352f7283d04674caba6fa4e31e"/>
     <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
         <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
         <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
@@ -454,15 +478,39 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-08-16 02:19:04</sys_created_on>
         <sys_id>aa7f11e02f364b904674caba6fa4e3e5</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>7</sys_mod_count>
         <sys_scope display_value="CampusDesk AI">28296cbb2f9607104674caba6fa4e352</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-08-16 03:40:35</sys_updated_on>
+        <sys_updated_on>2026-08-20 04:28:52</sys_updated_on>
         <ui_id>d5308b95-8045-47dd-85aa-cbdd84f2e904</ui_id>
         <updation_source/>
         <values>H4sIAAAAAAAA/+VVXU/bMBT9K5Wfoypp0kL7hqiQkBhIsPFCUeTYN8WaE3uODXRV//tuHKetALEi8TC0PsX3wz7n+PT6bk0EJzOSAY+TaTJhaZKmozgeHWdJMUmLZMRTCpCQiNS0Aqw0wJThuH6k0rWB9frUALXAB8oMfmjefubJkDljoLabDZZy0WhJV7ehAyPsQUiOeTK7u4+IpgY3t2DIbP0idSg6SQuQWHrdw3sJ1650u+aKuQpx5aIPXoTOecgMzueYwaYWThJHBJ4t1BwQSEllAxGpaI0slVmRmTUOA8ifX9Vyta14ELXtiFb0uRG/8eQsbutKQGYsiLBd5kGgLlzOqaU3uDOzzmz1UoJB02nCoaRO2tP9WFdwpa1QdddiaSH7biVdVV92ipDtBnv34RoEAbrl2SLvaJU3D+rpugd5JmovSaAoFaNyu6LWGlE428JZE5DgNa6o1qJe5tqoR+GbEUo1XEpcDEupnvDMRizrIWUt7iGqSodnGJ/78C01oiXxDbfB5k1EmlVzKmnT7Kighvkv1yLpiAUKuVfBS5B7J7TNzAhtT/CoRwjAN1HwfzF+z2FsujPU3p67/4ComfDKvfL6+S7zMc8fgKj3/Hd/028jDLZ/FbvY7x1cdolg+vGnmf74K5k+0Pjyrv+b1+PRu9N0z0ne3s2ezxEEIvQsl0Y5vXBxnPL1onf9gswW5BLskzI/BzdOa2XsgkSLbgOfHWfT8fH4KB2VUxofJXE2OcoYLeikpBmkGfhyZIwD+sD6N16Yfxbnx2bAATfVz4AzAZI3b1xdPwCgQuIW8u4qXwyBkBzchuT29fu0SZBMYv/7QvPgv3kE7/8AcYWlDQYKAAA=</values>
     </sys_hub_action_instance_v2>
     <sys_hub_alias_mapping action="delete_multiple" query="source_id=aa7f11e02f364b904674caba6fa4e3e5"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="CampusDesk AI - Incident Routing">ddbedda02f364b904674caba6fa4e328</flow>
+        <generation_source/>
+        <order>10</order>
+        <parent_ui_id>d76217f3-5e33-449f-bc9f-4abbafe50fc6</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-19 17:28:59</sys_created_on>
+        <sys_id>e48ccc392f3283d04674caba6fa4e3d4</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_scope display_value="CampusDesk AI">28296cbb2f9607104674caba6fa4e352</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-20 04:28:52</sys_updated_on>
+        <ui_id>8fa508f6-36a3-4e77-be13-3be281f7755c</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VVXW/aMBT9K8jPEXISoMBbBUKq1LVS2XgpVWTsG7DmfMxxaBniv+/GcQBR1FGpD0PjCd8P55xzj+3nLZGCDEkHBPUHfo+HfhgGlAb9jr/ohQs/ECED8IlHUpYAVmrgmRa4XjNVVoHtdqSBGRCtTLd+5KL6G/ltXmoNqdntsFTIIldsM3MdGOErqQTmyfD5xSM507i5AU2G25PUpegUW4DC0qcG3ilcs8mrtch4mSCuSDbBe9c5dpnW3Rgz2FTB8alH4M1AKgCBxEwV4JGEpcgy0xsyNLrEAPIXj6na7CtWMjU10YS9FfI3frlDq7oYkBl3IuyXkROoDsdjZtgUd+am1Hu9MsmhqDURELNSmdFxrC54zI3M0rrFsIVqujNVJulDrQjZb3A0j7JAEJBXPCvkNa14uspenxqQE5laSRxFlXGm9itmjJaL0lRwtgQUWI0TlucyXUa5ztbSNiOUpL1UuGjHKnvFbxZymbYZr3C3UVXWnmB8bMMzpmVF4htug807jxSbYqRYURyooIbRr7JCUhNzFCKrgpUgsk6omrmWubnFT63BAd95zv+L7kcO44ODoY72PJwBmXJplXvn9btD5nOevwBR4/nvdtLnETrbv4vdH/e2HuqEM333y0zfvybTOxpX7/q/eZ0GH96mR06y9i6OfI4gEKFludRZmc9LSkOxnTeun5PhnExBr3EsLaTzc068ed1tU6IXdAXnwCnrU793QykLgoDR+GZAqaA9W4508Xa+sP7M8/Jvgvzc6b9gRs3pn0hQojgztOboQ4KsDUT1EE+Ov0u2Zi65f/e+7A7we9T+rugm+G+ev5c/hAS/NAAKAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=e48ccc392f3283d04674caba6fa4e3d4"/>
     <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
         <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
         <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
@@ -478,17 +526,17 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-08-16 02:23:13</sys_created_on>
         <sys_id>ef6069642f364b904674caba6fa4e3dd</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>7</sys_mod_count>
         <sys_scope display_value="CampusDesk AI">28296cbb2f9607104674caba6fa4e352</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-08-16 03:40:35</sys_updated_on>
+        <sys_updated_on>2026-08-20 04:28:52</sys_updated_on>
         <ui_id>d469f685-f5d2-4f70-915e-c20de0d53a63</ui_id>
         <updation_source/>
         <values>H4sIAAAAAAAA/+VVXW/aMBT9K8jPEXISoMBbBUKq1LVS2XgpVWTsG7DmfMxxaBniv+/GcQBR1FGpD0PjCd8P55xzj+3nLZGCDEkHBPUHfo+HfhgGlAb9jr/ohQs/ECED8IlHUpYAVmrgmRa4XjNVVoHtdqSBGRCtTLd+5KL6G/ltXmoNqdntsFTIIldsM3MdGOErqQTmyfD5xSM507i5AU2G25PUpegUW4DC0qcG3ilcs8mrtch4mSCuSDbBe9c5dpnW3Rgz2FTB8alH4M1AKgCBxEwV4JGEpcgy0xsyNLrEAPIXj6na7CtWMjU10YS9FfI3frlDq7oYkBl3IuyXkROoDsdjZtgUd+am1Hu9MsmhqDURELNSmdFxrC54zI3M0rrFsIVqujNVJulDrQjZb3A0j7JAEJBXPCvkNa14uspenxqQE5laSRxFlXGm9itmjJaL0lRwtgQUWI0TlucyXUa5ztbSNiOUpL1UuGjHKnvFbxZymbYZr3C3UVXWnmB8bMMzpmVF4htug807jxSbYqRYURyooIbRr7JCUhNzFCKrgpUgsk6omrmWubnFT63BAd95zv+L7kcO44ODoY72PJwBmXJplXvn9btD5nOevwBR4/nvdtLnETrbv4vdH/e2HuqEM333y0zfvybTOxpX7/q/eZ0GH96mR06y9i6OfI4gEKFludRZmc9LSkOxnTeun5PhnExBr3EsLaTzc068ed1tU6IXdAXnwCnrU793QykLgoDR+GZAqaA9W4508Xa+sP7M8/Jvgvzc6b9gRs3pn0hQojgztOboQ4KsDUT1EE+Ov0u2Zi65f/e+7A7we9T+rugm+G+ev5c/hAS/NAAKAAA=</values>
     </sys_hub_action_instance_v2>
     <sys_hub_alias_mapping action="delete_multiple" query="source_id=ef6069642f364b904674caba6fa4e3dd"/>
     <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=ddbedda02f364b904674caba6fa4e328"/>
-    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=ddbedda02f364b904674caba6fa4e328^sys_idNOT IN34ef1d242f364b904674caba6fa4e30d,a39f5d242f364b904674caba6fa4e37b,ab3f51a02f364b904674caba6fa4e38b,d740e1a42f364b904674caba6fa4e345"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=ddbedda02f364b904674caba6fa4e328^sys_idNOT IN34ef1d242f364b904674caba6fa4e30d,6e2cc8b12f7283d04674caba6fa4e32b,83bc0cf12f7283d04674caba6fa4e3b5,a39f5d242f364b904674caba6fa4e37b,ab3f51a02f364b904674caba6fa4e38b,d740e1a42f364b904674caba6fa4e345"/>
     <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
         <attributes/>
         <block display_value="">6195e9602f764b904674caba6fa4e3c8</block>
@@ -507,13 +555,67 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-08-16 02:20:51</sys_created_on>
         <sys_id>34ef1d242f364b904674caba6fa4e30d</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_mod_count>8</sys_mod_count>
         <sys_scope display_value="CampusDesk AI">28296cbb2f9607104674caba6fa4e352</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-08-16 02:45:46</sys_updated_on>
+        <sys_updated_on>2026-08-20 03:55:37</sys_updated_on>
         <ui_id>441f608a-dc28-46fd-90f7-cc3cf7c8fd8e</ui_id>
         <updation_source/>
-        <values>H4sIAAAAAAAA/+1V22obMRD9FaNns+wlNo3fQkqg0DZQp3lpg5iVtGtRrbTVxY5r/O8d7cU2jUNNyWPfVmc0M2eOzrA7YoJvg3cP5sY5WWuy+PY0JVJHDL93RHKyIFUKVXbNMlbk8yJP0/zdVVbOizLLeQECCjIlGhqBN5nRXHppNO2AKVmDCjGAn1y6VsH28YiwlVTciqFrCxZzvLBksfsj5LetoApKoTBx6a3UNaZfym1MvB3JTT52yOusYz/E3djJWB5pZemUiGcvNBfYugLlxJQ0oDl4Y7cHxArg91odgZXUvp+4gWcnf2HtfDaLFyuBM7JBjsORDlKNKhnJxH0bCfaIh1KNEhoVGv25nyOKLCoIyp+IHBzWE20kHVkMlKrlymy+jA3vpO4GHILKMFCHE3iUoQxeuPgwQokGC9EG2hbFoa01a9klI5cmqRUekkqZDTaNjkqAReIJagTJHeLvO/gRrIxTfMIymNzTLMFJRjv3YTlvcYR9Jwv9GSKhfsBhFNqrgRccs7L1N9hnLQbW++lg3WuYVbMsnZ23x9X8jAlOXLvb3eJjesEnxk6+tjx+0ixhwaJsPgkUJHWhroWLAYbhGo2w338PaVrwpan8Bqx46f03q/sWG3SBRC826Lxsr6xN/pe1iQ994dakafp/bU7XRjra23+YrWv+z1vzFK3fd3C9b7hg0iGRh4h9GP8LMbBFA0h2Cm2M/RFHOGL736HnCM5hBgAA</values>
+        <values>H4sIAAAAAAAA/+1Uy27bMBD8FUNnQdAjNprcghQBCrQNUKe5tAGxIimZKEWyfNhxDf97l3rYRuKgRZFjb+Isd3d2uKNdooM3wbt7fe2caFVy9e0xTYSKGH7vEgUdT64SqhUTXmhFeiBN1iBDDOAnE85I2D4cEboSklk+VjNgMcdzm1ztnoX81nAioeYSE5feCtViumB4anJoikta0KpcVGWel+8uinpR1UXJKuBQ4b0p8WYiN/vYI+mrrGM/xN3USVsWaRV5mvAnzxXj2LoB6XiadKAYeG23B8RyYHdKHoGVUH6YuIMnJ35h7XI+jxcbjjPSUY7DkYxSTSppQfmdiQQHxEMtJwm1DJ36PMwRReYNBOlPRA4O63ETSUcWI6VmudKbL1PDW6H6Aceg1BTk4QQeZaiD5y4+DJe8w0KkA2NQHGKsXos+Gbl0WSvxkDVSb7Bp3JQMaCSeoUaQ3SL+vocfwIo4xScsg8kDzRqcoKTfKiznLY6w72UhP0MkNAw4jkIGNfCCo1YYf4191nxkvU9fruTJNu52N/hInrOZtrOvhsVPUmQ0WJTDZ4GAIC60LXcxQDHc4gPv999DnldsqRu/Actf7vSb1X0LZ1zCvJkX+fy8My4W55xxxhOv26H8gx3iA/6lG/I8/2+HUzsIR4a1Hmfrm/+zGx7j6g8d3LA3jFPhkMh9xD5M//EY2OICCHoKbbT9EUc4YvvfIkuO+BEGAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">e1f4d8f12fb283d04674caba6fa4e38f</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="CampusDesk AI - Incident Routing">ddbedda02f364b904674caba6fa4e328</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>9</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-19 17:27:28</sys_created_on>
+        <sys_id>6e2cc8b12f7283d04674caba6fa4e32b</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_scope display_value="CampusDesk AI">28296cbb2f9607104674caba6fa4e352</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-20 03:55:37</sys_updated_on>
+        <ui_id>d76217f3-5e33-449f-bc9f-4abbafe50fc6</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1Uy27bMBD8FUNnQdAjNhrfggQBCrQN0KS5tAGxIimZKEWyfNhxDf97l3rYRuOgRZFjb+Isd3dmuKtdooM3wbsHfeWcaFWy/PqUJkJFDL93iYKOJ8uEasWEF1qRHkiTNcgQA/jJhDMSto9HhK6EZJaP1QxYzPHcJsvdbyG/NZxIqLnExHtvhWoxXTA8NTk0xSUtaFUuqjLPy3cXRb2o6qJkFXCo8N6UeD2Rm33okfRV1rEf4m7qpC2LtIo8Tfiz54pxbN2AdDxNOlAMvLbbA2I5sDslj8BKKD8o7uDZiZ9Yu5zP48WGo0Y62nE4ktGqySUtKL8zkeCAeKjlZKGWoVOfBh3RZN5AkP7E5OCwHjeRdGQxUmruV3rzeWp4K1QvcAxKTUEeTuDRhjp47uLDcMk7LEQ6MAbNIcbqteiTkUuXtRIPWSP1BpvGScmARuIZegTZLeI3PfwIVkQVH7EMJg80a3CCkn6qsJy3KGHf20J+hEhoEDhKIYMbeMFRK4y/wj5rPrLepy9H8mQad7trfCTP2Uzb2RfD4icpMhos2uGzQEAQF9qWuxigGG7xgff7byHPK3aDUpAqfznTb1b3LTbjEubNvMjn5zfjYnFuM87sxOvrUP5hHeID/uU25Hn+fx1O10E4Moz1qK1v/s/b8BRHf+jghrlhnAqHRB4i9n76j8fAFgdA0FNoo+33KOGI7X8BQDK1uBEGAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">e5f4d8f12fb283d04674caba6fa4e392</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="CampusDesk AI - Incident Routing">ddbedda02f364b904674caba6fa4e328</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>11</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-19 17:29:58</sys_created_on>
+        <sys_id>83bc0cf12f7283d04674caba6fa4e3b5</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_scope display_value="CampusDesk AI">28296cbb2f9607104674caba6fa4e352</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-20 03:55:37</sys_updated_on>
+        <ui_id>e3adecdc-3a1f-4581-9a0b-6a6732f24e67</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1Uy27bMBD8FUNnQdAjNprcghQBCrRNkaS5tIGwIlcyUYpU+bDjGv73LvWwjcRBiyLH3sRZ7u7scEfbSHvXeWfv9aW1olHRxbfHOBIqYPS9jRS0GF1ETCsunNCq7IE4WoH0IUCfXNhOwubhgLClkNzgWK0DQzkOTXSxfRZymw5LCRVKSrxzRqiG0gWnU51CnZ2zjBX5osjTNH93llWLospyXgBCQfemxKuJ3Oxjj8Svsg79CLdTJ214oJWlcYRPDhVHal2DtBhHLSgOTpvNHjEI/EbJA7AUyg0Tt/BkxS+qnc/n4WKNNCMb5dgfy1GqSSUtGN50geCAOKjkJKGWvlWfhzmCyFiDl+5IZG+pHnaBdGAxUqrvlnp9OzW8FqofcAxKzUDuT+BIhso7tOFhUGJLhcoWuo7EKTujV6JPJi5t0kg6JLXUa2oaNiUBFognpBEk14S/7+EHMCJM8YnKUPJAswIrWNlvFZVzhkbY9bKUP30gNAw4jlIOatAFy4zo3CX1WeHIehe/XMmjbdxur+iRHPKZNrOvHQ+fZZYwb0gOl/gSRGl906ANAUbhhh54t/vu07TgX8DaNa3E7BYtupeb/cbV38Il5zCv51k6P+2Ss8Upl5zwx+vWyP9gjfCYf+mMNE3/W+PYGsKWw4qPs/XN/9kZj8EGQwc77A1HJiwRuQ/Yh+mfHgIbWgDBjiHazB9hhAO2+w1Qpj4gHQYAAA==</values>
         <workflow_reference/>
     </sys_hub_flow_logic_instance_v2>
     <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
@@ -534,13 +636,13 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-08-16 02:19:41</sys_created_on>
         <sys_id>a39f5d242f364b904674caba6fa4e37b</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_mod_count>8</sys_mod_count>
         <sys_scope display_value="CampusDesk AI">28296cbb2f9607104674caba6fa4e352</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-08-16 02:45:45</sys_updated_on>
+        <sys_updated_on>2026-08-20 03:55:37</sys_updated_on>
         <ui_id>d301d044-9a9b-4173-aa4c-48266f6c349a</ui_id>
         <updation_source/>
-        <values>H4sIAAAAAAAA/+1Vy27bMBD8FYNnQZDk2Gh8C1IELdA2QJPm0gbEiqRkohSp8mHHNfzvXephG4mDGkWOvYmz3N3Z4Sy0JSb4Nnh3b66ck7Umi++PCZE6Yvi9JZKTBakyqPJLlrNpMZ8WWVa8u8jL+bTMCz4FAVOSEA2NwJvMaC69NJp2QEJWoEIM4CeXrlWweTggbCkVt2Lo2oLFHC8sWWyfhfymFVRBKRQm3nkrdY3p53IbE69HcpNPHfI669gPcTd2MpZHWnmWEPHkheYCW1egnEhIA5qDN3azR6wAfqvVAVhK7fuJG3hy8jfWLmazeLESOCMb5Ngf6SDVqJKRTNy2kWCPeCjVKKFRodFf+jmiyKKCoPyRyMFhPdFG0pHFQKm6W5r117HhjdTdgENQGQZqfwKPMpTBCxcfRijRYCHaQNuiOLS1ZiW7ZOTSpLXCQ1ops8am0VEpsEg8RY0gvUH8fQc/gJVxis9YBpN7miU4yWjnPiznLY6w62Shv0Ik1A84jEJ7NfCCY1a2/gr7rMTAepcM1r2EWTXLs9lpe1zMT5jgyLXb7TU+phd8YuzkW8vjJ81TFizK5tNAQVIX6lq4GGAYrtEIu92PkGVT/gEsX4MVL73/ZnXfYoPOkOjFBp2W7ZW1Kf6yNvGhz9yaLMv+r83x2khHe/sPs3XN/3lrHqP1+w6u9w0XTDokch+xj+N/IQY2aADJjqG1sT/jCAds9wdL0GCUYQYAAA==</values>
+        <values>H4sIAAAAAAAA/+1Uy27bMBD8FUNnQdAjNhrfghRBC7QN0KS5tAGxIimZKEWyfNhxDf97l3rYRuOgRZFjb+Isd3d2uKNdooM3wbt7feWcaFWy/PqYJkJFDL93iYKOJ8uEasWEF1qRHkiTNcgQA/jJhDMStg9HhK6EZJaP1QxYzPHcJsvdbyG/NZxIqLnExDtvhWoxXTA8NTk0xSUtaFUuqjLPyzcXRb2o6qJkFXCo8N6UeD2Rm33okfRF1rEf4m7qpC2LtIo8TfiT54pxbN2AdDxNOlAMvLbbA2I5sFslj8BKKD9M3MGTEz+xdjmfx4sNxxnpKMfhSEapJpW0oPzWRIID4qGWk4Rahk59GuaIIvMGgvQnIgeH9biJpCOLkVJzt9Kbz1PDG6H6Aceg1BTk4QQeZaiD5y4+DJe8w0KkA2NQHGKsXos+Gbl0WSvxkDVSb7Bp3JQMaCSeoUaQ3SD+tocfwIo4xUcsg8kDzRqcoKTfKiznLY6w72UhP0IkNAw4jkIGNfCCo1YYf4V91nxkvU+fr+TJNu521/hInrOZtrMvhsVPUmQ0WJTDZ4GAIC60LXcxQDHc4gPv999CnlfsHVi2Acuf7/Sr1X0NZ1zCvJkX+fy8My4W55xxxhMv26H8gx3iA/6lG/I8/2+HUzsIR4a1Hmfrm/+zGx7j6g8d3LA3jFPhkMh9xN5P//EY2OICCHoKbbT9Hkc4YvtfyHzmohEGAAA=</values>
         <workflow_reference/>
     </sys_hub_flow_logic_instance_v2>
     <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
@@ -561,13 +663,13 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-08-16 02:18:02</sys_created_on>
         <sys_id>ab3f51a02f364b904674caba6fa4e38b</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_mod_count>8</sys_mod_count>
         <sys_scope display_value="CampusDesk AI">28296cbb2f9607104674caba6fa4e352</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-08-16 02:45:45</sys_updated_on>
+        <sys_updated_on>2026-08-20 03:55:37</sys_updated_on>
         <ui_id>03da9803-22bb-4ad6-ac4a-8b5839e36d38</ui_id>
         <updation_source/>
-        <values>H4sIAAAAAAAA/+1V22obMRD9FaNns+wlNo3fQkqg0CbQpHlpg5iVtGtRrbTVxY5r/O8d7cU2iUNNyWPfVmc0M2eOzrBbYoJvg3cP5so5WWuy+P40JVJHDL+3RHKyIFUKVXbJMlbk8yJP0/zDRVbOizLLeQECCjIlGhqBN5nRXHppNO2AKVmBCjGAn1y6VsHm8YCwpVTciqFrCxZzvLBksX0R8ptWUAWlUJh4763UNaafy21MvB7JTT53yNusYz/E3djJWB5pZemUiGcvNBfYugLlxJQ0oDl4Yzd7xArgd1odgKXUvp+4gWcnf2PtfDaLFyuBM7JBjv2RDlKNKhnJxF0bCfaIh1KNEhoVGn3bzxFFFhUE5Y9EDg7riTaSjiwGStX90qy/jg1vpO4GHILKMFD7E3iUoQxeuPgwQokGC9EG2hbFoa01K9klI5cmqRUekkqZNTaNjkqAReIJagTJDeIfO/gRrIxTfMEymNzTLMFJRjv3YTlvcYRdJwv9FSKhfsBhFNqrgRccs7L1V9hnJQbWu+lg3UuYVbMsnZ22x8X8hAmOXLvdXuNjesEnxk6+tTx+0ixhwaJsPgkUJHWhroWLAYbhGo2w2/0IaVrwW+HXxv58bf33Kvse+3OGQK/257RobyxN/pelic985s6kafp/aY6XRjram3+YrWv+zzvzFI3fd3C9b7hg0iGRh4h9Gv8KMbBBA0h2DEVPxhEO2O4PR8Ft/l8GAAA=</values>
+        <values>H4sIAAAAAAAA/+1Uy27bMBD8FUNnQdAjNhrfghQBCrQJ0KS5tAGxIimZKEWyfNhxDf97l3rYRuOgRZFjb+Isd3d2OKtdooM3wbsHfeWcaFWy/PqUJkJFDL93iYKOJ8uEasWEF1qRHkiTNcgQA/jJhDMSto9HhK6EZJaP1QxYzPHcJsvdbyG/NZxIqLnExHtvhWoxXTA8NTk0xSUtaFUuqjLPy3cXRb2o6qJkFXCo8N6UeD2Rm33skfRV1rEf4m7qpC2LtIo8Tfiz54pxbN2AdDxNOlAMvLbbA2I5sDslj8BKKD9M3MGzEz+xdjmfx4sNxxnpKMfhSEapJpW0oPzORIID4qGWk4Rahk7dDnNEkXkDQfoTkYPDetxE0pHFSKm5X+nN56nhjVD9gGNQagrycAKPMtTBcxcfhkveYSHSgTEoDjFWr0WfjFy6rJV4yBqpN9g0OiUDGolnqBFkN4i/7+FHsCJO8QnLYPJAswYnKOldheW8xRH2vSzkR4iEhgHHUcigBl5w1Arjr7DPmo+s9+lLS564cbe7xkfynM20nX0xLH6SIqPBohw+CwQEcaFtuYsBiuEWH3i//xbyvGK33G+0/f7S0m9V9i324hLmzbzI5+f34mJxbi/ObMTry1D+YRni8/3lLuR5/n8ZTpdBODKYepytb/7Pu/AUjT90cINvGKfCIZGHiH2Y/uIxsEUDCHoKRU/GEY7Y/hcVsyh9DwYAAA==</values>
         <workflow_reference/>
     </sys_hub_flow_logic_instance_v2>
     <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
@@ -588,13 +690,13 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-08-16 02:22:40</sys_created_on>
         <sys_id>d740e1a42f364b904674caba6fa4e345</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_mod_count>8</sys_mod_count>
         <sys_scope display_value="CampusDesk AI">28296cbb2f9607104674caba6fa4e352</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-08-16 02:45:46</sys_updated_on>
+        <sys_updated_on>2026-08-20 03:55:37</sys_updated_on>
         <ui_id>0726c76c-af5d-4285-ac01-ad61feb5a7a2</ui_id>
         <updation_source/>
-        <values>H4sIAAAAAAAA/+1Vy27bMBD8FYNnQZDk2Gh8C1KkKNA2QJPm0gbEiqRkohSp8mHHNfzvXephG4mDGkWOvYmz3N3Z4Sy0JSb4Nnh3b66ck7Umi++PCZE6Yvi9JZKTBakyqPJLlrNpMZ8WWVa8u8jL+bTMCz4FAVOSEA2NwJvMaC69NJp2QEJWoEIM4CeXrlWweTggbCkVt2Lo2oLFHC8sWWyfhfymFVRBKRQm3nkrdY3p53IbE69HcpNPHfI669gPcTd2MpZHWnmWEPHkheYCW1egnEhIA5qDN3azR6wAfqvVAVhK7fuJG3hy8jfWLmazeLESOCMb5Ngf6SDVqJKRTNy2kWCPeCjVKKFRodFf+jmiyKKCoPyRyMFhPdFG0pHFQKm6W5r117HhjdTdgENQGQZqfwKPMpTBCxcfRijRYCHaQNuiOLS1ZiW7ZOTSpLXCQ1ops8am0VEpsEg8RY0gvUH8fQc/gJVxis9YBpN7miU4yWjnPiznLY6w62Shv0Ik1A84jEJ7NfCCY1a2/gr7rMTAepcM1r2EWTXLs9lpe1zMT5jgyLXb7TU+phd8YuzkW8vjJ81TFizK5tNAQVIX6lq4GGAYrtEIu92PkGVT/kFoYUG9tP5blX2L/TlDoBf7c1q0V5am+MvSxGc+c2eyLPu/NMdLIx3tzT/M1jX/5515jMbvO7jeN1ww6ZDIfcQ+jn+FGNigASQ7htbG/owjHLDdH+5GtKFfBgAA</values>
+        <values>H4sIAAAAAAAA/+1Uy27bMBD8FUNnQ9UjNhrfghRBA7QN0KS5NAGxIimZKEUyfNhxDf97l3rYRuOgRZFjb+Isd3d2uKNtooM3wbs7feGcaFSy+P44TYSKGH5vEwUtTxYJ1YoJL7QiHTBNViBDDOAnE85I2NwfELoUklk+VDNgMcdzmyy2v4X8xnAioeISE2+9FarBdMHwVGdQ5+c0p2UxL4ssK96f5dW8rPKClcChxHtj4uVIbvKpQ6avso79EHdjJ21ZpJVn04Q/e64Yx9Y1SMenSQuKgdd2s0csB3aj5AFYCuX7iVt4duIn1i5ms3ix5jgjHeTYH8kg1aiSFpTfmEiwRzxUcpRQy9CqL/0cUWReQ5D+SOTgsB43kXRkMVCqb5d6/XVseCVUN+AQlJqC3J/AowxV8NzFh+GSt1iItGAMikOM1SvRJSOXNm0kHtJa6jU2jZuSAo3EU9QI0ivEP3TwPVgRp/iMZTC5p1mBE5R0W4XlvMURdp0s5ClEQv2AwyikVwMvOGqF8RfYZ8UH1rvpy5U82sbt9hIfyXM20XbyzbD4SfKUBoty+DQQEMSFpuEuBiiGG3zg3e4hZFnJrtVTEHYzeTf5yKV5udlvXP0tXHIOs3qWZ7PTLjmbn3LJCX+8bo3iD9aIj/mXzsiy7L81jq0hHOlXfJita/7PzniMNug7uH5vGKfCIZG7iF2P//QY2OACCHoMrbX9EUc4YLtfnuc3DB0GAAA=</values>
         <workflow_reference/>
     </sys_hub_flow_logic_instance_v2>
     <sys_hub_pill_compound action="delete_multiple" query="attached_to=ddbedda02f364b904674caba6fa4e328"/>
@@ -685,7 +787,7 @@
         <description>Automatically routes CampusDesk AI incidents to the appropriate assignment group based on the AI suggested category.</description>
         <flow_priority>MEDIUM</flow_priority>
         <internal_name>campusdesk_ai__incident_routing</internal_name>
-        <label_cache>[{"name":"Created or Updated_1.current.u_ai_suggested_category","label":"Trigger - Record Created or Updated➛Incident Record➛AI Suggested Category","reference":"","reference_display":"AI Suggested Category","type":"string","base_type":"string","parent_table_name":"incident","column_name":"u_ai_suggested_category","usedInstances":{"03da9803-22bb-4ad6-ac4a-8b5839e36d38":["condition"],"d301d044-9a9b-4173-aa4c-48266f6c349a":["condition"],"441f608a-dc28-46fd-90f7-cc3cf7c8fd8e":["condition"],"0726c76c-af5d-4285-ac01-ad61feb5a7a2":["condition"]}},{"name":"Created or Updated_1.current","label":"Trigger - Record Created or Updated➛Incident Record","reference":"incident","reference_display":"Incident","type":"reference","base_type":"reference","usedInstances":{"d5308b95-8045-47dd-85aa-cbdd84f2e904":["record"],"10d114d3-9451-45bb-8dff-74c8da84ec3d":["record"],"309a46e5-f90b-4a3b-8d76-5cfb7794c29c":["record"],"d469f685-f5d2-4f70-915e-c20de0d53a63":["record"]},"attributes":{}}]</label_cache>
+        <label_cache>[{"name":"Created or Updated_1.current.u_ai_suggested_category","label":"Trigger - Record Created or Updated➛Incident Record➛AI Suggested Category","reference":"","reference_display":"AI Suggested Category","type":"string","base_type":"string","parent_table_name":"incident","column_name":"u_ai_suggested_category","usedInstances":{"03da9803-22bb-4ad6-ac4a-8b5839e36d38":["condition"],"d301d044-9a9b-4173-aa4c-48266f6c349a":["condition"],"441f608a-dc28-46fd-90f7-cc3cf7c8fd8e":["condition"],"0726c76c-af5d-4285-ac01-ad61feb5a7a2":["condition"],"d76217f3-5e33-449f-bc9f-4abbafe50fc6":["condition"],"e3adecdc-3a1f-4581-9a0b-6a6732f24e67":["condition"]}},{"name":"Created or Updated_1.current","label":"Trigger - Record Created or Updated➛Incident Record","reference":"incident","reference_display":"Incident","type":"reference","base_type":"reference","usedInstances":{"d5308b95-8045-47dd-85aa-cbdd84f2e904":["record"],"10d114d3-9451-45bb-8dff-74c8da84ec3d":["record"],"309a46e5-f90b-4a3b-8d76-5cfb7794c29c":["record"],"d469f685-f5d2-4f70-915e-c20de0d53a63":["record"],"8fa508f6-36a3-4e77-be13-3be281f7755c":["record"],"82ac4817-1e46-4efc-a0ff-ae317e02f4f4":["record"]},"attributes":{}}]</label_cache>
         <master>true</master>
         <name>CampusDesk AI - Incident Routing</name>
         <natlang/>
@@ -702,7 +804,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>33952d602f764b904674caba6fa4e3ac</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
         <sys_package/>
@@ -710,7 +812,7 @@
         <sys_scope display_value="CampusDesk AI">28296cbb2f9607104674caba6fa4e352</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-08-16 02:45:55</sys_updated_on>
+        <sys_updated_on>2026-08-20 03:55:45</sys_updated_on>
         <type>flow</type>
         <version>2</version>
     </sys_hub_flow_snapshot>
@@ -735,7 +837,7 @@
         <active>true</active>
         <array>false</array>
         <array_denormalized>false</array_denormalized>
-        <attributes>child_label=FDChangeDetails,child_name=FDChangeDetails,child_type=object,child_type_label=Object,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=array.object,uiTypeLabel=Array.Object</attributes>
+        <attributes>child_label=FDChangeDetails,child_name=FDChangeDetails,child_type=object,child_type_label=Object,co_type_name=FDCollection,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=array.object,uiTypeLabel=Array.Object</attributes>
         <audit>false</audit>
         <calculation><![CDATA[(function calculatedFieldValue(current) {
 
@@ -795,14 +897,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-08-16 02:45:57</sys_created_on>
         <sys_id>9ca52d602f764b904674caba6fa4e3fd</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="CampusDesk AI">28296cbb2f9607104674caba6fa4e352</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-08-16 02:45:57</sys_updated_on>
+        <sys_updated_on>2026-08-19 18:06:00</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -820,7 +922,7 @@
         <active>true</active>
         <array>false</array>
         <array_denormalized>false</array_denormalized>
-        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name,uiTypeLabel=Table Name</attributes>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name</attributes>
         <audit>false</audit>
         <calculation><![CDATA[(function calculatedFieldValue(current) {
 
@@ -880,14 +982,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-08-16 02:45:58</sys_created_on>
         <sys_id>a8a56d602f764b904674caba6fa4e322</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="CampusDesk AI">28296cbb2f9607104674caba6fa4e352</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-08-16 02:45:58</sys_updated_on>
+        <sys_updated_on>2026-08-20 03:55:43</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -905,7 +1007,7 @@
         <active>true</active>
         <array>false</array>
         <array_denormalized>false</array_denormalized>
-        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id,uiTypeLabel=Document ID</attributes>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id</attributes>
         <audit>false</audit>
         <calculation><![CDATA[(function calculatedFieldValue(current) {
 
@@ -965,14 +1067,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-08-16 02:45:55</sys_created_on>
         <sys_id>f3952d602f764b904674caba6fa4e3ae</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="CampusDesk AI">28296cbb2f9607104674caba6fa4e352</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-08-16 02:45:55</sys_updated_on>
+        <sys_updated_on>2026-08-20 03:55:43</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -1000,17 +1102,17 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-08-16 02:46:04</sys_created_on>
         <sys_id>82a56d602f764b904674caba6fa4e3d5</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_scope/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-08-16 02:46:04</sys_updated_on>
+        <sys_updated_on>2026-08-19 18:05:58</sys_updated_on>
         <trigger_definition display_value="Created or Updated">a45d9180c32222002841b63b12d3aea7</trigger_definition>
-        <trigger_inputs>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</trigger_inputs>
+        <trigger_inputs>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</trigger_inputs>
         <trigger_outputs/>
         <trigger_type>record_create_or_update</trigger_type>
         <updation_source/>
     </sys_hub_trigger_instance_v2>
-    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=33952d602f764b904674caba6fa4e3ac^sys_idNOT IN06a56d602f764b904674caba6fa4e3d2,31a56d602f764b904674caba6fa4e3d1,8ea56d602f764b904674caba6fa4e3d2,b9a56d602f764b904674caba6fa4e3d1"/>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=33952d602f764b904674caba6fa4e3ac^sys_idNOT IN06a56d602f764b904674caba6fa4e3d2,2ef41cf12fb283d04674caba6fa4e337,31a56d602f764b904674caba6fa4e3d1,8ea56d602f764b904674caba6fa4e3d2,a2f41cf12fb283d04674caba6fa4e337,b9a56d602f764b904674caba6fa4e3d1"/>
     <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
         <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
         <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
@@ -1035,6 +1137,30 @@
         <values>H4sIAAAAAAAA/+VVXU/bMBT9K5Wfoypp0lL6NlEhITGQ6MYLRdGN7RRLTuw5NtBV/e+7cZy2AsSKxMPQ+hTfD/uc49Pruw0RjMxIxlmcnCYTmiZpOorj0TRLiklaJCOWAucJiUgNFcdKw6kyDNePIF0b2GzODAfL2UCZwU/N2s88GVJnDK/tdoulTDRawvo2dGCEPgjJME9md/cR0WBwc8sNmW1epI5FJ6HgEktvengv4dq1btdMUVchrlz0wcvQOQ+ZwcUcM9jUwkniiPBny2vGEUgJsuERqaBGlsqsycwahwHkz65rud5VPIjadkQreG7Ebzw5i9u6kiMzGkTYLfMgUBcu52BhgTtT68xOLyUobzpNGC/BSXt2GOsKrrUVqu5aLBSy71bSVfVVpwjZbXBwH65BEFy3PFvkHa1y8aCebnqQ56L2kgSKUlGQuxVYa0ThbAtnQ7jkXuMKtBb1KtdGPQrfjFCq4UriYlhK9YRnNmJVD4G2uIeoKgzPMT734VswoiXxHbfB5m1EmnVzJqFp9lRQw/yXa5F0xAKF3KvgJci9E9pmaoS23/CoRx6Ab6Pg/2L8nsPo6d5QB3vu/wOipsIr98rrF/vMxzx/BKLe8z/8Tb+NMNj+VezysHdw1SWC6cefZvrpVzJ9oPHlXf83r8ejd6fpgZO8vZsDnyMIROhZroxyeuniOGWbZe/6JZktyUKV9gkMHyyc1srYJYmW3Q4+PZrCeDo+SUflKcQnSZxNTjIKBUxKyHg6znw5UsYJfWT9G0/Mvwv0Y1PgiLvqp8C54JI1b1xePwJ4hcwtz7vLfDEGQnJwG5K79+/TZkEyif3vC02E/+YZvP8D2pWfaQgKAAA=</values>
     </sys_hub_action_instance_v2>
     <sys_hub_alias_mapping action="delete_multiple" query="source_id=06a56d602f764b904674caba6fa4e3d2"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="CampusDesk AI - Incident Routing">33952d602f764b904674caba6fa4e3ac</flow>
+        <generation_source/>
+        <order>12</order>
+        <parent_ui_id>e3adecdc-3a1f-4581-9a0b-6a6732f24e67</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-19 18:05:58</sys_created_on>
+        <sys_id>2ef41cf12fb283d04674caba6fa4e337</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="CampusDesk AI">28296cbb2f9607104674caba6fa4e352</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-19 18:05:58</sys_updated_on>
+        <ui_id>82ac4817-1e46-4efc-a0ff-ae317e02f4f4</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VVXW/aMBT9K8jPEXISoMBbBUKq1LVS2XgpVWTsG7DmfMxxaBniv+/GcQBR1FGpD0PjCd8P55xzj+3nLZGCDEkHBPUHfo+HfhgGlAb9jr/ohQs/ECED8IlHUpYAVmrgmRa4XjNVVoHtdqSBGRCtTLd+5KL6G/ltXmoNqdntsFTIIldsM3MdGOErqQTmyfD5xSM507i5AU2G25PUpegUW4DC0qcG3ilcs8mrtch4mSCuSDbBe9c5dpnW3Rgz2FTB8alH4M1AKgCBxEwV4JGEpcgy0xsyNLrEAPIXj6na7CtWMjU10YS9FfI3frlDq7oYkBl3IuyXkROoDsdjZtgUd+am1Hu9MsmhqDURELNSmdFxrC54zI3M0rrFsIVqujNVJulDrQjZb3A0j7JAEJBXPCvkNa14uspenxqQE5laSRxFlXGm9itmjJaL0lRwtgQUWI0TlucyXUa5ztbSNiOUpL1UuGjHKnvFbxZymbYZr3C3UVXWnmB8bMMzpmVF4htug807jxSbYqRYURyooIbRr7JCUhNzFCKrgpUgsk6omrmWubnFT63BAd95zv+L7kcO44ODoY72PJwBmXJplXvn9btD5nOevwBR4/nvdtLnETrbv4vdH/e2HuqEM333y0zfvybTOxpX7/q/eZ0GH96mR06y9i6OfI4gEKFludRZmc9LSkOxnTeun5PhnExBr3EsLaTzc068ed1tU6IXdAXnwCnrU793QykLgoDR+GZAqaA9W4508Xa+sP7M8/Jvgvzc6b9gRs3pn0hQojgztOboQ4KsDUT1EE+Ov0u2Zi65f/e+7A7we9T+rugm+G+ev5c/hAS/NAAKAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=2ef41cf12fb283d04674caba6fa4e337"/>
     <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
         <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
         <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
@@ -1092,6 +1218,30 @@
         <display_text/>
         <flow display_value="CampusDesk AI - Incident Routing">33952d602f764b904674caba6fa4e3ac</flow>
         <generation_source/>
+        <order>10</order>
+        <parent_ui_id>d76217f3-5e33-449f-bc9f-4abbafe50fc6</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-19 18:05:58</sys_created_on>
+        <sys_id>a2f41cf12fb283d04674caba6fa4e337</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="CampusDesk AI">28296cbb2f9607104674caba6fa4e352</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-19 18:05:58</sys_updated_on>
+        <ui_id>8fa508f6-36a3-4e77-be13-3be281f7755c</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VVXW/aMBT9K8jPEXISoMBbBUKq1LVS2XgpVWTsG7DmfMxxaBniv+/GcQBR1FGpD0PjCd8P55xzj+3nLZGCDEkHBPUHfo+HfhgGlAb9jr/ohQs/ECED8IlHUpYAVmrgmRa4XjNVVoHtdqSBGRCtTLd+5KL6G/ltXmoNqdntsFTIIldsM3MdGOErqQTmyfD5xSM507i5AU2G25PUpegUW4DC0qcG3ilcs8mrtch4mSCuSDbBe9c5dpnW3Rgz2FTB8alH4M1AKgCBxEwV4JGEpcgy0xsyNLrEAPIXj6na7CtWMjU10YS9FfI3frlDq7oYkBl3IuyXkROoDsdjZtgUd+am1Hu9MsmhqDURELNSmdFxrC54zI3M0rrFsIVqujNVJulDrQjZb3A0j7JAEJBXPCvkNa14uspenxqQE5laSRxFlXGm9itmjJaL0lRwtgQUWI0TlucyXUa5ztbSNiOUpL1UuGjHKnvFbxZymbYZr3C3UVXWnmB8bMMzpmVF4htug807jxSbYqRYURyooIbRr7JCUhNzFCKrgpUgsk6omrmWubnFT63BAd95zv+L7kcO44ODoY72PJwBmXJplXvn9btD5nOevwBR4/nvdtLnETrbv4vdH/e2HuqEM333y0zfvybTOxpX7/q/eZ0GH96mR06y9i6OfI4gEKFludRZmc9LSkOxnTeun5PhnExBr3EsLaTzc068ed1tU6IXdAXnwCnrU793QykLgoDR+GZAqaA9W4508Xa+sP7M8/Jvgvzc6b9gRs3pn0hQojgztOboQ4KsDUT1EE+Ov0u2Zi65f/e+7A7we9T+rugm+G+ev5c/hAS/NAAKAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=a2f41cf12fb283d04674caba6fa4e337"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="CampusDesk AI - Incident Routing">33952d602f764b904674caba6fa4e3ac</flow>
+        <generation_source/>
         <order>4</order>
         <parent_ui_id>d301d044-9a9b-4173-aa4c-48266f6c349a</parent_ui_id>
         <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
@@ -1108,7 +1258,7 @@
     </sys_hub_action_instance_v2>
     <sys_hub_alias_mapping action="delete_multiple" query="source_id=b9a56d602f764b904674caba6fa4e3d1"/>
     <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=33952d602f764b904674caba6fa4e3ac"/>
-    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=33952d602f764b904674caba6fa4e3ac^sys_idNOT IN2da56d602f764b904674caba6fa4e38e,31a56d602f764b904674caba6fa4e390,a9a56d602f764b904674caba6fa4e38c,f5a56d602f764b904674caba6fa4e3cf"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=33952d602f764b904674caba6fa4e3ac^sys_idNOT IN2da56d602f764b904674caba6fa4e38e,31a56d602f764b904674caba6fa4e390,76f41cf12fb283d04674caba6fa4e343,a9a56d602f764b904674caba6fa4e38c,f5a56d602f764b904674caba6fa4e3cf,faf41cf12fb283d04674caba6fa4e344"/>
     <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
         <attributes/>
         <block display_value="">6195e9602f764b904674caba6fa4e3c5</block>
@@ -1127,13 +1277,13 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-08-16 02:46:02</sys_created_on>
         <sys_id>2da56d602f764b904674caba6fa4e38e</sys_id>
-        <sys_mod_count>1</sys_mod_count>
-        <sys_scope/>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="CampusDesk AI">28296cbb2f9607104674caba6fa4e352</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-08-16 02:46:02</sys_updated_on>
+        <sys_updated_on>2026-08-20 03:55:44</sys_updated_on>
         <ui_id>d301d044-9a9b-4173-aa4c-48266f6c349a</ui_id>
         <updation_source/>
-        <values>H4sIAAAAAAAA/+1VTW/bMAz9K4HOhmHHTbDmVqQoNqBbgbXrZSsMWpIdYbLk6SNpZuS/j7IdJ1gzLMV63E16FMn3nkm4Jdq7xjv7oK+sFZUii69PEREqYHhuiWBkQcoEyvSSpjSbzrNpkkzfXaTFPCvSKcuAQ0YioqDm+JJqxYQTWuUdEJE1SB8CeGTCNhK2jweEroRkhg9dGzCY47ghi/a30LksJBRc4tPlnsbktkP+zM9tm4BbZ4SqhvvtUOV+D2rDAqs0iQh/dlwxjnxKkJZHpAbFwGmzHRHDgd0peQBWQrlecA3PVvzEhtPZLDwsOUqkgxvjNR+c6uHyGhwgFU+dN6NxWlBue3MYL8FLtzzG+gd3TZDapzgo5D5bS1+rT70jZCxw9GG8RRK8CUoD9UFHeb/Sm897ljdCda4MQakpyPEGDr0rvAt8WsIlr7FQXkPToKN5Y/RadMnIpY4riZe4lHqDTcMUxkAD8RiNhfgG8esOfgQjgoqPWAaTe5oFWEHzbmKxHNrEyS4idmuXEqw9iER38x8+UOwlD+Ly3p+QQo1o3BV2XvNBxy4aFuASZuUsTWanR+9ifmLAjma/bZc4E46ziTaTLw0LxzyNqTdopIt9DiK3vqq4DQGK4Qrnabf75pMkY+/BsA0Y/nKD3qzu6/bwDDNe7OFpg16zfNO/LF/48mfuXpIk/5fvn5dP2LxfmUFb1/wNd+8pLFDfc/SaCovUHgL2Yf+PCoEtDpegx9BGm+9B1AHb/QL59V667QYAAA==</values>
+        <values>H4sIAAAAAAAA/+1Vy27bMBD8lYBnQdAjNhrfAgdBC6QN0KS5tIGwIimZKEWqfNhxBf97l5IsG4mLNmiOvYmz3OXMkAN1RHvXemfv9aW1olZk8fUxIkIFDL87oqDhZEGoVkw4oVXRAxFZg/ShgJ9M2FbC9uGA0JWQzPBxWgsGexw3ZNE9KwmGDVUCVXpBU5pn8zxLkuzdeVrO8zLNWA4cchwooeQSty73NM5ueiT6LT+3bQNunRGqHtc345S7PagNC6zSJCL8yXHFOPKpQFoekQYUA6fNdkIMB3ar5AFYCeUGwQ08WfETD8xms7Cx4iiRjm5My2J0aoCrK3CAVDx13kzGaUG5HcxhvAIv3fIYGzbctkHq0OKglPtuLX2jPg2OkGnA0cV4iyR4G5QG6qOO6m6lN5/3LK+F6l0Zi1JTkNMKHHpXehf4dIRL3uCgooG2RUeL1ui16JuRSxPXEhdxJfUGDw2vKwYaiMdoLMTXiF/18AMYEVR8xDHYPNAswQpa9C8Rx6FNnOwiYrd2KcHag0h0t/jhA8VB8iiuGPwJLdSI1l3iyWs+6thFLx/20ZvuuiXetePsTJuzLy0Ln0UaU2/QIBf7AkRhfV1zGwoUyzW+k93um0+SnL0HwzZg+MtkvNnc1+XrAmbVLE1mp/N1Pj+VrxPJemWosj+EKtzoX2YqSZL/ofrnUAlbDFEYtfWHv2GmHkOAhjMnr6mwSO0+YB/2/5RQ2OLjEvQY2mjzPYg6YLtfCLOgQJ0GAAA=</values>
         <workflow_reference/>
     </sys_hub_flow_logic_instance_v2>
     <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
@@ -1154,13 +1304,40 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-08-16 02:46:03</sys_created_on>
         <sys_id>31a56d602f764b904674caba6fa4e390</sys_id>
-        <sys_mod_count>1</sys_mod_count>
-        <sys_scope/>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="CampusDesk AI">28296cbb2f9607104674caba6fa4e352</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-08-16 02:46:03</sys_updated_on>
+        <sys_updated_on>2026-08-20 03:55:44</sys_updated_on>
         <ui_id>441f608a-dc28-46fd-90f7-cc3cf7c8fd8e</ui_id>
         <updation_source/>
-        <values>H4sIAAAAAAAA/+1VTW/bMAz9K4HOhmHHTbD2VqQoMKBbgaXrZSsMWpIdYbLk6SNpZuS/j7IdJ2gzLMV63E16FMn3nkm4Jdq7xjv7oK+tFZUiV9+eIiJUwPDcEsHIFSkTKNNLmtJsOs+mSTL9cJEW86xIpywDDhmJiIKa40uqFRNOaJV3QETWIH0I4JEJ20jYPh4QuhKSGT50bcBgjuOGXLUvQueykFBwiU8XexqTuw75Mz+3bQJunRGqGu53Q5XlHtSGBVZpEhH+7LhiHPmUIC2PSA2KgdNmOyKGA7tX8gCshHK94BqerfiFDaezWXhYcpRIBzfGaz441cPlDThAKp46b0bjtKDc9uYwXoKXbnGM9Q/umyC1T3FQyH22lr5Wn3tHyFjg6MN4iyR4E5QG6oOOcrnSmy97lrdCda4MQakpyPEGDr0rvAt8WsIlr7FQXkPToKN5Y/RadMnIpY4riZe4lHqDTcMUxkAD8RiNhfgW8ZsOfgQjgopPWAaTe5oFWEHzbmKxHNrEyS4idmsXEqw9iER3858+UOwlD+Ly3p+QQo1o3DV2XvNBxy4aFuASZuUsTWanR+9ifmLAjma/bRc4E46ziTaTrw0LxzyNqTdopIt9DiK3vqq4DQGK4Qrnabf77pMkY0tdug0Y/nqD3q3u2/bwDDNe7eFpg96yfNO/LF/48mfuXpIk/5fvn5dP2LxfmUFb1/wdd+8pLFDfc/SaCovUHgL2cf+PCoEtDpegx9BGmx9B1AHb/QbRRTTq7QYAAA==</values>
+        <values>H4sIAAAAAAAA/+1VXWvbMBT9K0HPxvijCWvfSkph0K2wdH3ZirmWZEdMljx9JM1M/vuubMcJa8ZW1se9WefqXp1zpIM7or1rvbMP+tpaUSty9eUpIkIFDL87oqDh5IpQrZhwQquiByKyAelDAT+ZsK2E3eMRoWshmeHjtBYM9jhuyFX3S0kwbKgSqNJLmtI8W+RZkmTvLtJykZdpxnLgkONACSWXuHV5oDG765Hot/zcrg24dUaoelzfjVNWB1AbFlilSUT4s+OKceRTgbQ8Ig0oBk6b3YQYDuxeySOwFsoNght4tuIHHpjN52FjxVEiHd2YlsXo1ABXN+AAqXjqvJmM04JyO5jDeAVeuuUpNmy4b4PUocVBKQ/dWvpGfRwcIdOAk4vxFknwNigN1Ecd1Wqtt58OLG+F6l0Zi1JTkNMKHHpXehf4dIRL3uCgooG2RUeL1uiN6JuRSxPXEhdxJfUWDw2vKwYaiMdoLMS3iN/08CMYEVR8wDHYPNAswQpa9C8Rx6FNnOwjYnd2KcHao0h0t/juA8VB8iiuGPwJLdSI1l3jyRs+6thHLx/2yZvuuiXeteNsps3sc8vCZ5HG1Bs0yMW+AFFYX9fchgLFco3vZL//6pMkZytduS0Y/jIZbzb3dfm6hHk1T5P5+XxdLM7l60yyXhmq7A+hCjf6l5lKkuR/qP45VMIWQxRGbf3hb5ippxCg4czJayosUnsI2PvDPyUUdvi4BD2Fttp8C6KO2P4nIAPKEJ0GAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">e1f4d8f12fb283d04674caba6fa4e38f</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="CampusDesk AI - Incident Routing">33952d602f764b904674caba6fa4e3ac</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>9</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-19 18:05:59</sys_created_on>
+        <sys_id>76f41cf12fb283d04674caba6fa4e343</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_scope display_value="CampusDesk AI">28296cbb2f9607104674caba6fa4e352</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-20 03:55:44</sys_updated_on>
+        <ui_id>d76217f3-5e33-449f-bc9f-4abbafe50fc6</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1VXWvbMBT9K0HPxvijCWveSkph0K2wdn3ZirmWZEdMljx9JM1M/vuubMcJa8ZW1se9WefqXp1zpIM7or1rvbMP+spaUSuy/PIUEaECht8dUdBwsiRUKyac0KrogYhsQPpQwE8mbCth93hE6FpIZvg4rQWDPY4bsux+KQmGDVUCVXpJU5pnizxLkuzdRVou8jLNWA4cchwooeQSt64ONGa3PRL9lp/btQG3zghVj+vbccr9AdSGBVZpEhH+7LhiHPlUIC2PSAOKgdNmNyGGA7tT8gishXKD4AaerfiBB2bzedhYcZRIRzemZTE6NcDVNThAKp46bybjtKDcDuYwXoGXbnWKDRvu2iB1aHFQykO3lr5RHwdHyDTg5GK8RRK8DUoD9VFHdb/W208HljdC9a6MRakpyGkFDr0rvQt8OsIlb3BQ0UDboqNFa/RG9M3IpYlriYu4knqLh4bXFQMNxGM0FuIbxK97+BGMCCo+4BhsHmiWYAUt+peI49AmTvYRsTu7kmDtUSS6W3z3geIgeRRXDP6EFmpE667w5A0fdeyjlw/75E133Qrv2nE202b2uWXhs0hj6g0a5GJfgCisr2tuQ4FiucZ3st9/9UmSs3CtSJ6/TMabzX1dvi5hXs3TZH4+XxeLc/k6k6xXhir7Q6jCjf5lppIk+R+qfw6VsMUQhVFbf/gbZuopBGg4c/KaCovUHgL2/vBPCYUdPi5BT6GtNt+CqCO2/wmEA+dVnQYAAA==</values>
         <workflow_reference/>
     </sys_hub_flow_logic_instance_v2>
     <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
@@ -1181,13 +1358,13 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-08-16 02:46:02</sys_created_on>
         <sys_id>a9a56d602f764b904674caba6fa4e38c</sys_id>
-        <sys_mod_count>1</sys_mod_count>
-        <sys_scope/>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="CampusDesk AI">28296cbb2f9607104674caba6fa4e352</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-08-16 02:46:02</sys_updated_on>
+        <sys_updated_on>2026-08-20 03:55:44</sys_updated_on>
         <ui_id>03da9803-22bb-4ad6-ac4a-8b5839e36d38</ui_id>
         <updation_source/>
-        <values>H4sIAAAAAAAA/+1VTW/bMAz9K4HOhmHHTbDmVqQoMKBrgbXrZSsMWpIdYbLk6SNpZuS/j7IdJ1gzLMV63E16FMn3nkm4Jdq7xjv7qK+sFZUii6/PEREqYHhuiWBkQcoEyvSSpjSbzrNpkkw/XKTFPCvSKcuAQ0YioqDm+JJqxYQTWuUdEJE1SB8CeGTCNhK2TweEroRkhg9dGzCY47ghi/a30LksJBRc4tPlnsbktkP+zM9tm4BbZ4SqhvvtUOVhD2rDAqs0iQh/cVwxjnxKkJZHpAbFwGmzHRHDgd0reQBWQrlecA0vVvzEhtPZLDwsOUqkgxvjNR+c6uHyGhwgFU+dN6NxWlBue3MYL8FLtzzG+gf3TZDapzgo5D5bS1+ru94RMhY4+jDeIgneBKWB+qCjfFjpzec9yxuhOleGoNQU5HgDh94V3gU+LeGS11gor6Fp0NG8MXotumTkUseVxEtcSr3BpmEKY6CBeIzGQnyD+HUHP4ERQcUnLIPJPc0CrKB5N7FYDm3iZBcRu7VLCdYeRKK7+Q8fKPaSB3F5709IoUY07go7r/mgYxcNC3AJs3KWJrPTo3cxPzFgR7PftkucCcfZRJvJl4aFY57G1Bs00sU+B5FbX1XchgDFcIXztNt980mSsTvuNtp8f71A71X2bVt4hhWvtvC0PW9ZvelfVi989zM3L0mS/6v3z6snbN4vzKCta/6Om/cc1qfvOXpNhUVqjwH7uP9DhcAWh0vQYyhMdhB1wHa/AEPNlvfrBgAA</values>
+        <values>H4sIAAAAAAAA/+1VXWvbMBT9K0HPxvijCWvfSkph0LWwdn3ZirmWZEdMljx9JM1M/vuubMcJbcZW1se9WUe6V+cc3YM7or1rvbMP+tJaUSty8fUpIkIFDL87oqDh5IJQrZhwQquiByKyBunDBn4yYVsJ28cDQldCMsPHbi0YrHHckIvuxZZgWFAlUKXnNKV5tsizJMk+nKXlIi/TjOXAIceGEkou8ehyT2N20yPRb/m5bRtw64xQ9bi+Gbvc70FtWGCVJhHhz44rxpFPBdLyiDSgGDhtthNiOLA7JQ/ASig3CG7g2YqfeGE2n4eDFUeJdHRjWhajUwNcXYEDpOKp82YyTgvK7WAO4xV46ZbH2HDgrg1ShxIHpdxXa+kbdTs4QqYGRw/jLZLgbVAaqI86qvuV3nzes7wWqndl3JSagpxW4NC70rvApyNc8gYbFQ20LTpatEavRV+MXJq4lriIK6k3eGmYrhhoIB6jsRBfI37Vw49gRFDxCdtg8UCzBCto0U8itkObONlFxG7tUoK1B5HobvHDB4qD5FFcMfgTSqgRrbvEm9d81LGLXg/20Ux33RLf2nE202b2pWXhs0hj6g0a5GJfgCisr2tuwwbF7RrnZLf75pMkZ7fcbbT5/joY79X2bek6h3k1T5P56XSdLU6l60Su3hip7A+RCu/5l4lKkuR/pP45UsIWQxBGbf3l75iopxCf4c7JayosUnsI2Mf9HyVsbHG4BD2GwmQHUQds9wuSkeZYmwYAAA==</values>
         <workflow_reference/>
     </sys_hub_flow_logic_instance_v2>
     <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
@@ -1208,13 +1385,40 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-08-16 02:46:03</sys_created_on>
         <sys_id>f5a56d602f764b904674caba6fa4e3cf</sys_id>
-        <sys_mod_count>1</sys_mod_count>
-        <sys_scope/>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="CampusDesk AI">28296cbb2f9607104674caba6fa4e352</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-08-16 02:46:03</sys_updated_on>
+        <sys_updated_on>2026-08-20 03:55:44</sys_updated_on>
         <ui_id>0726c76c-af5d-4285-ac01-ad61feb5a7a2</ui_id>
         <updation_source/>
-        <values>H4sIAAAAAAAA/+1VTW/bMAz9K4HOhmHHTbDmVqToMKBbgbXrZSsMWpIdYbLk6SNpZuS/j7IdJ1gzLMV63E16FMn3nkm4Jdq7xjv7oK+sFZUii69PEREqYHhuiWBkQcoEyvSSpjSbzrNpkkzfXaTFPCvSKcuAQ0YioqDm+JJqxYQTWuUdEJE1SB8CeGTCNhK2jweEroRkhg9dGzCY47ghi/a30LksJBRc4tPlnsbktkP+zM9tm4BbZ4SqhvvtUOV+D2rDAqs0iQh/dlwxjnxKkJZHpAbFwGmzHRHDgd0peQBWQrlecA3PVvzEhtPZLDwsOUqkgxvjNR+c6uHyGhwgFU+dN6NxWlBue3MYL8FLtzzG+gd3TZDapzgo5D5bS1+rT70jZCxw9GG8RRK8CUoD9UFHeb/Sm897ljdCda4MQakpyPEGDr0rvAt8WsIlr7FQXkPToKN5Y/RadMnIpY4riZe4lHqDTcMUxkAD8RiNhfgG8esOfgQjgoqPWAaTe5oFWEHzbmKxHNrEyS4idmuXEqw9iER38x8+UOwlD+Ly3p+QQo1o3BV2XvNBxy4aFuASZuUsTWanR+9ifmLAjma/bZc4E46ziTaTLw0LxzyNqTdopIt9DiK3vqq4DQGK4Qrnabf75pMkY++54gbkywV6q7Kv28IzrHixhaftec3qTf+yeuG7n7l5SZL8X71/Xj1h835hBm1d8zfcvKewPn3P0WsqLFJ7CNiH/R8qBLY4XIIeQxttvgdRB2z3Cx0ZQw7rBgAA</values>
+        <values>H4sIAAAAAAAA/+1Vy27bMBD8FYNnQZXk2Gh8CxwEDZA2QJPm0gbCiqRsohTJ8GFHNfzvXUryA42LNmiOvYmz3OXMkANtiA7eBO/u9YVzYqHI7OtjQoSKGH5viIKGkxmhWjHhhVZlByRkBTLEAn4y4YyE9uGA0KWQzPJhmgGLPZ5bMtv8UhIMG+oM6vyc5nRcTMdFlhXvz/JqOq7ygo2BwxgHSqi4xK3zHY3RTYckv+XnWxNx561Qi2F9M0y524HassgqzxLCnz1XjCOfGqTjCWlAMfDatnvEcmC3Sh6ApVC+F9zAsxM/8MBiMokba44S6eDGflkOTvVwfQkekEqgPti9cVpQ7npzGK8hSD8/xvoNtyZK7Vs8VHLXrWVo1KfeEbIfcHQxwSEJbqLSSH3QUd8t9frzjuWVUJ0rQ1FqCnK/Ao/eVcFHPhvCJW9wUNmAMehoaaxeia4ZuTTpQuIiraVe46HxdaVAI/EUjYX0CvHLDn4AK6KKjzgGm3uaFThBy+4l4ji0iZNtQlzr5hKcO4hEd8unECn2kgdxZe9PbKFWGH+BJ6/4oGObvHzYR296s5njXXvORtqOvhgWP8s8pcGiQT4NJYjShcWCu1igWF7gO9luv4UsG7Nr9RSEbUfvRh+4NC/z8cbTX5e1c5jUkzybnM7a2fRU1k6k7JUBK/4QsHi7f5mvLMv+B+yfAyZc2cdi0NYd/ob5eoxh6s/ce02FQ2r3Ebve/V9iocXHJegxtNb2exR1wLY/Afsm1OOpBgAA</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">e5f4d8f12fb283d04674caba6fa4e392</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="CampusDesk AI - Incident Routing">33952d602f764b904674caba6fa4e3ac</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>11</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-19 18:05:59</sys_created_on>
+        <sys_id>faf41cf12fb283d04674caba6fa4e344</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_scope display_value="CampusDesk AI">28296cbb2f9607104674caba6fa4e352</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-20 03:55:44</sys_updated_on>
+        <ui_id>e3adecdc-3a1f-4581-9a0b-6a6732f24e67</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1Vy27bMBD8FYNnQdAjNprcAgcBCqRNkaS5tIGwIimZKEWqfNhxBf97l5IsG42LNmiOvYlD7nJmuAN1RHvXemcf9KW1olbk4stTRIQKGH53REHDyQWhWjHhhFZFD0RkDdKHDfxkwrYSto8HhK6EZIaP3VowWOO4IRfdL1uCYUGVQJWe05Tm2SLPkiR7d5aWi7xMM5YDhxwbSii5xKPLPY3ZTY9Ev+Xntm3ArTNC1eP6Zuxyvwe1YYFVmkSEPzuuGEc+FUjLI9KAYuC02U6I4cBulTwAK6HcILiBZyt+4IXZfB4OVhwl0tGNaVmMTg1wdQUOkIqnzpvJOC0ot4M5jFfgpVseY8OB2zZIHUoclHJfraVv1MfBETI1OHoYb5EEb4PSQH3UUd2v9OZuz/JaqN6VcVNqCnJagUPvSu8Cn45wyRtsVDTQtuho0Rq9Fn0xcmniWuIirqTe4KVhumKggXiMxkJ8jfhVDz+CEUHFB2yDxQPNEqygRT+J2A5t4mQXEbu1SwnWHkSiu8V3HygOkkdxxeBPKKFGtO4Sb17zUccuejnYRzPddUt8a8fZTJvZ55aFzyKNqTdokIt9AaKwvq65DRsUt2uck93uq0+SnH1CehucrNkdt9y9zMcbd39d1s5hXs3TZH46a2eLU1k7kbJXBiz7Q8DC6/5lvpIk+R+wfw6YsMUQi1Fbf/kb5usphGm4c/KaCovUHgL2fv9/CRtbHC5BjyGc729B1AHb/QSgLtuNqQYAAA==</values>
         <workflow_reference/>
     </sys_hub_flow_logic_instance_v2>
     <sys_hub_pill_compound action="delete_multiple" query="attached_to=33952d602f764b904674caba6fa4e3ac"/>
@@ -1301,18 +1505,18 @@
         <binding_strategy>com.snc.process_flow.engine.binding.OncePerRecord</binding_strategy>
         <plan>{"@class":"com.snc.process_flow.engine.serialization.plan_data.ChunkingPlanData","chunk_data":{"table":"sys_flow_trigger_plan","id":"f2a5ad602f764b904674caba6fa4e386","name":"plan","plan_signature":null},"plan_data":"CHUNKING_PLAN"}</plan>
         <plan_id>ddbedda02f364b904674caba6fa4e328</plan_id>
-        <snapshot>3f12bd282fb64b904674caba6fa4e350</snapshot>
+        <snapshot>6e83aab52ff2c3d04674caba6fa4e32a</snapshot>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-08-16 02:46:07</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>f2a5ad602f764b904674caba6fa4e386</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_overrides/>
         <sys_scope/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-08-16 02:46:07</sys_updated_on>
-        <trigger display_value="">bea5ad602f764b904674caba6fa4e383</trigger>
+        <sys_updated_on>2026-08-20 03:55:46</sys_updated_on>
+        <trigger display_value="">06fb1eb52fb2c3d04674caba6fa4e333</trigger>
     </sys_flow_trigger_plan>
     <sys_flow_subflow_plan action="delete_multiple" query="plan_id=ddbedda02f364b904674caba6fa4e328"/>
 </record_update>

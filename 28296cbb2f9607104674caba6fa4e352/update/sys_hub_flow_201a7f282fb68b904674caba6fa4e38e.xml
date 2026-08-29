@@ -17,7 +17,7 @@
         <flow_priority>MEDIUM</flow_priority>
         <generation_source/>
         <internal_name>campusdesk_ai__problem_automation</internal_name>
-        <label_cache>[{"name":"97ddea00-1dea-45ea-9bb1-c540d770b101.Record.category","label":"1➛Incident Record➛Category","reference":"","reference_display":"Category","type":"choice","base_type":"choice","parent_table_name":"incident","column_name":"category","choices":[{"label":null,"value":null,"order":0.0}],"usedInstances":{"8154392a-d38b-452c-9ce9-7600da223319":["category"]},"attributes":null},{"name":"Created_1.current.first_reported_by_task","label":"Trigger - Record Created➛Problem Record➛Origin task","reference":"task","reference_display":"Origin task","type":"reference","base_type":"reference","parent_table_name":"problem","column_name":"first_reported_by_task","choices":[{"label":null,"value":null,"order":0.0}],"usedInstances":{"97ddea00-1dea-45ea-9bb1-c540d770b101":[null]},"attributes":null},{"name":"97ddea00-1dea-45ea-9bb1-c540d770b101.Record.assigned_to","label":"1➛Incident Record➛Assigned to","reference":"sys_user","reference_display":"Assigned to","type":"reference","base_type":"reference","parent_table_name":"incident","column_name":"assigned_to","choices":[{"label":null,"value":null,"order":0.0}],"usedInstances":{"8154392a-d38b-452c-9ce9-7600da223319":["assigned_to"]},"attributes":null},{"name":"97ddea00-1dea-45ea-9bb1-c540d770b101.Record.urgency","label":"1➛Incident Record➛Urgency","reference":"","reference_display":"Urgency","type":"choice","base_type":"choice","parent_table_name":"incident","column_name":"urgency","choices":[{"label":null,"value":null,"order":0.0}],"usedInstances":{"8154392a-d38b-452c-9ce9-7600da223319":["urgency"]},"attributes":null},{"name":"97ddea00-1dea-45ea-9bb1-c540d770b101.Record.assignment_group","label":"1➛Incident Record➛Assignment group","reference":"sys_user_group","reference_display":"Assignment group","type":"reference","base_type":"reference","parent_table_name":"incident","column_name":"assignment_group","choices":[{"label":null,"value":null,"order":0.0}],"usedInstances":{"8154392a-d38b-452c-9ce9-7600da223319":["assignment_group"]},"attributes":null},{"name":"97ddea00-1dea-45ea-9bb1-c540d770b101.Record.impact","label":"1➛Incident Record➛Impact","reference":"","reference_display":"Impact","type":"choice","base_type":"choice","parent_table_name":"incident","column_name":"impact","choices":[{"label":null,"value":null,"order":0.0}],"usedInstances":{"8154392a-d38b-452c-9ce9-7600da223319":["impact"]},"attributes":null},{"name":"Created_1.current","label":"Trigger - Record Created➛Problem Record","reference":"problem","reference_display":"Problem","type":"reference","base_type":"reference","parent_table_name":null,"column_name":null,"choices":[{"label":null,"value":null,"order":0.0}],"usedInstances":{"298fb474-4433-4cbb-9b76-e89aa452545e":["record"],"8154392a-d38b-452c-9ce9-7600da223319":["record"]},"attributes":{"":""}},{"name":"Created_1.current.number","label":"Trigger - Record Created➛Problem Record➛Number","reference":"","reference_display":"Number","type":"string","base_type":"string","parent_table_name":"problem","column_name":"number","choices":[{"label":null,"value":null,"order":0.0}],"usedInstances":{"97ddea00-1dea-45ea-9bb1-c540d770b101":[null]},"attributes":null}]</label_cache>
+        <label_cache>[{"name":"97ddea00-1dea-45ea-9bb1-c540d770b101.Record.assigned_to","label":"1➛Incident Record➛Assigned to","reference":"sys_user","reference_display":"Assigned to","type":"reference","base_type":"reference","parent_table_name":"incident","column_name":"assigned_to","choices":[{"label":null,"value":null,"order":0.0}],"usedInstances":{"8154392a-d38b-452c-9ce9-7600da223319":["assigned_to"]},"attributes":null},{"name":"97ddea00-1dea-45ea-9bb1-c540d770b101.Record.urgency","label":"1➛Incident Record➛Urgency","reference":"","reference_display":"Urgency","type":"choice","base_type":"choice","parent_table_name":"incident","column_name":"urgency","choices":[{"label":null,"value":null,"order":0.0}],"usedInstances":{"8154392a-d38b-452c-9ce9-7600da223319":["urgency"]},"attributes":null},{"name":"97ddea00-1dea-45ea-9bb1-c540d770b101.Record.x_1971543_campus_0_ai_suggested_priority","label":"1➛Incident Record➛AI Suggested Priority","reference":"","reference_display":"AI Suggested Priority","type":"choice","base_type":"choice","parent_table_name":"incident","column_name":"x_1971543_campus_0_ai_suggested_priority","choices":[{"label":null,"value":null,"order":0.0}],"usedInstances":{"298fb474-4433-4cbb-9b76-e89aa452545e":["u_ai_suggested_priority"]},"attributes":null},{"name":"97ddea00-1dea-45ea-9bb1-c540d770b101.Record.assignment_group","label":"1➛Incident Record➛Assignment group","reference":"sys_user_group","reference_display":"Assignment group","type":"reference","base_type":"reference","parent_table_name":"incident","column_name":"assignment_group","choices":[{"label":null,"value":null,"order":0.0}],"usedInstances":{"8154392a-d38b-452c-9ce9-7600da223319":["assignment_group"]},"attributes":null},{"name":"97ddea00-1dea-45ea-9bb1-c540d770b101.Record.impact","label":"1➛Incident Record➛Impact","reference":"","reference_display":"Impact","type":"choice","base_type":"choice","parent_table_name":"incident","column_name":"impact","choices":[{"label":null,"value":null,"order":0.0}],"usedInstances":{"8154392a-d38b-452c-9ce9-7600da223319":["impact"]},"attributes":null},{"name":"97ddea00-1dea-45ea-9bb1-c540d770b101.Record.u_knowledge_article","label":"1➛Incident Record➛Knowledge Article","reference":"kb_knowledge","reference_display":"Knowledge Article","type":"reference","base_type":"reference","parent_table_name":"incident","column_name":"u_knowledge_article","choices":[{"label":null,"value":null,"order":0.0}],"usedInstances":{"298fb474-4433-4cbb-9b76-e89aa452545e":["u_knowledge_article"]},"attributes":null},{"name":"97ddea00-1dea-45ea-9bb1-c540d770b101.Record.x_1971543_campus_0_ai_resolution_guidance","label":"1➛Incident Record➛AI Resolution Guidance","reference":"","reference_display":"AI Resolution Guidance","type":"html","base_type":"html","parent_table_name":"incident","column_name":"x_1971543_campus_0_ai_resolution_guidance","choices":[{"label":null,"value":null,"order":0.0}],"usedInstances":{"298fb474-4433-4cbb-9b76-e89aa452545e":[null]},"attributes":null},{"name":"Created_1.current","label":"Trigger - Record Created➛Problem Record","reference":"problem","reference_display":"Problem","type":"reference","base_type":"reference","parent_table_name":null,"column_name":null,"choices":[{"label":null,"value":null,"order":0.0}],"usedInstances":{"298fb474-4433-4cbb-9b76-e89aa452545e":["record"],"8154392a-d38b-452c-9ce9-7600da223319":["record"]},"attributes":{"":""}},{"name":"Created_1.current.number","label":"Trigger - Record Created➛Problem Record➛Number","reference":"","reference_display":"Number","type":"string","base_type":"string","parent_table_name":"problem","column_name":"number","choices":[{"label":null,"value":null,"order":0.0}],"usedInstances":{"97ddea00-1dea-45ea-9bb1-c540d770b101":[null]},"attributes":null},{"name":"Created_1.current.first_reported_by_task.sys_id","label":"Trigger - Record Created➛Problem Record➛Origin task➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"task","column_name":"sys_id","choices":[{"label":null,"value":null,"order":0}],"usedInstances":{"97ddea00-1dea-45ea-9bb1-c540d770b101":[null]},"attributes":null},{"name":"97ddea00-1dea-45ea-9bb1-c540d770b101.Record.category","label":"1➛Incident Record➛Category","reference":"","reference_display":"Category","type":"choice","base_type":"choice","parent_table_name":"incident","column_name":"category","choices":[{"label":null,"value":null,"order":0.0}],"usedInstances":{"8154392a-d38b-452c-9ce9-7600da223319":["category"]},"attributes":null},{"name":"Created_1.current.first_reported_by_task","label":"Trigger - Record Created➛Problem Record➛Origin task","reference":"task","reference_display":"Origin task","type":"reference","base_type":"reference","parent_table_name":"problem","column_name":"first_reported_by_task","choices":[{"label":null,"value":null,"order":0.0}],"usedInstances":{"97ddea00-1dea-45ea-9bb1-c540d770b101":[null]},"attributes":null},{"name":"97ddea00-1dea-45ea-9bb1-c540d770b101.Record.x_1971543_campus_0_ai_recommendation","label":"1➛Incident Record➛AI Recommendation","reference":"","reference_display":"AI Recommendation","type":"html","base_type":"html","parent_table_name":"incident","column_name":"x_1971543_campus_0_ai_recommendation","choices":[{"label":null,"value":null,"order":0.0}],"usedInstances":{"298fb474-4433-4cbb-9b76-e89aa452545e":[null]},"attributes":null},{"name":"97ddea00-1dea-45ea-9bb1-c540d770b101.Record.x_1971543_campus_0_ai_priority_reason","label":"1➛Incident Record➛AI Priority Reason","reference":"","reference_display":"AI Priority Reason","type":"html","base_type":"html","parent_table_name":"incident","column_name":"x_1971543_campus_0_ai_priority_reason","choices":[{"label":null,"value":null,"order":0.0}],"usedInstances":{"298fb474-4433-4cbb-9b76-e89aa452545e":[null]},"attributes":null}]</label_cache>
         <latest_snapshot/>
         <master_snapshot/>
         <master_snapshot_digest/>
@@ -39,7 +39,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>201a7f282fb68b904674caba6fa4e38e</sys_id>
-        <sys_mod_count>14</sys_mod_count>
+        <sys_mod_count>19</sys_mod_count>
         <sys_name>CampusDesk AI - Problem Automation</sys_name>
         <sys_overrides/>
         <sys_package display_value="CampusDesk AI" source="x_1971543_campus_0">28296cbb2f9607104674caba6fa4e352</sys_package>
@@ -47,11 +47,11 @@
         <sys_scope display_value="CampusDesk AI">28296cbb2f9607104674caba6fa4e352</sys_scope>
         <sys_update_name>sys_hub_flow_201a7f282fb68b904674caba6fa4e38e</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-08-16 16:20:37</sys_updated_on>
+        <sys_updated_on>2026-08-18 03:50:04</sys_updated_on>
         <type>flow</type>
         <updation_source/>
         <version>2</version>
-        <version_record>a91060302ffa8b904674caba6fa4e34c</version_record>
+        <version_record>66778c552ff28f904674caba6fa4e361</version_record>
     </sys_hub_flow>
     <sys_translated_text action="delete_multiple" query="documentkey=201a7f282fb68b904674caba6fa4e38e"/>
     <sys_variable_value action="delete_multiple" query="document_key=201a7f282fb68b904674caba6fa4e38e"/>
@@ -365,13 +365,13 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-08-16 14:38:58</sys_created_on>
         <sys_id>01d884342f3a8b904674caba6fa4e312</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_scope display_value="CampusDesk AI">28296cbb2f9607104674caba6fa4e352</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-08-16 14:50:13</sys_updated_on>
+        <sys_updated_on>2026-08-17 06:04:27</sys_updated_on>
         <ui_id>97ddea00-1dea-45ea-9bb1-c540d770b101</ui_id>
         <updation_source/>
-        <values>H4sIAAAAAAAA/+VXUW/iOBD+K1GeKZcQINC3ExVSpb2ttO31ZXdlObFTrDV21nbapaj//caJQ1hIgVzZU1f3hGKPPd/MfN94+Lz2GfEv/REJptl0OprEQRBFQTAeRykOkyQap0mQJKHf8wVeUrDUUhlkVjmFpUfMi80a1iksEaZzjlf3bgd7RnrPsJ4uGCeKCv/y89een2MFtxmq/Mv1ztapcDhOKAfTW/Dt3VV4WiCWP5fgQ7K0/v7gjs7qRamIhRL1fPrDUEEoYMgw17TnL7Eg2Ei12qwoismN4M3CggkDt/nW+Idmz+AvGli7jEJUKa32Np/Ipahazq6wwbdGFakplDOtwGrIx3oT5iaRLTl38IOXXmP/bO3xrj2h2wfCF8g3oRkuuJn9O59hV58D67MK8CY3TELV/cjWBSe8Dl/yYik+VrX0NwjvW8hW7Vy9wrlCQ7JpbgtqK+TKld0u5NOnuhpzJkpcbpPLFPPNFzZGsaQwNi9rPyMoY5QTxARnwnqCsln6UE6X4AEtcZ4z8YByJR9ZeSvEsuw/cPjoZ1w+2VywB9HHqY28D8TC/TmsX5XL91gxm4W/4Bo43LMOF3DU+UM6VSw36ImRB2oa77UVkeYJ829t+45xqC5UGZ7/0vP1Ss841rpJNtAUfS9sDqrUu+yhslDlkRLFnxDBI3WJshwoZRselC0mOxKtCr3Fl/3+0blznAChzsKNZaSXrF5D5VpHVfPS4uf2Mbcb3sdqo6b32VrIJDhPC2mT+L4EOylwX1qWar+PsroTv8rNMfZPDz5a04ZnLENLyCfLOUWKpsAdjbCiKJOFIKiKYUsWNtkZU9o4432ZfKJQeuFJ4JRnFtQrrb2NdUcJHY+jltB15tWBOG/ag0C8MhBvE0i3sLs82cOz6W14Jr01z+EcM15WQxuab5WTKiXVK8/2kUIeYMSJb/qJoMKzgnr7o98mgdbH/wjWM48E76U/HWtNKcXJcIDHcRSGQRAGJA4mcRxOxkk2xvEwazSKkBYpzBJwcwZUgetRTY26zsF+/6kGiq6N5gRUNQWvpPhSBMEgNp6FBfX1aljHgbuGkkjJKRY7HeUOXpo/5g6/4+vo3XWV/+QVf6saCnb3WmJ/1YhcufypuAX7W7DvBb22FJvQYDAJSXoxicP4YpiR8cWU4NEFniajOCI0HWa/YhAmo4NT6NYokEpBmA1VbylMFMuEKkv4iKzXMyCaoQSF/bRQUBPTrzthDvMqbCQrZLD+9vKyL8w33NRNyydEXGt5th1yWxrqAWB37UPbBfWDdUbJBr+TaN84er+XF+ykCZscnEzxsOFTdV2jKCZSVuZrTyHXzU5Hxh8HUzP+zqHZAed4Xn62/cEsj+38wQz+n38w3+egBoAYB4agqoRaFqpM5SNKeaHLDYWFdv9szvfMfP0HaVDLKLcVAAA=</values>
+        <values>H4sIAAAAAAAA/+VXUW/iOBD+K1GeKZcQINC3ExVSpb2ttO31ZXdlObFTrDV21nbapaj//caJQ1hIgVzZU1f3hLDHnm9mvm88+bz2GfEv/REJptl0OprEQRBFQTAeRykOkyQap0mQJKHf8wVeUrDUUhlkVjmFpUfMi80a1iksEaZzjlf3bgd7RnrPsJ4uGCeKCv/y89een2MFtxmq/Mv1ztapcDhOKAfTW/Dt3VV4WiCWP5fgQ7K0/v/BHZ3Vi1IRCyXq+fSHoYJQwJBhrmnPX2JBsJFqtVlRFJMbwZuFBRMGbvOt8Q/NnsFfNLB2GYWoUlrtbf4il6JqObvCBt8aVaSmUM60AqshH+tNmJtEtuTcwQ9eeo39s7XHu/aEbh8IXyDfhGa44Gb273yGXX0OrM8qwJvcMAlV9yNbF5zwOnzJi6X4WNXS3yC8byFbtXP1CucKDcmmuS2orZArV3a7kE+f6mrMmShxuU0uU8w3/7AxiiWFsXlZ+xlBGaOcICY4E9YTlM3Sh3K6BA9oifOciQeUK/nIylshlmX/gcOffsblk80FexB9nNrI+0As3J/D+lW5fI8Vs1n4C66Bwz3rcAFHnT+kU8Vyg54YeaCm8V5bEWmeMP/Wtu8Yh+pCleH5Lz1fr/SMY62bZANN0ffC5qBKvcseKgtVHilR/AkRPFKXKMuBUrbhQdlisiPRqtBbfNnvH507xwkQ6izcWEZ6yeo1VK51VDUvLX5uH3O74X2sNmp6n62FTILztJA2ie9LsJMC96Vlqfb7KKs78avcHGP/9OCjNW14xjK0hHyynFOkaArc0QgrijJZCIKqGLZkYZOdMaWNM96XyScKpReeBE55ZkG90trbWHeU0PE4agldZ14diPOmPQjEKwPxNoF0C7vLkz08m96GZ9Jb8xzOMeNlNbSh+VY5qVJSvfJsHynkAUac+KafCCo8K6i3P/ptEmh9/I9gPfNI8F7607HWlFKcDAd4HEdhGARhQOJgEsfhZJxkYxwPs0ajCGmRwiwBN2dAFbge1dSo6xzs959qoOjaaE5AVVPwSoovRRAMYuNZWFBfr4Z1HLhrKImUnGKx01Hu4KX5Y+7wO76O3l1X+U9e8beqoWB3ryX2V43IlcufiluwvwX7XtBrS7EJDQaTkKQXkziML4YZGV9MCR5d4GkyiiNC02H2KwZhMjo4hW6NAqkUhNlQ9fZ300ojRizhI7Jez4BohhIU9tNCQU1Mv+6EOcyrsJGskMH6W7869vKyr8+3X9hN2SfEXyt7tp2AtqTU48Du2oe2C+rn64wCDn4nCb9xEH8v79lJ8zY5OKfiYcOn6rpGX0ykrMzXnlCum52OjD8Opmb8nUOzA87xvPzb9rlZHtv53Az+n5+b73NsA0CMA0NQVUItC1Wm8hGlvNDlhsJCu++c8z06X/8Bcbvo7cUVAAA=</values>
     </sys_hub_action_instance_v2>
     <sys_hub_alias_mapping action="delete_multiple" query="source_id=01d884342f3a8b904674caba6fa4e312"/>
     <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
@@ -389,13 +389,13 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-08-16 15:45:06</sys_created_on>
         <sys_id>6df750302fba8b904674caba6fa4e3ef</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_scope display_value="CampusDesk AI">28296cbb2f9607104674caba6fa4e352</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-08-16 16:20:27</sys_updated_on>
+        <sys_updated_on>2026-08-18 03:49:52</sys_updated_on>
         <ui_id>298fb474-4433-4cbb-9b76-e89aa452545e</ui_id>
         <updation_source/>
-        <values>H4sIAAAAAAAA/+2TW2vjMBCF/0rQszF2nIY2b0tCYKGXpS156RYjS+NEIMteXdJmQ/77jm3ZyabdkkIfttC86cyMdM74y8OWCE4mZAQ8ii/iMUviJBlG0fB8FGfjJIuHPKEAMQmIogVgpwZWao7nNZWuFrbbqQZqgadxyJzWoOxuh3UuTCXpZuHbUGErITnWyeThMSAV1XijBU0m26PSqZYkzUBi623n6dij3VT1mZfMFegrFZ146SdnvjL4PsMKDtV24igg8GxBcUAjOZUGAlJQxakt9YZMrHYoYGh+o+Sm71gJZdugBX024je+PIrqvhwwGfNL6I+pX1Ar5zNq6R3ezKzT/b5KwcC0O+GQUyft9FBrG24qK0rVjliayW66lK5Q1+1GSH/BwfdwBk1AVeesnbex8rtV+XTbmZwL1azER5Qlo7I/UWu1yJyt7WwJSGh2XNCqEmqZVrpci2YYrRThUuIhzGX5hG8asVQhZbXvELdKwznqs0ZeUC3qEFd4DQ7vAmI2ZiqpMfsouMP0l6udtMF8hLTZQrOCtCGhHmZaVPYbPrUGb3wXeOij4ZuEwR6ohnVzAP1PF0UJf0l5r7+P9ROcdKzPBUhuXrHmWbdQoCELaWv1b9zvfXGw8MWe+A9DPh5Hze8L/P8X/OzsLdzYxZ6ugzv38GNAVIuX9P/oC+/D/wQ/Hf73zXd+3V/3DzjWLg9nB9dtwZN/9mHgn38m5H2MT8/8v0h//ANM49P12QgAAA==</values>
+        <values>H4sIAAAAAAAA/+1aUW/bNhD+K4KeLU+yZTtKn4oGHQJ0bZF1fWk7gSJPDhGJ1CiqiWcY2Pt+woD9uP2SHSnJdm2nlbeui1slgG0d78g73nf85LPeLF3O3HPXHzE/iIIpHQfj8cj3R2dhkEzHSTBiYwIA7sAVJAfUfE+yCkq8th9QUMWEx2U1n0OpgcWF4lJxvXhb+f6YLZfRjDEgvu8F+OaFE3yJkiTw6CT02WzmJ4EfDK+ASsWGd3EQzYJJOI4pyYuqjP3Dc69WP9tV2+tYASmlqJe0r7RwGNHE01wscgpKSp1kkt40Ki7+m09QK5cFEQ7NSFm248Y4LogCoeOCZ9lb1yn1IoP1OC+LjCzOHS4yLuARjlMpNKoD45okG82UZCXgsHXHTGX3rR1dLlMWa0VEmUqVn0/8MDwDknjTYJZ6YRKOvSSMJl40m8AkOvMjNFqtujmPSzkOoRQKXW6WiNNKUM2lKNEndJQLBnetof+Fw2hyhMnlrJ3qAkUvcf5L1iVM64rX+GzfCaZDfcrUWJVdlNC5O712VMpM88LbOEuu40b4Sha7ao1XrW7geM4zKW+cnwqnxrtTr+9cCsoZau6IH186LxuA44gFeBePS02UbjX3F61tvzPGHSYjSsnb7onISAKYDqwbfazRByv99ecf9/i5JRgOhw/Mo+P2FsQa4gdS/U8XSyqtpXA2GN0v/TgllDCIu5SpORG2Pb93NkfIrVOGFEXGwVgTxUm9oe0ULwoQzlrVaedxCk5vQDkodPZhi/u/UyYoOb5C6uPaK6nihfY4PWhx+KQX0p7zDRx++71zhuqMHJfFfUFRX9XEp3AH8hwBRMzOnT7vhRH4LBqPPJYS5oUBjbxkMvU9Mp0wEoSz4CyZnQDvdQ2j571P8N7Vh/juae+rpb2r/ZPsP2a9LkX60FnvuPr4GkjvRsjbDNgcYixzTltXj/t+eWCa9qukglJmlc3svOKMCNpuxgnT6mgEgT/GOzpgs8QL/TTxzsYz6gVp4Eds6kMyOYWvk13D+MZo1XwaTef60UEirUfsWdEi2/m+RfbxhNrz50Plz/3sfgES7VKS/xOJ3s+ZR9fByROnO2g9et13a/tu7b8L4xuj175b29PuvbTbd2v7bm0H/u27tQ+Y9/pubd+t7Wmv79b23dq+W/sQaLXv1n7NtGo+9d3ab54/+25t3639SLeWXvOMIfG452/eDVzkIJKDBuWeL3eGuj61axOCqk85ZKw88BivXhTmWkOOW6Ehrh/rreXPGuNXzaDzuhnENBmnAt8fuHhGIsgB/bE0MXBzYu50pFq451pVKFBA2AuRLdYa11xonNY1uncl/xUdCKa+/TPaKWCYFGqN9WXcZKsWp4YqfsT5qa5Uo0qvJacYlN0gBimpMv1kW1YrvCgMrGoTS3ONNeItF8/r7XHXE7SNc5RUJToBhYnW+F8Hl/54LW+vWiefGkpV60DxroNk6yuiteKIGOPO0oUMcnOHkWMJcTGPCyXfc2uMruTDeYYXwzSTt7hmyediSGz1DM0JNnyK8gsrfm3qDoP4AadB49XALRflE1MXm1BwD+NfKuNJHVgTQmx3wW5BbGFhjG31PMal3kPj+GrQPCQewkfhFmzQpWwlbz0kvlw+QRSYXwWCIa2UubVarfZ/nTi6Ajq41FbAVevTro9NBTBJK5sQznbgf9GMOJcX29j/XNAPe9A/YNAjNX4EYTTaAGprzg3wMUCU5vtQf7keOA7xHfxpEf/K5vmwf+2xvyt7tm3rPK8HGshPPhvkz04J8k0YJ4/5+5D+7m+RosUNBTQAAA==</values>
     </sys_hub_action_instance_v2>
     <sys_hub_alias_mapping action="delete_multiple" query="source_id=6df750302fba8b904674caba6fa4e3ef"/>
     <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
@@ -424,7 +424,58 @@
     <sys_hub_alias_mapping action="delete_multiple" query="source_id=c37b04782f3a8b904674caba6fa4e384"/>
     <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=201a7f282fb68b904674caba6fa4e38e"/>
     <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=201a7f282fb68b904674caba6fa4e38e"/>
-    <sys_hub_pill_compound action="delete_multiple" query="attached_to=201a7f282fb68b904674caba6fa4e38e"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=201a7f282fb68b904674caba6fa4e38e^sys_idNOT IN3b3117f42ffecb904674caba6fa4e387,773117f42ffecb904674caba6fa4e388,bb3117f42ffecb904674caba6fa4e388"/>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>201a7f282fb68b904674caba6fa4e38e</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{97ddea00-1dea-45ea-9bb1-c540d770b101.Record.x_1971543_campus_0_ai_recommendation}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-17 05:14:37</sys_created_on>
+        <sys_id>3b3117f42ffecb904674caba6fa4e387</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="CampusDesk AI">28296cbb2f9607104674caba6fa4e352</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-17 05:14:37</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>49e0d932-dfad-41c9-b560-a65da14718b7</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>201a7f282fb68b904674caba6fa4e38e</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{97ddea00-1dea-45ea-9bb1-c540d770b101.Record.x_1971543_campus_0_ai_resolution_guidance}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-17 05:14:37</sys_created_on>
+        <sys_id>773117f42ffecb904674caba6fa4e388</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="CampusDesk AI">28296cbb2f9607104674caba6fa4e352</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-17 05:14:37</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>22e10395-ed7b-40fb-837c-1f109d60eb5d</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>201a7f282fb68b904674caba6fa4e38e</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{97ddea00-1dea-45ea-9bb1-c540d770b101.Record.x_1971543_campus_0_ai_priority_reason}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-17 05:14:37</sys_created_on>
+        <sys_id>bb3117f42ffecb904674caba6fa4e388</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="CampusDesk AI">28296cbb2f9607104674caba6fa4e352</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-17 05:14:37</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>50448eab-617f-4b43-b495-975e5980903d</ui_id>
+    </sys_hub_pill_compound>
     <sys_hub_flow_variable action="delete_multiple" query="model=201a7f282fb68b904674caba6fa4e38e"/>
     <sys_documentation action="INSERT_OR_UPDATE">
         <element>current</element>
