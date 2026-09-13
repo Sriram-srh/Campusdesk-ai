@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ws_operation">
+    <sys_ws_operation action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <consumes>application/json,application/xml,text/xml</consumes>
+        <consumes_customized>false</consumes_customized>
+        <default_operation_uri/>
+        <enforce_acl/>
+        <http_method>GET</http_method>
+        <name>Get CampusDesk Service Status</name>
+        <operation_script><![CDATA[(function process(/*RESTAPIRequest*/ request, /*RESTAPIResponse*/ response) {
+
+    var result = {
+        status: "success",
+        application: "CampusDesk AI",
+        api: "CampusDesk Integration API",
+        message: "CampusDesk Integration API is working",
+        timestamp: new GlideDateTime().getDisplayValue()
+    };
+
+    response.setStatus(200);
+    response.setBody(result);
+
+})(request, response);]]></operation_script>
+        <operation_uri>/api/x_1971543_campus_0/campusdesk_integration_api/status</operation_uri>
+        <produces>application/json,application/xml,text/xml</produces>
+        <produces_customized>false</produces_customized>
+        <relative_path>/status</relative_path>
+        <request_example/>
+        <requires_acl_authorization>true</requires_acl_authorization>
+        <requires_authentication>true</requires_authentication>
+        <requires_snc_internal_role>true</requires_snc_internal_role>
+        <short_description/>
+        <support_trailing_slash>false</support_trailing_slash>
+        <sys_class_name>sys_ws_operation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-29 06:06:21</sys_created_on>
+        <sys_id>2500197c2f4b0f104674caba6fa4e35c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Get CampusDesk Service Status</sys_name>
+        <sys_package display_value="CampusDesk AI" source="x_1971543_campus_0">28296cbb2f9607104674caba6fa4e352</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CampusDesk AI">28296cbb2f9607104674caba6fa4e352</sys_scope>
+        <sys_update_name>sys_ws_operation_2500197c2f4b0f104674caba6fa4e35c</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-29 06:06:21</sys_updated_on>
+        <web_service_definition display_value="CampusDesk Integration API">e2638db02f0b0f104674caba6fa4e377</web_service_definition>
+        <web_service_version/>
+    </sys_ws_operation>
+</record_update>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_lib_asset">
+    <sys_ux_lib_asset action="INSERT_OR_UPDATE">
+        <bundled_asset>false</bundled_asset>
+        <category>component</category>
+        <checksum>43303322748c1452670f268b9cd568be</checksum>
+        <config_option/>
+        <content>/*__ESM_BODY_START__*/window.process={};import{r as reactExports,j as jsxRuntimeExports}from"./main.jsdbx";import{N as NowRecordListConnected}from"./NowRecordListConnected.jsdbx";import"/uxasset/externals/@servicenow/now-record-list-connected/index.jsdbx";import"./computedProvider.jsdbx";function MetricCard({label,val,color}){return jsxRuntimeExports.jsxs("div",{"data-source-loc":"components/Dashboard.tsx:20:5",className:"metric-card",style:{borderTopColor:color},children:[jsxRuntimeExports.jsx("div",{"data-source-loc":"components/Dashboard.tsx:21:7",className:"metric-value",children:val}),jsxRuntimeExports.jsx("div",{"data-source-loc":"components/Dashboard.tsx:22:7",className:"metric-label",children:label})]})}function Dashboard({onViewIncidents,onSelectIncident}){let[metrics,setMetrics]=reactExports.useState(null);return reactExports.useEffect(()=&gt;{let hdrs={"X-UserToken":window.g_ck||"",Accept:"application/json"};async function fetchCount(q){try{let r=await fetch(`/api/now/stats/incident?sysparm_query=${encodeURIComponent(q)}&amp;sysparm_count=true`,{headers:hdrs}),d=await r.json();return parseInt(d?.result?.stats?.count??"0",10)||0}catch{return 0}}Promise.all([fetchCount("active=true"),fetchCount("active=true^priorityIN1,2"),fetchCount("state=6"),fetchCount("active=true^priority=1")]).then(([open,crit,resolved,p1])=&gt;setMetrics({totalOpen:open,criticalHigh:crit,resolvedToday:resolved,slaAtRisk:p1}))},[]),jsxRuntimeExports.jsxs("div",{"data-source-loc":"components/Dashboard.tsx:61:5",className:"campus-app",children:[jsxRuntimeExports.jsxs("div",{"data-source-loc":"components/Dashboard.tsx:62:7",className:"campus-header",children:[jsxRuntimeExports.jsx("h1",{"data-source-loc":"components/Dashboard.tsx:63:9",className:"section-title",children:"CampusDesk AI Dashboard"}),jsxRuntimeExports.jsx("span",{"data-source-loc":"components/Dashboard.tsx:64:9",className:"nav-link",onClick:onViewIncidents,role:"button",tabIndex:0,children:"View All Incidents →"})]}),jsxRuntimeExports.jsxs("div",{"data-source-loc":"components/Dashboard.tsx:69:7",className:"metrics-grid",children:[jsxRuntimeExports.jsx(MetricCard,{"data-source-loc":"components/Dashboard.tsx:70:9",label:"Total Open",val:metrics?metrics.totalOpen:"...",color:"#0080a3"}),jsxRuntimeExports.jsx(MetricCard,{"data-source-loc":"components/Dashboard.tsx:71:9",label:"Critical / High",val:metrics?metrics.criticalHigh:"...",color:"#c4314b"}),jsxRuntimeExports.jsx(MetricCard,{"data-source-loc":"components/Dashboard.tsx:72:9",label:"Resolved",val:metrics?metrics.resolvedToday:"...",color:"#2e8540"}),jsxRuntimeExports.jsx(MetricCard,{"data-source-loc":"components/Dashboard.tsx:73:9",label:"P1 Active",val:metrics?metrics.slaAtRisk:"...",color:"#e07c00"})]}),jsxRuntimeExports.jsx("h2",{"data-source-loc":"components/Dashboard.tsx:76:7",className:"section-title",style:{marginBottom:"0.5rem"},children:"Recent Open Incidents"}),jsxRuntimeExports.jsx(NowRecordListConnected,{"data-source-loc":"components/Dashboard.tsx:77:7",table:"incident",listTitle:"Open Incidents",columns:"number,short_description,priority,state,assigned_to",hideHeader:!0,limit:10,onRowClicked:e=&gt;onSelectIncident(e.detail.payload.sys_id)},"active=true")]})}export{Dashboard as default};
+//# sourceMappingURL=Dashboard.js.map.jsdbx
+</content>
+        <content_meta/>
+        <dependencies/>
+        <device_type/>
+        <es_module>true</es_module>
+        <is_attachment>false</is_attachment>
+        <mime_type>application/javascript</mime_type>
+        <name>x_1971543_campus_0/Dashboard</name>
+        <sys_class_name>sys_ux_lib_asset</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-07 09:02:54</sys_created_on>
+        <sys_id>a6c171ae614c40e3b3ee0cfab4b17e72</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_1971543_campus_0/Dashboard</sys_name>
+        <sys_package display_value="CampusDesk AI" source="x_1971543_campus_0">28296cbb2f9607104674caba6fa4e352</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CampusDesk AI">28296cbb2f9607104674caba6fa4e352</sys_scope>
+        <sys_update_name>sys_ux_lib_asset_a6c171ae614c40e3b3ee0cfab4b17e72</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-07 09:02:54</sys_updated_on>
+    </sys_ux_lib_asset>
+</record_update>

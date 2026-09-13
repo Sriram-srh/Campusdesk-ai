@@ -5,7 +5,7 @@
         <active>true</active>
         <allow_high_security_roles>false</allow_high_security_roles>
         <annotation/>
-        <attributes>timeFromCreateToActivate=9000</attributes>
+        <attributes>timeFromCreateToActivate=1019824000</attributes>
         <authored_on_release_version/>
         <callable_by_client_api>false</callable_by_client_api>
         <category/>
@@ -23,7 +23,7 @@
         <natlang/>
         <outputs/>
         <pre_compiled>false</pre_compiled>
-        <remote_trigger_id>a9bde7bf2f7e47104674caba6fa4e392</remote_trigger_id>
+        <remote_trigger_id>c500e8772f8bc3904674caba6fa4e349</remote_trigger_id>
         <run_as>system</run_as>
         <run_with_roles/>
         <sc_callable>false</sc_callable>
@@ -37,7 +37,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>dd8f92a5c7394a70b84a9aececb553d3</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>17</sys_mod_count>
         <sys_name>CampusDesk Problem Management</sys_name>
         <sys_overrides/>
         <sys_package display_value="CampusDesk AI" source="x_1971543_campus_0">28296cbb2f9607104674caba6fa4e352</sys_package>
@@ -45,11 +45,11 @@
         <sys_scope display_value="CampusDesk AI">28296cbb2f9607104674caba6fa4e352</sys_scope>
         <sys_update_name>sys_hub_flow_dd8f92a5c7394a70b84a9aececb553d3</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-08-26 15:00:45</sys_updated_on>
+        <sys_updated_on>2026-09-07 10:17:45</sys_updated_on>
         <type>flow</type>
         <updation_source/>
         <version>2</version>
-        <version_record>ae7fef732fbe47104674caba6fa4e31f</version_record>
+        <version_record/>
     </sys_hub_flow>
     <sys_translated_text action="delete_multiple" query="documentkey=dd8f92a5c7394a70b84a9aececb553d3"/>
     <sys_variable_value action="delete_multiple" query="document_key=dd8f92a5c7394a70b84a9aececb553d3"/>
@@ -70,15 +70,15 @@
         <run_when_user_setting>any</run_when_user_setting>
         <sys_class_name>sys_flow_record_trigger</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2026-08-26 15:00:44</sys_created_on>
+        <sys_created_on>2026-09-07 10:17:45</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
-        <sys_id>a9bde7bf2f7e47104674caba6fa4e392</sys_id>
+        <sys_id>c500e8772f8bc3904674caba6fa4e349</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_overrides/>
         <sys_scope display_value="CampusDesk AI">28296cbb2f9607104674caba6fa4e352</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-08-26 15:00:44</sys_updated_on>
+        <sys_updated_on>2026-09-07 10:17:45</sys_updated_on>
         <table>problem</table>
         <trigger_definition/>
     </sys_flow_record_trigger>
@@ -89,14 +89,14 @@
         <identifier_type>flow</identifier_type>
         <runner>FDTriggerRunner</runner>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2026-08-26 15:00:45</sys_created_on>
-        <sys_id>6dbde7bf2f7e47104674caba6fa4e393</sys_id>
+        <sys_created_on>2026-09-07 10:17:45</sys_created_on>
+        <sys_id>0d00e8772f8bc3904674caba6fa4e34a</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-08-26 15:00:45</sys_updated_on>
-        <trigger display_value="">a9bde7bf2f7e47104674caba6fa4e392</trigger>
+        <sys_updated_on>2026-09-07 10:17:45</sys_updated_on>
+        <trigger display_value="">c500e8772f8bc3904674caba6fa4e349</trigger>
     </sys_trigger_runner_mapping>
-    <sys_trigger_runner_mapping action="delete_multiple" query="identifier=dd8f92a5c7394a70b84a9aececb553d3^sys_idNOT IN6dbde7bf2f7e47104674caba6fa4e393"/>
+    <sys_trigger_runner_mapping action="delete_multiple" query="identifier=dd8f92a5c7394a70b84a9aececb553d3^sys_idNOT IN0d00e8772f8bc3904674caba6fa4e34a"/>
     <sys_hub_flow_stage action="delete_multiple" query="flow=dd8f92a5c7394a70b84a9aececb553d3"/>
     <sys_flow_cat_variable_model action="delete_multiple" query="id=dd8f92a5c7394a70b84a9aececb553d3"/>
     <sys_hub_flow_input action="delete_multiple" query="model=dd8f92a5c7394a70b84a9aececb553d3^sys_idNOT IN01bda7bf2f7e47104674caba6fa4e3cf,49bda7bf2f7e47104674caba6fa4e3af,cdbda7bf2f7e47104674caba6fa4e3c3"/>
@@ -369,10 +369,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-08-26 15:00:34</sys_created_on>
         <sys_id>5607e467580c4d75aaba43ff877c5b3f</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>8</sys_mod_count>
         <sys_scope display_value="CampusDesk AI">28296cbb2f9607104674caba6fa4e352</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-08-26 15:00:43</sys_updated_on>
+        <sys_updated_on>2026-09-07 10:17:37</sys_updated_on>
         <trigger_definition display_value="Created or Updated">a45d9180c32222002841b63b12d3aea7</trigger_definition>
         <trigger_inputs>H4sIAAAAAAAA/+1Y247TMBD9FZMnkIpUxAPSvnFbaSUuErvAAyyRa09aC9cuttNuWO2/M3aS1s0FUrbhIu3TbsaO58zMOTNOP10nzoj5HMyZso4qBueFPePJSZJMEklnIPHfCzqTgM9COTCKyotiBWh23pwquvRrHFagOChXvsoWWjB4JSw+f7qcJEuqOHXaFMmJMzlMkszo5QUsV5I6PCuj0qJRGw4mOXk0nU6ScG7lBA9cU5n755XRaFh6j8Li28WH1gJbCMkNqNLziho8yflzr1sRNZy4jsAqTIgIrpwPkW/hRkFVFgOUv1WyiLZcWfEdwvu5hTRKU7UjO1/ozTvIABEzOBUquKsWpWZUbp+ow1rNcgcWY7m52abgVICsSmaZESv3lDmxrtN6MxlS43e5Im8VeVnFSEKGbLvoZWF/UfBrjAq+5T6gEHlWF8nXHjdnryKvWhGWG4zeEcwnqbNMXI0gO1vSOZRu8FwJzEVFyN7b+Om1sFaoeRR7D5Sw3sYiixhQTYzbQLjsIspQ+ptcpVqlW+rthFDjb8igNg8QQW/Je327Bgf+VW0klK89z3lNuRHEkkm9IWfq2AqhqmiSMngSCtVREKbR2ZUbTRUzyr7Ojc4V70Ox20Huc8hoLt2D8USqDfwczv6OvylTjygVKpLoXjIbOt1bGyjWHeU63d6ps0zVc624cEJ3abNesgddWQ5kA4sA1FygIY7P+XT6mPugv1T3lRTDcHCvXHg0fdJmygFvDuBRnJwOuK4jT6PxqLoJ/i6NNlQ5mzqdUs7TCPH2mrHUHOSLqMoVd1Auq9zZ5CbiAE667UXw+MPi4wIUOQdsONr/dc43niNPjnBYSZa4WfpikNA9tCHYAQ12kO3GGtNoDVzhBWIIsDdaPfyTuGbaLVojBXE8Q/tegvyVtAfcbe+mt544G2RVardsWu/H1hw4pXXgqOkhbL/zu+HTSF6QWtBsS+dzKTikslw7/hQKPIigNYuGCTW195ozbb4cyJU43J85dB0puOOKT95IY6HrgwIbnf+Y8HUZrcNqBanOOhu+yEiVHPzqnBXELQAxSbzI4skB1Xif/Ur7Ud+E9kITXCDmj4A7Tt8Pomo3/7LczStkMB4s5/6+33B+1/x36bsodx1bxlqxxu2J3faHqX6RULmhhW1pF6XhVVL9OIYG5IMqGTAODliD2etep9i5gpHkK+6VMpbnXAk0p2xB1RxsCwJlC1JuIeWWv9kS6q8a6wzunBdRN6hY02gHlXVgP9gRut/f/9IAhuv98gdTfFMYGhkAAA==</trigger_inputs>
         <trigger_outputs/>
@@ -395,10 +395,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-08-26 15:00:34</sys_created_on>
         <sys_id>eb35610ba69948568ec566e7b7bc1d45</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>8</sys_mod_count>
         <sys_scope display_value="CampusDesk AI">28296cbb2f9607104674caba6fa4e352</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-08-26 15:00:43</sys_updated_on>
+        <sys_updated_on>2026-09-07 10:17:37</sys_updated_on>
         <ui_id>eb35610b-a699-4856-8ec5-66e7b7bc1d45</ui_id>
         <updation_source/>
         <values>H4sIAAAAAAAA/+VUTW/bMAz9K4bOjhEn9brmNiQrMKAfw4K1h6IwZJlOBMiSJ8lJMyP/fZStOEYbbAvW24AcwucnkY965FNDJC2BzIhQq1TABgQJyYaK2mFcFgrDnJtK0N2DR790aEU1nrSgyawhbM1FrkGS2dNzSHiOtCRjccbYh2Qaj8dT/GVFnF/F4ytgycfL/BKvEDTDfDNy4/OeKMXuKgexteIMfHzjj80PoNK5K2McEnixIHPA/AUVBkJSUplTq/SuRzTQ/F6KI7Dm0uJtxJFfDP+J+S7GjlcAKmLQfevD1Lejg4sFtXRpdc1srT21K9ZgL5pe4mgU3CkJwWg06O+g9H145PoGv3oFz4yHzEeqJZerAXmLyJE8GZI/a630gAo+9tzpHl8uh4LWws7PVxD/tYLJOQqmZyi4cAq65t9Xlit0I4mdZ2gmDk+jRF3Ku85npNf78MrwHbo46fvaoAWgcjZzvvEmKpZrtf128Mg1l21F/qNQjIo+otZqntXW9bchIKDEi9KSVhU2Iq202vD2MBZbRiuBQVQItcWkhq9kRJmTFqGraXSN+KKFH6jmTuYtXoOH9yExOzMX1JijWLRw+qN2lXTSvYa0bVR7hGle2U+YYAO+XNf+wViWYAxdweANvmqFacugaeY4WRbyQOnge5W7v2kcsVpjR2wk6zIDvd8HxuKXoO4Ib5fLv173p600mf5uK0Ey2Eq3vdaTDfCbyeBjtv4dbqblATwMx7ttpkmSvM9qOjXsb8fnrOn5/4bj+RcuJPYBQAcAAA==</values>
@@ -511,7 +511,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>55bde7bf2f7e47104674caba6fa4e339</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>7</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
         <sys_package/>
@@ -519,7 +519,7 @@
         <sys_scope display_value="CampusDesk AI">28296cbb2f9607104674caba6fa4e352</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-08-26 15:00:43</sys_updated_on>
+        <sys_updated_on>2026-09-07 10:17:44</sys_updated_on>
         <type>flow</type>
         <version>2</version>
     </sys_hub_flow_snapshot>
@@ -714,7 +714,7 @@
         <active>true</active>
         <array>false</array>
         <array_denormalized>false</array_denormalized>
-        <attributes>child_label=FDChangeDetails,child_name=FDChangeDetails,child_type=object,child_type_label=Object,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=array.object,uiTypeLabel=Array.Object</attributes>
+        <attributes>child_label=FDChangeDetails,child_name=FDChangeDetails,child_type=object,child_type_label=Object,co_type_name=FDCollection,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=array.object,uiTypeLabel=Array.Object</attributes>
         <audit>false</audit>
         <calculation><![CDATA[(function calculatedFieldValue(current) {
 
@@ -774,14 +774,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-08-26 15:00:43</sys_created_on>
         <sys_id>95bde7bf2f7e47104674caba6fa4e34b</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="CampusDesk AI">28296cbb2f9607104674caba6fa4e352</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-08-26 15:00:43</sys_updated_on>
+        <sys_updated_on>2026-09-07 08:36:04</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -936,12 +936,12 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>65bde7bf2f7e47104674caba6fa4e394</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>7</sys_mod_count>
         <sys_overrides/>
         <sys_scope/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-08-26 15:00:45</sys_updated_on>
-        <trigger display_value="">a9bde7bf2f7e47104674caba6fa4e392</trigger>
+        <sys_updated_on>2026-09-07 10:17:45</sys_updated_on>
+        <trigger display_value="">c500e8772f8bc3904674caba6fa4e349</trigger>
     </sys_flow_trigger_plan>
     <sys_flow_subflow_plan action="delete_multiple" query="plan_id=dd8f92a5c7394a70b84a9aececb553d3"/>
 </record_update>

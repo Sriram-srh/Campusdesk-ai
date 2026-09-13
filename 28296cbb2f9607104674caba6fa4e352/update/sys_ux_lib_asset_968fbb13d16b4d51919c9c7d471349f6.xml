@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_lib_asset">
+    <sys_ux_lib_asset action="INSERT_OR_UPDATE">
+        <bundled_asset>false</bundled_asset>
+        <category>component</category>
+        <checksum>25b2d88417e4953f01dcb71cf5ff9bc2</checksum>
+        <config_option/>
+        <content>/*__ESM_BODY_START__*/window.process={};import{r as reactExports,R as React}from"./main.jsdbx";import"/uxasset/externals/@servicenow/now-record-list-connected/index.jsdbx";import{u as useOpenRecordAPI,S as ServiceNowEvents,a as useServiceNowEvent,s as setProperties,b as useHTMLAttributes}from"./computedProvider.jsdbx";let NowRecordListConnected=props=&gt;{let{table,listTitle,limit,view,columns,hideHeader,hideQuickEdit,hideInlineEditing,hideRowSelector,onNewActionClicked,onRowClicked,onSelectedRecordCountUpdated,onQueryUpdated,onDataFetchRequested,onDataFetchSucceeded,onRefreshRequested,...rest}=props,elementRef=reactExports.useRef(null),openRecordApi=useOpenRecordAPI(),onItemSelectedHandler=reactExports.useCallback(e=&gt;{let{detail}=e,{payload,...detailRest}=detail;if(payload?.row?.sys_id?.value!=="-1")return;let createNewRecordPayload={table:payload.table,sysId:payload.row.sys_id.value,query:payload.additional_data.query},newEvent=new CustomEvent(ServiceNowEvents.LISTS.CREATE_NEW_RECORD,{detail:{...detailRest,payload:createNewRecordPayload}});onNewActionClicked?onNewActionClicked(newEvent):openRecordApi.openInNewTab({table:createNewRecordPayload.table,sysId:createNewRecordPayload.sysId,params:{query:createNewRecordPayload.query}})},[onNewActionClicked,openRecordApi]),onRowClickedHandler=reactExports.useCallback(e=&gt;{if(onRowClicked)onRowClicked(e);else{let{detail}=e,{payload}=detail;openRecordApi.openInNewTab({table:payload.table,sysId:payload.sys_id})}},[onRowClicked,openRecordApi]);useServiceNowEvent(elementRef,ServiceNowEvents.LISTS.ITEM_SELECTED,onItemSelectedHandler),useServiceNowEvent(elementRef,ServiceNowEvents.LISTS.ROW_CLICKED,onRowClickedHandler),useServiceNowEvent(elementRef,ServiceNowEvents.LISTS.SELECTED_RECORD_COUNT_UPDATED,onSelectedRecordCountUpdated),useServiceNowEvent(elementRef,ServiceNowEvents.LISTS.QUERY_UPDATED,onQueryUpdated),useServiceNowEvent(elementRef,ServiceNowEvents.LISTS.DATA_FETCH_REQUESTED,onDataFetchRequested),useServiceNowEvent(elementRef,ServiceNowEvents.LISTS.DATA_FETCH_SUCCEEDED,onDataFetchSucceeded),useServiceNowEvent(elementRef,ServiceNowEvents.LISTS.REFRESH_REQUESTED,onRefreshRequested),setProperties(elementRef,{table,listTitle,limit,view,columns,hideHeader,hideQuickEdit,hideInlineEditing,hideRowSelector,workspaceConfigId:"7b24ceae5304130084acddeeff7b12a3"});let restProps=useHTMLAttributes(elementRef,rest);return React.createElement("now-record-list-connected",{ref:elementRef,...restProps})};export{NowRecordListConnected as N};
+//# sourceMappingURL=NowRecordListConnected.js.map.jsdbx
+</content>
+        <content_meta/>
+        <dependencies/>
+        <device_type/>
+        <es_module>true</es_module>
+        <is_attachment>false</is_attachment>
+        <mime_type>application/javascript</mime_type>
+        <name>x_1971543_campus_0/NowRecordListConnected</name>
+        <sys_class_name>sys_ux_lib_asset</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-07 09:02:50</sys_created_on>
+        <sys_id>968fbb13d16b4d51919c9c7d471349f6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_1971543_campus_0/NowRecordListConnected</sys_name>
+        <sys_package display_value="CampusDesk AI" source="x_1971543_campus_0">28296cbb2f9607104674caba6fa4e352</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CampusDesk AI">28296cbb2f9607104674caba6fa4e352</sys_scope>
+        <sys_update_name>sys_ux_lib_asset_968fbb13d16b4d51919c9c7d471349f6</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-07 09:02:50</sys_updated_on>
+    </sys_ux_lib_asset>
+</record_update>

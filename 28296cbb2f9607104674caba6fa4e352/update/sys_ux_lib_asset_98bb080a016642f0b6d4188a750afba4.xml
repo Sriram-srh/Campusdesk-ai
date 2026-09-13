@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_lib_asset">
+    <sys_ux_lib_asset action="INSERT_OR_UPDATE">
+        <bundled_asset>false</bundled_asset>
+        <category>component</category>
+        <checksum>d86a995e600fb1ecddef5f489038b8d3</checksum>
+        <config_option/>
+        <content>/*__ESM_BODY_START__*/window.process={};import{r as reactExports}from"./main.jsdbx";let ServiceNowEvents={ALERT:{ACTION_CLICKED:"NOW_ALERT#ACTION_CLICKED",AUTO_DISMISS:"NOW_ALERT#AUTO_DISMISS",EXPANDED_SET:"NOW_ALERT#EXPANDED_SET",TEXT_LINK_CLICKED:"NOW_ALERT#TEXT_LINK_CLICKED"},FORM_ACTION_BAR:{CLICKED:"NOW_RECORD_UI_ACTION_BAR#CLICKED"},FORM_COLUMN_LAYOUT:{ADD_NOTIFICATIONS:"NOW_RECORD_FORM_SECTION_COLUMN_LAYOUT#ADD_NOTIFICATIONS",CLEAR_NOTIFICATIONS:"NOW_RECORD_FORM_SECTION_COLUMN_LAYOUT#CLEAR_NOTIFICATIONS",REFERENCE_INFO_CLICK:"REFERENCE_INFO_CLICK",FORM_MESSAGE_SET_TRANSACTION_SCOPE:"SN_FORM_INTERNAL_FORM_MESSAGES#SET_TRANSACTION_SCOPE",FORM_MESSAGE_CLEAR_TRANSACTION_SCOPE:"SN_FORM_INTERNAL_FORM_MESSAGES#CLEAR_TRANSACTION_SCOPE"},FORM_CONTEXT:{ADD_NOTIFICATIONS:"NOW_REACT_FORM#ADD_NOTIFICATIONS",CLEAR_NOTIFICATIONS:"NOW_REACT_FORM#CLEAR_NOTIFICATIONS",FORM_FETCH_STARTED:"NOW_REACT_FORM#FORM_FETCH_STARTED",FORM_FETCH_SUCCESS:"NOW_REACT_FORM#FORM_FETCH_SUCCESS",FORM_SUBMIT_COMPLETED:"NOW_REACT_FORM#FORM_SUBMIT_COMPLETED",OPEN_RECORD:"NOW_REACT_FORM#OPEN_RECORD",SCREEN_STATUS_CHANGED:"NOW_REACT_FORM#SCREEN_STATUS_CHANGED",WRAPPED_ACTION:"NOW_REACT_FORM#WRAPPED_ACTION"},FORM_CSDB:{ADD_NOTIFICATIONS:"SN_FORM_DATA_CONNECTED#ADD_NOTIFICATIONS",CLEAR_NOTIFICATIONS:"SN_FORM_DATA_CONNECTED#CLEAR_NOTIFICATIONS",CLEAR_TRANSACTION_SCOPE:"SN_FORM_DATA_CONNECTED#CLEAR_TRANSACTION_SCOPE",CSDB_OUTPUT_PROP_CHANGED:"CSDB_REACT#OUTPUT_PROP_CHANGED",CSDB_STATE_CHANGED:"CSDB_REACT#STATE_CHANGED",EXECUTE_UI_ACTION_REQUESTED:"SN_SCRIPTING_ENVIRONMENT#INTERNAL_EXECUTE_UI_ACTION_REQUESTED",FETCH_STARTED:"SN_FORM_DATA_CONNECTED#FETCH_STARTED",FETCH_SUCCESS:"SN_FORM_DATA_CONNECTED#FETCH_SUCCESS",FORM_SUBMIT_COMPLETED:"SN_FORM_DATA_CONNECTED#FORM_SUBMIT_COMPLETED",ITEM_SELECTED:"SN_FORM_DATA_CONNECTED#ITEM_SELECTED",PREVIEW_RECORD:"SN_FORM_DATA_CONNECTED#PREVIEW_RECORD",PREVIEW_RECORD_INTERNAL:"PREVIEW_RECORD",PROVIDER_FETCH_START:"SN_FORM_DATA_PROVIDER#FETCH_START",PROVIDER_FETCH_SUCCESS:"SN_FORM_DATA_PROVIDER#FETCH_SUCCESS",SCREEN_STATUS_CHANGED:"SN_FORM_DATA_CONNECTED#SCREEN_STATUS_CHANGED",SET_TRANSACTION_SCOPE:"SN_FORM_DATA_CONNECTED#SET_TRANSACTION_SCOPE",WRAPPED_ACTION:"SN_FORM_DATA_CONNECTED#WRAPPED_ACTION"},LISTS:{CREATE_NEW_RECORD:"NOW_RECORD_LIST_CONNECTED#CREATE_NEW_RECORD",DATA_FETCH_REQUESTED:"NOW_RECORD_LIST_CONNECTED#DATA_FETCH_REQUESTED",DATA_FETCH_SUCCEEDED:"NOW_RECORD_LIST_CONNECTED#DATA_FETCH_SUCCEEDED",ITEM_SELECTED:"ITEM_SELECTED",QUERY_UPDATED:"NOW_RECORD_LIST_CONNECTED#QUERY_UPDATED",REFRESH_REQUESTED:"NOW_RECORD_LIST_CONNECTED#REFRESH_REQUESTED",ROW_CLICKED:"NOW_RECORD_LIST_CONNECTED#ROW_CLICKED",SELECTED_RECORD_COUNT_UPDATED:"NOW_RECORD_LIST_CONNECTED#SELECTED_RECORD_COUNT_UPDATED"},LOADER:{ACTION_CLICKED:"NOW_LOADER#ACTION_CLICKED"},MODAL:{DOM_READY:"NOW_MODAL#DOM_READY",FOOTER_ACTION_CLICKED:"NOW_MODAL#FOOTER_ACTION_CLICKED",OPENED_SET:"NOW_MODAL#OPENED_SET",RESIZABLE_END:"NOW_MODAL#RESIZABLE_END"}},useServiceNowEvent=(elementRef,eventName,handler)=&gt;{reactExports.useEffect(()=&gt;{var element;if(elementRef.current&amp;&amp;handler)return element=elementRef.current,element&amp;&amp;eventName&amp;&amp;handler?(element.addEventListener(eventName,handler),()=&gt;{element.removeEventListener(eventName,handler)}):(console.warn("[ServiceNow Events] Invalid parameters:",{element,eventName:eventName,handler:handler}),()=&gt;{})},[elementRef,eventName,handler])},setProperties=(ref,properties)=&gt;reactExports.useEffect(()=&gt;{ref.current&amp;&amp;Object.keys(properties).forEach(key=&gt;{ref.current[key]=properties[key]})},[ref,...Object.values(properties)]),hasCamelCase=key=&gt;/[A-Z]/.test(key),toKebabCase=key=&gt;key.replace(/[A-Z]/g,(letter,index)=&gt;0===index?letter.toLowerCase():`-${letter.toLowerCase()}`);function useHTMLAttributes(ref,props){let camelCaseProps={},cleanProps={};for(let[key,value]of Object.entries(props))hasCamelCase(key)?camelCaseProps[key]=value:cleanProps[key]=value;return reactExports.useLayoutEffect(()=&gt;{if(ref.current)for(let[key,value]of Object.entries(camelCaseProps)){let attributeName=toKebabCase(key);"boolean"==typeof value?value?ref.current.setAttribute(attributeName,""):ref.current.removeAttribute(attributeName):null==value?ref.current.removeAttribute(attributeName):("string"==typeof value||"number"==typeof value)&amp;&amp;ref.current.setAttribute(attributeName,String(value))}}),cleanProps}let RecordContext=reactExports.createContext(null);RecordContext.displayName="RecordContext";let useRecord=()=&gt;reactExports.useContext(RecordContext),isEmpty=value=&gt;null==value||("string"==typeof value||Array.isArray(value)?0===value.length:"object"==typeof value&amp;&amp;0===Object.keys(value).length),get=(object,path,defaultValue)=&gt;{if(!path||isEmpty(path))return defaultValue;let keys=Array.isArray(path)?path:path.toString().split(/[[\].]/).filter(Boolean),value=object;for(let key of keys){if(null==value)break;value=Array.isArray(value)&amp;&amp;/^\d+$/.test(key)?value[parseInt(key,10)]:value[key]}return void 0===value?defaultValue:value},isEqual=(value,other)=&gt;{if(value===other)return!0;if(typeof value!=typeof other||null===value||null===other||"object"!=typeof value)return!1;let valueTag=Object.prototype.toString.call(value);if(valueTag!==Object.prototype.toString.call(other))return!1;if("[object Array]"===valueTag){let length=value.length;if(length!==other.length)return!1;for(let i=0;i&lt;length;i++)if(!isEqual(value[i],other[i]))return!1;return!0}if("[object Object]"===valueTag){let valueKeys=Object.keys(value),otherKeys=Object.keys(other);if(valueKeys.length!==otherKeys.length)return!1;for(let key of valueKeys)if(!Object.prototype.hasOwnProperty.call(other,key)||!isEqual(value[key],other[key]))return!1;return!0}return!1},set=(object,path,value)=&gt;(null==path||("string"==typeof path&amp;&amp;(path=path.split(/\.|\[|\]/g).filter(Boolean).map(part=&gt;isNaN(part)?part:Number(part))),path.reduce((curr,key,index)=&gt;{if(index!==path.length-1)return"number"==typeof key?(Array.isArray(curr)||(curr=[]),void 0===curr[key]&amp;&amp;(curr[key]={})):curr[key]||(curr[key]={}),curr[key];curr[key]=value},object)),object);function useBaseAPI(config){let[state,setState]=reactExports.useState(config.initialState),setPartialState=reactExports.useCallback(updates=&gt;{setState(prev=&gt;{let newState={};for(let key in updates)isEqual(prev[key],updates[key])||(newState[key]=updates[key]);return isEmpty(newState)?prev:{...prev,...newState}})},[setState]),eventHandlers=reactExports.useRef(new Map),on=reactExports.useCallback((eventType,handler)=&gt;{eventHandlers.current.has(eventType)||eventHandlers.current.set(eventType,new Set),eventHandlers.current.get(eventType).add(handler)},[]),off=reactExports.useCallback((eventType,handler)=&gt;{let handlers=eventHandlers.current.get(eventType);handlers&amp;&amp;(handlers.delete(handler),0===handlers.size&amp;&amp;eventHandlers.current.delete(eventType))},[]),emit=reactExports.useCallback((eventType,data)=&gt;{let handlers=eventHandlers.current.get(eventType);handlers&amp;&amp;handlers.forEach(handler=&gt;{try{handler(data)}catch(error){console.error(`Error in event handler for ${eventType}:`,error)}})},[]);return reactExports.useEffect(()=&gt;()=&gt;{eventHandlers.current.clear()},[]),{state,setState,setPartialState,on,off,emit}}function useOpenRecordAPI(config){let{state,setState}=useBaseAPI({initialState:{modalState:{isOpen:!1,payload:null,isReadOnly:!1}}}),{overrideOnPreviewRequest,overrideOnOpenRecordRequest,overrideOnNewRecordRequest,onAllRequests}=reactExports.useMemo(()=&gt;({overrideOnPreviewRequest:config?.onPreviewRecordRequest!==void 0,overrideOnOpenRecordRequest:config?.onOpenRecordRequest!==void 0,overrideOnNewRecordRequest:config?.onNewRecordRequest!==void 0,onAllRequests:config?.onAllRequests!==void 0}),[config]),defaultBuildRecordUrl=reactExports.useCallback(payload=&gt;{let url="/now/nav/ui/classic/params/target/{table}.do".replace("{table}",payload.table),queryParams=[];return queryParams.push(`sys_id=${payload.sysId}`),payload.params?.query&amp;&amp;queryParams.push(`sysparm_query=${payload.params.query}`),url+=encodeURIComponent("?"+queryParams.join("&amp;"))},[]),defaultIsReadOnly=reactExports.useCallback(payload=&gt;payload.params?.isReferenceInfoClick===!0||payload.params?.isNewRecord!==!0,[]),buildRecordUrl=reactExports.useMemo(()=&gt;config?.buildRecordUrl??defaultBuildRecordUrl,[config,defaultBuildRecordUrl]),isModalReadOnly=reactExports.useMemo(()=&gt;config?.isModalReadOnly??defaultIsReadOnly,[config,defaultIsReadOnly]),openInNewTab=reactExports.useCallback(payload=&gt;{let url=buildRecordUrl(payload);window.open(url,"_blank")},[buildRecordUrl]),openInModal=reactExports.useCallback((payload,isReadOnlyOverride)=&gt;{let calculatedIsReadOnly=void 0!==isReadOnlyOverride?isReadOnlyOverride:isModalReadOnly(payload);setState(prev=&gt;({...prev,modalState:{isOpen:!0,payload,isReadOnly:calculatedIsReadOnly}}))},[setState,isModalReadOnly]),closeModal=reactExports.useCallback(()=&gt;{setState(prev=&gt;({...prev,modalState:{isOpen:!1,payload:null,isReadOnly:!1}}))},[setState]),callbackAPI=reactExports.useMemo(()=&gt;({openInModal,openInNewTab}),[openInModal,openInNewTab]),openRecord=reactExports.useCallback(payload=&gt;{let{params}=payload;if(onAllRequests)return void config.onAllRequests(payload,callbackAPI);if(params?.isReferenceInfoClick){if(overrideOnPreviewRequest)return void config.onPreviewRecordRequest(payload,callbackAPI);let calculatedIsReadOnly=isModalReadOnly(payload);openInModal(payload,calculatedIsReadOnly)}else if(params?.isNewRecord||"-1"===payload.sysId){if(overrideOnNewRecordRequest)return void config.onNewRecordRequest(payload,callbackAPI);openInNewTab(payload)}else{if(overrideOnOpenRecordRequest)return void config.onOpenRecordRequest(payload,callbackAPI);openInNewTab(payload)}},[config,callbackAPI,openInModal,openInNewTab,overrideOnPreviewRequest,overrideOnNewRecordRequest,overrideOnOpenRecordRequest,onAllRequests]);return reactExports.useMemo(()=&gt;({openRecord,openInNewTab,openInModal,closeModal,modalState:state.modalState,buildRecordUrl,isModalReadOnly}),[openRecord,openInNewTab,openInModal,closeModal,state.modalState,buildRecordUrl,isModalReadOnly])}let executeGraphQLQuery=async(query,variables={})=&gt;{try{let response=await fetch("/api/now/graphql",{method:"POST",headers:{"Content-Type":"application/json",Accept:"application/json","X-UserToken":window.g_ck},body:JSON.stringify({query:query,variables:variables})});if(!response?.ok)throw Error(`HTTP error! status: ${response?.status||""}`);let result=await response.json();if(result?.errors)throw result.errors;return result.data}catch(error){throw console.error("Error executing GraphQL query:",error),error}},userSessionProvider={provider:executeGraphQLQuery(`
+{
+  GlideDomain_Query {
+    sessionTimeout: property(name: "glide.ui.session_timeout") {
+      value
+    }
+    sessionTimeleft: property(name: "glide.ui.session_timeleft") {
+      value
+    }
+    activeSessionTimeleft: property(name: "glide.ui.active.session_timeleft") {
+      value
+    }
+    trackingEnabled: property(name: "glide.uxbuilder.tracking.enabled") {
+      value
+    }
+    forgetMe: property(name: "glide.ui.forgetme") {
+      value
+    }
+    user: user{
+      preferences(name: ["workspace.notifications.inbox.desktop", "workspace.notifications.inbox.audio", "workspace.notifications.chat.desktop", "workspace.notifications.chat.audio", "workspace.showRibbon", "workspace.showAgentAssist", "workspace.wrapListText", "workspace.notifications.showPopups", "workspace.notifications.showBadgeCount", "rowcount", "ts.match", "glide.ui.accessibility", "glide.ui.compact", "glide.ui.report.accessibility.patterns", "glide.ui.date_format", "glide.ui.short_date_format", "glide.ui.keyboard.shortcuts.enabled", "glide.ui.report.accessibility.patterns", "glide.ui.accessibility", "glide.ui.accessibility.accessible.tooltips", "glide.ui.accessibility.accessible.dateFormat", "glide.ui.report.accessibility.screen_reader_table", "glide.polaris.animation_disabled", "glide.polaris.accessibility.presence_icon", "glide.polaris.accessibility.truncation_tab_stop", "table.wrap", "glide.ui.polaris.use", "list_export.deliveryType", "list_export.orientationType", "list_export.fileType", "list_export.email", "user.can.logout", "glide.ui.menu.contextual.pinned.id", "glide.ui.menu.main.pinned.id" "glide.ui.polaris.ui16_tabs_inside_polaris", "tabbed.forms", "glide.ui.related_list_timing", "glide.ui.polaris.nav_filter_method", "my_home_navigation_page","glide.ui.polaris.landing_page_header_collapsed","glide.ui.polaris.theme.variant","glide.ui.polaris.theme.infodensity","encryption_context"]) {
+        name
+        value
+      }
+      sys_id
+      firstName
+      lastName
+      fullName
+      userName
+      roles : allRoles
+      avatar
+      initials
+      timeZone
+      timeFormat
+      dateFormat
+      dateTimeFormat
+      language
+      timeZoneOffset
+      title
+      countryCallingCode
+      country
+      isImpersonating
+      canImpersonate
+      impersonatingUserId
+      elevatedRoles
+      isReadOnlyMaintUser
+    }
+  }
+}
+`,{}),mapper:(uxGlobals,result)=&gt;{let user=result?.GlideDomain_Query?.user,isLoggedIn=user?"true":"false",userPrefs=(user?.preferences||[]).reduce((agg,pref)=&gt;(agg[pref.name]=pref.value,agg),{});return{...uxGlobals,session:{..."object"==typeof uxGlobals?.session&amp;&amp;uxGlobals?.session||{},output:{...uxGlobals?.session?.output||{},user,isLoggedIn,userPrefs,properties:{sessionTimeout:result?.GlideDomain_Query?.sessionTimeout,sessionTimeleft:result?.GlideDomain_Query?.sessionTimeleft,activeSessionTimeleft:result?.GlideDomain_Query?.activeSessionTimeleft,trackingEnabled:result?.GlideDomain_Query?.trackingEnabled,forgetMe:result?.GlideDomain_Query?.forgetMe}}},userPrefs,isLoggedIn}}},deviceInfoProvider={provider:new Promise(resolve=&gt;{let ua,browser,os,type;resolve((ua=navigator.userAgent,browser="Unknown",ua.includes("Edg/")?browser="Microsoft Edge":!ua.includes("Chrome/")||ua.includes("Edg/")||ua.includes("OPR/")?ua.includes("Safari/")&amp;&amp;!ua.includes("Chrome/")?browser="Safari":ua.includes("Firefox/")?browser="Firefox":ua.includes("Opera/")||ua.includes("OPR/")?browser="Opera":(ua.includes("Trident/")||ua.includes("MSIE "))&amp;&amp;(browser="Internet Explorer"):browser="Google Chrome",os="Unknown",ua.includes("iPhone")||ua.includes("iPad")||ua.includes("iPod")?os="iOS":ua.includes("Win")?os="Windows":ua.includes("Mac")?os="macOS":ua.includes("CrOS")?os="Chrome OS":ua.includes("Android")?os="Android":(ua.includes("X11")||ua.includes("Linux"))&amp;&amp;(os="Linux"),type="desktop",/Mobi|Android|iPhone|iPad|iPod/i.test(ua)&amp;&amp;(type=/iPad|Android(?!.*Mobile)/i.test(ua)?"tablet":"mobile"),{browser,os,type}))}),mapper:(uxGlobals,result)=&gt;({...uxGlobals,deviceInfo:result})},sysPropsProvider={provider:executeGraphQLQuery(`
+{
+   GlideRecord_Query {
+        sys_properties(queryConditions:"name=glide.builddate^ORname=form_query_hash^ORname=form_without_activiystream_query_hash^ORname=com.glide.max_query_size^ORname=sn_now_record_form.u_SupportedFileTypesForAttachmentPreview^ORname=sn_agent_workspace.preview_attachment.disabled^ORname=glide.attachment.extensions^ORname=com.glide.attachment.max_size^ORname=glide.activity.api_version^ORname=glide.sys.language^ORname=glide.ui.activity.email.use_display^ORname=glide.ui.activity.filter_persistence_level^ORname=glide.ui.activity.sort_persistence_level^ORname=glide.ui.journal.enable_mentions^ORname=glide.ui.mentions.preload^ORname=sn_agent_workspace.activity_email_options_enabled^ORname=glide.activity.compose.allow_journal_settings_overrides^ORname=glide.activity.compose.can_post_mandatory_fields^ORname=glide.activity.compose.textarea.autoresize_line_limit^ORname=glide.ui.journal.use_html^ORname=glide.ui.journal.html.toolbar^ORname=glide.ui.journal.html.plugins") {
+            _results {
+                name {
+                    label
+                    displayValue
+                    value
+                }
+                value {
+                    label
+                    displayValue
+                    value
+                }
+                type {
+                    value
+                }
+            }
+        }
+   } 
+}
+`,{}),mapper:(uxGlobals,result)=&gt;{var sysPropsResults;let sysprops=(sysPropsResults=result?.GlideRecord_Query?.sys_properties?._results)&amp;&amp;Array.isArray(sysPropsResults)?sysPropsResults.reduce((agg,prop)=&gt;(prop?.name?.value&amp;&amp;prop?.value?.value!==void 0&amp;&amp;(agg[prop.name.value]=prop.value.value),agg),{}):{};return{...uxGlobals,sysprops}}},hardcodedProvider={provider:new Promise(resolve=&gt;{resolve({})}),mapper:uxGlobals=&gt;({...uxGlobals,...{presource:{...uxGlobals?.presource||{},"sn-workspace-header:wsConfigSysId":{data:{GlideRecord_Query:{sys_aw_master_config:{_results:[{sys_id:{value:"7b24ceae5304130084acddeeff7b12a3"}}]}}}}}}})},listPrefs=new Set(["workspace.wrapListText","rowcount"]),filterOnlyListPrefs=pref=&gt;listPrefs.has(pref.name),computedProvider={provider:new Promise(resolve=&gt;{resolve({})}),mapper:uxGlobals=&gt;{let user,preferences;return{...uxGlobals,...(user=uxGlobals?.session?.output?.user||{},preferences=user?.preferences||[],{presource:{...uxGlobals.presource||{},"now-list:initUserPrefsResource":{data:{GlideDomain_Query:{user:{preferences:preferences.filter(filterOnlyListPrefs)}}}}}})}}};export{RecordContext as R,ServiceNowEvents as S,useServiceNowEvent as a,useHTMLAttributes as b,useBaseAPI as c,set as d,useRecord as e,userSessionProvider as f,get as g,hardcodedProvider as h,isEmpty as i,deviceInfoProvider as j,sysPropsProvider as k,computedProvider as l,isEqual as m,setProperties as s,useOpenRecordAPI as u};
+//# sourceMappingURL=computedProvider.js.map.jsdbx
+</content>
+        <content_meta/>
+        <dependencies/>
+        <device_type/>
+        <es_module>true</es_module>
+        <is_attachment>false</is_attachment>
+        <mime_type>application/javascript</mime_type>
+        <name>x_1971543_campus_0/computedProvider</name>
+        <sys_class_name>sys_ux_lib_asset</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-07 09:02:51</sys_created_on>
+        <sys_id>98bb080a016642f0b6d4188a750afba4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_1971543_campus_0/computedProvider</sys_name>
+        <sys_package display_value="CampusDesk AI" source="x_1971543_campus_0">28296cbb2f9607104674caba6fa4e352</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CampusDesk AI">28296cbb2f9607104674caba6fa4e352</sys_scope>
+        <sys_update_name>sys_ux_lib_asset_98bb080a016642f0b6d4188a750afba4</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-07 09:02:51</sys_updated_on>
+    </sys_ux_lib_asset>
+</record_update>

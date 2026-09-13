@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ws_operation">
+    <sys_ws_operation action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <consumes>application/json,application/xml,text/xml</consumes>
+        <consumes_customized>false</consumes_customized>
+        <default_operation_uri/>
+        <enforce_acl/>
+        <http_method>GET</http_method>
+        <name>Get CampusDesk Requests</name>
+        <operation_script><![CDATA[(function process(/*RESTAPIRequest*/ request, /*RESTAPIResponse*/ response) {
+
+    var result = [];
+
+    var gr = new GlideRecord('incident');
+
+    if (!gr.isValid()) {
+        response.setStatus(500);
+        response.setBody({
+            success: false,
+            error: 'Incident table is invalid'
+        });
+        return;
+    }
+
+    gr.orderByDesc('sys_created_on');
+    gr.query();
+
+    while (gr.next()) {
+
+        result.push({
+            sys_id: gr.getUniqueValue(),
+            number: gr.getValue('number'),
+            short_description: gr.getValue('short_description'),
+            description: gr.getValue('description'),
+            category: gr.getValue('category'),
+            subcategory: gr.getValue('subcategory'),
+            priority: gr.getValue('priority'),
+            state: gr.getDisplayValue('state'),
+            assignment_group: gr.getDisplayValue('assignment_group'),
+            assigned_to: gr.getDisplayValue('assigned_to'),
+            opened_at: gr.getValue('opened_at'),
+            updated_at: gr.getValue('sys_updated_on')
+        });
+    }
+
+    response.setStatus(200);
+
+    response.setBody({
+        success: true,
+        count: result.length,
+        requests: result
+    });
+
+})(request, response);]]></operation_script>
+        <operation_uri>/api/x_1971543_campus_0/campusdesk_integration_api/requests</operation_uri>
+        <produces>application/json,application/xml,text/xml</produces>
+        <produces_customized>false</produces_customized>
+        <relative_path>/requests</relative_path>
+        <request_example/>
+        <requires_acl_authorization>true</requires_acl_authorization>
+        <requires_authentication>true</requires_authentication>
+        <requires_snc_internal_role>true</requires_snc_internal_role>
+        <short_description>Returns the latest CampusDesk request items for authorized integrations.</short_description>
+        <support_trailing_slash>false</support_trailing_slash>
+        <sys_class_name>sys_ws_operation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-29 06:00:56</sys_created_on>
+        <sys_id>55be09782f4b0f104674caba6fa4e368</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name>Get CampusDesk Requests</sys_name>
+        <sys_package display_value="CampusDesk AI" source="x_1971543_campus_0">28296cbb2f9607104674caba6fa4e352</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CampusDesk AI">28296cbb2f9607104674caba6fa4e352</sys_scope>
+        <sys_update_name>sys_ws_operation_55be09782f4b0f104674caba6fa4e368</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-07 08:00:55</sys_updated_on>
+        <web_service_definition display_value="CampusDesk Integration API">e2638db02f0b0f104674caba6fa4e377</web_service_definition>
+        <web_service_version/>
+    </sys_ws_operation>
+</record_update>

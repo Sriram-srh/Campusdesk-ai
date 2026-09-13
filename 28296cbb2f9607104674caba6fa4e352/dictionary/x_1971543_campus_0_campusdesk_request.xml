@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="enforce_dot_walk_cross_scope_access=true" db_object_id="044d0ef82f434f104674caba6fa4e392" label="CampusDesk Request" max_length="40" name="x_1971543_campus_0_campusdesk_request" type="collection">
+        <element label="Short Description" max_length="40" name="column_label_type_column_name_short_description" type="string"/>
+        <element label="Priority" max_length="40" name="priority" type="string"/>
+        <element label="Status" max_length="40" name="status" type="string"/>
+        <element label="Number" max_length="40" name="number" type="string"/>
+        <element label="Description" max_length="1000" name="description" type="string"/>
+        <element label="Subcategory" max_length="40" name="subcategory" type="string"/>
+        <element label="Category" max_length="40" name="category" type="string"/>
+    </element>
+</database>

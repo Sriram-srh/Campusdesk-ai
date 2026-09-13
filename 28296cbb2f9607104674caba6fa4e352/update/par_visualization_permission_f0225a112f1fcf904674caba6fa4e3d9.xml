@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="par_visualization_permission">
+    <par_visualization_permission action="INSERT_OR_UPDATE">
+        <can_share>true</can_share>
+        <component display_value="CampusDesk AI Operations Command Center">3b125a112f1fcf904674caba6fa4e370</component>
+        <group/>
+        <owner>true</owner>
+        <role/>
+        <sys_class_name>par_visualization_permission</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-12 10:27:14</sys_created_on>
+        <sys_id>f0225a112f1fcf904674caba6fa4e3d9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>3b125a112f1fcf904674caba6fa4e370</sys_name>
+        <sys_package display_value="CampusDesk AI" source="x_1971543_campus_0">28296cbb2f9607104674caba6fa4e352</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CampusDesk AI">28296cbb2f9607104674caba6fa4e352</sys_scope>
+        <sys_update_name>par_visualization_permission_f0225a112f1fcf904674caba6fa4e3d9</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-12 10:27:14</sys_updated_on>
+        <user display_value="System Administrator">6816f79cc0a8016401c5a33be04be441</user>
+        <write>true</write>
+    </par_visualization_permission>
+</record_update>

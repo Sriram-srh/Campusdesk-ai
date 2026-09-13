@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ws_operation">
+    <sys_ws_operation action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <consumes>application/json,application/xml,text/xml</consumes>
+        <consumes_customized>false</consumes_customized>
+        <default_operation_uri/>
+        <enforce_acl/>
+        <http_method>POST</http_method>
+        <name>Create CampusDesk Request</name>
+        <operation_script><![CDATA[(function process(/*RESTAPIRequest*/ request, /*RESTAPIResponse*/ response) {
+
+    // ==========================================
+    // CampusDesk - Create Request API
+    // ==========================================
+
+    var body = request.body.data;
+
+    // ------------------------------------------
+    // Validate request body
+    // ------------------------------------------
+    if (!body) {
+        response.setStatus(400);
+        response.setBody({
+            success: false,
+            error: "Request body is required"
+        });
+        return;
+    }
+
+    // ------------------------------------------
+    // Validate required fields
+    // ------------------------------------------
+    if (!body.short_description) {
+        response.setStatus(400);
+        response.setBody({
+            success: false,
+            error: "short_description is required"
+        });
+        return;
+    }
+
+    if (!body.description) {
+        response.setStatus(400);
+        response.setBody({
+            success: false,
+            error: "description is required"
+        });
+        return;
+    }
+
+    // ------------------------------------------
+    // CampusDesk Request table
+    // ------------------------------------------
+    var tableName = "x_1971543_campus_0_campusdesk_request";
+
+    var gr = new GlideRecord(tableName);
+
+    // ------------------------------------------
+    // Validate table
+    // ------------------------------------------
+    if (!gr.isValid()) {
+        response.setStatus(500);
+        response.setBody({
+            success: false,
+            error: "CampusDesk request table is invalid",
+            table: tableName
+        });
+        return;
+    }
+
+    // ------------------------------------------
+    // Initialize new CampusDesk request
+    // ------------------------------------------
+    gr.initialize();
+
+    // ------------------------------------------
+    // Set request fields
+    // ------------------------------------------
+    gr.setValue("short_description", body.short_description);
+    gr.setValue("description", body.description);
+
+    if (body.category) {
+        gr.setValue("category", body.category);
+    }
+
+    if (body.subcategory) {
+        gr.setValue("subcategory", body.subcategory);
+    }
+
+    // ------------------------------------------
+    // Insert record
+    // ------------------------------------------
+    var sysId = gr.insert();
+
+    // ------------------------------------------
+    // Insert failed
+    // ------------------------------------------
+    if (!sysId) {
+        response.setStatus(500);
+        response.setBody({
+            success: false,
+            error: "Unable to create CampusDesk request"
+        });
+        return;
+    }
+
+    // ------------------------------------------
+    // Successful response
+    // ------------------------------------------
+    response.setStatus(201);
+
+    response.setBody({
+        success: true,
+        message: "CampusDesk request created successfully",
+        request: {
+            sys_id: gr.getUniqueValue(),
+            number: gr.getValue("number"),
+            short_description: gr.getValue("short_description"),
+            description: gr.getValue("description"),
+            category: gr.getValue("category"),
+            subcategory: gr.getValue("subcategory"),
+            state: gr.getDisplayValue("state"),
+            priority: gr.getDisplayValue("priority"),
+            opened_at: gr.getValue("opened_at")
+        }
+    });
+
+})(request, response);]]></operation_script>
+        <operation_uri>/api/x_1971543_campus_0/campusdesk_integration_api/requests</operation_uri>
+        <produces>application/json,application/xml,text/xml</produces>
+        <produces_customized>false</produces_customized>
+        <relative_path>/requests</relative_path>
+        <request_example/>
+        <requires_acl_authorization>true</requires_acl_authorization>
+        <requires_authentication>true</requires_authentication>
+        <requires_snc_internal_role>true</requires_snc_internal_role>
+        <short_description/>
+        <support_trailing_slash>false</support_trailing_slash>
+        <sys_class_name>sys_ws_operation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-29 07:39:54</sys_created_on>
+        <sys_id>866561b82f0f0f104674caba6fa4e307</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name>Create CampusDesk Request</sys_name>
+        <sys_package display_value="CampusDesk AI" source="x_1971543_campus_0">28296cbb2f9607104674caba6fa4e352</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CampusDesk AI">28296cbb2f9607104674caba6fa4e352</sys_scope>
+        <sys_update_name>sys_ws_operation_866561b82f0f0f104674caba6fa4e307</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-29 10:22:15</sys_updated_on>
+        <web_service_definition display_value="CampusDesk Integration API">e2638db02f0b0f104674caba6fa4e377</web_service_definition>
+        <web_service_version/>
+    </sys_ws_operation>
+</record_update>
