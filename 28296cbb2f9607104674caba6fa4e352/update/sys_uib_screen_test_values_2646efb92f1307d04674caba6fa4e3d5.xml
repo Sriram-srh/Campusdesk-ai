@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_uib_screen_test_values">
+    <sys_uib_screen_test_values action="INSERT_OR_UPDATE">
+        <macroponent/>
+        <macroponent_config>{
+    "sysId": null,
+    "tabSysId": null,
+    "filter": null,
+    "edit": null,
+    "element": null
+}</macroponent_config>
+        <screen display_value="Operations Command Center default">9246efb92f1307d04674caba6fa4e39a</screen>
+        <sys_class_name>sys_uib_screen_test_values</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-14 05:51:52</sys_created_on>
+        <sys_id>2646efb92f1307d04674caba6fa4e3d5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="CampusDesk AI" source="x_1971543_campus_0">28296cbb2f9607104674caba6fa4e352</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CampusDesk AI">28296cbb2f9607104674caba6fa4e352</sys_scope>
+        <sys_update_name>sys_uib_screen_test_values_2646efb92f1307d04674caba6fa4e3d5</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-14 05:51:52</sys_updated_on>
+    </sys_uib_screen_test_values>
+</record_update>
